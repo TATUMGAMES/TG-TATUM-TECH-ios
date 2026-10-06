@@ -1,0 +1,30 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/**/Package.resolved
+
+# Local configuration and secrets (never commit)
+Config/Secrets.xcconfig
+*.p12
+*.mobileprovision
+*.provisionprofile
+*.cer
+*.p8
+GoogleService-Info.plist
+.env
+.env.*
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/

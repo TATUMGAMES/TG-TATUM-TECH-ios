@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Tatum Tech Fall 2026",
+    "host": "Tatum Games",
+    "date": "2026-10-10T11:30:00Z",
+    "durationHours": 5,
+    "location": "South Los Angeles, CA",
+    "featuredImage": "tatum_tech_placeholder_flyer_01",
+    "lumaUrl": "https://luma.com/14agrzue",
+    "virtualSpeakers": [
+      {
+        "id": "jeff-bogensberger",
+        "name": "Jeff Bogensberger",
+        "companyName": "The Laughing Otter",
+        "profileImage": "speaker_jeff_bogensberger",
+        "description": null,
+        "speakingTopic": "Maintaining work/life balance while building a gaming career",
+        "speakingSchedule": "Saturday, October 10 · 2:30 – 3:00pm",
+        "startTime": "2:30 PM",
+        "endTime": "3:00 PM",
+        "timeZone": "America/Los_Angeles",
+        "meetUrl": "https://meet.google.com/ggu-rnvc-rpm",
+        "sortOrder": 1
+      },
+      {
+        "id": "reginald-owens-ii",
+        "name": "Reginald Owens II",
+        "companyName": "Light Bright Publications",
+        "profileImage": "speaker_reginald_owens",
+        "description": null,
+        "speakingTopic": "The power of storytelling",
+        "speakingSchedule": "Saturday, October 10 · 3:30 – 4:00pm",
+        "startTime": "3:30 PM",
+        "endTime": "4:00 PM",
+        "timeZone": "America/Los_Angeles",
+        "meetUrl": "https://meet.google.com/zee-fauy-cst",
+        "sortOrder": 2
+      },
+      {
+        "id": "tanmay-patil",
+        "name": "Tanmay Patil (3D Animator & AI Studio)",
+        "companyName": "Vibe XP, Team Firestorm",
+        "profileImage": "male_profile_default",
+        "description": null,
+        "speakingTopic": "How AI, 3D animation & VFX are shaping the future",
+        "speakingSchedule": "Saturday, October 10 · 4:00 – 4:30pm",
+        "startTime": "4:00 PM",
+        "endTime": "4:30 PM",
+        "timeZone": "America/Los_Angeles",
+        "meetUrl": "https://meet.google.com/zrt-pfvk-hpx",
+        "sortOrder": 3
+      }
+    ]
+  }
+]

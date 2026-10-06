@@ -1,0 +1,28 @@
+// Settings shared by every build configuration.
+// Values here are committed: never put credentials or private keys in this file.
+// Machine-local overrides (API key, Google iOS client ID, signing team) belong in
+// Config/Secrets.xcconfig, which is git-ignored. See Config/Secrets.example.xcconfig.
+
+PRODUCT_NAME = TatumTech
+PRODUCT_BUNDLE_IDENTIFIER = com.tatumgames.tatumtech
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1
+DEVELOPMENT_TEAM =
+
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+TARGETED_DEVICE_FAMILY = 1
+SWIFT_VERSION = 5.0
+SWIFT_STRICT_CONCURRENCY = complete
+
+// Tatum Tech API. Release builds always use production + network regardless of these values.
+TATUM_TECH_ENVIRONMENT = production
+TATUM_TECH_DATA_SOURCE = network
+TATUM_TECH_API_KEY =
+
+// Google Sign-In. The server (Web) client ID is a public OAuth identifier that the backend
+// uses as the ID token audience; it is not a secret.
+GOOGLE_SERVER_CLIENT_ID = 200853064929-k7cus4bcs41l07vvdqfuj5nimaqvk26c.apps.googleusercontent.com
+// iOS OAuth client for this bundle ID. Not created yet; set it in Secrets.xcconfig.
+GOOGLE_IOS_CLIENT_ID =
+// Reversed iOS client ID (com.googleusercontent.apps.<id>), registered as a URL scheme.
+GOOGLE_REVERSED_CLIENT_ID = com.tatumgames.tatumtech.google-unconfigured

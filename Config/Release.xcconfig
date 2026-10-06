@@ -1,0 +1,6 @@
+#include "Shared.xcconfig"
+#include? "Secrets.xcconfig"
+
+// Release always targets the production API over the network.
+TATUM_TECH_ENVIRONMENT = production
+TATUM_TECH_DATA_SOURCE = network
