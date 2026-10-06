@@ -1,6 +1,9 @@
 #include "Shared.xcconfig"
 #include? "Secrets.xcconfig"
 
+PRODUCT_BUNDLE_IDENTIFIER = com.tatumgames.tatumtech.ios
+FIREBASE_PLIST_VARIANT = Prod
+
 // Release always targets the production API over the network.
 TATUM_TECH_ENVIRONMENT = production
 TATUM_TECH_DATA_SOURCE = network

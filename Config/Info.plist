@@ -43,9 +43,16 @@
 	<array>
 		<string>mailto</string>
 		<string>tel</string>
+		<string>discord</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Tatum Tech uses the camera to scan contact card QR codes at events and to take your contact card photo.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Tatum Tech saves scanned contact cards to your contacts when you ask it to.</string>
+	<key>TatumTechAppStoreID</key>
+	<string>$(APP_STORE_ID)</string>
 	<key>TatumTechAPIKey</key>
 	<string>$(TATUM_TECH_API_KEY)</string>
 	<key>TatumTechDataSource</key>

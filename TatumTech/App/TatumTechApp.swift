@@ -8,6 +8,8 @@ struct TatumTechApp: App {
         WindowGroup {
             RootView()
                 .environment(appModel)
+                .environment(appModel.router)
+                .environment(appModel.reminders)
                 .onOpenURL { url in
                     _ = appModel.dependencies.googleSignIn.handle(url)
                 }

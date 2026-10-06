@@ -4,7 +4,8 @@
 // Config/Secrets.xcconfig, which is git-ignored. See Config/Secrets.example.xcconfig.
 
 PRODUCT_NAME = TatumTech
-PRODUCT_BUNDLE_IDENTIFIER = com.tatumgames.tatumtech
+// Debug and Release override this with the IDs registered in Firebase.
+PRODUCT_BUNDLE_IDENTIFIER = com.tatumgames.tatumtech.ios
 MARKETING_VERSION = 1.0
 CURRENT_PROJECT_VERSION = 1
 DEVELOPMENT_TEAM =
@@ -26,3 +27,11 @@ GOOGLE_SERVER_CLIENT_ID = 200853064929-k7cus4bcs41l07vvdqfuj5nimaqvk26c.apps.goo
 GOOGLE_IOS_CLIENT_ID =
 // Reversed iOS client ID (com.googleusercontent.apps.<id>), registered as a URL scheme.
 GOOGLE_REVERSED_CLIENT_ID = com.tatumgames.tatumtech.google-unconfigured
+
+// Numeric App Store ID used for the "rate the app" store link. Empty until the App Store
+// Connect record exists; the rating prompt then falls back to the in-app review request.
+APP_STORE_ID =
+
+// Firebase reads "GoogleService-Info $(FIREBASE_PLIST_VARIANT).plist" from the repository
+// root at build time. Those files are git-ignored.
+FIREBASE_PLIST_VARIANT = Prod

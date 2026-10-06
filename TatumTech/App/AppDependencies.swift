@@ -1,5 +1,6 @@
 import Foundation
 import TatumTechKit
+import UserNotifications
 
 /// Services shared by every screen, built once at launch.
 @MainActor
@@ -9,6 +10,15 @@ struct AppDependencies {
     let content: any ContentRepository
     let googleSignIn: any GoogleSignInProviding
     let appleCredentials: any AppleCredentialStateChecking
+    /// The user's on-device data: profile, progress, timeline, contact card, notifications.
+    let local: LocalRepository
+    let catalog: BundledCatalog
+    let analytics: AnalyticsService
+    let discord: DiscordClient
+    let contactImages: ContactCardImageStore
+    let reminders: MeetingReminderCenter
+    /// Numeric App Store ID for the review link, when the store record exists.
+    let appStoreID: String?
 
     /// Live services, or deterministic offline ones when launched by UI tests.
     static func makeForLaunch(processInfo: ProcessInfo = .processInfo) -> AppDependencies {
@@ -26,6 +36,8 @@ struct AppDependencies {
         )
         let keychain = KeychainStore(service: "\(bundle.bundleIdentifier ?? "com.tatumgames.tatumtech").auth")
         FirstLaunchGuard().clearCredentialsAfterReinstall(keychain)
+        let analytics = AnalyticsService(clients: FirebaseServices.configure(bundle: bundle))
+        UnhandledExceptionBridge.install(analytics: analytics)
 
         let transport: any HTTPTransport = switch configuration.dataSource {
         case .network: URLSessionTransport()
@@ -35,19 +47,28 @@ struct AppDependencies {
             baseURL: configuration.environment.baseURL,
             apiKey: configuration.apiKey,
             transport: transport,
-            logger: configuration.logsHTTPTraffic ? OSLogTrafficLogger() : nil
+            logger: configuration.logsHTTPTraffic ? OSLogTrafficLogger() : nil,
+            failureObserver: analytics
         )
+        let appStoreID = (bundle.object(forInfoDictionaryKey: "TatumTechAppStoreID") as? String)?
+            .trimmingCharacters(in: .whitespacesAndNewlines)
         return AppDependencies(
             configuration: configuration,
             client: client,
             secureStore: keychain,
             googleSignIn: GoogleSignInProviderFactory.make(bundle: bundle),
-            appleCredentials: AppleIDCredentialStateChecker()
+            appleCredentials: AppleIDCredentialStateChecker(),
+            local: LocalRepository(fileURL: LocalDataLocation.fileURL),
+            analytics: analytics,
+            discordTransport: URLSessionTransport(),
+            contactImages: .live(),
+            reminders: MeetingReminderCenter(notifications: .current()),
+            appStoreID: appStoreID?.isEmpty == false ? appStoreID : nil
         )
     }
 
-    /// Bundled JSON, in-memory credentials, and no external sign-in, so UI tests never touch the
-    /// network or the Keychain.
+    /// Bundled JSON, in-memory storage, and no external services, so UI tests never touch the
+    /// network, the Keychain, or notifications.
     static func uiTesting(signedIn: Bool) -> AppDependencies {
         let configuration = AppConfiguration(environment: .production, dataSource: .localJSON)
         let client = TatumTechAPIClient(
@@ -64,7 +85,13 @@ struct AppDependencies {
             client: client,
             secureStore: store,
             googleSignIn: UnavailableGoogleSignIn(),
-            appleCredentials: AuthorizedAppleCredentials()
+            appleCredentials: AuthorizedAppleCredentials(),
+            local: LocalRepository(fileURL: nil),
+            analytics: .disabled,
+            discordTransport: OfflineTransport(),
+            contactImages: .inMemory,
+            reminders: MeetingReminderCenter(notifications: nil, defaults: UserDefaults(suiteName: "ui-testing") ?? .standard),
+            appStoreID: nil
         )
     }
 
@@ -73,7 +100,13 @@ struct AppDependencies {
         client: TatumTechAPIClient,
         secureStore: any SecureStore,
         googleSignIn: any GoogleSignInProviding,
-        appleCredentials: any AppleCredentialStateChecking
+        appleCredentials: any AppleCredentialStateChecking,
+        local: LocalRepository,
+        analytics: AnalyticsService,
+        discordTransport: any HTTPTransport,
+        contactImages: ContactCardImageStore,
+        reminders: MeetingReminderCenter,
+        appStoreID: String?
     ) {
         let sessionManager = SessionManager(
             client: client,
@@ -88,6 +121,13 @@ struct AppDependencies {
         self.content = APIContentRepository(client: client)
         self.googleSignIn = googleSignIn
         self.appleCredentials = appleCredentials
+        self.local = local
+        self.catalog = BundledCatalog(loadFile: BundledContent.loader)
+        self.analytics = analytics
+        self.discord = DiscordClient(transport: discordTransport, analytics: analytics)
+        self.contactImages = contactImages
+        self.reminders = reminders
+        self.appStoreID = appStoreID
     }
 }
 
@@ -111,6 +151,16 @@ private enum StorageKey {
     static let federatedAccount = "tatumTech.federatedAccount"
 }
 
+/// Where the on-device data document lives. Application Support is backed up and is not purged
+/// by the system, unlike Caches.
+enum LocalDataLocation {
+    static var fileURL: URL? {
+        FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first?
+            .appendingPathComponent("TatumTech", isDirectory: true)
+            .appendingPathComponent("local-data.json")
+    }
+}
+
 /// Reads JSON files bundled in `Resources/Content`.
 enum BundledContent {
     static let loader: @Sendable (String) throws -> Data = { name in try load(name) }
@@ -120,6 +170,13 @@ enum BundledContent {
             throw CocoaError(.fileNoSuchFile)
         }
         return try Data(contentsOf: url)
+    }
+}
+
+/// Fails every request as if the device were offline. Used by UI tests for third-party APIs.
+struct OfflineTransport: HTTPTransport {
+    func send(_ request: HTTPRequest) async throws -> HTTPResponse {
+        throw URLError(.notConnectedToInternet)
     }
 }
 
