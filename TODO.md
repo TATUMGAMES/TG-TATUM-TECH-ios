@@ -1,106 +1,78 @@
 # TODO
 
-Open work for the iOS app. Each entry says what is needed, why, where it applies, what it unlocks,
-whether it blocks release, and whether an AI agent can do it without outside help. Keep this file
-current: remove entries when done and record them in `docs/IMPLEMENTATION_LOG.md`.
+External configuration and verification the app still needs. Every feature is implemented in code;
+the items below need access, accounts, assets or hardware that are not in this repository.
 
 Never put credentials, keys or tokens in this file.
 
-## Needs a Mac (verification)
+## Verification (needs a Mac)
 
-### Build and run the app in Xcode
-- **What:** Open the project, resolve packages, build, run on a simulator, run all tests (Cmd-U).
-- **Why:** The app layer was written without access to Xcode; only `TatumTechKit` has been compiled
-  and tested.
-- **Where:** Whole `TatumTech/`, `TatumTechTests/`, `TatumTechUITests/`, `TatumTech.xcodeproj`.
-- **Value:** Confirms everything compiles and the UI matches `docs/APP_DESIGN.md`.
+### Build, run and test the app in Xcode
+- **What:** Open the project, resolve packages (GoogleSignIn-iOS, firebase-ios-sdk), build for a
+  simulator and a device, and run all tests (Cmd-U).
+- **Why:** The app target and its tests have not been compiled. Only `TatumTechKit` was built and
+  tested (110 tests, Swift 6.4 toolchain on Windows).
+- **Where:** `TatumTech/`, `TatumTechTests/`, `TatumTechUITests/`, `TatumTech.xcodeproj`.
 - **Blocks release:** Yes.
-- **AI can continue:** Yes, once build output is shared. Fixing compile errors is routine.
-- Things to check in particular: the partner detail sheet dismissing before the contact picker
-  appears; the Google image button scaling; paged home grid height with large Dynamic Type; UI test
-  identifiers resolving on image buttons.
+- Check in particular: camera QR scanning on a device, the system New Contact screen after saving
+  a scanned card, the vCard QR being readable by the iOS Camera app, local notification delivery
+  for speaker reminders (use the debug "Test reminder in 10 s" button), Safari checkout for
+  donations, and the rating prompt on the 20th app open.
+
+### Firebase DebugView check
+- **What:** Run a Debug build with `-FIRDebugEnabled` and confirm every event in
+  `docs/ANALYTICS_PARITY.md` arrives with its parameters.
+- **Blocks release:** No, but needed to mark analytics as verified at runtime.
 
 ## External configuration
 
-### Google iOS OAuth client
-- **What:** Create an iOS OAuth client for `com.tatumgames.tatumtech` in the Google Cloud project
-  that owns the Web client, then set `GOOGLE_IOS_CLIENT_ID` and `GOOGLE_REVERSED_CLIENT_ID` in
-  `Config/Secrets.xcconfig` (or in `Shared.xcconfig`, since client IDs are not secret).
-- **Why:** Google sign-in needs a client ID registered for the iOS bundle ID.
-- **Where:** `Config/*.xcconfig`, `GoogleSignInProviderFactory`.
-- **Value:** Enables Google sign-in; until then the button shows the "unavailable" message.
-- **Blocks release:** Yes, if Google sign-in should ship on iOS.
-- **AI can continue:** No. Needs Google Cloud console access.
-
-### Apple Developer team and Sign in with Apple
-- **What:** Set `DEVELOPMENT_TEAM`, register the App ID with the Sign in with Apple capability.
-- **Why:** Signing and the Apple sign-in entitlement.
-- **Where:** `Config/Secrets.xcconfig`, Apple Developer portal.
-- **Value:** Device builds, Sign in with Apple, TestFlight.
+### Apple Developer team and capabilities
+- **What:** Set `DEVELOPMENT_TEAM` in `Config/Secrets.xcconfig`; register App IDs
+  `com.tatumgames.tatumtech.ios` and `com.tatumgames.tatumtech.ios.debug` with Sign in with Apple.
 - **Blocks release:** Yes.
-- **AI can continue:** No.
 
-### Backend: Sign in with Apple endpoint
-- **What:** An API endpoint that verifies an Apple identity token (and nonce) and issues a Tatum
-  Tech session.
-- **Why:** Apple sign-ins are stored on the device only and cannot call authenticated APIs.
-- **Where:** Backend; then `TatumTechAPIClient`, `AccountService.completeAppleSignIn`.
-- **Value:** Apple users get a full account (profile, future authenticated features).
-- **Blocks release:** No (current behavior is usable), but needed before authenticated features.
-- **AI can continue:** iOS side yes, once the endpoint contract exists.
+### Google iOS OAuth clients
+- **What:** Create iOS OAuth clients for both bundle IDs in the Google Cloud project that owns the
+  Web client, then set `GOOGLE_IOS_CLIENT_ID` and `GOOGLE_REVERSED_CLIENT_ID`.
+- **Why:** Until then the Google button explains that Google sign-in is unavailable.
+- **Blocks release:** Yes, if Google sign-in ships on iOS.
+
+### App Store Connect record
+- **What:** Create the app record and set `APP_STORE_ID` in `Config/Shared.xcconfig`.
+- **Why:** The rating prompt opens the App Store review page with this ID. Without it the app uses
+  the system in-app review request instead.
+- **Blocks release:** No.
+
+### Firebase configuration files and Crashlytics symbols
+- **What:** Keep `GoogleService-Info Debug.plist` and `GoogleService-Info Prod.plist` in the
+  repository root on build machines (they are git-ignored; distribute them through a secure
+  channel, never through git). Add the Crashlytics "upload symbols" run-script phase in Xcode
+  (`${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run`) so crash
+  reports are symbolicated.
+- **Blocks release:** No (the app runs without them, with analytics off).
 
 ### Backend: delete account endpoint
-- **What:** An endpoint that deletes the user's server data.
-- **Why:** Delete Account currently signs out and clears local data, as on Android. App Store
-  Guideline 5.1.1(v) requires deleting the account, not only signing out.
-- **Where:** Backend; then `AppModel.deleteAccount`.
+- **What:** An endpoint that deletes the user's server-side account.
+- **Why:** Delete Account signs out and erases all on-device data. App Store Review Guideline
+  5.1.1(v) expects server-side deletion for accounts created in the app.
 - **Blocks release:** Likely yes for App Store review.
-- **AI can continue:** iOS side yes, once the endpoint exists.
+
+### Backend: Sign in with Apple endpoint
+- **What:** An endpoint that verifies an Apple identity token and nonce and issues a Tatum Tech
+  session.
+- **Why:** Apple sign-ins currently stay on the device and cannot call authenticated APIs.
+- **Blocks release:** No.
 
 ### Backend: sign-in route
-- **What:** `POST tatum-tech/signin` returned 404 when last checked from Android.
-- **Why:** Email and Google sign-in depend on it.
-- **Blocks release:** Yes.
-- **AI can continue:** No.
+- **What:** Confirm `POST tatum-tech/signin` is deployed (it returned 404 when last checked).
+- **Blocks release:** Yes, for email and Google sign-in.
 
 ### Final app icon
-- **What:** A 1024×1024 opaque icon from design.
-- **Why:** The current icon is upscaled from the Android foreground and is a placeholder.
-- **Where:** `Assets.xcassets/AppIcon.appiconset`.
+- **What:** A 1024×1024 opaque icon from design for `Assets.xcassets/AppIcon.appiconset`.
+- **Why:** The current icon is upscaled from a smaller source.
 - **Blocks release:** Yes.
-- **AI can continue:** No (needs the design asset).
 
-### Firebase Analytics (optional)
-- **What:** Decide whether iOS should report analytics like Android. If yes, add the Firebase SDK
-  and a `GoogleService-Info.plist` provided outside git, and update the privacy manifest.
-- **Blocks release:** No.
-- **AI can continue:** Partly; needs the plist and a product decision.
-
-## Features to build
-
-Each needs no outside help unless noted. None blocks a first release unless product decides so.
-
-- **Scanner and contact card:** QR generation (Core Image) and scanning (AVFoundation) with the
-  Android vCard and legacy payload formats; needs `NSCameraUsageDescription`.
-- **Meeting reminders:** local notifications before events the user registered for, with a
-  permission prompt and in-app banner like Android.
-- **Recent notifications:** local store (SwiftData) and list screen.
-- **Networking section** on Upcoming Events.
-- **Coding challenges, AI challenges, stats, resources, community, donate, careers, Leet Code,
-  mock interviews, discover games, game resources, timeline:** replace the pending screens. Most
-  need backend endpoints that are not yet defined.
-- **Profile, Demographic, About, FAQ** screens from the account sheet.
-- **Apple credential revocation while running:** observe
-  `ASAuthorizationAppleIDProvider.credentialRevokedNotification` and sign out immediately (today
-  it is checked at launch).
-
-## Content
-
-- **Missing event flyer:** the bundled event JSON references `tatum_tech_placeholder_flyer_01`,
-  which exists in neither app. iOS shows a placeholder; add the image or update the data.
-
-## Maintenance
-
-- **GoogleSignIn package:** pinned "up to next major" from 8.0.0; review on each major release.
-- **Localization:** strings are in code and collected by `Localizable.xcstrings`; add languages when
-  Android does.
+### Event flyer image
+- **What:** The bundled event data references `tatum_tech_placeholder_flyer_01`, which is not in
+  the design assets. Provide the image or update the event data.
+- **Blocks release:** No (a neutral image is shown).

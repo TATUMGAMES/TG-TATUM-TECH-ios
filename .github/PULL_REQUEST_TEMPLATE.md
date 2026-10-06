@@ -17,12 +17,12 @@
 - [ ] Follows the existing structure (core logic in TatumTechKit, UI in TatumTech/Features)
 - [ ] No unused code, debug output or commented-out code
 
-## Android Parity
+## Cross-platform Parity
 
-<!-- Which Android behavior this matches, and any intentional difference. -->
+<!-- Product behavior shared with other Tatum Tech apps, and any intentional difference. -->
 
-- [ ] Behavior and copy match the Android app, or the difference is explained
-- [ ] `docs/IOS_FEATURE_PARITY.md` updated if feature status changed
+- [ ] Behavior, copy and analytics stay consistent across Tatum Tech apps, or the difference is explained
+- [ ] `docs/FEATURE_PARITY_AUDIT.md` and `docs/ANALYTICS_PARITY.md` updated if features or events changed
 - [ ] `docs/PLATFORM_DIFFERENCES.md` updated for any new intentional difference
 
 ## Testing
