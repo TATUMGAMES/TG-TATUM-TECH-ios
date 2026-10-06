@@ -20,7 +20,7 @@ Config/Secrets.xcconfig
 *.provisionprofile
 *.cer
 *.p8
-GoogleService-Info.plist
+GoogleService-Info*.plist
 .env
 .env.*
 

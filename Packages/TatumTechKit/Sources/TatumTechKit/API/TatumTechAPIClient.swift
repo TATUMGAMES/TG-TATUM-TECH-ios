@@ -36,17 +36,20 @@ public struct TatumTechAPIClient: Sendable {
     private let apiKey: String?
     private let transport: any HTTPTransport
     private let logger: (any HTTPTrafficLogger)?
+    private let failureObserver: (any APIFailureObserver)?
 
     public init(
         baseURL: URL,
         apiKey: String? = nil,
         transport: any HTTPTransport,
-        logger: (any HTTPTrafficLogger)? = nil
+        logger: (any HTTPTrafficLogger)? = nil,
+        failureObserver: (any APIFailureObserver)? = nil
     ) {
         self.baseURL = baseURL
         self.apiKey = apiKey
         self.transport = transport
         self.logger = logger
+        self.failureObserver = failureObserver
     }
 
     // MARK: Authentication
@@ -170,14 +173,17 @@ public struct TatumTechAPIClient: Sendable {
         body: (any Encodable)? = nil,
         accessToken: String? = nil
     ) async throws -> Payload {
-        let response = try await exchange(method, path, query: query, body: body, accessToken: accessToken)
-        let envelope: ResponseEnvelope<Payload>
+        let clock = ContinuousClock()
+        let started = clock.now
+        let (request, response) = try await exchange(method, path, query: query, body: body, accessToken: accessToken)
         do {
-            envelope = try JSONDecoder().decode(ResponseEnvelope<Payload>.self, from: response.body)
+            let envelope = try JSONDecoder().decode(ResponseEnvelope<Payload>.self, from: response.body)
+            return try require(envelope.data, "data")
         } catch {
-            throw APIError.decoding("\(method.rawValue) \(path): \(error)")
+            let failure = (error as? APIError) ?? APIError.decoding("\(method.rawValue) \(path): \(error)")
+            report(failure, for: request, duration: clock.now - started)
+            throw failure
         }
-        return try require(envelope.data, "data")
     }
 
     /// Calls an endpoint whose successful body is irrelevant.
@@ -196,7 +202,7 @@ public struct TatumTechAPIClient: Sendable {
         query: [String: String?],
         body: (any Encodable)?,
         accessToken: String?
-    ) async throws -> HTTPResponse {
+    ) async throws -> (HTTPRequest, HTTPResponse) {
         let request = try buildRequest(method, path, query: query, body: body, accessToken: accessToken)
         logger?.log(request: request)
         let clock = ContinuousClock()
@@ -210,17 +216,32 @@ public struct TatumTechAPIClient: Sendable {
             if Task.isCancelled || error is CancellationError || (error as? URLError)?.code == .cancelled {
                 throw CancellationError()
             }
-            throw APIError.network(String(describing: error))
+            let failure = APIError.network(String(describing: error))
+            report(failure, for: request, duration: clock.now - started)
+            throw failure
         }
         logger?.log(response: response, for: request, duration: clock.now - started)
 
         guard response.isSuccess else {
-            throw APIError.http(
+            let failure = APIError.http(
                 statusCode: response.statusCode,
                 messages: ErrorMessageParser.messages(from: response.body)
             )
+            report(failure, for: request, duration: clock.now - started)
+            throw failure
         }
-        return response
+        return (request, response)
+    }
+
+    private func report(_ error: APIError, for request: HTTPRequest, duration: Duration) {
+        failureObserver?.requestFailed(
+            APIRequestFailure(
+                method: request.method,
+                url: request.url,
+                durationMilliseconds: duration.wholeMilliseconds,
+                error: error
+            )
+        )
     }
 
     func buildRequest(
