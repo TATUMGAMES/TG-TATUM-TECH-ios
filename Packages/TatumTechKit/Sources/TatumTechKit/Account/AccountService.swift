@@ -78,8 +78,7 @@ public struct AccountSummary: Equatable, Sendable {
 /// Signs users in and out with every supported provider and reports the combined account state.
 ///
 /// A user is signed in when the Tatum Tech API session exists or a Google/Apple identity is stored,
-/// matching the Android app, where a Google (Firebase) user counts as signed in even if the API
-/// exchange failed.
+/// so a Google (Firebase) user counts as signed in even if the API exchange failed.
 public actor AccountService {
     /// Longest wait for the API to accept a Google ID token before continuing without an API session.
     public static let googleExchangeTimeout: Duration = .seconds(10)
@@ -132,7 +131,7 @@ public actor AccountService {
     /// Stores the Google identity, then exchanges its ID token with the Tatum Tech API.
     ///
     /// The exchange is best effort (at most `googleExchangeTimeout`): if it fails, the user is
-    /// still signed in with Google only, as on Android.
+    /// still signed in with Google only.
     ///
     /// - Returns: The new state and the exchange failure, if any, for logging.
     public func completeGoogleSignIn(_ identity: GoogleIdentity) async throws -> (state: AccountState, exchangeError: (any Error)?) {

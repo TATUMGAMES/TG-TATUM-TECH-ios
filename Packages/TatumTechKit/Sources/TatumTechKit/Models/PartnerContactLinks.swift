@@ -2,7 +2,7 @@ import Foundation
 
 /// URLs for reaching a partner from the directory.
 public enum PartnerContactLinks {
-    /// Subject line prefilled on partner emails (same text as the Android app).
+    /// Subject line prefilled on partner emails (same text in every Tatum Tech app).
     public static let emailSubject = "Got Your Contact Info From Tatum Games. I Have Some Questions"
 
     /// `mailto:` URL with the subject prefilled, or `nil` for a blank address.

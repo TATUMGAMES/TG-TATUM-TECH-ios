@@ -3,7 +3,7 @@ import Foundation
 /// Where an image referenced by content comes from.
 ///
 /// Content (API or bundled JSON) refers to images as a remote URL, the name of an image bundled
-/// with the app (optionally prefixed `drawable:` for compatibility with the Android content),
+/// with the app (optionally prefixed `drawable:`, as shared content writes it),
 /// or a solid swatch written `color://<name>`.
 public enum ImageSource: Hashable, Sendable {
     case remote(URL)

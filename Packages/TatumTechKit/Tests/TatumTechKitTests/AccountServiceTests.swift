@@ -52,7 +52,7 @@ struct AccountServiceTests {
         #expect(Fixtures.json(try #require(transport.requests.first))["googleIdToken"] as? String == "id-token")
     }
 
-    /// The Android app enters with a Google-only session when the API exchange fails; so does iOS.
+    /// A failed API exchange still enters with a Google-only session.
     @Test func googleSignInContinuesWhenExchangeFails() async throws {
         let service = service(FakeTransport(statusCode: 404, json: "{}"))
         let result = try await service.completeGoogleSignIn(GoogleIdentity(idToken: "id-token", userID: "g-1"))

@@ -1,7 +1,7 @@
 import Foundation
 
 extension EventStart {
-    /// Pattern shared with the Android app, e.g. "October 10, 2026 at 11:30 AM".
+    /// Pattern shared across Tatum Tech apps, e.g. "October 10, 2026 at 11:30 AM".
     public static let displayPattern = "MMMM d, yyyy 'at' h:mm a"
 
     /// The start written in the offset it was published with (not the device's time zone).

@@ -1,10 +1,10 @@
 import Foundation
 
-/// Client-side checks for the sign-in and sign-up forms, identical to the Android app's rules.
+/// Client-side checks for the sign-in and sign-up forms, shared by every Tatum Tech client.
 public enum CredentialRules {
     public static let minimumPasswordLength = 6
 
-    // Same pattern as Android's `Patterns.EMAIL_ADDRESS`.
+    // Same email pattern every Tatum Tech client uses.
     private static let emailPattern =
         "[a-zA-Z0-9+._%\\-]{1,256}@[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}(\\.[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25})+"
 

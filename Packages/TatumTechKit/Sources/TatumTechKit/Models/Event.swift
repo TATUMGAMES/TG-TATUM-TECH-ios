@@ -45,7 +45,7 @@ public struct Event: Identifiable, Hashable, Sendable {
 /// The start of an event as written by the content: the instant plus the UTC offset it was written in.
 ///
 /// Event times are shown in the offset they were published with rather than converted to the
-/// device's time zone, matching the Android app.
+/// device's time zone.
 public struct EventStart: Hashable, Sendable {
     public let date: Date
     public let timeZone: TimeZone

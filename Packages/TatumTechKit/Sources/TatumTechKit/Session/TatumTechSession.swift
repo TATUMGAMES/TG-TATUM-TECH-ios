@@ -44,7 +44,7 @@ public protocol DeviceIdentifierProvider: Sendable {
 }
 
 /// Device id kept in `UserDefaults`, created on first use. It is not a secret, and resetting it on
-/// reinstall matches the Android app.
+/// reinstall is expected.
 public struct UserDefaultsDeviceIdentifier: DeviceIdentifierProvider, @unchecked Sendable {
     private let defaults: UserDefaults
     private let key: String

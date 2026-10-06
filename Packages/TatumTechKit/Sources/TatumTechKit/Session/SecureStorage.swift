@@ -70,7 +70,7 @@ public final class InMemorySecureStore: SecureStore, @unchecked Sendable {
 /// Generic-password Keychain items for this app.
 ///
 /// Items are readable after the first unlock and never leave the device (no iCloud Keychain sync,
-/// not restored onto another device from a backup), like the Android Keystore-backed store.
+/// not restored onto another device from a backup).
 public struct KeychainStore: SecureStore {
     private let service: String
 
