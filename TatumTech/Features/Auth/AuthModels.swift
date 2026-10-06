@@ -5,7 +5,7 @@ import OSLog
 import TatumTechKit
 
 /// Field validation shared by the auth forms. Errors appear only after a field loses focus and
-/// is not blank, as on Android.
+/// is not blank.
 struct CredentialField {
     var text = ""
     var wasEdited = false

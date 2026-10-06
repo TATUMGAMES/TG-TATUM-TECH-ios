@@ -1,3 +1,4 @@
+import AuthenticationServices
 import SwiftUI
 
 /// Chooses between the launch, signed-out, and signed-in experiences.
@@ -17,6 +18,9 @@ struct RootView: View {
         }
         .animation(.easeInOut(duration: 0.25), value: app.phase)
         .task { await app.start() }
+        .onReceive(NotificationCenter.default.publisher(for: ASAuthorizationAppleIDProvider.credentialRevokedNotification)) { _ in
+            Task { await app.appleCredentialRevoked() }
+        }
     }
 }
 

@@ -68,7 +68,54 @@ struct FieldError: View {
     }
 }
 
-private extension View {
+/// Labeled single-line field with an optional leading icon, for profile-style forms.
+struct LabeledFormField: View {
+    let label: LocalizedStringKey
+    @Binding var text: String
+    var systemImage: String?
+    var contentType: UITextContentType?
+    var keyboard: UIKeyboardType = .default
+    var capitalization: TextInputAutocapitalization = .words
+    var isEnabled = true
+    var errorMessage: LocalizedStringKey?
+    /// Applied to the text field itself so UI tests find the input, not its label.
+    var identifier: String = ""
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.xxs) {
+            Text(label)
+                .font(.subheadline.weight(.medium))
+                .foregroundStyle(errorMessage == nil ? Palette.textSecondary : Palette.error)
+            HStack(spacing: Spacing.sm) {
+                if let systemImage {
+                    Image(systemName: systemImage)
+                        .foregroundStyle(Palette.textSecondary)
+                        .accessibilityHidden(true)
+                }
+                TextField(label, text: $text)
+                    .textContentType(contentType)
+                    .keyboardType(keyboard)
+                    .textInputAutocapitalization(capitalization)
+                    .autocorrectionDisabled()
+                    .disabled(!isEnabled)
+                    .foregroundStyle(isEnabled ? Palette.textPrimary : Palette.textSecondary)
+                    .accessibilityIdentifier(identifier)
+            }
+            .formFieldChrome()
+            .overlay(
+                RoundedRectangle(cornerRadius: Radius.small, style: .continuous)
+                    .strokeBorder(Palette.error, lineWidth: errorMessage == nil ? 0 : 1.5)
+            )
+            if let errorMessage {
+                Text(errorMessage)
+                    .font(.footnote)
+                    .foregroundStyle(Palette.error)
+            }
+        }
+    }
+}
+
+extension View {
     func formFieldChrome() -> some View {
         padding(.horizontal, Spacing.md)
             .frame(minHeight: Metrics.buttonHeight)

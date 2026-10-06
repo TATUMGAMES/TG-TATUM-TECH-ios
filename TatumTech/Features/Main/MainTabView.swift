@@ -1,53 +1,49 @@
 import SwiftUI
+import TatumTechKit
 
-enum MainTab: Hashable {
-    case home, learn, timeline, stats
-}
-
-/// Signed-in experience. The four tabs mirror the Android bottom navigation bar.
+/// Signed-in experience: Home, Learn (coding challenges), Timeline, and Stats tabs, with the
+/// speaker reminder banner and rating prompt on top.
 struct MainTabView: View {
-    @State private var selection: MainTab = .home
+    @Environment(AppModel.self) private var app
+    @Environment(AppRouter.self) private var router
+    @Environment(MeetingReminderCenter.self) private var reminders
 
     var body: some View {
-        TabView(selection: $selection) {
-            HomeTab()
+        @Bindable var router = router
+        TabView(selection: $router.selectedTab) {
+            tab(.home) { HomeView() }
                 .tabItem { Label("Home", systemImage: "house") }
-                .tag(MainTab.home)
 
-            PendingTab(feature: .codingChallenges, title: "Learn")
+            tab(.learn) { ChallengeQuizView(track: .coding) }
                 .tabItem { Label("Learn", systemImage: "face.smiling") }
-                .tag(MainTab.learn)
 
-            PendingTab(feature: .timeline, title: "Timeline")
+            tab(.timeline) { TimelineScreen() }
                 .tabItem { Label("Timeline", systemImage: "calendar") }
-                .tag(MainTab.timeline)
 
-            PendingTab(feature: .stats, title: "Stats")
+            tab(.stats) { StatsView() }
                 .tabItem { Label("Stats", systemImage: "star") }
-                .tag(MainTab.stats)
         }
         .tint(Palette.brandPrimaryStrong)
-    }
-}
-
-private struct HomeTab: View {
-    var body: some View {
-        NavigationStack {
-            HomeView()
-                .appRouteDestinations()
+        .overlay(alignment: .top) { MeetingReminderBannerHost() }
+        .sheet(item: $router.ratingTrigger) { trigger in
+            RatingView(trigger: trigger)
+                .trackScreen("rating_screen")
+        }
+        .notificationPermissionPrompt(reminders)
+        .onChange(of: reminders.pendingDestination, initial: true) { _, destination in
+            guard let destination else { return }
+            reminders.pendingDestination = nil
+            router.ratingTrigger = nil
+            router.open(destination)
         }
     }
-}
 
-private struct PendingTab: View {
-    let feature: PendingFeature
-    let title: LocalizedStringKey
-
-    var body: some View {
-        NavigationStack {
-            PendingFeatureView(feature: feature)
-                .navigationTitle(title)
+    private func tab(_ tab: MainTab, @ViewBuilder root: () -> some View) -> some View {
+        NavigationStack(path: router.path(for: tab)) {
+            root()
+                .trackScreen(tab.analyticsRoute)
                 .appRouteDestinations()
         }
+        .tag(tab)
     }
 }

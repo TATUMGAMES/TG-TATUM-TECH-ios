@@ -17,7 +17,7 @@ protocol GoogleSignInProviding {
 }
 
 /// Used when the GoogleSignIn package or the iOS OAuth client ID is missing: tapping the Google
-/// button explains that Google sign-in isn't available, as Android does when no provider exists.
+/// button explains that Google sign-in isn't available.
 struct UnavailableGoogleSignIn: GoogleSignInProviding {
     func signIn() async throws -> GoogleIdentity { throw GoogleSignInFailure.unavailable }
     func handle(_ url: URL) -> Bool { false }

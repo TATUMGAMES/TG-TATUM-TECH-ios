@@ -1,10 +1,15 @@
 import SwiftUI
+import TatumTechKit
 
-/// Home: greeting, category chips, and a swipeable grid of feature cards per category.
+/// Home: greeting, category chips, a swipeable grid of feature cards per category, and recent
+/// notifications.
 struct HomeView: View {
     @Environment(AppModel.self) private var app
+    @Environment(AppRouter.self) private var router
     @State private var category: HomeCategory = .events
     @State private var isAccountPresented = false
+    @State private var notifications: [RecentNotification] = []
+    @State private var notificationsExpanded = true
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -24,8 +29,18 @@ struct HomeView: View {
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             .animation(.easeInOut, value: category)
+
+            RecentNotificationsSection(
+                notifications: notifications,
+                isExpanded: $notificationsExpanded,
+                open: open
+            )
+            .padding(.horizontal, Spacing.md)
+            .padding(.top, Spacing.sm)
+            .padding(.bottom, Spacing.md)
         }
         .background(Palette.surface.ignoresSafeArea())
+        .task { await refresh() }
         .navigationTitle("Tatum Tech")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -46,15 +61,133 @@ struct HomeView: View {
 
     private var greeting: some View {
         Group {
-            if let name = app.displayName {
-                Text("Hello, \(name)!")
-            } else {
+            if app.greetingName.isEmpty {
                 Text("Hello!")
+            } else {
+                Text("Hello, \(app.greetingName)!")
             }
         }
         .font(.largeTitle.bold())
         .foregroundStyle(Palette.textPrimary)
         .accessibilityAddTraits(.isHeader)
+        .accessibilityIdentifier("home.greeting")
+    }
+
+    /// Reloads the profile name and today's notifications each time Home appears.
+    private func refresh() async {
+        await app.refreshLocalUser()
+        let events = (try? await app.content.upcomingEvents()) ?? []
+        let hasQuestions = await !app.dependencies.catalog.questionBank.isEmpty
+        notifications = await app.local.refreshNotifications(events: events, hasChallengeQuestions: hasQuestions)
+    }
+
+    private func open(_ notification: RecentNotification) {
+        let local = app.local
+        Task {
+            await local.markNotificationRead(id: notification.id)
+            await refresh()
+        }
+        router.open(notification.destination)
+    }
+}
+
+/// Collapsible list of recent notifications; unread ones are tinted and dotted.
+private struct RecentNotificationsSection: View {
+    let notifications: [RecentNotification]
+    @Binding var isExpanded: Bool
+    let open: (RecentNotification) -> Void
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var contentHeight: CGFloat = 0
+
+    private static let maxListHeight: CGFloat = 200
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Button {
+                withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.22)) { isExpanded.toggle() }
+            } label: {
+                HStack {
+                    Text("Recent Notifications")
+                        .font(.subheadline.bold())
+                        .foregroundStyle(Palette.textPrimary)
+                    Spacer()
+                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                        .foregroundStyle(Palette.textPrimary)
+                }
+                .padding(.vertical, Spacing.xxs)
+                .frame(minHeight: Metrics.minimumTapTarget)
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(isExpanded ? "Collapse recent notifications" : "Expand recent notifications")
+            .accessibilityIdentifier("home.notifications.toggle")
+
+            if isExpanded {
+                ScrollView {
+                    VStack(spacing: Spacing.xs) {
+                        if notifications.isEmpty {
+                            Text("No recent notifications")
+                                .font(.callout)
+                                .foregroundStyle(Palette.textPrimary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.vertical, Spacing.xs)
+                        } else {
+                            ForEach(notifications) { notification in
+                                NotificationRow(notification: notification) { open(notification) }
+                            }
+                        }
+                    }
+                    .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { contentHeight = $0 }
+                }
+                .scrollBounceBehavior(.basedOnSize)
+                .frame(height: min(contentHeight, Self.maxListHeight))
+                .transition(.opacity.combined(with: .move(edge: .top)))
+            }
+        }
+    }
+}
+
+private struct NotificationRow: View {
+    let notification: RecentNotification
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: Spacing.md) {
+                Image(notification.iconName)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(Spacing.xs)
+                    .frame(width: 40, height: 40)
+                    .background(RoundedRectangle(cornerRadius: Radius.small).fill(Palette.lavender))
+                    .accessibilityHidden(true)
+                VStack(alignment: .leading, spacing: 0) {
+                    Text(notification.title)
+                        .font(.system(size: 16, weight: notification.isUnread ? .semibold : .medium))
+                        .foregroundStyle(.black)
+                    Text(notification.description)
+                        .font(.system(size: 14))
+                        .foregroundStyle(Palette.grey)
+                }
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                if notification.isUnread {
+                    Circle()
+                        .fill(Palette.brandPrimaryStrong)
+                        .frame(width: 8, height: 8)
+                        .accessibilityHidden(true)
+                }
+            }
+            .padding(Spacing.md)
+            .background(
+                RoundedRectangle(cornerRadius: Radius.medium, style: .continuous)
+                    .fill(notification.isUnread ? Palette.lavender.opacity(0.55) : Palette.lightGrey)
+            )
+            .contentShape(RoundedRectangle(cornerRadius: Radius.medium))
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+        .accessibilityValue(notification.isUnread ? "Unread" : "")
     }
 }
 
@@ -81,6 +214,7 @@ private struct CategoryChipBar: View {
                         .buttonStyle(.plain)
                         .id(category)
                         .accessibilityAddTraits(isSelected ? .isSelected : [])
+                        .accessibilityIdentifier("home.category.\(category.rawValue)")
                     }
                 }
                 .padding(.horizontal, Spacing.md)
@@ -92,7 +226,7 @@ private struct CategoryChipBar: View {
     }
 }
 
-/// Two cards per row; an odd last card spans the full width, as on Android.
+/// Two cards per row; an odd last card spans the full width.
 private struct FeatureGrid: View {
     let items: [FeatureItem]
 

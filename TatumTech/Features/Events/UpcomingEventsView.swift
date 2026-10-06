@@ -2,6 +2,7 @@ import SwiftUI
 import TatumTechKit
 
 struct UpcomingEventsView: View {
+    @Environment(AppModel.self) private var app
     @State private var model: UpcomingEventsModel
 
     init(repository: any ContentRepository) {
@@ -14,7 +15,10 @@ struct UpcomingEventsView: View {
             .background(Palette.screenBackground.ignoresSafeArea())
             .navigationTitle("Upcoming Events")
             .navigationBarTitleDisplayMode(.inline)
-            .task { await model.load() }
+            .task {
+                await model.load()
+                await syncReminders()
+            }
     }
 
     @ViewBuilder
@@ -24,18 +28,30 @@ struct UpcomingEventsView: View {
             LoadingView()
         case .failed:
             LoadFailedView { Task { await model.reload() } }
-        case let .loaded(events) where events.isEmpty:
-            EmptyStateView(message: "No upcoming events right now.", systemImage: "calendar")
         case let .loaded(events):
             ScrollView {
                 LazyVStack(spacing: Spacing.lg) {
+                    NetworkingContactSection()
+                    if events.isEmpty {
+                        EmptyStateView(message: "No upcoming events right now.", systemImage: "calendar")
+                            .padding(.top, Spacing.xl)
+                    }
                     ForEach(events) { event in
                         EventCardView(event: event)
                     }
                 }
                 .padding(Spacing.md)
             }
-            .refreshable { await model.reload() }
+            .refreshable {
+                await model.reload()
+                await syncReminders()
+            }
+        }
+    }
+
+    private func syncReminders() async {
+        if case let .loaded(events) = model.state {
+            await app.reminders.sync(events: events)
         }
     }
 }
@@ -82,7 +98,7 @@ struct EventCardView: View {
                 .accessibilityHint("Opens registration on Luma")
 
                 if event.hasVirtualSpeakers {
-                    NavigationLink(value: AppRoute.virtualSpeakers(eventID: event.id)) {
+                    NavigationLink(value: AppRoute.virtualSpeakers(eventID: event.id, speakerID: nil)) {
                         Text("Virtual Speakers")
                     }
                     .buttonStyle(.filledAction())

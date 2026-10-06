@@ -1,12 +1,10 @@
 import SwiftUI
 
-/// Account menu (the Android side drawer): profile and info destinations, account deletion,
-/// app version, and legal links.
+/// Account menu (the side drawer): profile and info destinations, app version, and legal links.
+/// Picking a destination closes the menu and opens the screen on the current tab.
 struct AccountSheet: View {
-    @Environment(AppModel.self) private var app
+    @Environment(AppRouter.self) private var router
     @Environment(\.dismiss) private var dismiss
-    @State private var isConfirmingDeletion = false
-    @State private var isDeleting = false
 
     var body: some View {
         NavigationStack {
@@ -23,20 +21,10 @@ struct AccountSheet: View {
                 }
 
                 Section {
-                    menuLink(.profile)
-                    menuLink(.demographics)
-                    menuLink(.about)
-                    menuLink(.faq)
-                }
-
-                Section {
-                    Button(role: .destructive) {
-                        isConfirmingDeletion = true
-                    } label: {
-                        Label("Delete Account", systemImage: "trash")
-                            .foregroundStyle(Palette.error)
-                    }
-                    .accessibilityIdentifier("account.delete")
+                    menuItem("Profile", systemImage: "person.crop.circle", route: .profile, id: "menu.profile")
+                    menuItem("Demographic Info", systemImage: "list.bullet.clipboard", route: .demographics, id: "menu.demographics")
+                    menuItem("About Tatum Games", systemImage: "info.circle", route: .about(.about), id: "menu.about")
+                    menuItem("FAQ", systemImage: "questionmark.circle", route: .about(.faq), id: "menu.faq")
                 }
 
                 Section {
@@ -55,43 +43,21 @@ struct AccountSheet: View {
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") { dismiss() }
-                        .disabled(isDeleting)
-                }
-            }
-            .navigationDestination(for: PendingFeature.self) { feature in
-                PendingFeatureView(feature: feature)
-            }
-            .disabled(isDeleting)
-            .overlay {
-                if isDeleting {
-                    ProgressView("Deleting account.")
-                        .padding(Spacing.xl)
-                        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: Radius.medium))
                 }
             }
         }
         .tint(Palette.brandPrimaryStrong)
-        .interactiveDismissDisabled(isDeleting)
-        .alert("Delete Account", isPresented: $isConfirmingDeletion) {
-            Button("Yes", role: .destructive, action: deleteAccount)
-            Button("No", role: .cancel) {}
-        } message: {
-            Text("Are you sure you want to delete your Tatum Tech account? This action is not reversable.")
-        }
     }
 
-    private func menuLink(_ feature: PendingFeature) -> some View {
-        NavigationLink(value: feature) {
-            Label(feature.title, systemImage: feature.systemImage)
+    private func menuItem(_ title: LocalizedStringKey, systemImage: String, route: AppRoute, id: String) -> some View {
+        Button {
+            router.push(route)
+            dismiss()
+        } label: {
+            Label(title, systemImage: systemImage)
                 .foregroundStyle(Palette.textPrimary)
         }
-    }
-
-    private func deleteAccount() {
-        isDeleting = true
-        Task {
-            await app.deleteAccount()
-        }
+        .accessibilityIdentifier(id)
     }
 
     private static var appVersion: String {

@@ -17,11 +17,12 @@ struct AuthFlowView: View {
                 account: app.accountService,
                 google: app.dependencies.googleSignIn
             ))
+            .trackScreen("auth_screen")
             .navigationDestination(for: AuthRoute.self) { route in
                 switch route {
-                case .signIn: SignInView(account: app.accountService)
-                case .signUp: SignUpView(account: app.accountService)
-                case .forgotPassword: ForgotPasswordView(account: app.accountService)
+                case .signIn: SignInView(account: app.accountService).trackScreen("sign_in_screen")
+                case .signUp: SignUpView(account: app.accountService).trackScreen("sign_up_screen")
+                case .forgotPassword: ForgotPasswordView(account: app.accountService).trackScreen("forgot_password_screen")
                 }
             }
         }

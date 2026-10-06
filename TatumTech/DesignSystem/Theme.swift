@@ -2,9 +2,9 @@ import SwiftUI
 
 /// Brand colors. Values live in the asset catalog (`Colors/`) so they can gain dark variants later.
 enum Palette {
-    /// Lavender brand color (Android `purple_200`). Pair with `textPrimary`, not white, for contrast.
+    /// Lavender brand color. Pair with `textPrimary`, not white, for contrast.
     static let brandPrimary = Color("BrandPrimary")
-    /// Deep purple for tinted text, links, and selection on light backgrounds (Android `Purple500`).
+    /// Deep purple for tinted text, links, and selection on light backgrounds.
     static let brandPrimaryStrong = Color("BrandPrimaryStrong")
     static let brandSecondary = Color("BrandSecondary")
 
@@ -23,6 +23,22 @@ enum Palette {
     static let featuredAccent = Color("FeaturedAccent")
     static let partnerContact = Color("PartnerContact")
     static let partnerDonation = Color("PartnerDonation")
+
+    /// Accent colors used by progress rings, badges, and store buttons.
+    static let purpleDeep = Color(hex: 0x3700B3)
+    static let gold = Color(hex: 0xFFC107)
+    static let teal = Color(hex: 0x03DAC5)
+    static let tealDeep = Color(hex: 0x018786)
+    static let deepOrange = Color(hex: 0xFF5722)
+    static let successGreen = Color(hex: 0x4CAF50)
+    static let destructive = Color(hex: 0xD32F2F)
+    static let lightGrey = Color(hex: 0xEEEEEE)
+    static let mediumGrey = Color(hex: 0xBDBDBD)
+    static let grey = Color(hex: 0x9E9E9E)
+    static let lavender = Color(hex: 0xEDE7F6)
+    static let discordBlurple = Color(hex: 0x5865F2)
+    static let discordGreen = Color(hex: 0x43B581)
+    static let steamDark = Color(hex: 0x1B2838)
 
     /// Solid fills content can request with `color://<name>`.
     static func swatch(named name: String) -> Color {
@@ -57,6 +73,18 @@ enum Metrics {
     /// Widest the auth buttons grow on large phones.
     static let authButtonMaxWidth: CGFloat = 320
     static let minimumTapTarget: CGFloat = 44
+}
+
+extension Color {
+    init(hex: UInt32, opacity: Double = 1) {
+        self.init(
+            .sRGB,
+            red: Double((hex >> 16) & 0xFF) / 255,
+            green: Double((hex >> 8) & 0xFF) / 255,
+            blue: Double(hex & 0xFF) / 255,
+            opacity: opacity
+        )
+    }
 }
 
 extension View {

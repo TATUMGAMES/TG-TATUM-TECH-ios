@@ -182,7 +182,7 @@ private struct PartnerActionButtons: View {
     }
 }
 
-private struct SocialLinksRow: View {
+struct SocialLinksRow: View {
     let links: [SocialLink]
     let open: (URL) -> Void
 
@@ -213,7 +213,7 @@ private struct SocialLinksRow: View {
     }
 }
 
-private struct PartnerLogo: View {
+struct PartnerLogo: View {
     let partner: Partner
     let size: CGFloat
 
@@ -236,7 +236,7 @@ private struct FeaturedBadge: View {
     }
 }
 
-private extension SocialLink.Platform {
+extension SocialLink.Platform {
     var imageName: String? {
         switch self {
         case .x: "social_media_x"

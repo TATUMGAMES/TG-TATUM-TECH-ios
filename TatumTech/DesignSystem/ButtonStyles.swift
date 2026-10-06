@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Main call to action. When disabled it switches to an outlined look, as on Android.
+/// Main call to action. When disabled it switches to an outlined look.
 struct PrimaryButtonStyle: ButtonStyle {
     @Environment(\.isEnabled) private var isEnabled
 
