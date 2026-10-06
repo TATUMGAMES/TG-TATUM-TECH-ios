@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "py_beg_001",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What is the output of print(type(None))?",
+    "options": [
+      "<class 'NoneType'>",
+      "None",
+      "<type 'None'>",
+      "'NoneType'"
+    ],
+    "correctAnswer": "<class 'NoneType'>",
+    "explanation": "The type of None in Python is <class 'NoneType'>.",
+    "platform": "Web"
+  },
+  {
+    "id": "py_beg_002",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Which of the following is a valid variable name in Python?",
+    "options": [
+      "2variable",
+      "variable_2",
+      "variable-2",
+      "variable 2"
+    ],
+    "correctAnswer": "variable_2",
+    "explanation": "Variable names cannot start with a digit or contain spaces/hyphens.",
+    "platform": "Web"
+  },
+  {
+    "id": "py_beg_003",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Wnhat does the following code output? prit(2 * '2')",
+    "options": [
+      "4",
+      "'22'",
+      "'4'",
+      "'2'2'"
+    ],
+    "correctAnswer": "'22'",
+    "explanation": "Multiplying a string by 2 repeats it: '2' * 2 = '22' in Python.",
+    "platform": "Web"
+  },
+  {
+    "id": "py_beg_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "In Python, lists are? Choose the best beginner-level answer.",
+    "options": [
+      "Mutable sequences",
+      "Immutable tuples",
+      "Only hashable",
+      "Only sorted"
+    ],
+    "correctAnswer": "Mutable sequences",
+    "explanation": "list supports in-place mutation.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "In Python, lists are? Which choice matches core introductory knowledge?",
+    "options": [
+      "Mutable sequences",
+      "Immutable tuples",
+      "Only hashable",
+      "Only sorted"
+    ],
+    "correctAnswer": "Mutable sequences",
+    "explanation": "list supports in-place mutation.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `def` declare? Choose the best beginner-level answer.",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `def` declare? For newcomers, which statement is correct?",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `def` declare? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `def` declare? Pick the fundamental concept that applies.",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `def` declare? Which choice matches core introductory knowledge?",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`None` represents? Choose the best beginner-level answer.",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`None` represents? For newcomers, which statement is correct?",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`None` represents? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`None` represents? Pick the fundamental concept that applies.",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`None` represents? Which choice matches core introductory knowledge?",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "List comprehension `[x for x in xs if x]` is? Choose the best beginner-level answer.",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "List comprehension `[x for x in xs if x]` is? For newcomers, which statement is correct?",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "List comprehension `[x for x in xs if x]` is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "List comprehension `[x for x in xs if x]` is? Pick the fundamental concept that applies.",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "List comprehension `[x for x in xs if x]` is? Which choice matches core introductory knowledge?",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`*args` collects? Choose the best beginner-level answer.",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`*args` collects? For newcomers, which statement is correct?",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`*args` collects? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`*args` collects? Pick the fundamental concept that applies.",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`*args` collects? Which choice matches core introductory knowledge?",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`**kwargs` collects? Choose the best beginner-level answer.",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`**kwargs` collects? For newcomers, which statement is correct?",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`**kwargs` collects? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`**kwargs` collects? Pick the fundamental concept that applies.",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`**kwargs` collects? Which choice matches core introductory knowledge?",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `with` manage? Choose the best beginner-level answer.",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `with` manage? For newcomers, which statement is correct?",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `with` manage? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `with` manage? Pick the fundamental concept that applies.",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `with` manage? Which choice matches core introductory knowledge?",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dict` keys must be? Choose the best beginner-level answer.",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dict` keys must be? For newcomers, which statement is correct?",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dict` keys must be? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dict` keys must be? Pick the fundamental concept that applies.",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dict` keys must be? Which choice matches core introductory knowledge?",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`__init__` is? Choose the best beginner-level answer.",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`__init__` is? For newcomers, which statement is correct?",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`__init__` is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`__init__` is? Pick the fundamental concept that applies.",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`__init__` is? Which choice matches core introductory knowledge?",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Generators use? Choose the best beginner-level answer.",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Generators use? For newcomers, which statement is correct?",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Generators use? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Generators use? Pick the fundamental concept that applies.",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Generators use? Which choice matches core introductory knowledge?",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`isinstance(x, list)` checks? Choose the best beginner-level answer.",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`isinstance(x, list)` checks? For newcomers, which statement is correct?",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`isinstance(x, list)` checks? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`isinstance(x, list)` checks? Pick the fundamental concept that applies.",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`isinstance(x, list)` checks? Which choice matches core introductory knowledge?",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Virtual environments help? Choose the best beginner-level answer.",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Virtual environments help? For newcomers, which statement is correct?",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Virtual environments help? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Virtual environments help? Pick the fundamental concept that applies.",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "Virtual environments help? Which choice matches core introductory knowledge?",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pip install` installs? Choose the best beginner-level answer.",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pip install` installs? For newcomers, which statement is correct?",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pip install` installs? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pip install` installs? Pick the fundamental concept that applies.",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pip install` installs? Which choice matches core introductory knowledge?",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "EAFP style prefers? Choose the best beginner-level answer.",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "EAFP style prefers? For newcomers, which statement is correct?",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "EAFP style prefers? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "EAFP style prefers? Pick the fundamental concept that applies.",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "EAFP style prefers? Which choice matches core introductory knowledge?",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`@property` creates? Choose the best beginner-level answer.",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`@property` creates? For newcomers, which statement is correct?",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`@property` creates? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`@property` creates? Pick the fundamental concept that applies.",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`@property` creates? Which choice matches core introductory knowledge?",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dataclasses` reduce? Choose the best beginner-level answer.",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dataclasses` reduce? For newcomers, which statement is correct?",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dataclasses` reduce? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dataclasses` reduce? Pick the fundamental concept that applies.",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`dataclasses` reduce? Which choice matches core introductory knowledge?",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`asyncio` is for? Choose the best beginner-level answer.",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`asyncio` is for? For newcomers, which statement is correct?",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`asyncio` is for? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`asyncio` is for? Pick the fundamental concept that applies.",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`asyncio` is for? Which choice matches core introductory knowledge?",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pathlib.Path` helps with? Choose the best beginner-level answer.",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pathlib.Path` helps with? For newcomers, which statement is correct?",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pathlib.Path` helps with? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pathlib.Path` helps with? Pick the fundamental concept that applies.",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`pathlib.Path` helps with? Which choice matches core introductory knowledge?",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `zip(a, b)` do? Choose the best beginner-level answer.",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `zip(a, b)` do? For newcomers, which statement is correct?",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `zip(a, b)` do? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `zip(a, b)` do? Pick the fundamental concept that applies.",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "What does `zip(a, b)` do? Which choice matches core introductory knowledge?",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_096",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`enumerate(xs)` yields? Choose the best beginner-level answer.",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_097",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`enumerate(xs)` yields? For newcomers, which statement is correct?",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_098",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`enumerate(xs)` yields? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_099",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`enumerate(xs)` yields? Pick the fundamental concept that applies.",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  },
+  {
+    "id": "py_beg_100",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Beginner",
+    "question": "`enumerate(xs)` yields? Which choice matches core introductory knowledge?",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  }
+]

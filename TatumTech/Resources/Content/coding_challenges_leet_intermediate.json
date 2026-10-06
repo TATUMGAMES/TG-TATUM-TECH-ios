@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "lc_i_tasks_001",
+    "question": "What pattern should be used for problems involving contiguous subarrays?",
+    "options": [
+      "Greedy",
+      "Sliding Window",
+      "DFS",
+      "Backtracking"
+    ],
+    "correctAnswer": "Sliding Window",
+    "pattern": "Sliding Window",
+    "strategy": "Expand and shrink window dynamically",
+    "explanation": "Sliding window avoids nested loops and reduces time complexity from O(n^2) to O(n) for many subarray problems.",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "lc_i_001",
+    "question": "Which data structure pair is often used for an LRU cache?",
+    "options": [
+      "Array only",
+      "Doubly linked list + HashMap",
+      "Stack + Queue",
+      "Two stacks only"
+    ],
+    "correctAnswer": "Doubly linked list + HashMap",
+    "pattern": "HashMap + Linked List",
+    "strategy": "HashMap for O(1) node lookup; DLL for O(1) eviction order.",
+    "explanation": "The map points to list nodes for get/put in constant time; the list preserves recency for eviction.",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "hints": [
+      "Aim for O(1) get and put",
+      "You need both fast lookup and fast reordering of the least-recently-used entry"
+    ],
+    "timeComplexity": "O(1) per operation",
+    "spaceComplexity": "O(capacity)"
+  },
+  {
+    "id": "lc_i_002",
+    "question": "Shortest paths in a graph with non-negative weights?",
+    "options": [
+      "DFS only",
+      "BFS only",
+      "Dijkstra",
+      "Only brute force"
+    ],
+    "correctAnswer": "Dijkstra",
+    "pattern": "Shortest path",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "strategy": "Dijkstra relaxes edges in order of increasing distance from the source."
+  },
+  {
+    "id": "lc_i_003",
+    "question": "Two-sum with O(n) time typically uses:",
+    "options": [
+      "Nested loops only",
+      "HashMap for complement lookup",
+      "Sorting only",
+      "Recursion on bits"
+    ],
+    "correctAnswer": "HashMap for complement lookup",
+    "pattern": "HashMap",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "strategy": "One pass: for each value, check if target - value was seen."
+  },
+  {
+    "id": "lc_i_004",
+    "question": "Sliding window maximum/minimum problems often use:",
+    "options": [
+      "Brute force always",
+      "Deque monotonic queue",
+      "Only BFS",
+      "Union-Find only"
+    ],
+    "correctAnswer": "Deque monotonic queue",
+    "pattern": "Monotonic deque",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "strategy": "Maintain candidates in deque order so the max/min at window edge is O(1)."
+  },
+  {
+    "id": "lc_i_005",
+    "question": "Binary search works on arrays that are:",
+    "options": [
+      "Only unsorted",
+      "Sorted (or monotonic predicate)",
+      "Only strings",
+      "Only size 2"
+    ],
+    "correctAnswer": "Sorted (or monotonic predicate)",
+    "pattern": "Binary search",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "strategy": "Monotonic predicate generalizes binary search beyond sorted arrays."
+  },
+  {
+    "id": "lc_i_t3_001",
+    "question": "How can you detect a cycle in a linked list?",
+    "options": [
+      "Hash set of visited nodes",
+      "Floyd's tortoise and hare (two pointers)",
+      "Track whether you revisit the same node object",
+      "All of the above are valid approaches"
+    ],
+    "correctAnswer": "All of the above are valid approaches",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "patternCategory": "Linked list / cycle detection",
+    "strategy": "Extra memory: store seen nodes. O(1) space: slow/fast pointers; if they meet, a cycle exists.",
+    "hints": [
+      "Compare time vs space when choosing Floyd vs a set",
+      "Consider what happens if fast pointer reaches null"
+    ],
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1) with Floyd; O(n) with a hash set"
+  },
+  {
+    "id": "lc_i_t3_002",
+    "question": "Longest substring without repeating characters — which approach fits best?",
+    "options": [
+      "Sliding window with last-seen indices (hash map)",
+      "Sort the string and count uniques",
+      "Recursively enumerate every substring",
+      "Use a stack of characters only"
+    ],
+    "correctAnswer": "Sliding window with last-seen indices (hash map)",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "patternCategory": "Sliding window",
+    "strategy": "Expand the right edge; when a repeat appears, jump the left edge past the prior index of that character.",
+    "hints": [
+      "Avoid generating all substrings explicitly",
+      "Track the start of the current valid window"
+    ],
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(min(n, alphabet size))"
+  },
+  {
+    "id": "lc_i_t5_001",
+    "question": "Which data structure is most efficient for implementing an LRU cache?",
+    "options": [
+      "Array",
+      "Linked List + HashMap",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Linked List + HashMap",
+    "pattern": "HashMap + linked list",
+    "strategy": "Use a doubly linked list to track order and a hashmap for O(1) access to nodes. This combination allows both fast eviction and fast lookup.",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "lc_i_t5_002",
+    "question": "Which algorithm is most suitable for finding the shortest path in a weighted graph with positive weights?",
+    "options": [
+      "DFS",
+      "BFS",
+      "Dijkstra's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "correctAnswer": "Dijkstra's Algorithm",
+    "pattern": "Shortest path",
+    "strategy": "Use Dijkstra for single-source shortest path with positive edge weights. BFS only works for unweighted graphs.",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "lc_i_t5_003",
+    "question": "Given an array of integers, which technique is best to find two numbers that sum to a target efficiently?",
+    "options": [
+      "Brute force nested loops",
+      "Sorting + two pointers",
+      "HashMap for lookup",
+      "Recursion"
+    ],
+    "correctAnswer": "HashMap for lookup",
+    "pattern": "HashMap",
+    "strategy": "Use a hashmap to store numbers seen so far. Check if (target - current number) exists in O(1) time for each element, giving O(n) solution.",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "lc_i_t5_004",
+    "question": "In solving sliding window problems efficiently, which technique is most commonly used?",
+    "options": [
+      "Brute force nested loops",
+      "Two-pointer technique",
+      "Recursion",
+      "DFS"
+    ],
+    "correctAnswer": "Two-pointer technique",
+    "pattern": "Sliding window",
+    "strategy": "Use two pointers to define a moving window over the array/string. Allows O(n) solutions for sum/max/min in subarrays.",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "lc_i_t5_005",
+    "question": "You are given a binary tree. How would you implement inorder traversal?",
+    "options": [
+      "Recursive approach",
+      "Iterative using stack",
+      "Morris traversal",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "patternCategory": "Tree / traversal",
+    "strategy": "Recursive is simple, iterative with stack avoids recursion depth issues, Morris traversal uses O(1) auxiliary space.",
+    "hints": [
+      "Think about how to visit left, root, right",
+      "Consider space optimization if recursion depth is a concern"
+    ],
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(h) for recursion/stack, O(1) for Morris"
+  },
+  {
+    "id": "lc_i_t5_006",
+    "question": "You need to implement a queue using two stacks. Which strategy works?",
+    "options": [
+      "Push-heavy: push to stack1, pop from stack2 after transferring",
+      "Pop-heavy: transfer all to stack2 on pop",
+      "Use a deque instead",
+      "Both push-heavy and pop-heavy"
+    ],
+    "correctAnswer": "Both push-heavy and pop-heavy",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "patternCategory": "Design / stack",
+    "strategy": "Using two stacks, either push-heavy or pop-heavy approaches can simulate queue behavior. Analyze which optimizes for frequent push or pop operations.",
+    "hints": [
+      "Think about amortized complexity",
+      "Use temporary stack transfer"
+    ],
+    "timeComplexity": "Amortized O(1) per operation",
+    "spaceComplexity": "O(n)"
+  },
+  {
+    "id": "lc_i_t5_007",
+    "question": "Given a 2D grid of '1's (land) and '0's (water), count the number of islands.",
+    "options": [
+      "DFS",
+      "BFS",
+      "Union-Find",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "patternCategory": "Graph / DFS / BFS",
+    "strategy": "DFS or BFS explores connected land nodes. Union-Find tracks connected components efficiently.",
+    "hints": [
+      "Mark visited cells to avoid double counting",
+      "Consider recursion limits for DFS"
+    ],
+    "timeComplexity": "O(m*n)",
+    "spaceComplexity": "O(m*n) for recursion or queue"
+  },
+  {
+    "id": "lc_i_t5_008",
+    "question": "You need to find the maximum subarray sum in an integer array.",
+    "options": [
+      "Brute-force checking all subarrays",
+      "Kadane's algorithm",
+      "Divide and conquer",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "platform": "General",
+    "patternCategory": "Dynamic programming / Kadane",
+    "strategy": "Kadane's algorithm efficiently tracks current max sum ending at each index. Divide and conquer works but is less optimal.",
+    "hints": [
+      "Track running sum vs max sum",
+      "Avoid unnecessary recomputation"
+    ],
+    "timeComplexity": "O(n) for Kadane",
+    "spaceComplexity": "O(1)"
+  },
+  {
+    "id": "lc_int_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two pointers on a sorted array often exploit? In a typical production scenario, which is best?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_int_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two pointers on a sorted array often exploit? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_int_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two pointers on a sorted array often exploit? Considering tradeoffs, what is correct?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_int_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two pointers on a sorted array often exploit? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_int_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two pointers on a sorted array often exploit? Select the most suitable engineering choice.",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_int_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A hash set helps achieve? In a typical production scenario, which is best?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A hash set helps achieve? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A hash set helps achieve? Considering tradeoffs, what is correct?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A hash set helps achieve? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A hash set helps achieve? Select the most suitable engineering choice.",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Binary search requires? In a typical production scenario, which is best?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_int_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Binary search requires? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_int_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Binary search requires? Considering tradeoffs, what is correct?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_int_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Binary search requires? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_int_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Binary search requires? Select the most suitable engineering choice.",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_int_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Sliding window is useful for? In a typical production scenario, which is best?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_int_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Sliding window is useful for? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_int_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Sliding window is useful for? Considering tradeoffs, what is correct?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_int_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Sliding window is useful for? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_int_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Sliding window is useful for? Select the most suitable engineering choice.",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_int_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "BFS finds? In a typical production scenario, which is best?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_int_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "BFS finds? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_int_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "BFS finds? Considering tradeoffs, what is correct?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_int_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "BFS finds? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_int_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "BFS finds? Select the most suitable engineering choice.",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_int_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "DFS is natural for? In a typical production scenario, which is best?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_int_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "DFS is natural for? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_int_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "DFS is natural for? Considering tradeoffs, what is correct?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_int_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "DFS is natural for? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_int_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "DFS is natural for? Select the most suitable engineering choice.",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_int_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dynamic programming stores? In a typical production scenario, which is best?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dynamic programming stores? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dynamic programming stores? Considering tradeoffs, what is correct?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dynamic programming stores? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dynamic programming stores? Select the most suitable engineering choice.",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A min-heap peeks? In a typical production scenario, which is best?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_int_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A min-heap peeks? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_int_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A min-heap peeks? Considering tradeoffs, what is correct?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_int_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A min-heap peeks? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_int_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A min-heap peeks? Select the most suitable engineering choice.",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_int_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Union-Find supports? In a typical production scenario, which is best?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_int_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Union-Find supports? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_int_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Union-Find supports? Considering tradeoffs, what is correct?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_int_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Union-Find supports? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_int_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Union-Find supports? Select the most suitable engineering choice.",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_int_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Prefix sums accelerate? In a typical production scenario, which is best?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_int_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Prefix sums accelerate? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_int_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Prefix sums accelerate? Considering tradeoffs, what is correct?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_int_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Prefix sums accelerate? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_int_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Prefix sums accelerate? Select the most suitable engineering choice.",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_int_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Kadane's algorithm finds? In a typical production scenario, which is best?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Kadane's algorithm finds? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Kadane's algorithm finds? Considering tradeoffs, what is correct?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Kadane's algorithm finds? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Kadane's algorithm finds? Select the most suitable engineering choice.",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_int_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Topological sort needs? In a typical production scenario, which is best?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Topological sort needs? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Topological sort needs? Considering tradeoffs, what is correct?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Topological sort needs? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Topological sort needs? Select the most suitable engineering choice.",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two-sum with a hash map is typically? In a typical production scenario, which is best?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two-sum with a hash map is typically? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two-sum with a hash map is typically? Considering tradeoffs, what is correct?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two-sum with a hash map is typically? Which statement reflects solid mid-level practice?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Two-sum with a hash map is typically? Select the most suitable engineering choice.",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_int_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A monotonic stack helps with? In a typical production scenario, which is best?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_int_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A monotonic stack helps with? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_int_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A monotonic stack helps with? Considering tradeoffs, what is correct?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_int_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A monotonic stack helps with? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_int_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A monotonic stack helps with? Select the most suitable engineering choice.",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_int_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Backtracking explores? In a typical production scenario, which is best?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_int_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Backtracking explores? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_int_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Backtracking explores? Considering tradeoffs, what is correct?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_int_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Backtracking explores? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_int_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Backtracking explores? Select the most suitable engineering choice.",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_int_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dijkstra needs? In a typical production scenario, which is best?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dijkstra needs? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dijkstra needs? Considering tradeoffs, what is correct?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dijkstra needs? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "Dijkstra needs? Select the most suitable engineering choice.",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_int_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A trie accelerates? In a typical production scenario, which is best?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_int_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A trie accelerates? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_int_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A trie accelerates? Considering tradeoffs, what is correct?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_int_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Intermediate",
+    "question": "A trie accelerates? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  }
+]

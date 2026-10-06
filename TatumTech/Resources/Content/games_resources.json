@@ -1,0 +1,33 @@
+[
+  {
+    "category": "Technology Builder",
+    "partnerIds": [
+      "technology_red_apple_tech"
+    ]
+  },
+  {
+    "category": "Product Management",
+    "partnerIds": [
+      "technology_korgi"
+    ]
+  },
+  {
+    "category": "Monetization",
+    "partnerIds": [
+      "technology_invo"
+    ]
+  },
+  {
+    "category": "Distribution",
+    "partnerIds": [
+      "technology_glitch",
+      "technology_mikros"
+    ]
+  },
+  {
+    "category": "Infrastructure",
+    "partnerIds": [
+      "technology_mikros"
+    ]
+  }
+]

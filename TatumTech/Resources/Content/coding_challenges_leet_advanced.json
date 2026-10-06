@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "lc_a_001",
+    "question": "Dynamic programming often breaks problems into:",
+    "options": [
+      "Only greedy choices with no overlap",
+      "Overlapping subproblems with optimal substructure",
+      "Random sampling steps",
+      "Single-pass array sort only"
+    ],
+    "correctAnswer": "Overlapping subproblems with optimal substructure",
+    "pattern": "Dynamic programming",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "platform": "General",
+    "strategy": "Memoize or tabulate repeated subproblems to avoid exponential recomputation."
+  },
+  {
+    "id": "lc_a_002",
+    "question": "For strongly connected components, which algorithm is standard?",
+    "options": [
+      "Dijkstra",
+      "Kosaraju or Tarjan",
+      "Kruskal only",
+      "Floyd–Warshall only"
+    ],
+    "correctAnswer": "Kosaraju or Tarjan",
+    "pattern": "Graph SCC",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "platform": "General",
+    "strategy": "Two-pass DFS or Tarjan's low-link values identify SCCs in directed graphs."
+  },
+  {
+    "id": "lc_a_003",
+    "question": "0/1 knapsack (max value, weight limit) is classically solved with:",
+    "options": [
+      "Greedy by value always",
+      "2D DP over items and capacity",
+      "Only BFS on tree",
+      "Single variable calculus"
+    ],
+    "correctAnswer": "2D DP over items and capacity",
+    "pattern": "0/1 Knapsack DP",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "platform": "General",
+    "strategy": "Each item: take or skip, building optimal value per capacity."
+  },
+  {
+    "id": "lc_a_004",
+    "question": "Longest Increasing Subsequence O(n log n) approach uses:",
+    "options": [
+      "Brute force O(2^n) always",
+      "Patience sorting / binary search on tails",
+      "Only counting sort",
+      "Union-Find on edges"
+    ],
+    "correctAnswer": "Patience sorting / binary search on tails",
+    "pattern": "LIS / patience sorting",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "platform": "General",
+    "strategy": "Keep smallest tail values for each length; binary search to place each element."
+  },
+  {
+    "id": "lc_a_005",
+    "question": "Max flow min cut relates to:",
+    "options": [
+      "Only tree diameter",
+      "Ford-Fulkerson / Dinic style max-flow algorithms",
+      "Only topological sort",
+      "Only Dijkstra on DAGs"
+    ],
+    "correctAnswer": "Ford-Fulkerson / Dinic style max-flow algorithms",
+    "pattern": "Max flow",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "platform": "General",
+    "strategy": "Augmenting paths push flow until residual network saturates."
+  },
+  {
+    "id": "lc_a_t5_001",
+    "question": "Given a graph, how would you detect if it contains a cycle?",
+    "options": [
+      "DFS with parent tracking",
+      "BFS with visited nodes",
+      "Union-Find for undirected graphs",
+      "All of the above depending on graph type"
+    ],
+    "correctAnswer": "All of the above depending on graph type",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "platform": "General",
+    "patternCategory": "Graph / cycle detection",
+    "strategy": "DFS is standard for directed graphs. Union-Find works efficiently for undirected graphs. BFS can also help detect cycles with extra tracking.",
+    "hints": [
+      "Consider directed vs undirected graphs",
+      "Track parent nodes or visited status carefully"
+    ],
+    "timeComplexity": "O(V + E)",
+    "spaceComplexity": "O(V)"
+  },
+  {
+    "id": "lc_a_t5_002",
+    "question": "Given n pairs of parentheses, generate all combinations of well-formed parentheses.",
+    "options": [
+      "Backtracking",
+      "Dynamic Programming",
+      "Iterative generation",
+      "All of the above"
+    ],
+    "correctAnswer": "Backtracking",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "platform": "General",
+    "patternCategory": "Backtracking",
+    "strategy": "Backtracking explores all valid placements recursively, pruning invalid states early.",
+    "hints": [
+      "Keep track of remaining open and close parentheses",
+      "Avoid invalid sequences proactively"
+    ],
+    "timeComplexity": "O(4^n / sqrt(n))",
+    "spaceComplexity": "O(n)"
+  },
+  {
+    "id": "lc_a_t5_003",
+    "question": "You need to implement a MinStack that supports push, pop, top, and retrieving the minimum element in O(1) time.",
+    "options": [
+      "Use an auxiliary stack to track minimums",
+      "Store elements in a sorted array",
+      "Use a priority queue",
+      "Use a linked list only"
+    ],
+    "correctAnswer": "Use an auxiliary stack to track minimums",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "platform": "General",
+    "patternCategory": "Design / stack",
+    "strategy": "Maintain a second stack to track the minimum element at each stage of the main stack. This allows O(1) retrieval of min.",
+    "hints": [
+      "Consider space-time trade-offs",
+      "Push the current min along with element when pushing"
+    ],
+    "timeComplexity": "O(1) per operation",
+    "spaceComplexity": "O(n)"
+  },
+  {
+    "id": "lc_adv_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two pointers on a sorted array often exploit? Under advanced constraints, which is correct?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_adv_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two pointers on a sorted array often exploit? Which option best matches expert-level understanding?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_adv_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two pointers on a sorted array often exploit? In a high-scale design, what applies?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_adv_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two pointers on a sorted array often exploit? Which statement is most precise for advanced use?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_adv_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two pointers on a sorted array often exploit? Select the rigorously correct advanced answer.",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_adv_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A hash set helps achieve? Under advanced constraints, which is correct?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A hash set helps achieve? Which option best matches expert-level understanding?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A hash set helps achieve? In a high-scale design, what applies?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A hash set helps achieve? Which statement is most precise for advanced use?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A hash set helps achieve? Select the rigorously correct advanced answer.",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Binary search requires? Under advanced constraints, which is correct?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_adv_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Binary search requires? Which option best matches expert-level understanding?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_adv_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Binary search requires? In a high-scale design, what applies?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_adv_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Binary search requires? Which statement is most precise for advanced use?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_adv_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Binary search requires? Select the rigorously correct advanced answer.",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_adv_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Sliding window is useful for? Under advanced constraints, which is correct?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_adv_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Sliding window is useful for? Which option best matches expert-level understanding?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_adv_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Sliding window is useful for? In a high-scale design, what applies?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_adv_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Sliding window is useful for? Which statement is most precise for advanced use?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_adv_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Sliding window is useful for? Select the rigorously correct advanced answer.",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_adv_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "BFS finds? Under advanced constraints, which is correct?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_adv_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "BFS finds? Which option best matches expert-level understanding?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_adv_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "BFS finds? In a high-scale design, what applies?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_adv_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "BFS finds? Which statement is most precise for advanced use?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_adv_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "BFS finds? Select the rigorously correct advanced answer.",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_adv_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "DFS is natural for? Under advanced constraints, which is correct?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_adv_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "DFS is natural for? Which option best matches expert-level understanding?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_adv_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "DFS is natural for? In a high-scale design, what applies?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_adv_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "DFS is natural for? Which statement is most precise for advanced use?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_adv_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "DFS is natural for? Select the rigorously correct advanced answer.",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_adv_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dynamic programming stores? Under advanced constraints, which is correct?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dynamic programming stores? Which option best matches expert-level understanding?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dynamic programming stores? In a high-scale design, what applies?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dynamic programming stores? Which statement is most precise for advanced use?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dynamic programming stores? Select the rigorously correct advanced answer.",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A min-heap peeks? Under advanced constraints, which is correct?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_adv_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A min-heap peeks? Which option best matches expert-level understanding?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_adv_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A min-heap peeks? In a high-scale design, what applies?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_adv_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A min-heap peeks? Which statement is most precise for advanced use?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_adv_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A min-heap peeks? Select the rigorously correct advanced answer.",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_adv_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Union-Find supports? Under advanced constraints, which is correct?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_adv_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Union-Find supports? Which option best matches expert-level understanding?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_adv_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Union-Find supports? In a high-scale design, what applies?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_adv_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Union-Find supports? Which statement is most precise for advanced use?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_adv_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Union-Find supports? Select the rigorously correct advanced answer.",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_adv_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Prefix sums accelerate? Under advanced constraints, which is correct?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_adv_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Prefix sums accelerate? Which option best matches expert-level understanding?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_adv_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Prefix sums accelerate? In a high-scale design, what applies?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_adv_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Prefix sums accelerate? Which statement is most precise for advanced use?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_adv_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Prefix sums accelerate? Select the rigorously correct advanced answer.",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_adv_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Kadane's algorithm finds? Under advanced constraints, which is correct?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Kadane's algorithm finds? Which option best matches expert-level understanding?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Kadane's algorithm finds? In a high-scale design, what applies?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Kadane's algorithm finds? Which statement is most precise for advanced use?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Kadane's algorithm finds? Select the rigorously correct advanced answer.",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_adv_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Topological sort needs? Under advanced constraints, which is correct?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Topological sort needs? Which option best matches expert-level understanding?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Topological sort needs? In a high-scale design, what applies?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Topological sort needs? Which statement is most precise for advanced use?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Topological sort needs? Select the rigorously correct advanced answer.",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two-sum with a hash map is typically? Under advanced constraints, which is correct?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two-sum with a hash map is typically? Which option best matches expert-level understanding?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two-sum with a hash map is typically? In a high-scale design, what applies?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two-sum with a hash map is typically? Which statement is most precise for advanced use?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Two-sum with a hash map is typically? Select the rigorously correct advanced answer.",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_adv_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A monotonic stack helps with? Under advanced constraints, which is correct?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_adv_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A monotonic stack helps with? Which option best matches expert-level understanding?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_adv_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A monotonic stack helps with? In a high-scale design, what applies?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_adv_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A monotonic stack helps with? Which statement is most precise for advanced use?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_adv_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A monotonic stack helps with? Select the rigorously correct advanced answer.",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_adv_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Backtracking explores? Under advanced constraints, which is correct?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_adv_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Backtracking explores? Which option best matches expert-level understanding?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_adv_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Backtracking explores? In a high-scale design, what applies?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_adv_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Backtracking explores? Which statement is most precise for advanced use?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_adv_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Backtracking explores? Select the rigorously correct advanced answer.",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_adv_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dijkstra needs? Under advanced constraints, which is correct?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dijkstra needs? Which option best matches expert-level understanding?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dijkstra needs? In a high-scale design, what applies?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dijkstra needs? Which statement is most precise for advanced use?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Dijkstra needs? Select the rigorously correct advanced answer.",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_adv_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A trie accelerates? Under advanced constraints, which is correct?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_adv_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A trie accelerates? Which option best matches expert-level understanding?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_adv_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A trie accelerates? In a high-scale design, what applies?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_adv_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A trie accelerates? Which statement is most precise for advanced use?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_adv_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "A trie accelerates? Select the rigorously correct advanced answer.",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_adv_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Bit manipulation can? Under advanced constraints, which is correct?",
+    "options": [
+      "Pack flags / accelerate some math",
+      "Replace all DP",
+      "Remove need for graphs",
+      "Guarantee O(1) sorts"
+    ],
+    "correctAnswer": "Pack flags / accelerate some math",
+    "explanation": "Bits enable compact state.",
+    "platform": "Interview",
+    "pattern": "Bit tricks"
+  },
+  {
+    "id": "lc_adv_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Bit manipulation can? Which option best matches expert-level understanding?",
+    "options": [
+      "Pack flags / accelerate some math",
+      "Replace all DP",
+      "Remove need for graphs",
+      "Guarantee O(1) sorts"
+    ],
+    "correctAnswer": "Pack flags / accelerate some math",
+    "explanation": "Bits enable compact state.",
+    "platform": "Interview",
+    "pattern": "Bit tricks"
+  },
+  {
+    "id": "lc_adv_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Bit manipulation can? In a high-scale design, what applies?",
+    "options": [
+      "Pack flags / accelerate some math",
+      "Replace all DP",
+      "Remove need for graphs",
+      "Guarantee O(1) sorts"
+    ],
+    "correctAnswer": "Pack flags / accelerate some math",
+    "explanation": "Bits enable compact state.",
+    "platform": "Interview",
+    "pattern": "Bit tricks"
+  },
+  {
+    "id": "lc_adv_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Bit manipulation can? Which statement is most precise for advanced use?",
+    "options": [
+      "Pack flags / accelerate some math",
+      "Replace all DP",
+      "Remove need for graphs",
+      "Guarantee O(1) sorts"
+    ],
+    "correctAnswer": "Pack flags / accelerate some math",
+    "explanation": "Bits enable compact state.",
+    "platform": "Interview",
+    "pattern": "Bit tricks"
+  },
+  {
+    "id": "lc_adv_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Bit manipulation can? Select the rigorously correct advanced answer.",
+    "options": [
+      "Pack flags / accelerate some math",
+      "Replace all DP",
+      "Remove need for graphs",
+      "Guarantee O(1) sorts"
+    ],
+    "correctAnswer": "Pack flags / accelerate some math",
+    "explanation": "Bits enable compact state.",
+    "platform": "Interview",
+    "pattern": "Bit tricks"
+  },
+  {
+    "id": "lc_adv_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Interval merging sorts by? Under advanced constraints, which is correct?",
+    "options": [
+      "Start time then merge overlaps",
+      "End time only always",
+      "Random order",
+      "Hash only"
+    ],
+    "correctAnswer": "Start time then merge overlaps",
+    "explanation": "Sort then linear merge.",
+    "platform": "Interview",
+    "pattern": "Intervals"
+  },
+  {
+    "id": "lc_adv_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Advanced",
+    "question": "Interval merging sorts by? Which option best matches expert-level understanding?",
+    "options": [
+      "Start time then merge overlaps",
+      "End time only always",
+      "Random order",
+      "Hash only"
+    ],
+    "correctAnswer": "Start time then merge overlaps",
+    "explanation": "Sort then linear merge.",
+    "platform": "Interview",
+    "pattern": "Intervals"
+  }
+]

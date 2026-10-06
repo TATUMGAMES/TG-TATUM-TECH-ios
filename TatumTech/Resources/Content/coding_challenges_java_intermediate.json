@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "java_int_001",
+    "question": "What is the output of the following Java code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String str1 = \"Hello\";\n        String str2 = \"Hello\";\n        String str3 = new String(\"Hello\");\n        System.out.println(str1 == str2);\n        System.out.println(str1 == str3);\n    }\n}\n```",
+    "options": [
+      "true\\ntrue",
+      "true\\nfalse",
+      "false\\ntrue",
+      "false\\nfalse"
+    ],
+    "correctAnswer": "true\\nfalse",
+    "language": "Java",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "java_int_002",
+    "question": "Which of the following is NOT a valid access modifier in Java?",
+    "options": [
+      "public",
+      "private",
+      "protected",
+      "internal"
+    ],
+    "correctAnswer": "internal",
+    "language": "Java",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "java_int_003",
+    "question": "What is the purpose of the `static` keyword in Java?",
+    "options": [
+      "To create immutable variables",
+      "To create class-level variables and methods",
+      "To create thread-safe code",
+      "To optimize performance"
+    ],
+    "correctAnswer": "To create class-level variables and methods",
+    "language": "Java",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "java_int_004",
+    "question": "What will be the output of this code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        int[] arr = {1, 2, 3, 4, 5};\n        for (int i = 0; i < arr.length; i++) {\n            if (arr[i] % 2 == 0) {\n                System.out.println(arr[i]);\n            }\n        }\n    }\n}\n```",
+    "options": [
+      "1\\n3\\n5",
+      "2\\n4",
+      "1\\n2\\n3\\n4\\n5",
+      "Error"
+    ],
+    "correctAnswer": "2\\n4",
+    "language": "Java",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "java_int_005",
+    "question": "Which of the following is true about Java interfaces?",
+    "options": [
+      "Interfaces can have concrete methods",
+      "Interfaces can extend multiple interfaces",
+      "Interfaces can have constructors",
+      "Interfaces can be instantiated directly"
+    ],
+    "correctAnswer": "Interfaces can extend multiple interfaces",
+    "language": "Java",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "java_int_006",
+    "question": "What is the output of this code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String str = \"Hello World\";\n        System.out.println(str.substring(6));\n    }\n}\n```",
+    "options": [
+      "Hello",
+      "World",
+      "Hello World",
+      "Error"
+    ],
+    "correctAnswer": "World",
+    "language": "Java",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "java_int_007",
+    "question": "Which collection class is synchronized in Java?",
+    "options": [
+      "ArrayList",
+      "HashMap",
+      "Vector",
+      "LinkedList"
+    ],
+    "correctAnswer": "Vector",
+    "language": "Java",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, final on a variable means? In a typical production scenario, which is best?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, final on a variable means? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, final on a variable means? Considering tradeoffs, what is correct?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, final on a variable means? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, final on a variable means? Select the most suitable engineering choice.",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, interface methods can? In a typical production scenario, which is best?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, interface methods can? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, interface methods can? Considering tradeoffs, what is correct?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, interface methods can? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "In Java, interface methods can? Select the most suitable engineering choice.",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "ArrayList is? In a typical production scenario, which is best?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "ArrayList is? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "ArrayList is? Considering tradeoffs, what is correct?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "ArrayList is? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "ArrayList is? Select the most suitable engineering choice.",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "HashMap typically allows? In a typical production scenario, which is best?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "HashMap typically allows? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "HashMap typically allows? Considering tradeoffs, what is correct?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "HashMap typically allows? Which statement reflects solid mid-level practice?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "HashMap typically allows? Select the most suitable engineering choice.",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "synchronized provides? In a typical production scenario, which is best?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "synchronized provides? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "synchronized provides? Considering tradeoffs, what is correct?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "synchronized provides? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "synchronized provides? Select the most suitable engineering choice.",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Checked exceptions must be? In a typical production scenario, which is best?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Checked exceptions must be? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Checked exceptions must be? Considering tradeoffs, what is correct?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Checked exceptions must be? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Checked exceptions must be? Select the most suitable engineering choice.",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Optional helps avoid? In a typical production scenario, which is best?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Optional helps avoid? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Optional helps avoid? Considering tradeoffs, what is correct?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Optional helps avoid? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Optional helps avoid? Select the most suitable engineering choice.",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Stream map does? In a typical production scenario, which is best?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Stream map does? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Stream map does? Considering tradeoffs, what is correct?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Stream map does? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Stream map does? Select the most suitable engineering choice.",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "record types provide? In a typical production scenario, which is best?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "record types provide? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "record types provide? Considering tradeoffs, what is correct?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "record types provide? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "record types provide? Select the most suitable engineering choice.",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Local var requires? In a typical production scenario, which is best?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Local var requires? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Local var requires? Considering tradeoffs, what is correct?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Local var requires? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Local var requires? Select the most suitable engineering choice.",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Garbage collection frees? In a typical production scenario, which is best?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Garbage collection frees? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Garbage collection frees? Considering tradeoffs, what is correct?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Garbage collection frees? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Garbage collection frees? Select the most suitable engineering choice.",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "equals should be? In a typical production scenario, which is best?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "equals should be? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "equals should be? Considering tradeoffs, what is correct?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "equals should be? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "equals should be? Select the most suitable engineering choice.",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "String is? In a typical production scenario, which is best?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "String is? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "String is? Considering tradeoffs, what is correct?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "String is? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "String is? Select the most suitable engineering choice.",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "enum defines? In a typical production scenario, which is best?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "enum defines? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "enum defines? Considering tradeoffs, what is correct?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "enum defines? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "enum defines? Select the most suitable engineering choice.",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "try-with-resources closes? In a typical production scenario, which is best?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "try-with-resources closes? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "try-with-resources closes? Considering tradeoffs, what is correct?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "try-with-resources closes? Which statement reflects solid mid-level practice?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "try-with-resources closes? Select the most suitable engineering choice.",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "volatile ensures? In a typical production scenario, which is best?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "volatile ensures? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "volatile ensures? Considering tradeoffs, what is correct?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "volatile ensures? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "volatile ensures? Select the most suitable engineering choice.",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "CompletableFuture models? In a typical production scenario, which is best?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "CompletableFuture models? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "CompletableFuture models? Considering tradeoffs, what is correct?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "CompletableFuture models? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "CompletableFuture models? Select the most suitable engineering choice.",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Generics provide? In a typical production scenario, which is best?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Generics provide? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Generics provide? Considering tradeoffs, what is correct?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Generics provide? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "Generics provide? Select the most suitable engineering choice.",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "LinkedList is best when? In a typical production scenario, which is best?",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "LinkedList is best when? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_int_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Intermediate",
+    "question": "LinkedList is best when? Considering tradeoffs, what is correct?",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  }
+]

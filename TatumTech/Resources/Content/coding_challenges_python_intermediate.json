@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "py_int_001",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What is a list comprehension in Python?",
+    "options": [
+      "A way to create lists using a compact syntax",
+      "A method to sort lists",
+      "A way to convert lists to dictionaries",
+      "A type of loop"
+    ],
+    "correctAnswer": "A way to create lists using a compact syntax",
+    "explanation": "List comprehensions provide a concise way to create lists based on existing sequences.",
+    "platform": "Web"
+  },
+  {
+    "id": "py_int_002",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What is the difference between a list and a tuple in Python?",
+    "options": [
+      "Lists are mutable, tuples are immutable",
+      "Tuples are mutable, lists are immutable",
+      "There is no difference",
+      "Lists can only contain numbers"
+    ],
+    "correctAnswer": "Lists are mutable, tuples are immutable",
+    "explanation": "Lists can be modified after creation, while tuples cannot be changed once created.",
+    "platform": "Web"
+  },
+  {
+    "id": "py_int_003",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What is a decorator in Python?",
+    "options": [
+      "A function that modifies another function",
+      "A way to add comments to code",
+      "A type of variable",
+      "A method to format strings"
+    ],
+    "correctAnswer": "A function that modifies another function",
+    "explanation": "Decorators are functions that take another function as input and return a modified version.",
+    "platform": "Web"
+  },
+  {
+    "id": "py_int_004",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What is the purpose of the 'with' statement in Python?",
+    "options": [
+      "To automatically handle resource management",
+      "To create loops",
+      "To define functions",
+      "To import modules"
+    ],
+    "correctAnswer": "To automatically handle resource management",
+    "explanation": "The 'with' statement ensures proper cleanup of resources like file handles.",
+    "platform": "Web"
+  },
+  {
+    "id": "py_int_005",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What is a generator in Python?",
+    "options": [
+      "A function that yields values one at a time",
+      "A way to create random numbers",
+      "A type of class",
+      "A method to sort data"
+    ],
+    "correctAnswer": "A function that yields values one at a time",
+    "explanation": "Generators use the 'yield' keyword to return values one at a time, saving memory.",
+    "platform": "Web"
+  },
+  {
+    "id": "py_int_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "In Python, lists are? In a typical production scenario, which is best?",
+    "options": [
+      "Mutable sequences",
+      "Immutable tuples",
+      "Only hashable",
+      "Only sorted"
+    ],
+    "correctAnswer": "Mutable sequences",
+    "explanation": "list supports in-place mutation.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `def` declare? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `def` declare? Considering tradeoffs, what is correct?",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `def` declare? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `def` declare? Select the most suitable engineering choice.",
+    "options": [
+      "A function",
+      "A class only",
+      "A module only",
+      "A decorator only"
+    ],
+    "correctAnswer": "A function",
+    "explanation": "def defines a function.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`None` represents? In a typical production scenario, which is best?",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`None` represents? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`None` represents? Considering tradeoffs, what is correct?",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`None` represents? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`None` represents? Select the most suitable engineering choice.",
+    "options": [
+      "Absence of a value",
+      "Integer zero",
+      "Empty string",
+      "False only"
+    ],
+    "correctAnswer": "Absence of a value",
+    "explanation": "None is the null object.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "List comprehension `[x for x in xs if x]` is? In a typical production scenario, which is best?",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "List comprehension `[x for x in xs if x]` is? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "List comprehension `[x for x in xs if x]` is? Considering tradeoffs, what is correct?",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "List comprehension `[x for x in xs if x]` is? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "List comprehension `[x for x in xs if x]` is? Select the most suitable engineering choice.",
+    "options": [
+      "A filtered mapping expression",
+      "A generator always",
+      "A set",
+      "A dict"
+    ],
+    "correctAnswer": "A filtered mapping expression",
+    "explanation": "Comprehensions build collections.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`*args` collects? In a typical production scenario, which is best?",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`*args` collects? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`*args` collects? Considering tradeoffs, what is correct?",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`*args` collects? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`*args` collects? Select the most suitable engineering choice.",
+    "options": [
+      "Extra positional arguments",
+      "Only keywords",
+      "Only defaults",
+      "Only annotations"
+    ],
+    "correctAnswer": "Extra positional arguments",
+    "explanation": "*args packs leftover positionals.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`**kwargs` collects? In a typical production scenario, which is best?",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`**kwargs` collects? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`**kwargs` collects? Considering tradeoffs, what is correct?",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`**kwargs` collects? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`**kwargs` collects? Select the most suitable engineering choice.",
+    "options": [
+      "Extra keyword arguments",
+      "Only positionals",
+      "Only decorators",
+      "Only imports"
+    ],
+    "correctAnswer": "Extra keyword arguments",
+    "explanation": "**kwargs packs keyword leftovers.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `with` manage? In a typical production scenario, which is best?",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `with` manage? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `with` manage? Considering tradeoffs, what is correct?",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `with` manage? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `with` manage? Select the most suitable engineering choice.",
+    "options": [
+      "Context managers / resource lifetimes",
+      "Only loops",
+      "Only imports",
+      "Only metaclasses"
+    ],
+    "correctAnswer": "Context managers / resource lifetimes",
+    "explanation": "with ensures cleanup.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dict` keys must be? In a typical production scenario, which is best?",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dict` keys must be? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dict` keys must be? Considering tradeoffs, what is correct?",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dict` keys must be? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dict` keys must be? Select the most suitable engineering choice.",
+    "options": [
+      "Hashable",
+      "Always strings",
+      "Always ints",
+      "Mutable lists"
+    ],
+    "correctAnswer": "Hashable",
+    "explanation": "Keys must be hashable.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`__init__` is? In a typical production scenario, which is best?",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`__init__` is? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`__init__` is? Considering tradeoffs, what is correct?",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`__init__` is? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`__init__` is? Select the most suitable engineering choice.",
+    "options": [
+      "Instance initializer",
+      "Class destructor only",
+      "Module loader",
+      "GC finalizer only"
+    ],
+    "correctAnswer": "Instance initializer",
+    "explanation": "__init__ initializes instances.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Generators use? In a typical production scenario, which is best?",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Generators use? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Generators use? Considering tradeoffs, what is correct?",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Generators use? Which statement reflects solid mid-level practice?",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Generators use? Select the most suitable engineering choice.",
+    "options": [
+      "yield",
+      "return only",
+      "await only",
+      "goto"
+    ],
+    "correctAnswer": "yield",
+    "explanation": "yield produces generator values.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`isinstance(x, list)` checks? In a typical production scenario, which is best?",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`isinstance(x, list)` checks? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`isinstance(x, list)` checks? Considering tradeoffs, what is correct?",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`isinstance(x, list)` checks? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`isinstance(x, list)` checks? Select the most suitable engineering choice.",
+    "options": [
+      "Type membership",
+      "Truthiness",
+      "Identity",
+      "Hashability only"
+    ],
+    "correctAnswer": "Type membership",
+    "explanation": "isinstance tests types/ABC.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Virtual environments help? In a typical production scenario, which is best?",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Virtual environments help? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Virtual environments help? Considering tradeoffs, what is correct?",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Virtual environments help? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "Virtual environments help? Select the most suitable engineering choice.",
+    "options": [
+      "Isolate project dependencies",
+      "Speed the CPU",
+      "Compile C always",
+      "Replace pip"
+    ],
+    "correctAnswer": "Isolate project dependencies",
+    "explanation": "venv isolates packages.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pip install` installs? In a typical production scenario, which is best?",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pip install` installs? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pip install` installs? Considering tradeoffs, what is correct?",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pip install` installs? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pip install` installs? Select the most suitable engineering choice.",
+    "options": [
+      "Packages from indexes/wheels",
+      "Only stdlib",
+      "Only OS kernels",
+      "Only Docker"
+    ],
+    "correctAnswer": "Packages from indexes/wheels",
+    "explanation": "pip is the package installer.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "EAFP style prefers? In a typical production scenario, which is best?",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "EAFP style prefers? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "EAFP style prefers? Considering tradeoffs, what is correct?",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "EAFP style prefers? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "EAFP style prefers? Select the most suitable engineering choice.",
+    "options": [
+      "Trying and handling exceptions",
+      "Always checking types first",
+      "No try blocks",
+      "Silent failures"
+    ],
+    "correctAnswer": "Trying and handling exceptions",
+    "explanation": "EAFP is idiomatic Python.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`@property` creates? In a typical production scenario, which is best?",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`@property` creates? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`@property` creates? Considering tradeoffs, what is correct?",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`@property` creates? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`@property` creates? Select the most suitable engineering choice.",
+    "options": [
+      "Managed attributes",
+      "Only static methods",
+      "Only classmethods",
+      "Only decorators factories"
+    ],
+    "correctAnswer": "Managed attributes",
+    "explanation": "property exposes getter/setter APIs.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dataclasses` reduce? In a typical production scenario, which is best?",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dataclasses` reduce? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dataclasses` reduce? Considering tradeoffs, what is correct?",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dataclasses` reduce? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`dataclasses` reduce? Select the most suitable engineering choice.",
+    "options": [
+      "Boilerplate for data containers",
+      "Import time only",
+      "GC pressure always",
+      "Network latency"
+    ],
+    "correctAnswer": "Boilerplate for data containers",
+    "explanation": "dataclasses synthesize common methods.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`asyncio` is for? In a typical production scenario, which is best?",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`asyncio` is for? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`asyncio` is for? Considering tradeoffs, what is correct?",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`asyncio` is for? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`asyncio` is for? Select the most suitable engineering choice.",
+    "options": [
+      "Concurrent IO-bound tasks",
+      "Only CPU-bound GIL escape",
+      "Only GUI",
+      "Only XML"
+    ],
+    "correctAnswer": "Concurrent IO-bound tasks",
+    "explanation": "asyncio schedules cooperative tasks.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pathlib.Path` helps with? In a typical production scenario, which is best?",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pathlib.Path` helps with? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pathlib.Path` helps with? Considering tradeoffs, what is correct?",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pathlib.Path` helps with? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`pathlib.Path` helps with? Select the most suitable engineering choice.",
+    "options": [
+      "Filesystem paths",
+      "Only URLs",
+      "Only regex",
+      "Only sockets"
+    ],
+    "correctAnswer": "Filesystem paths",
+    "explanation": "Path is an OO path API.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `zip(a, b)` do? In a typical production scenario, which is best?",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `zip(a, b)` do? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `zip(a, b)` do? Considering tradeoffs, what is correct?",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `zip(a, b)` do? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "What does `zip(a, b)` do? Select the most suitable engineering choice.",
+    "options": [
+      "Pairs items from iterables",
+      "Compresses files always",
+      "Sorts tuples",
+      "Hashes keys"
+    ],
+    "correctAnswer": "Pairs items from iterables",
+    "explanation": "zip iterates in lockstep.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_096",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`enumerate(xs)` yields? In a typical production scenario, which is best?",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_097",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`enumerate(xs)` yields? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_098",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`enumerate(xs)` yields? Considering tradeoffs, what is correct?",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_099",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`enumerate(xs)` yields? Which statement reflects solid mid-level practice?",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  },
+  {
+    "id": "py_int_100",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Python",
+    "level": "Intermediate",
+    "question": "`enumerate(xs)` yields? Select the most suitable engineering choice.",
+    "options": [
+      "(index, value) pairs",
+      "Only values",
+      "Only keys",
+      "Only hashes"
+    ],
+    "correctAnswer": "(index, value) pairs",
+    "explanation": "enumerate tracks indices.",
+    "platform": "General"
+  }
+]

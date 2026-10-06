@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "js_beg_001",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is the output of console.log(typeof null)?",
+    "options": [
+      "null",
+      "object",
+      "undefined",
+      "function"
+    ],
+    "correctAnswer": "object",
+    "explanation": "'null' is of type 'object' due to a long-standing JavaScript bug.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_002",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Which of the following is a valid way to declare a variable in JavaScript?",
+    "options": [
+      "var x = 5;",
+      "int x = 5;",
+      "let x == 5;",
+      "x := 5;"
+    ],
+    "correctAnswer": "var x = 5;",
+    "explanation": "'var', 'let', and 'const' are used to declare variables in JavaScript.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_003",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does the following code output? console.log(2 + '2');",
+    "options": [
+      "4",
+      "22",
+      "'4'",
+      "'2'2"
+    ],
+    "correctAnswer": "22",
+    "explanation": "The number 2 is coerced to a string, so the result is string concatenation: '22'.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_004",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Which symbol is used for single-line comments in JavaScript?",
+    "options": [
+      "#",
+      "//",
+      "/*",
+      "<!--"
+    ],
+    "correctAnswer": "//",
+    "explanation": "Single-line comments in JavaScript start with '//'.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_005",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What will console.log(5 == '5') output?",
+    "options": [
+      "false",
+      "true",
+      "undefined",
+      "error"
+    ],
+    "correctAnswer": "true",
+    "explanation": "The '==' operator checks for equality with type coercion, so 5 == '5' is true.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_006",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Which keyword is used to define a constant in JavaScript?",
+    "options": [
+      "let",
+      "var",
+      "const",
+      "define"
+    ],
+    "correctAnswer": "const",
+    "explanation": "'const' is used to define a variable whose value cannot be reassigned.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_007",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is the correct syntax to output 'Hello World' in the console?",
+    "options": [
+      "print('Hello World');",
+      "echo 'Hello World';",
+      "console.log('Hello World');",
+      "System.out.println('Hello World');"
+    ],
+    "correctAnswer": "console.log('Hello World');",
+    "explanation": "Use console.log() to print messages to the JavaScript console.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_008",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Which of the following is NOT a primitive type in JavaScript?",
+    "options": [
+      "string",
+      "number",
+      "boolean",
+      "object"
+    ],
+    "correctAnswer": "object",
+    "explanation": "Primitive types include string, number, boolean, null, undefined, and symbol. 'object' is not primitive.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_009",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Which method is used to remove the last element of an array?",
+    "options": [
+      "shift()",
+      "pop()",
+      "splice()",
+      "remove()"
+    ],
+    "correctAnswer": "pop()",
+    "explanation": "The pop() method removes the last element from an array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_010",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Which operator is used to assign a value to a variable?",
+    "options": [
+      "+",
+      "-",
+      "=",
+      "=="
+    ],
+    "correctAnswer": "=",
+    "explanation": "The '=' operator is used for assignment, not comparison.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "In JavaScript, `const` bindings are? Choose the best beginner-level answer.",
+    "options": [
+      "Not reassignable",
+      "Deeply immutable always",
+      "Function-scoped like var",
+      "Hoisted as undefined only"
+    ],
+    "correctAnswer": "Not reassignable",
+    "explanation": "const prevents reassignment of the binding.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Promises represent? For newcomers, which statement is correct?",
+    "options": [
+      "Future completion of async work",
+      "Only DOM nodes",
+      "Only CSS rules",
+      "Only JSON schemas"
+    ],
+    "correctAnswer": "Future completion of async work",
+    "explanation": "Promises model eventual success/failure.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Promises represent? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Future completion of async work",
+      "Only DOM nodes",
+      "Only CSS rules",
+      "Only JSON schemas"
+    ],
+    "correctAnswer": "Future completion of async work",
+    "explanation": "Promises model eventual success/failure.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Promises represent? Pick the fundamental concept that applies.",
+    "options": [
+      "Future completion of async work",
+      "Only DOM nodes",
+      "Only CSS rules",
+      "Only JSON schemas"
+    ],
+    "correctAnswer": "Future completion of async work",
+    "explanation": "Promises model eventual success/failure.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Promises represent? Which choice matches core introductory knowledge?",
+    "options": [
+      "Future completion of async work",
+      "Only DOM nodes",
+      "Only CSS rules",
+      "Only JSON schemas"
+    ],
+    "correctAnswer": "Future completion of async work",
+    "explanation": "Promises model eventual success/failure.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `async/await` simplify? Choose the best beginner-level answer.",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `async/await` simplify? For newcomers, which statement is correct?",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `async/await` simplify? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `async/await` simplify? Pick the fundamental concept that applies.",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `async/await` simplify? Which choice matches core introductory knowledge?",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Closures in JavaScript capture? Choose the best beginner-level answer.",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Closures in JavaScript capture? For newcomers, which statement is correct?",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Closures in JavaScript capture? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Closures in JavaScript capture? Pick the fundamental concept that applies.",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Closures in JavaScript capture? Which choice matches core introductory knowledge?",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`map` on arrays returns? Choose the best beginner-level answer.",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`map` on arrays returns? For newcomers, which statement is correct?",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`map` on arrays returns? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`map` on arrays returns? Pick the fundamental concept that applies.",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`map` on arrays returns? Which choice matches core introductory knowledge?",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`null` vs `undefined` in JavaScript? Choose the best beginner-level answer.",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`null` vs `undefined` in JavaScript? For newcomers, which statement is correct?",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`null` vs `undefined` in JavaScript? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`null` vs `undefined` in JavaScript? Pick the fundamental concept that applies.",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`null` vs `undefined` in JavaScript? Which choice matches core introductory knowledge?",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is event bubbling? Choose the best beginner-level answer.",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is event bubbling? For newcomers, which statement is correct?",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is event bubbling? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is event bubbling? Pick the fundamental concept that applies.",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is event bubbling? Which choice matches core introductory knowledge?",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`JSON.parse` converts? Choose the best beginner-level answer.",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`JSON.parse` converts? For newcomers, which statement is correct?",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`JSON.parse` converts? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`JSON.parse` converts? Pick the fundamental concept that applies.",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`JSON.parse` converts? Which choice matches core introductory knowledge?",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Modules with `import/export` are? Choose the best beginner-level answer.",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Modules with `import/export` are? For newcomers, which statement is correct?",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Modules with `import/export` are? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Modules with `import/export` are? Pick the fundamental concept that applies.",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Modules with `import/export` are? Which choice matches core introductory knowledge?",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`this` in an arrow function is? Choose the best beginner-level answer.",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`this` in an arrow function is? For newcomers, which statement is correct?",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`this` in an arrow function is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`this` in an arrow function is? Pick the fundamental concept that applies.",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`this` in an arrow function is? Which choice matches core introductory knowledge?",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Set` stores? Choose the best beginner-level answer.",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Set` stores? For newcomers, which statement is correct?",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Set` stores? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Set` stores? Pick the fundamental concept that applies.",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Set` stores? Which choice matches core introductory knowledge?",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`fetch` returns? Choose the best beginner-level answer.",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`fetch` returns? For newcomers, which statement is correct?",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`fetch` returns? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`fetch` returns? Pick the fundamental concept that applies.",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`fetch` returns? Which choice matches core introductory knowledge?",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Optional chaining `?.` helps when? Choose the best beginner-level answer.",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Optional chaining `?.` helps when? For newcomers, which statement is correct?",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Optional chaining `?.` helps when? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Optional chaining `?.` helps when? Pick the fundamental concept that applies.",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Optional chaining `?.` helps when? Which choice matches core introductory knowledge?",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Array.isArray` checks? Choose the best beginner-level answer.",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Array.isArray` checks? For newcomers, which statement is correct?",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Array.isArray` checks? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Array.isArray` checks? Pick the fundamental concept that applies.",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Array.isArray` checks? Which choice matches core introductory knowledge?",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `debounce` typically do? Choose the best beginner-level answer.",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `debounce` typically do? For newcomers, which statement is correct?",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `debounce` typically do? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `debounce` typically do? Pick the fundamental concept that applies.",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What does `debounce` typically do? Which choice matches core introductory knowledge?",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`localStorage` data is stored as? Choose the best beginner-level answer.",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`localStorage` data is stored as? For newcomers, which statement is correct?",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`localStorage` data is stored as? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`localStorage` data is stored as? Pick the fundamental concept that applies.",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`localStorage` data is stored as? Which choice matches core introductory knowledge?",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Strict mode (`'use strict'`) can? Choose the best beginner-level answer.",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Strict mode (`'use strict'`) can? For newcomers, which statement is correct?",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Strict mode (`'use strict'`) can? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Strict mode (`'use strict'`) can? Pick the fundamental concept that applies.",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "Strict mode (`'use strict'`) can? Which choice matches core introductory knowledge?",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Promise.all` rejects when? Choose the best beginner-level answer.",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Promise.all` rejects when? For newcomers, which statement is correct?",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Promise.all` rejects when? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Promise.all` rejects when? Pick the fundamental concept that applies.",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "`Promise.all` rejects when? Which choice matches core introductory knowledge?",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_096",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is a pure function? Choose the best beginner-level answer.",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_097",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is a pure function? For newcomers, which statement is correct?",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_098",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is a pure function? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_099",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is a pure function? Pick the fundamental concept that applies.",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_beg_100",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "question": "What is a pure function? Which choice matches core introductory knowledge?",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  }
+]

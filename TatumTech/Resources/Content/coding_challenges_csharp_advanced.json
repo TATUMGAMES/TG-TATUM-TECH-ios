@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "cs_adv_001",
+    "question": "What is the output of the following C# code?\n\n```csharp\nusing System;\nusing System.Collections.Generic;\nclass Program {\n    static void Main() {\n        var list = new List<string> {\"A\", \"B\", \"C\"};\n        \n        for (int i = list.Count - 1; i >= 0; i--) {\n            if (list[i] == \"B\") {\n                list.RemoveAt(i);\n            }\n        }\n        Console.WriteLine(string.Join(\", \", list));\n    }\n}\n```",
+    "options": [
+      "A, C",
+      "A, B, C",
+      "B",
+      "Exception"
+    ],
+    "correctAnswer": "A, C",
+    "language": "C#",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_002",
+    "question": "What is the purpose of the `volatile` keyword in C#?",
+    "options": [
+      "To make variables thread-safe",
+      "To prevent variables from being cached by threads",
+      "To create immutable variables",
+      "To optimize performance"
+    ],
+    "correctAnswer": "To prevent variables from being cached by threads",
+    "language": "C#",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_003",
+    "question": "Which of the following is true about C# generics?",
+    "options": [
+      "Generics are implemented using type erasure",
+      "Generics provide runtime type safety",
+      "Generic types are reified at runtime",
+      "Generics cannot be used with primitive types"
+    ],
+    "correctAnswer": "Generic types are reified at runtime",
+    "language": "C#",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_004",
+    "question": "What will be the output of this code?\n\n```csharp\nusing System;\nclass Program {\n    static void Main() {\n        try {\n            int result = 10 / 0;\n        } catch (DivideByZeroException e) {\n            Console.WriteLine(\"Caught: \" + e.GetType().Name);\n        } catch (Exception e) {\n            Console.WriteLine(\"Caught: \" + e.GetType().Name);\n        }\n    }\n}\n```",
+    "options": [
+      "Caught: DivideByZeroException",
+      "Caught: Exception",
+      "No output",
+      "Error"
+    ],
+    "correctAnswer": "Caught: DivideByZeroException",
+    "language": "C#",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_005",
+    "question": "What is the difference between `Dictionary<TKey, TValue>` and `Hashtable` in C#?",
+    "options": [
+      "`Dictionary` is synchronized, `Hashtable` is not",
+      "`Dictionary` allows null keys and values, `Hashtable` does not",
+      "`Dictionary` is type-safe, `Hashtable` is not",
+      "There is no difference"
+    ],
+    "correctAnswer": "`Dictionary` is type-safe, `Hashtable` is not",
+    "language": "C#",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_006",
+    "question": "What is the output of this code?\n\n```csharp\nusing System;\nclass Program {\n    static void Main() {\n        string str1 = \"Hello\";\n        string str2 = \"Hello\";\n        string str3 = string.Intern(\"Hello\");\n        Console.WriteLine(str1 == str3);\n    }\n}\n```",
+    "options": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ],
+    "correctAnswer": "True",
+    "language": "C#",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_007",
+    "question": "Which of the following is NOT a valid way to create a thread in C#?",
+    "options": [
+      "Extending Thread class",
+      "Using Task.Run()",
+      "Using ThreadPool.QueueUserWorkItem()",
+      "Using async/await"
+    ],
+    "correctAnswer": "Extending Thread class",
+    "language": "C#",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "In C#, string is? Under advanced constraints, which is correct?",
+    "options": [
+      "An immutable reference type",
+      "A mutable value type",
+      "Always stackalloc",
+      "A pointer only"
+    ],
+    "correctAnswer": "An immutable reference type",
+    "explanation": "System.String is immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "async/await typically returns? Which statement is most precise for advanced use?",
+    "options": [
+      "Task or Task<T>",
+      "void only",
+      "Thread always",
+      "only IEnumerable"
+    ],
+    "correctAnswer": "Task or Task<T>",
+    "explanation": "async methods usually return Task.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "async/await typically returns? Select the rigorously correct advanced answer.",
+    "options": [
+      "Task or Task<T>",
+      "void only",
+      "Thread always",
+      "only IEnumerable"
+    ],
+    "correctAnswer": "Task or Task<T>",
+    "explanation": "async methods usually return Task.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "LINQ helps with? Under advanced constraints, which is correct?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "LINQ helps with? Which option best matches expert-level understanding?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "LINQ helps with? In a high-scale design, what applies?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "LINQ helps with? Which statement is most precise for advanced use?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "LINQ helps with? Select the rigorously correct advanced answer.",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Nullable reference types warn about? Under advanced constraints, which is correct?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Nullable reference types warn about? Which option best matches expert-level understanding?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Nullable reference types warn about? In a high-scale design, what applies?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Nullable reference types warn about? Which statement is most precise for advanced use?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Nullable reference types warn about? Select the rigorously correct advanced answer.",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "record types emphasize? Under advanced constraints, which is correct?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "record types emphasize? Which option best matches expert-level understanding?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "record types emphasize? In a high-scale design, what applies?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "record types emphasize? Which statement is most precise for advanced use?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "record types emphasize? Select the rigorously correct advanced answer.",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IDisposable is for? Under advanced constraints, which is correct?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IDisposable is for? Which option best matches expert-level understanding?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IDisposable is for? In a high-scale design, what applies?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IDisposable is for? Which statement is most precise for advanced use?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IDisposable is for? Select the rigorously correct advanced answer.",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "using statement ensures? Under advanced constraints, which is correct?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "using statement ensures? Which option best matches expert-level understanding?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "using statement ensures? In a high-scale design, what applies?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "using statement ensures? Which statement is most precise for advanced use?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "using statement ensures? Select the rigorously correct advanced answer.",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Span<T> helps with? Under advanced constraints, which is correct?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Span<T> helps with? Which option best matches expert-level understanding?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Span<T> helps with? In a high-scale design, what applies?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Span<T> helps with? Which statement is most precise for advanced use?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Span<T> helps with? Select the rigorously correct advanced answer.",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Dependency Injection commonly uses? Under advanced constraints, which is correct?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Dependency Injection commonly uses? Which option best matches expert-level understanding?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Dependency Injection commonly uses? In a high-scale design, what applies?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Dependency Injection commonly uses? Which statement is most precise for advanced use?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "Dependency Injection commonly uses? Select the rigorously correct advanced answer.",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "enum in C# is? Under advanced constraints, which is correct?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "enum in C# is? Which option best matches expert-level understanding?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "enum in C# is? In a high-scale design, what applies?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "enum in C# is? Which statement is most precise for advanced use?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "enum in C# is? Select the rigorously correct advanced answer.",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "delegate represents? Under advanced constraints, which is correct?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "delegate represents? Which option best matches expert-level understanding?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "delegate represents? In a high-scale design, what applies?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "delegate represents? Which statement is most precise for advanced use?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "delegate represents? Select the rigorously correct advanced answer.",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "event keyword builds on? Under advanced constraints, which is correct?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "event keyword builds on? Which option best matches expert-level understanding?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "event keyword builds on? In a high-scale design, what applies?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "event keyword builds on? Which statement is most precise for advanced use?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "event keyword builds on? Select the rigorously correct advanced answer.",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "lock statement uses? Under advanced constraints, which is correct?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "lock statement uses? Which option best matches expert-level understanding?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "lock statement uses? In a high-scale design, what applies?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "lock statement uses? Which statement is most precise for advanced use?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "lock statement uses? Select the rigorously correct advanced answer.",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IEnumerable<T> enables? Under advanced constraints, which is correct?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IEnumerable<T> enables? Which option best matches expert-level understanding?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IEnumerable<T> enables? In a high-scale design, what applies?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IEnumerable<T> enables? Which statement is most precise for advanced use?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "IEnumerable<T> enables? Select the rigorously correct advanced answer.",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ValueTask can reduce? Under advanced constraints, which is correct?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ValueTask can reduce? Which option best matches expert-level understanding?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ValueTask can reduce? In a high-scale design, what applies?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ValueTask can reduce? Which statement is most precise for advanced use?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ValueTask can reduce? Select the rigorously correct advanced answer.",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "init accessors allow? Under advanced constraints, which is correct?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "init accessors allow? Which option best matches expert-level understanding?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "init accessors allow? In a high-scale design, what applies?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "init accessors allow? Which statement is most precise for advanced use?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "init accessors allow? Select the rigorously correct advanced answer.",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "pattern matching improves? Under advanced constraints, which is correct?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "pattern matching improves? Which option best matches expert-level understanding?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "pattern matching improves? In a high-scale design, what applies?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "pattern matching improves? Which statement is most precise for advanced use?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "pattern matching improves? Select the rigorously correct advanced answer.",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "CancellationToken is used to? Under advanced constraints, which is correct?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "CancellationToken is used to? Which option best matches expert-level understanding?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "CancellationToken is used to? In a high-scale design, what applies?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "CancellationToken is used to? Which statement is most precise for advanced use?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "CancellationToken is used to? Select the rigorously correct advanced answer.",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ConcurrentDictionary is? Under advanced constraints, which is correct?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ConcurrentDictionary is? Which option best matches expert-level understanding?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ConcurrentDictionary is? In a high-scale design, what applies?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ConcurrentDictionary is? Which statement is most precise for advanced use?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "ConcurrentDictionary is? Select the rigorously correct advanced answer.",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_096",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "HttpClient should be? Under advanced constraints, which is correct?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_097",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "HttpClient should be? Which option best matches expert-level understanding?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_098",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "HttpClient should be? In a high-scale design, what applies?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_099",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "HttpClient should be? Which statement is most precise for advanced use?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_adv_100",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Advanced",
+    "question": "HttpClient should be? Select the rigorously correct advanced answer.",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  }
+]

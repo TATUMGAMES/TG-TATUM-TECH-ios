@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "java_beg_001",
+    "question": "What is the correct way to declare a variable in Java?",
+    "options": [
+      "int x = 5;",
+      "var x = 5;",
+      "x = 5;",
+      "int x; x = 5;"
+    ],
+    "correctAnswer": "int x = 5;",
+    "language": "Java",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "java_beg_002",
+    "question": "Which keyword is used to create a class in Java?",
+    "options": [
+      "class",
+      "Class",
+      "CLASS",
+      "new"
+    ],
+    "correctAnswer": "class",
+    "language": "Java",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "java_beg_003",
+    "question": "What is the output of this code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        int x = 5;\n        int y = 3;\n        System.out.println(x + y);\n    }\n}\n```",
+    "options": [
+      "8",
+      "53",
+      "Error",
+      "15"
+    ],
+    "correctAnswer": "8",
+    "language": "Java",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "java_beg_004",
+    "question": "Which data type is used to store whole numbers in Java?",
+    "options": [
+      "int",
+      "float",
+      "String",
+      "boolean"
+    ],
+    "correctAnswer": "int",
+    "language": "Java",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "java_beg_005",
+    "question": "What is the correct syntax for a for loop in Java?",
+    "options": [
+      "for (int i = 0; i < 5; i++)",
+      "for i in range(5)",
+      "for (i = 0; i < 5; i++)",
+      "for i from 0 to 5"
+    ],
+    "correctAnswer": "for (int i = 0; i < 5; i++)",
+    "language": "Java",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "java_beg_006",
+    "question": "Which keyword is used to create an object in Java?",
+    "options": [
+      "new",
+      "create",
+      "object",
+      "instance"
+    ],
+    "correctAnswer": "new",
+    "language": "Java",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "java_beg_007",
+    "question": "What is the output of this code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String name = \"Java\";\n        System.out.println(\"Hello \" + name);\n    }\n}\n```",
+    "options": [
+      "Hello Java",
+      "Hello + name",
+      "Error",
+      "Hello"
+    ],
+    "correctAnswer": "Hello Java",
+    "language": "Java",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, final on a variable means? Choose the best beginner-level answer.",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, final on a variable means? For newcomers, which statement is correct?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, final on a variable means? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, final on a variable means? Pick the fundamental concept that applies.",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, final on a variable means? Which choice matches core introductory knowledge?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, interface methods can? Choose the best beginner-level answer.",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, interface methods can? For newcomers, which statement is correct?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, interface methods can? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, interface methods can? Pick the fundamental concept that applies.",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "In Java, interface methods can? Which choice matches core introductory knowledge?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "ArrayList is? Choose the best beginner-level answer.",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "ArrayList is? For newcomers, which statement is correct?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "ArrayList is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "ArrayList is? Pick the fundamental concept that applies.",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "ArrayList is? Which choice matches core introductory knowledge?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "HashMap typically allows? Choose the best beginner-level answer.",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "HashMap typically allows? For newcomers, which statement is correct?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "HashMap typically allows? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "HashMap typically allows? Pick the fundamental concept that applies.",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "HashMap typically allows? Which choice matches core introductory knowledge?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "synchronized provides? Choose the best beginner-level answer.",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "synchronized provides? For newcomers, which statement is correct?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "synchronized provides? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "synchronized provides? Pick the fundamental concept that applies.",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "synchronized provides? Which choice matches core introductory knowledge?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Checked exceptions must be? Choose the best beginner-level answer.",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Checked exceptions must be? For newcomers, which statement is correct?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Checked exceptions must be? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Checked exceptions must be? Pick the fundamental concept that applies.",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Checked exceptions must be? Which choice matches core introductory knowledge?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Optional helps avoid? Choose the best beginner-level answer.",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Optional helps avoid? For newcomers, which statement is correct?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Optional helps avoid? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Optional helps avoid? Pick the fundamental concept that applies.",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Optional helps avoid? Which choice matches core introductory knowledge?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Stream map does? Choose the best beginner-level answer.",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Stream map does? For newcomers, which statement is correct?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Stream map does? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Stream map does? Pick the fundamental concept that applies.",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Stream map does? Which choice matches core introductory knowledge?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "record types provide? Choose the best beginner-level answer.",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "record types provide? For newcomers, which statement is correct?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "record types provide? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "record types provide? Pick the fundamental concept that applies.",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "record types provide? Which choice matches core introductory knowledge?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Local var requires? Choose the best beginner-level answer.",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Local var requires? For newcomers, which statement is correct?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Local var requires? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Local var requires? Pick the fundamental concept that applies.",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Local var requires? Which choice matches core introductory knowledge?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Garbage collection frees? Choose the best beginner-level answer.",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Garbage collection frees? For newcomers, which statement is correct?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Garbage collection frees? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Garbage collection frees? Pick the fundamental concept that applies.",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Garbage collection frees? Which choice matches core introductory knowledge?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "equals should be? Choose the best beginner-level answer.",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "equals should be? For newcomers, which statement is correct?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "equals should be? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "equals should be? Pick the fundamental concept that applies.",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "equals should be? Which choice matches core introductory knowledge?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "String is? Choose the best beginner-level answer.",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "String is? For newcomers, which statement is correct?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "String is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "String is? Pick the fundamental concept that applies.",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "String is? Which choice matches core introductory knowledge?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "enum defines? Choose the best beginner-level answer.",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "enum defines? For newcomers, which statement is correct?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "enum defines? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "enum defines? Pick the fundamental concept that applies.",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "enum defines? Which choice matches core introductory knowledge?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "try-with-resources closes? Choose the best beginner-level answer.",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "try-with-resources closes? For newcomers, which statement is correct?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "try-with-resources closes? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "try-with-resources closes? Pick the fundamental concept that applies.",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "try-with-resources closes? Which choice matches core introductory knowledge?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "volatile ensures? Choose the best beginner-level answer.",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "volatile ensures? For newcomers, which statement is correct?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "volatile ensures? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "volatile ensures? Pick the fundamental concept that applies.",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "volatile ensures? Which choice matches core introductory knowledge?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "CompletableFuture models? Choose the best beginner-level answer.",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "CompletableFuture models? For newcomers, which statement is correct?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "CompletableFuture models? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "CompletableFuture models? Pick the fundamental concept that applies.",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "CompletableFuture models? Which choice matches core introductory knowledge?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Generics provide? Choose the best beginner-level answer.",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Generics provide? For newcomers, which statement is correct?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Generics provide? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Generics provide? Pick the fundamental concept that applies.",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "Generics provide? Which choice matches core introductory knowledge?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "LinkedList is best when? Choose the best beginner-level answer.",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "LinkedList is best when? For newcomers, which statement is correct?",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_beg_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Beginner",
+    "question": "LinkedList is best when? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  }
+]

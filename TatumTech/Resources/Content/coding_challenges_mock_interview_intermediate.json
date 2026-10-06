@@ -1,0 +1,1592 @@
+[
+  {
+    "id": "mock_i_001",
+    "question": "For 'Tell me about a conflict', interviewers often look for:",
+    "options": [
+      "You avoiding all disagreement",
+      "Professional resolution focusing on outcomes",
+      "Naming people to blame",
+      "Saying conflict never happens"
+    ],
+    "correctAnswer": "Professional resolution focusing on outcomes",
+    "language": "MockInterview",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "mock_i_002",
+    "question": "When you do not know an answer, a strong approach is to:",
+    "options": [
+      "Guess loudly and insist",
+      "Think aloud, state assumptions, and outline how you would learn",
+      "Stay silent until time ends",
+      "Change jobs mid-interview"
+    ],
+    "correctAnswer": "Think aloud, state assumptions, and outline how you would learn",
+    "language": "MockInterview",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "mock_i_003",
+    "question": "System design interviews often start with:",
+    "options": [
+      "Writing code for sorting",
+      "Requirements, scale, and API sketch",
+      "Choosing a font",
+      "Skipping trade-offs"
+    ],
+    "correctAnswer": "Requirements, scale, and API sketch",
+    "language": "MockInterview",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "mock_i_004",
+    "question": "For 'Why this company?', strong answers tie to:",
+    "options": [
+      "Only the commute",
+      "Mission, product, and team culture you researched",
+      "Generic praise with no specifics",
+      "Salary alone"
+    ],
+    "correctAnswer": "Mission, product, and team culture you researched",
+    "language": "MockInterview",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "mock_i_005",
+    "question": "Testing your solution out loud should include:",
+    "options": [
+      "Only happy path",
+      "Edge cases, empty input, and typical examples",
+      "Deleting the code",
+      "Avoiding examples"
+    ],
+    "correctAnswer": "Edge cases, empty input, and typical examples",
+    "language": "MockInterview",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "mi_int_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "In a system design interview, first clarify? In a typical production scenario, which is best?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "In a system design interview, first clarify? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "In a system design interview, first clarify? Considering tradeoffs, what is correct?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "In a system design interview, first clarify? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "In a system design interview, first clarify? Select the most suitable engineering choice.",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "CAP theorem trades off? In a typical production scenario, which is best?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "CAP theorem trades off? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "CAP theorem trades off? Considering tradeoffs, what is correct?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "CAP theorem trades off? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "CAP theorem trades off? Select the most suitable engineering choice.",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Horizontal scaling adds? In a typical production scenario, which is best?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Horizontal scaling adds? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Horizontal scaling adds? Considering tradeoffs, what is correct?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Horizontal scaling adds? Which statement reflects solid mid-level practice?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Horizontal scaling adds? Select the most suitable engineering choice.",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A load balancer primarily? In a typical production scenario, which is best?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A load balancer primarily? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A load balancer primarily? Considering tradeoffs, what is correct?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A load balancer primarily? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A load balancer primarily? Select the most suitable engineering choice.",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Idempotent APIs allow? In a typical production scenario, which is best?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Idempotent APIs allow? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Idempotent APIs allow? Considering tradeoffs, what is correct?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Idempotent APIs allow? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Idempotent APIs allow? Select the most suitable engineering choice.",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Caching improves? In a typical production scenario, which is best?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Caching improves? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Caching improves? Considering tradeoffs, what is correct?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Caching improves? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Caching improves? Select the most suitable engineering choice.",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Observability typically includes? In a typical production scenario, which is best?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Observability typically includes? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Observability typically includes? Considering tradeoffs, what is correct?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Observability typically includes? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Observability typically includes? Select the most suitable engineering choice.",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A good API error should? In a typical production scenario, which is best?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A good API error should? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A good API error should? Considering tradeoffs, what is correct?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A good API error should? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A good API error should? Select the most suitable engineering choice.",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Rate limiting protects? In a typical production scenario, which is best?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Rate limiting protects? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Rate limiting protects? Considering tradeoffs, what is correct?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Rate limiting protects? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Rate limiting protects? Select the most suitable engineering choice.",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Event-driven designs often use? In a typical production scenario, which is best?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Event-driven designs often use? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Event-driven designs often use? Considering tradeoffs, what is correct?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Event-driven designs often use? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Event-driven designs often use? Select the most suitable engineering choice.",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Strong consistency means? In a typical production scenario, which is best?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Strong consistency means? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Strong consistency means? Considering tradeoffs, what is correct?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Strong consistency means? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Strong consistency means? Select the most suitable engineering choice.",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A postmortem should focus on? In a typical production scenario, which is best?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A postmortem should focus on? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A postmortem should focus on? Considering tradeoffs, what is correct?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A postmortem should focus on? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "A postmortem should focus on? Select the most suitable engineering choice.",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Technical debt is? In a typical production scenario, which is best?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Technical debt is? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Technical debt is? Considering tradeoffs, what is correct?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Technical debt is? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Technical debt is? Select the most suitable engineering choice.",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Code review goals include? In a typical production scenario, which is best?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Code review goals include? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Code review goals include? Considering tradeoffs, what is correct?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Code review goals include? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Code review goals include? Select the most suitable engineering choice.",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Feature flags enable? In a typical production scenario, which is best?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Feature flags enable? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Feature flags enable? Considering tradeoffs, what is correct?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Feature flags enable? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Feature flags enable? Select the most suitable engineering choice.",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Database indexing speeds? In a typical production scenario, which is best?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Database indexing speeds? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Database indexing speeds? Considering tradeoffs, what is correct?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Database indexing speeds? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Database indexing speeds? Select the most suitable engineering choice.",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Circuit breakers prevent? In a typical production scenario, which is best?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Circuit breakers prevent? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Circuit breakers prevent? Considering tradeoffs, what is correct?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Circuit breakers prevent? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Circuit breakers prevent? Select the most suitable engineering choice.",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Pagination should be? In a typical production scenario, which is best?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Pagination should be? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Pagination should be? Considering tradeoffs, what is correct?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Pagination should be? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Pagination should be? Select the most suitable engineering choice.",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Security basics include? In a typical production scenario, which is best?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Security basics include? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Security basics include? Considering tradeoffs, what is correct?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Security basics include? Which statement reflects solid mid-level practice?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_int_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Intermediate",
+    "question": "Security basics include? Select the most suitable engineering choice.",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  }
+]

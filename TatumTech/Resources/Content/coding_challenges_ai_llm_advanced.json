@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "ai_llm_a_001",
+    "question": "What is a multi-agent system in AI?",
+    "options": [
+      "A system with multiple GPUs",
+      "Multiple AI agents collaborating to complete tasks",
+      "A distributed database",
+      "A cloud deployment model"
+    ],
+    "correctAnswer": "Multiple AI agents collaborating to complete tasks",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Agents can specialize (planning, tools, critique) and coordinate to solve complex workflows."
+  },
+  {
+    "id": "ai_llm_a_002",
+    "question": "What is the role of an orchestrator in AI systems?",
+    "options": [
+      "Rendering UI",
+      "Managing and coordinating multiple agents and workflows",
+      "Training models",
+      "Storing data"
+    ],
+    "correctAnswer": "Managing and coordinating multiple agents and workflows",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "The orchestrator routes tasks, merges outputs, and enforces policies across agents and tools."
+  },
+  {
+    "id": "ai_llm_a_003",
+    "question": "What is Reinforcement Learning with Human Feedback (RLHF) primarily used for in LLMs?",
+    "options": [
+      "Faster tokenizer parsing",
+      "Aligning model behavior with human preferences",
+      "Converting FP32 to INT8 only",
+      "Removing the need for GPUs"
+    ],
+    "correctAnswer": "Aligning model behavior with human preferences",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "RLHF uses human rankings or feedback to train a reward model and improve helpfulness and safety."
+  },
+  {
+    "id": "ai_llm_a_004",
+    "question": "Parameter-efficient fine-tuning (e.g., LoRA) mainly aims to:",
+    "options": [
+      "Train all billions of parameters from scratch each time",
+      "Update a small subset of adapters while freezing most weights",
+      "Remove attention entirely",
+      "Guarantee zero hallucinations"
+    ],
+    "correctAnswer": "Update a small subset of adapters while freezing most weights",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Low-rank adapters reduce compute and memory while adapting large models to new tasks."
+  },
+  {
+    "id": "ai_llm_a_005",
+    "question": "Why might KV-cache matter in autoregressive LLM inference?",
+    "options": [
+      "It stores key/value tensors to avoid recomputing past tokens",
+      "It caches compiled Java bytecode",
+      "It replaces the tokenizer",
+      "It is only used for CNNs"
+    ],
+    "correctAnswer": "It stores key/value tensors to avoid recomputing past tokens",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Caching attention keys and values makes long generations much cheaper after the first pass."
+  },
+  {
+    "id": "ai_llm_a_006",
+    "question": "What is the main architectural difference between GPT and BERT?",
+    "options": [
+      "GPT is encoder-only; BERT is decoder-only",
+      "GPT is decoder-only; BERT is encoder-only",
+      "GPT uses CNNs; BERT uses RNNs",
+      "There is no structural difference"
+    ],
+    "correctAnswer": "GPT is decoder-only; BERT is encoder-only",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "GPT-style models generate text autoregressively with a decoder stack; BERT is bidirectional encoder-only, optimized for understanding and classification."
+  },
+  {
+    "id": "ai_llm_a_007",
+    "question": "When building a large language model from scratch, what is typically required?",
+    "options": [
+      "Only a small curated FAQ",
+      "Dataset work, architecture choices, and large-scale training compute",
+      "Replacing GPUs with CPU-only inference",
+      "Skipping tokenizer design"
+    ],
+    "correctAnswer": "Dataset work, architecture choices, and large-scale training compute",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "LLM pretraining needs cleaned corpora, a transformer (or successor) design, and heavy GPU/TPU training; fine-tuning and deployment follow."
+  },
+  {
+    "id": "ai_llm_a_t6_001",
+    "question": "What is a common approach to reducing the size of a large LLM for deployment?",
+    "options": [
+      "Knowledge distillation",
+      "Quantization",
+      "Pruning",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Distillation transfers knowledge to smaller models; quantization lowers numeric precision; pruning removes weights—often combined for efficient inference."
+  },
+  {
+    "id": "ai_llm_a_t6_002",
+    "question": "What is the main difference between autoregressive and autoencoding language models?",
+    "options": [
+      "Autoregressive predicts next token; autoencoding predicts masked tokens",
+      "Autoregressive never uses attention",
+      "Autoencoding generates long stories token by token",
+      "There is no practical difference"
+    ],
+    "correctAnswer": "Autoregressive predicts next token; autoencoding predicts masked tokens",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Autoregressive models (e.g. GPT) generate left-to-right; autoencoding models (e.g. BERT) fill in masked positions using bidirectional context."
+  },
+  {
+    "id": "ai_llm_a_t6_003",
+    "question": "Which stack is often used for distributed training of very large LLMs?",
+    "options": [
+      "PyTorch with DeepSpeed (or similar sharding tools)",
+      "Spreadsheet macros",
+      "CSS preprocessors",
+      "DNS configuration only"
+    ],
+    "correctAnswer": "PyTorch with DeepSpeed (or similar sharding tools)",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Frameworks like DeepSpeed or FSDP shard optimizer states and parameters across GPUs to train models that do not fit on one device."
+  },
+  {
+    "id": "ai_llm_a_t6_004",
+    "question": "Which hardware is most associated with training large LLMs?",
+    "options": [
+      "Consumer CPUs only",
+      "GPUs and TPUs",
+      "Mechanical hard drives only",
+      "Bluetooth peripherals"
+    ],
+    "correctAnswer": "GPUs and TPUs",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Matrix-heavy transformer training relies on massively parallel accelerators such as GPUs and TPUs."
+  },
+  {
+    "id": "ai_llm_a_t6_005",
+    "question": "In LLM deployment, what helps serve models efficiently to many users?",
+    "options": [
+      "Model quantization and request batching",
+      "Training entirely on each client device for every request",
+      "Disabling KV-cache and attention",
+      "Single-threaded CPU-only servers for all traffic"
+    ],
+    "correctAnswer": "Model quantization and request batching",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Quantization cuts memory and compute; batching amortizes kernel launches so throughput stays high under load."
+  },
+  {
+    "id": "ai_llm_a_t6_006",
+    "question": "Which learning setting helps LLMs adapt as new user feedback arrives over time?",
+    "options": [
+      "Online or continual learning updates",
+      "Offline batch training only, never updated",
+      "Removing all evaluation metrics",
+      "Freezing every weight forever"
+    ],
+    "correctAnswer": "Online or continual learning updates",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Incremental updates let systems incorporate fresh signals, though they must be managed carefully to avoid catastrophic forgetting."
+  },
+  {
+    "id": "ai_llm_a_t6_007",
+    "question": "Which approaches can improve LLM generalization to new domains?",
+    "options": [
+      "Few-shot prompting, prompt tuning, and fine-tuning",
+      "Training on exactly one fixed sentence forever",
+      "Removing all attention layers",
+      "Shrinking embeddings to zero dimensions"
+    ],
+    "correctAnswer": "Few-shot prompting, prompt tuning, and fine-tuning",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "platform": "General",
+    "explanation": "Lightweight adaptation paths steer a base model toward new tasks without always retraining from scratch."
+  },
+  {
+    "id": "ai_adv_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "What is a token in LLM APIs? Under advanced constraints, which is correct?",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "What is a token in LLM APIs? Which option best matches expert-level understanding?",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "What is a token in LLM APIs? In a high-scale design, what applies?",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "What is a token in LLM APIs? Which statement is most precise for advanced use?",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "What is a token in LLM APIs? Select the rigorously correct advanced answer.",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Temperature in decoding mainly controls? Under advanced constraints, which is correct?",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Temperature in decoding mainly controls? Which option best matches expert-level understanding?",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Temperature in decoding mainly controls? In a high-scale design, what applies?",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Temperature in decoding mainly controls? Which statement is most precise for advanced use?",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Temperature in decoding mainly controls? Select the rigorously correct advanced answer.",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "RAG typically retrieves? Under advanced constraints, which is correct?",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "RAG typically retrieves? Which option best matches expert-level understanding?",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "RAG typically retrieves? In a high-scale design, what applies?",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "RAG typically retrieves? Which statement is most precise for advanced use?",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "RAG typically retrieves? Select the rigorously correct advanced answer.",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Embeddings are useful for? Under advanced constraints, which is correct?",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Embeddings are useful for? Which option best matches expert-level understanding?",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Embeddings are useful for? In a high-scale design, what applies?",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Embeddings are useful for? Which statement is most precise for advanced use?",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Embeddings are useful for? Select the rigorously correct advanced answer.",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Prompt injection is a risk when? Under advanced constraints, which is correct?",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Prompt injection is a risk when? Which option best matches expert-level understanding?",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Prompt injection is a risk when? In a high-scale design, what applies?",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Prompt injection is a risk when? Which statement is most precise for advanced use?",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Prompt injection is a risk when? Select the rigorously correct advanced answer.",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "System prompts usually? Under advanced constraints, which is correct?",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "System prompts usually? Which option best matches expert-level understanding?",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "System prompts usually? In a high-scale design, what applies?",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "System prompts usually? Which statement is most precise for advanced use?",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "System prompts usually? Select the rigorously correct advanced answer.",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Hallucinations refer to? Under advanced constraints, which is correct?",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Hallucinations refer to? Which option best matches expert-level understanding?",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Hallucinations refer to? In a high-scale design, what applies?",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Hallucinations refer to? Which statement is most precise for advanced use?",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Hallucinations refer to? Select the rigorously correct advanced answer.",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Fine-tuning primarily? Under advanced constraints, which is correct?",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Fine-tuning primarily? Which option best matches expert-level understanding?",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Fine-tuning primarily? In a high-scale design, what applies?",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Fine-tuning primarily? Which statement is most precise for advanced use?",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Fine-tuning primarily? Select the rigorously correct advanced answer.",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Context window limits? Under advanced constraints, which is correct?",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Context window limits? Which option best matches expert-level understanding?",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Context window limits? In a high-scale design, what applies?",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Context window limits? Which statement is most precise for advanced use?",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Context window limits? Select the rigorously correct advanced answer.",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Function/tool calling lets models? Under advanced constraints, which is correct?",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Function/tool calling lets models? Which option best matches expert-level understanding?",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Function/tool calling lets models? In a high-scale design, what applies?",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Function/tool calling lets models? Which statement is most precise for advanced use?",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Function/tool calling lets models? Select the rigorously correct advanced answer.",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Top-p (nucleus) sampling keeps? Under advanced constraints, which is correct?",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Top-p (nucleus) sampling keeps? Which option best matches expert-level understanding?",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Top-p (nucleus) sampling keeps? In a high-scale design, what applies?",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Top-p (nucleus) sampling keeps? Which statement is most precise for advanced use?",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Top-p (nucleus) sampling keeps? Select the rigorously correct advanced answer.",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Chunking documents for RAG helps? Under advanced constraints, which is correct?",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Chunking documents for RAG helps? Which option best matches expert-level understanding?",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Chunking documents for RAG helps? In a high-scale design, what applies?",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Chunking documents for RAG helps? Which statement is most precise for advanced use?",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Chunking documents for RAG helps? Select the rigorously correct advanced answer.",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Evaluation harnesses measure? Under advanced constraints, which is correct?",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Evaluation harnesses measure? Which option best matches expert-level understanding?",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Evaluation harnesses measure? In a high-scale design, what applies?",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Evaluation harnesses measure? Which statement is most precise for advanced use?",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Evaluation harnesses measure? Select the rigorously correct advanced answer.",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Guardrails typically? Under advanced constraints, which is correct?",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Guardrails typically? Which option best matches expert-level understanding?",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Guardrails typically? In a high-scale design, what applies?",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Guardrails typically? Which statement is most precise for advanced use?",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Guardrails typically? Select the rigorously correct advanced answer.",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Few-shot prompting provides? Under advanced constraints, which is correct?",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Few-shot prompting provides? Which option best matches expert-level understanding?",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Few-shot prompting provides? In a high-scale design, what applies?",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Few-shot prompting provides? Which statement is most precise for advanced use?",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Few-shot prompting provides? Select the rigorously correct advanced answer.",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Cosine similarity compares? Under advanced constraints, which is correct?",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Cosine similarity compares? Which option best matches expert-level understanding?",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Cosine similarity compares? In a high-scale design, what applies?",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Cosine similarity compares? Which statement is most precise for advanced use?",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Cosine similarity compares? Select the rigorously correct advanced answer.",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Latency vs throughput tradeoff often involves? Under advanced constraints, which is correct?",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Latency vs throughput tradeoff often involves? Which option best matches expert-level understanding?",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Latency vs throughput tradeoff often involves? In a high-scale design, what applies?",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Latency vs throughput tradeoff often involves? Which statement is most precise for advanced use?",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Latency vs throughput tradeoff often involves? Select the rigorously correct advanced answer.",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_adv_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Advanced",
+    "question": "Structured output (JSON mode) helps? Under advanced constraints, which is correct?",
+    "options": [
+      "Reliable downstream parsing",
+      "Faster training",
+      "Larger context always",
+      "Lower temperature always"
+    ],
+    "correctAnswer": "Reliable downstream parsing",
+    "explanation": "Constrained formats aid integration.",
+    "platform": "AI"
+  }
+]

@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "java_adv_001",
+    "question": "What is the output of the following Java code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        List<String> list = new ArrayList<>();\n        list.add(\"A\");\n        list.add(\"B\");\n        list.add(\"C\");\n        \n        Iterator<String> it = list.iterator();\n        while (it.hasNext()) {\n            String item = it.next();\n            if (item.equals(\"B\")) {\n                it.remove();\n            }\n        }\n        System.out.println(list);\n    }\n}\n```",
+    "options": [
+      "[A, C]",
+      "[A, B, C]",
+      "[B]",
+      "ConcurrentModificationException"
+    ],
+    "correctAnswer": "[A, C]",
+    "language": "Java",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "java_adv_002",
+    "question": "What is the purpose of the `volatile` keyword in Java?",
+    "options": [
+      "To make variables thread-safe",
+      "To prevent variables from being cached by threads",
+      "To create immutable variables",
+      "To optimize performance"
+    ],
+    "correctAnswer": "To prevent variables from being cached by threads",
+    "language": "Java",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "java_adv_003",
+    "question": "Which of the following is true about Java generics?",
+    "options": [
+      "Generics are implemented using type erasure",
+      "Generics provide runtime type safety",
+      "Generic types are reified at runtime",
+      "Generics cannot be used with primitive types"
+    ],
+    "correctAnswer": "Generics are implemented using type erasure",
+    "language": "Java",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "java_adv_004",
+    "question": "What will be the output of this code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        try {\n            int result = 10 / 0;\n        } catch (ArithmeticException e) {\n            System.out.println(\"Caught: \" + e.getClass().getSimpleName());\n        } catch (Exception e) {\n            System.out.println(\"Caught: \" + e.getClass().getSimpleName());\n        }\n    }\n}\n```",
+    "options": [
+      "Caught: ArithmeticException",
+      "Caught: Exception",
+      "No output",
+      "Error"
+    ],
+    "correctAnswer": "Caught: ArithmeticException",
+    "language": "Java",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "java_adv_005",
+    "question": "What is the difference between `HashMap` and `Hashtable` in Java?",
+    "options": [
+      "`HashMap` is synchronized, `Hashtable` is not",
+      "`HashMap` allows null keys and values, `Hashtable` does not",
+      "`HashMap` is faster, `Hashtable` is slower",
+      "There is no difference"
+    ],
+    "correctAnswer": "`HashMap` allows null keys and values, `Hashtable` does not",
+    "language": "Java",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "java_adv_006",
+    "question": "What is the output of this code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String str1 = \"Hello\";\n        String str2 = \"Hello\";\n        String str3 = new String(\"Hello\").intern();\n        System.out.println(str1 == str3);\n    }\n}\n```",
+    "options": [
+      "true",
+      "false",
+      "Error",
+      "null"
+    ],
+    "correctAnswer": "true",
+    "language": "Java",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "java_adv_007",
+    "question": "Which of the following is NOT a valid way to create a thread in Java?",
+    "options": [
+      "Extending Thread class",
+      "Implementing Runnable interface",
+      "Using ExecutorService",
+      "Using synchronized keyword"
+    ],
+    "correctAnswer": "Using synchronized keyword",
+    "language": "Java",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, final on a variable means? Under advanced constraints, which is correct?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, final on a variable means? Which option best matches expert-level understanding?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, final on a variable means? In a high-scale design, what applies?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, final on a variable means? Which statement is most precise for advanced use?",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, final on a variable means? Select the rigorously correct advanced answer.",
+    "options": [
+      "Reference cannot be reassigned",
+      "Object is deeply immutable",
+      "Method is abstract",
+      "Class is sealed"
+    ],
+    "correctAnswer": "Reference cannot be reassigned",
+    "explanation": "final prevents reassignment.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, interface methods can? Under advanced constraints, which is correct?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, interface methods can? Which option best matches expert-level understanding?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, interface methods can? In a high-scale design, what applies?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, interface methods can? Which statement is most precise for advanced use?",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "In Java, interface methods can? Select the rigorously correct advanced answer.",
+    "options": [
+      "Be abstract or default",
+      "Always be private only",
+      "Always be synchronized",
+      "Always be native"
+    ],
+    "correctAnswer": "Be abstract or default",
+    "explanation": "Interfaces define contracts; defaults allowed.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "ArrayList is? Under advanced constraints, which is correct?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "ArrayList is? Which option best matches expert-level understanding?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "ArrayList is? In a high-scale design, what applies?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "ArrayList is? Which statement is most precise for advanced use?",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "ArrayList is? Select the rigorously correct advanced answer.",
+    "options": [
+      "A resizable array list",
+      "A linked list",
+      "A concurrent map",
+      "A tree set"
+    ],
+    "correctAnswer": "A resizable array list",
+    "explanation": "ArrayList backs a dynamic array.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "HashMap typically allows? Under advanced constraints, which is correct?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "HashMap typically allows? Which option best matches expert-level understanding?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "HashMap typically allows? In a high-scale design, what applies?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "HashMap typically allows? Which statement is most precise for advanced use?",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "HashMap typically allows? Select the rigorously correct advanced answer.",
+    "options": [
+      "One null key",
+      "Duplicate keys",
+      "Only sorted keys",
+      "Only int keys"
+    ],
+    "correctAnswer": "One null key",
+    "explanation": "HashMap permits a null key.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "synchronized provides? Under advanced constraints, which is correct?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "synchronized provides? Which option best matches expert-level understanding?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "synchronized provides? In a high-scale design, what applies?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "synchronized provides? Which statement is most precise for advanced use?",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "synchronized provides? Select the rigorously correct advanced answer.",
+    "options": [
+      "Mutual exclusion",
+      "Only visibility without locking",
+      "Only GC",
+      "Only JIT hints"
+    ],
+    "correctAnswer": "Mutual exclusion",
+    "explanation": "synchronized locks a monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Checked exceptions must be? Under advanced constraints, which is correct?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Checked exceptions must be? Which option best matches expert-level understanding?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Checked exceptions must be? In a high-scale design, what applies?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Checked exceptions must be? Which statement is most precise for advanced use?",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Checked exceptions must be? Select the rigorously correct advanced answer.",
+    "options": [
+      "Declared or handled",
+      "Ignored always",
+      "Only RuntimeException",
+      "Only Errors"
+    ],
+    "correctAnswer": "Declared or handled",
+    "explanation": "Checked exceptions are part of the API.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Optional helps avoid? Under advanced constraints, which is correct?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Optional helps avoid? Which option best matches expert-level understanding?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Optional helps avoid? In a high-scale design, what applies?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Optional helps avoid? Which statement is most precise for advanced use?",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Optional helps avoid? Select the rigorously correct advanced answer.",
+    "options": [
+      "Null pointer ambiguity",
+      "All exceptions",
+      "Generics",
+      "Streams"
+    ],
+    "correctAnswer": "Null pointer ambiguity",
+    "explanation": "Optional models presence/absence.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Stream map does? Under advanced constraints, which is correct?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Stream map does? Which option best matches expert-level understanding?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Stream map does? In a high-scale design, what applies?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Stream map does? Which statement is most precise for advanced use?",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Stream map does? Select the rigorously correct advanced answer.",
+    "options": [
+      "Transform elements",
+      "Filter only",
+      "Sort only",
+      "Collect only"
+    ],
+    "correctAnswer": "Transform elements",
+    "explanation": "map applies a function.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "record types provide? Under advanced constraints, which is correct?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "record types provide? Which option best matches expert-level understanding?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "record types provide? In a high-scale design, what applies?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "record types provide? Which statement is most precise for advanced use?",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "record types provide? Select the rigorously correct advanced answer.",
+    "options": [
+      "Immutable data carriers",
+      "Mutable beans only",
+      "Only enums",
+      "Only annotations"
+    ],
+    "correctAnswer": "Immutable data carriers",
+    "explanation": "records generate accessors/equals.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Local var requires? Under advanced constraints, which is correct?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Local var requires? Which option best matches expert-level understanding?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Local var requires? In a high-scale design, what applies?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Local var requires? Which statement is most precise for advanced use?",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Local var requires? Select the rigorously correct advanced answer.",
+    "options": [
+      "Inferable initializer",
+      "No initializer",
+      "Always Object",
+      "Always primitive"
+    ],
+    "correctAnswer": "Inferable initializer",
+    "explanation": "Local-variable type inference needs an initializer.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Garbage collection frees? Under advanced constraints, which is correct?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Garbage collection frees? Which option best matches expert-level understanding?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Garbage collection frees? In a high-scale design, what applies?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Garbage collection frees? Which statement is most precise for advanced use?",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Garbage collection frees? Select the rigorously correct advanced answer.",
+    "options": [
+      "Unreachable objects",
+      "All static fields nightly",
+      "Stack frames only",
+      "Native malloc only"
+    ],
+    "correctAnswer": "Unreachable objects",
+    "explanation": "GC reclaims unreachable heap objects.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "equals should be? Under advanced constraints, which is correct?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "equals should be? Which option best matches expert-level understanding?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "equals should be? In a high-scale design, what applies?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "equals should be? Which statement is most precise for advanced use?",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "equals should be? Select the rigorously correct advanced answer.",
+    "options": [
+      "Consistent with hashCode",
+      "Based on identity only always",
+      "Ignored for collections",
+      "Private always"
+    ],
+    "correctAnswer": "Consistent with hashCode",
+    "explanation": "Equal objects must share hashCode.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "String is? Under advanced constraints, which is correct?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "String is? Which option best matches expert-level understanding?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "String is? In a high-scale design, what applies?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "String is? Which statement is most precise for advanced use?",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "String is? Select the rigorously correct advanced answer.",
+    "options": [
+      "Immutable",
+      "Mutable like StringBuilder",
+      "A primitive",
+      "A thread"
+    ],
+    "correctAnswer": "Immutable",
+    "explanation": "String instances are immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "enum defines? Under advanced constraints, which is correct?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "enum defines? Which option best matches expert-level understanding?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "enum defines? In a high-scale design, what applies?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "enum defines? Which statement is most precise for advanced use?",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "enum defines? Select the rigorously correct advanced answer.",
+    "options": [
+      "A fixed set of constants",
+      "Only interfaces",
+      "Only annotations",
+      "Only packages"
+    ],
+    "correctAnswer": "A fixed set of constants",
+    "explanation": "Enums are typed constant sets.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "try-with-resources closes? Under advanced constraints, which is correct?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "try-with-resources closes? Which option best matches expert-level understanding?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "try-with-resources closes? In a high-scale design, what applies?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "try-with-resources closes? Which statement is most precise for advanced use?",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "try-with-resources closes? Select the rigorously correct advanced answer.",
+    "options": [
+      "AutoCloseable resources",
+      "Only threads",
+      "Only files via finalize",
+      "Only sockets via GC"
+    ],
+    "correctAnswer": "AutoCloseable resources",
+    "explanation": "try-with-resources auto-closes.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "volatile ensures? Under advanced constraints, which is correct?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "volatile ensures? Which option best matches expert-level understanding?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "volatile ensures? In a high-scale design, what applies?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "volatile ensures? Which statement is most precise for advanced use?",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "volatile ensures? Select the rigorously correct advanced answer.",
+    "options": [
+      "Visibility of writes across threads",
+      "Atomic compound actions",
+      "Fair locking",
+      "No reordering of all ops"
+    ],
+    "correctAnswer": "Visibility of writes across threads",
+    "explanation": "volatile establishes happens-before for that field.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "CompletableFuture models? Under advanced constraints, which is correct?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "CompletableFuture models? Which option best matches expert-level understanding?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "CompletableFuture models? In a high-scale design, what applies?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "CompletableFuture models? Which statement is most precise for advanced use?",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "CompletableFuture models? Select the rigorously correct advanced answer.",
+    "options": [
+      "Async results",
+      "Only sync locks",
+      "Only GUI",
+      "Only JDBC"
+    ],
+    "correctAnswer": "Async results",
+    "explanation": "CompletableFuture composes async stages.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Generics provide? Under advanced constraints, which is correct?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Generics provide? Which option best matches expert-level understanding?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Generics provide? In a high-scale design, what applies?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Generics provide? Which statement is most precise for advanced use?",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "Generics provide? Select the rigorously correct advanced answer.",
+    "options": [
+      "Compile-time type safety",
+      "Runtime erasure removal of all types",
+      "Faster GC always",
+      "Only arrays"
+    ],
+    "correctAnswer": "Compile-time type safety",
+    "explanation": "Generics are mostly erased at runtime.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "LinkedList is best when? Under advanced constraints, which is correct?",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "LinkedList is best when? Which option best matches expert-level understanding?",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  },
+  {
+    "id": "jv_adv_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Java",
+    "level": "Advanced",
+    "question": "LinkedList is best when? In a high-scale design, what applies?",
+    "options": [
+      "Frequent middle inserts/deletes",
+      "Random access dominates",
+      "Only sorting",
+      "Only hashing"
+    ],
+    "correctAnswer": "Frequent middle inserts/deletes",
+    "explanation": "Linked structures favor splice ops.",
+    "platform": "General"
+  }
+]

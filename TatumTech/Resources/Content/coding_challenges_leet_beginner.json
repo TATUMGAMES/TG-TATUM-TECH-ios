@@ -1,0 +1,1714 @@
+[
+  {
+    "id": "lc_b_tasks_001",
+    "question": "What is the output of this code?",
+    "code": "int[] nums = {2, 7, 11, 15};\nint target = 9;",
+    "options": [
+      "[0,1]",
+      "[1,2]",
+      "[2,3]",
+      "null"
+    ],
+    "correctAnswer": "[0,1]",
+    "pattern": "HashMap",
+    "strategy": "Store value → index and check complement",
+    "explanation": "To solve Two Sum efficiently, store each number in a hashmap and check if the complement (target - current) exists.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_tasks_002",
+    "question": "Which strategy is best for detecting duplicates in an array?",
+    "options": [
+      "Nested loops",
+      "Sorting",
+      "HashSet",
+      "Recursion"
+    ],
+    "correctAnswer": "HashSet",
+    "pattern": "Hashing",
+    "strategy": "Use a set to track seen elements",
+    "explanation": "A HashSet allows O(1) lookup, making duplicate detection efficient.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_001",
+    "question": "What is the output of this Python code?\n\ndef func(lst):\n    return [x**2 for x in lst if x % 2 == 0]\n\nprint(func([1,2,3,4,5]))",
+    "options": [
+      "[1, 4, 9, 16, 25]",
+      "[4, 16]",
+      "[2, 4]",
+      "Error"
+    ],
+    "correctAnswer": "[4, 16]",
+    "pattern": "List comprehension",
+    "strategy": "List comprehension: filter evens, then square.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_002",
+    "question": "What will this Java code print?\n\nint[] nums = {1,2,3,4,5};\nint sum = 0;\nfor (int i = 0; i < nums.length; i += 2) sum += nums[i];\nSystem.out.println(sum);",
+    "code": "int[] nums = {1,2,3,4,5};\nint sum = 0;\nfor (int i = 0; i < nums.length; i += 2) sum += nums[i];\nSystem.out.println(sum);",
+    "options": [
+      "6",
+      "9",
+      "15",
+      "10"
+    ],
+    "correctAnswer": "9",
+    "pattern": "Iteration",
+    "strategy": "Loop visits indices 0,2,4 → 1+3+5.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_003",
+    "question": "Which Java class is most suitable for a min-heap priority queue?",
+    "options": [
+      "ArrayList",
+      "LinkedList",
+      "PriorityQueue",
+      "HashMap"
+    ],
+    "correctAnswer": "PriorityQueue",
+    "pattern": "Heap",
+    "strategy": "PriorityQueue is backed by a binary heap.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_004",
+    "question": "For stack push/pop in O(1), which structure is a common choice?",
+    "options": [
+      "Queue only",
+      "Linked list or dynamic array with end operations",
+      "Binary search tree",
+      "Trie"
+    ],
+    "correctAnswer": "Linked list or dynamic array with end operations",
+    "pattern": "Stack",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General",
+    "strategy": "Stacks need O(1) push/pop at one end."
+  },
+  {
+    "id": "lc_b_005",
+    "question": "Time complexity of lookup in a hash map (average case)?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "pattern": "Hashing",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General",
+    "strategy": "Hash tables amortize lookups to expected constant time."
+  },
+  {
+    "id": "lc_b_t3_001",
+    "question": "Given the following Python code, what is printed?",
+    "code": "nums = [1, 2, 3, 4, 5]\nprint(sum(nums[::2]))",
+    "options": [
+      "6",
+      "9",
+      "15",
+      "10"
+    ],
+    "correctAnswer": "9",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General",
+    "patternCategory": "Array / slicing",
+    "strategy": "nums[::2] picks indices 0, 2, 4 → values 1, 3, 5; their sum is 9.",
+    "explanation": "Step-size 2 slicing selects every other element starting at index 0.",
+    "hints": [
+      "Review Python list slicing with a step",
+      "Which indices does [::2] include?"
+    ],
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1) extra beyond the list"
+  },
+  {
+    "id": "lc_b_t3_002",
+    "question": "For the Two Sum problem, which statements can be valid depending on constraints?",
+    "options": [
+      "Brute-force nested loops always",
+      "Hashmap for complement lookup in one pass",
+      "Sort plus two pointers when indices need not be preserved",
+      "All of the above can apply in different settings"
+    ],
+    "correctAnswer": "All of the above can apply in different settings",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General",
+    "patternCategory": "Array / hash map",
+    "strategy": "O(n²) brute force is simplest; hashmap gives O(n) time; sorted two-pointer helps when you only need values, not original indices.",
+    "hints": [
+      "Compare time vs space trade-offs",
+      "Check whether original indices are required"
+    ],
+    "timeComplexity": "O(n) with hashmap; O(n log n) if sorting",
+    "spaceComplexity": "O(n) with hashmap; O(1) extra for sorted two-pointer on a copy"
+  },
+  {
+    "id": "lc_b_t5_001",
+    "question": "What is the output of the following Python code?",
+    "code": "def func(lst):\n    return [x**2 for x in lst if x % 2 == 0]\n\nprint(func([1,2,3,4,5]))",
+    "options": [
+      "[1, 4, 9, 16, 25]",
+      "[4, 16]",
+      "[2, 4]",
+      "Error"
+    ],
+    "correctAnswer": "[4, 16]",
+    "pattern": "List comprehension",
+    "strategy": "Use list comprehension with conditional filtering. Understand how the if clause works inside the comprehension.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_t5_002",
+    "question": "What will the following Java code print?",
+    "code": "public class Test {\n    public static void main(String[] args) {\n        int[] nums = {1,2,3,4,5};\n        int sum = 0;\n        for (int i = 0; i < nums.length; i += 2) sum += nums[i];\n        System.out.println(sum);\n    }\n}",
+    "options": [
+      "6",
+      "9",
+      "15",
+      "10"
+    ],
+    "correctAnswer": "9",
+    "pattern": "Array iteration",
+    "strategy": "Sum every element at an even index (0-based). The loop increment i += 2 visits indices 0, 2, 4.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_t5_003",
+    "question": "You want to implement a priority queue in Java. Which standard library class is most suitable?",
+    "options": [
+      "ArrayList",
+      "LinkedList",
+      "PriorityQueue",
+      "HashMap"
+    ],
+    "correctAnswer": "PriorityQueue",
+    "pattern": "Heap",
+    "strategy": "Java's PriorityQueue implements a min-heap by default. Understand heap properties for insertion and removal of min/max elements.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_t5_004",
+    "question": "Which data structure is ideal for implementing a stack with O(1) push/pop operations?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Queue",
+      "HashMap"
+    ],
+    "correctAnswer": "Linked List",
+    "pattern": "Stack",
+    "strategy": "A linked list allows O(1) insertion and deletion at the head. Arrays can work too, but may require resizing for dynamic size.",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "lc_b_t5_005",
+    "question": "Implement a function to evaluate a valid parentheses string.",
+    "options": [
+      "Use a stack to track opening brackets",
+      "Count opening and closing brackets",
+      "Use recursion",
+      "Both stack and recursion"
+    ],
+    "correctAnswer": "Use a stack to track opening brackets",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "platform": "General",
+    "patternCategory": "Stack / parentheses",
+    "strategy": "Push opening brackets to a stack and pop when a closing bracket matches. If stack is empty at end, string is valid.",
+    "hints": [
+      "Think LIFO structure",
+      "Stack ensures proper nesting"
+    ],
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(n)"
+  },
+  {
+    "id": "lc_beg_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two pointers on a sorted array often exploit? Choose the best beginner-level answer.",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_beg_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two pointers on a sorted array often exploit? For newcomers, which statement is correct?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_beg_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two pointers on a sorted array often exploit? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_beg_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two pointers on a sorted array often exploit? Pick the fundamental concept that applies.",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_beg_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two pointers on a sorted array often exploit? Which choice matches core introductory knowledge?",
+    "options": [
+      "Monotonic order",
+      "Randomness",
+      "Hash collisions only",
+      "Bit tricks only"
+    ],
+    "correctAnswer": "Monotonic order",
+    "explanation": "Sorted order enables coordinated moves.",
+    "platform": "Interview",
+    "pattern": "Two pointers"
+  },
+  {
+    "id": "lc_beg_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A hash set helps achieve? Choose the best beginner-level answer.",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A hash set helps achieve? For newcomers, which statement is correct?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A hash set helps achieve? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A hash set helps achieve? Pick the fundamental concept that applies.",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A hash set helps achieve? Which choice matches core introductory knowledge?",
+    "options": [
+      "Average O(1) membership tests",
+      "Always O(log n) sort",
+      "O(n^2) joins",
+      "Only DFS"
+    ],
+    "correctAnswer": "Average O(1) membership tests",
+    "explanation": "Hash sets trade space for speed.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Binary search requires? Choose the best beginner-level answer.",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_beg_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Binary search requires? For newcomers, which statement is correct?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_beg_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Binary search requires? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_beg_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Binary search requires? Pick the fundamental concept that applies.",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_beg_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Binary search requires? Which choice matches core introductory knowledge?",
+    "options": [
+      "Monotonic predicate / sorted domain",
+      "A heap",
+      "A trie",
+      "Union-find"
+    ],
+    "correctAnswer": "Monotonic predicate / sorted domain",
+    "explanation": "Binary search halves search space.",
+    "platform": "Interview",
+    "pattern": "Binary search"
+  },
+  {
+    "id": "lc_beg_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Sliding window is useful for? Choose the best beginner-level answer.",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_beg_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Sliding window is useful for? For newcomers, which statement is correct?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_beg_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Sliding window is useful for? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_beg_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Sliding window is useful for? Pick the fundamental concept that applies.",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_beg_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Sliding window is useful for? Which choice matches core introductory knowledge?",
+    "options": [
+      "Subarray/substring constraints",
+      "Only graph SCC",
+      "Only geometry",
+      "Only FFT"
+    ],
+    "correctAnswer": "Subarray/substring constraints",
+    "explanation": "Windows maintain a contiguous range.",
+    "platform": "Interview",
+    "pattern": "Sliding window"
+  },
+  {
+    "id": "lc_beg_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "BFS finds? Choose the best beginner-level answer.",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_beg_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "BFS finds? For newcomers, which statement is correct?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_beg_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "BFS finds? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_beg_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "BFS finds? Pick the fundamental concept that applies.",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_beg_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "BFS finds? Which choice matches core introductory knowledge?",
+    "options": [
+      "Shortest path in unweighted graphs",
+      "MST always",
+      "Max flow always",
+      "Only topological order"
+    ],
+    "correctAnswer": "Shortest path in unweighted graphs",
+    "explanation": "BFS layers by distance.",
+    "platform": "Interview",
+    "pattern": "BFS"
+  },
+  {
+    "id": "lc_beg_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "DFS is natural for? Choose the best beginner-level answer.",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_beg_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "DFS is natural for? For newcomers, which statement is correct?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_beg_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "DFS is natural for? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_beg_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "DFS is natural for? Pick the fundamental concept that applies.",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_beg_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "DFS is natural for? Which choice matches core introductory knowledge?",
+    "options": [
+      "Exploring paths / components / recursion trees",
+      "Only priority queues",
+      "Only binary search",
+      "Only hashing"
+    ],
+    "correctAnswer": "Exploring paths / components / recursion trees",
+    "explanation": "DFS goes deep first.",
+    "platform": "Interview",
+    "pattern": "DFS"
+  },
+  {
+    "id": "lc_beg_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dynamic programming stores? Choose the best beginner-level answer.",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dynamic programming stores? For newcomers, which statement is correct?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dynamic programming stores? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dynamic programming stores? Pick the fundamental concept that applies.",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dynamic programming stores? Which choice matches core introductory knowledge?",
+    "options": [
+      "Subproblem solutions",
+      "Only input arrays",
+      "Only randomness",
+      "Only hashes"
+    ],
+    "correctAnswer": "Subproblem solutions",
+    "explanation": "DP reuses overlapping subproblems.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A min-heap peeks? Choose the best beginner-level answer.",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_beg_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A min-heap peeks? For newcomers, which statement is correct?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_beg_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A min-heap peeks? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_beg_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A min-heap peeks? Pick the fundamental concept that applies.",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_beg_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A min-heap peeks? Which choice matches core introductory knowledge?",
+    "options": [
+      "Smallest key",
+      "Largest key",
+      "Median always",
+      "Random key"
+    ],
+    "correctAnswer": "Smallest key",
+    "explanation": "Min-heap root is minimum.",
+    "platform": "Interview",
+    "pattern": "Heap"
+  },
+  {
+    "id": "lc_beg_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Union-Find supports? Choose the best beginner-level answer.",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_beg_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Union-Find supports? For newcomers, which statement is correct?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_beg_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Union-Find supports? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_beg_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Union-Find supports? Pick the fundamental concept that applies.",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_beg_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Union-Find supports? Which choice matches core introductory knowledge?",
+    "options": [
+      "Disjoint set union/find",
+      "Only sorting",
+      "Only BFS",
+      "Only trie"
+    ],
+    "correctAnswer": "Disjoint set union/find",
+    "explanation": "DSU tracks components.",
+    "platform": "Interview",
+    "pattern": "Union-Find"
+  },
+  {
+    "id": "lc_beg_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Prefix sums accelerate? Choose the best beginner-level answer.",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_beg_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Prefix sums accelerate? For newcomers, which statement is correct?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_beg_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Prefix sums accelerate? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_beg_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Prefix sums accelerate? Pick the fundamental concept that applies.",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_beg_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Prefix sums accelerate? Which choice matches core introductory knowledge?",
+    "options": [
+      "Range sum queries",
+      "Only max flow",
+      "Only hashing",
+      "Only DFS"
+    ],
+    "correctAnswer": "Range sum queries",
+    "explanation": "Prefix arrays answer ranges quickly.",
+    "platform": "Interview",
+    "pattern": "Prefix sum"
+  },
+  {
+    "id": "lc_beg_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Kadane's algorithm finds? Choose the best beginner-level answer.",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Kadane's algorithm finds? For newcomers, which statement is correct?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Kadane's algorithm finds? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Kadane's algorithm finds? Pick the fundamental concept that applies.",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Kadane's algorithm finds? Which choice matches core introductory knowledge?",
+    "options": [
+      "Maximum subarray sum",
+      "MST",
+      "SCC",
+      "Shortest path with negatives"
+    ],
+    "correctAnswer": "Maximum subarray sum",
+    "explanation": "Kadane scans for best subarray.",
+    "platform": "Interview",
+    "pattern": "DP"
+  },
+  {
+    "id": "lc_beg_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Topological sort needs? Choose the best beginner-level answer.",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Topological sort needs? For newcomers, which statement is correct?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Topological sort needs? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Topological sort needs? Pick the fundamental concept that applies.",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Topological sort needs? Which choice matches core introductory knowledge?",
+    "options": [
+      "A DAG",
+      "An undirected cycle",
+      "A heap only",
+      "A trie only"
+    ],
+    "correctAnswer": "A DAG",
+    "explanation": "Toposort requires acyclicity.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two-sum with a hash map is typically? Choose the best beginner-level answer.",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two-sum with a hash map is typically? For newcomers, which statement is correct?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two-sum with a hash map is typically? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two-sum with a hash map is typically? Pick the fundamental concept that applies.",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Two-sum with a hash map is typically? Which choice matches core introductory knowledge?",
+    "options": [
+      "O(n) average time",
+      "O(n^2) always",
+      "O(1) always",
+      "O(n log n) only"
+    ],
+    "correctAnswer": "O(n) average time",
+    "explanation": "One pass with complements.",
+    "platform": "Interview",
+    "pattern": "Hashing"
+  },
+  {
+    "id": "lc_beg_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A monotonic stack helps with? Choose the best beginner-level answer.",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_beg_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A monotonic stack helps with? For newcomers, which statement is correct?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_beg_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A monotonic stack helps with? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_beg_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A monotonic stack helps with? Pick the fundamental concept that applies.",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_beg_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A monotonic stack helps with? Which choice matches core introductory knowledge?",
+    "options": [
+      "Next greater/smaller elements",
+      "Only sorting",
+      "Only BFS",
+      "Only hashing"
+    ],
+    "correctAnswer": "Next greater/smaller elements",
+    "explanation": "Monotonic stacks maintain order.",
+    "platform": "Interview",
+    "pattern": "Stack"
+  },
+  {
+    "id": "lc_beg_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Backtracking explores? Choose the best beginner-level answer.",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_beg_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Backtracking explores? For newcomers, which statement is correct?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_beg_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Backtracking explores? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_beg_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Backtracking explores? Pick the fundamental concept that applies.",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_beg_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Backtracking explores? Which choice matches core introductory knowledge?",
+    "options": [
+      "Candidate solutions with undo",
+      "Only greedy choices",
+      "Only Dijkstra",
+      "Only hashing"
+    ],
+    "correctAnswer": "Candidate solutions with undo",
+    "explanation": "Backtracking DFS with prune.",
+    "platform": "Interview",
+    "pattern": "Backtracking"
+  },
+  {
+    "id": "lc_beg_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dijkstra needs? Choose the best beginner-level answer.",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dijkstra needs? For newcomers, which statement is correct?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dijkstra needs? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dijkstra needs? Pick the fundamental concept that applies.",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Dijkstra needs? Which choice matches core introductory knowledge?",
+    "options": [
+      "Non-negative edge weights",
+      "Negative cycles",
+      "Only DAG",
+      "Only trees"
+    ],
+    "correctAnswer": "Non-negative edge weights",
+    "explanation": "Classic Dijkstra assumes non-negative weights.",
+    "platform": "Interview",
+    "pattern": "Graph"
+  },
+  {
+    "id": "lc_beg_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A trie accelerates? Choose the best beginner-level answer.",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_beg_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A trie accelerates? For newcomers, which statement is correct?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_beg_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A trie accelerates? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_beg_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A trie accelerates? Pick the fundamental concept that applies.",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_beg_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "A trie accelerates? Which choice matches core introductory knowledge?",
+    "options": [
+      "Prefix queries",
+      "Max flow",
+      "Convex hull",
+      "FFT"
+    ],
+    "correctAnswer": "Prefix queries",
+    "explanation": "Tries share prefixes.",
+    "platform": "Interview",
+    "pattern": "Trie"
+  },
+  {
+    "id": "lc_beg_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "LeetCode",
+    "level": "Beginner",
+    "question": "Bit manipulation can? Choose the best beginner-level answer.",
+    "options": [
+      "Pack flags / accelerate some math",
+      "Replace all DP",
+      "Remove need for graphs",
+      "Guarantee O(1) sorts"
+    ],
+    "correctAnswer": "Pack flags / accelerate some math",
+    "explanation": "Bits enable compact state.",
+    "platform": "Interview",
+    "pattern": "Bit tricks"
+  }
+]

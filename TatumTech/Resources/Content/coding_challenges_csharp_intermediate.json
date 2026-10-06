@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "cs_int_001",
+    "question": "What is the output of the following C# code?\n\n```csharp\nusing System;\nclass Program {\n    static void Main() {\n        string str1 = \"Hello\";\n        string str2 = \"Hello\";\n        string str3 = new string(\"Hello\".ToCharArray());\n        Console.WriteLine(str1 == str2);\n        Console.WriteLine(str1 == str3);\n    }\n}\n```",
+    "options": [
+      "True\\nTrue",
+      "True\\nFalse",
+      "False\\nTrue",
+      "False\\nFalse"
+    ],
+    "correctAnswer": "True\\nTrue",
+    "language": "C#",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_002",
+    "question": "Which of the following is NOT a valid access modifier in C#?",
+    "options": [
+      "public",
+      "private",
+      "protected",
+      "internal"
+    ],
+    "correctAnswer": "internal",
+    "language": "C#",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_003",
+    "question": "What is the purpose of the `static` keyword in C#?",
+    "options": [
+      "To create immutable variables",
+      "To create class-level variables and methods",
+      "To create thread-safe code",
+      "To optimize performance"
+    ],
+    "correctAnswer": "To create class-level variables and methods",
+    "language": "C#",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_004",
+    "question": "What will be the output of this code?\n\n```csharp\nusing System;\nclass Program {\n    static void Main() {\n        int[] arr = {1, 2, 3, 4, 5};\n        for (int i = 0; i < arr.Length; i++) {\n            if (arr[i] % 2 == 0) {\n                Console.WriteLine(arr[i]);\n            }\n        }\n    }\n}\n```",
+    "options": [
+      "1\\n3\\n5",
+      "2\\n4",
+      "1\\n2\\n3\\n4\\n5",
+      "Error"
+    ],
+    "correctAnswer": "2\\n4",
+    "language": "C#",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_005",
+    "question": "Which of the following is true about C# interfaces?",
+    "options": [
+      "Interfaces can have concrete methods",
+      "Interfaces can extend multiple interfaces",
+      "Interfaces can have constructors",
+      "Interfaces can be instantiated directly"
+    ],
+    "correctAnswer": "Interfaces can extend multiple interfaces",
+    "language": "C#",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_006",
+    "question": "What is the output of this code?\n\n```csharp\nusing System;\nclass Program {\n    static void Main() {\n        string str = \"Hello World\";\n        Console.WriteLine(str.Substring(6));\n    }\n}\n```",
+    "options": [
+      "Hello",
+      "World",
+      "Hello World",
+      "Error"
+    ],
+    "correctAnswer": "World",
+    "language": "C#",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_007",
+    "question": "Which collection class is thread-safe in C#?",
+    "options": [
+      "List<T>",
+      "Dictionary<TKey, TValue>",
+      "ConcurrentDictionary<TKey, TValue>",
+      "LinkedList<T>"
+    ],
+    "correctAnswer": "ConcurrentDictionary<TKey, TValue>",
+    "language": "C#",
+    "level": "Intermediate",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "In C#, string is? In a typical production scenario, which is best?",
+    "options": [
+      "An immutable reference type",
+      "A mutable value type",
+      "Always stackalloc",
+      "A pointer only"
+    ],
+    "correctAnswer": "An immutable reference type",
+    "explanation": "System.String is immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "async/await typically returns? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Task or Task<T>",
+      "void only",
+      "Thread always",
+      "only IEnumerable"
+    ],
+    "correctAnswer": "Task or Task<T>",
+    "explanation": "async methods usually return Task.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "async/await typically returns? Select the most suitable engineering choice.",
+    "options": [
+      "Task or Task<T>",
+      "void only",
+      "Thread always",
+      "only IEnumerable"
+    ],
+    "correctAnswer": "Task or Task<T>",
+    "explanation": "async methods usually return Task.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "LINQ helps with? In a typical production scenario, which is best?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "LINQ helps with? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "LINQ helps with? Considering tradeoffs, what is correct?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "LINQ helps with? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "LINQ helps with? Select the most suitable engineering choice.",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Nullable reference types warn about? In a typical production scenario, which is best?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Nullable reference types warn about? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Nullable reference types warn about? Considering tradeoffs, what is correct?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Nullable reference types warn about? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Nullable reference types warn about? Select the most suitable engineering choice.",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "record types emphasize? In a typical production scenario, which is best?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "record types emphasize? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "record types emphasize? Considering tradeoffs, what is correct?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "record types emphasize? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "record types emphasize? Select the most suitable engineering choice.",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IDisposable is for? In a typical production scenario, which is best?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IDisposable is for? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IDisposable is for? Considering tradeoffs, what is correct?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IDisposable is for? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IDisposable is for? Select the most suitable engineering choice.",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "using statement ensures? In a typical production scenario, which is best?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "using statement ensures? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "using statement ensures? Considering tradeoffs, what is correct?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "using statement ensures? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "using statement ensures? Select the most suitable engineering choice.",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Span<T> helps with? In a typical production scenario, which is best?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Span<T> helps with? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Span<T> helps with? Considering tradeoffs, what is correct?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Span<T> helps with? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Span<T> helps with? Select the most suitable engineering choice.",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Dependency Injection commonly uses? In a typical production scenario, which is best?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Dependency Injection commonly uses? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Dependency Injection commonly uses? Considering tradeoffs, what is correct?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Dependency Injection commonly uses? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "Dependency Injection commonly uses? Select the most suitable engineering choice.",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "enum in C# is? In a typical production scenario, which is best?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "enum in C# is? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "enum in C# is? Considering tradeoffs, what is correct?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "enum in C# is? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "enum in C# is? Select the most suitable engineering choice.",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "delegate represents? In a typical production scenario, which is best?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "delegate represents? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "delegate represents? Considering tradeoffs, what is correct?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "delegate represents? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "delegate represents? Select the most suitable engineering choice.",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "event keyword builds on? In a typical production scenario, which is best?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "event keyword builds on? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "event keyword builds on? Considering tradeoffs, what is correct?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "event keyword builds on? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "event keyword builds on? Select the most suitable engineering choice.",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "lock statement uses? In a typical production scenario, which is best?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "lock statement uses? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "lock statement uses? Considering tradeoffs, what is correct?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "lock statement uses? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "lock statement uses? Select the most suitable engineering choice.",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IEnumerable<T> enables? In a typical production scenario, which is best?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IEnumerable<T> enables? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IEnumerable<T> enables? Considering tradeoffs, what is correct?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IEnumerable<T> enables? Which statement reflects solid mid-level practice?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "IEnumerable<T> enables? Select the most suitable engineering choice.",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ValueTask can reduce? In a typical production scenario, which is best?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ValueTask can reduce? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ValueTask can reduce? Considering tradeoffs, what is correct?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ValueTask can reduce? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ValueTask can reduce? Select the most suitable engineering choice.",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "init accessors allow? In a typical production scenario, which is best?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "init accessors allow? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "init accessors allow? Considering tradeoffs, what is correct?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "init accessors allow? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "init accessors allow? Select the most suitable engineering choice.",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "pattern matching improves? In a typical production scenario, which is best?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "pattern matching improves? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "pattern matching improves? Considering tradeoffs, what is correct?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "pattern matching improves? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "pattern matching improves? Select the most suitable engineering choice.",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "CancellationToken is used to? In a typical production scenario, which is best?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "CancellationToken is used to? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "CancellationToken is used to? Considering tradeoffs, what is correct?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "CancellationToken is used to? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "CancellationToken is used to? Select the most suitable engineering choice.",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ConcurrentDictionary is? In a typical production scenario, which is best?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ConcurrentDictionary is? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ConcurrentDictionary is? Considering tradeoffs, what is correct?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ConcurrentDictionary is? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "ConcurrentDictionary is? Select the most suitable engineering choice.",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_096",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "HttpClient should be? In a typical production scenario, which is best?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_097",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "HttpClient should be? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_098",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "HttpClient should be? Considering tradeoffs, what is correct?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_099",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "HttpClient should be? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_int_100",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Intermediate",
+    "question": "HttpClient should be? Select the most suitable engineering choice.",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  }
+]

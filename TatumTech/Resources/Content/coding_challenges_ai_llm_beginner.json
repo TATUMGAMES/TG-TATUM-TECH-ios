@@ -1,0 +1,1593 @@
+[
+  {
+    "id": "ai_llm_b_001",
+    "question": "What is a Large Language Model (LLM)?",
+    "options": [
+      "A rule-based chatbot system",
+      "A neural network trained on large amounts of text data",
+      "A database query engine",
+      "A compiler for programming languages"
+    ],
+    "correctAnswer": "A neural network trained on large amounts of text data",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "LLMs learn statistical patterns from large text corpora to predict and generate plausible language."
+  },
+  {
+    "id": "ai_llm_b_002",
+    "question": "What architecture is most commonly used to build modern LLMs?",
+    "options": [
+      "CNN",
+      "RNN",
+      "Transformer",
+      "SVM"
+    ],
+    "correctAnswer": "Transformer",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "Transformers use self-attention to process sequences in parallel and scale well; they underpin GPT, BERT, and most modern LLMs."
+  },
+  {
+    "id": "ai_llm_b_003",
+    "question": "What is prompt engineering?",
+    "options": [
+      "Writing machine learning algorithms",
+      "Designing inputs to guide LLM outputs effectively",
+      "Training neural networks",
+      "Building hardware for AI"
+    ],
+    "correctAnswer": "Designing inputs to guide LLM outputs effectively",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "Prompt engineering shapes tone, format, and reliability without changing model weights."
+  },
+  {
+    "id": "ai_llm_b_004",
+    "question": "Which language is most commonly used for AI development?",
+    "options": [
+      "Java",
+      "Kotlin",
+      "Python",
+      "Swift"
+    ],
+    "correctAnswer": "Python",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "Python has rich ML libraries and is the default for many research and production AI stacks."
+  },
+  {
+    "id": "ai_llm_b_005",
+    "question": "What does tokenization mean?",
+    "options": [
+      "Encrypting data",
+      "Breaking text into smaller units",
+      "Compressing files",
+      "Optimizing GPU usage"
+    ],
+    "correctAnswer": "Breaking text into smaller units",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "Models operate on tokens—subwords or characters—not raw strings, which affects length limits and cost."
+  },
+  {
+    "id": "ai_llm_b_006",
+    "question": "Which libraries are widely used to build and train modern LLMs?",
+    "options": [
+      "Pandas only",
+      "TensorFlow and PyTorch",
+      "Scikit-learn only",
+      "OpenCV"
+    ],
+    "correctAnswer": "TensorFlow and PyTorch",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "PyTorch and TensorFlow are the dominant frameworks for training transformers and shipping LLM workflows."
+  },
+  {
+    "id": "ai_llm_b_007",
+    "question": "Which languages are most commonly used for AI and LLM development?",
+    "options": [
+      "Kotlin and Swift only",
+      "Python and R",
+      "JavaScript only",
+      "C# only"
+    ],
+    "correctAnswer": "Python and R",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "Python leads due to PyTorch, TensorFlow, and Hugging Face; R remains common for statistics-heavy ML and analytics."
+  },
+  {
+    "id": "ai_llm_b_t6_001",
+    "question": "Which library is widely used for building transformer models?",
+    "options": [
+      "Hugging Face Transformers",
+      "NumPy",
+      "Scikit-learn",
+      "Matplotlib"
+    ],
+    "correctAnswer": "Hugging Face Transformers",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "Hugging Face provides pre-trained transformer models, tokenizers, and utilities for fine-tuning and deployment."
+  },
+  {
+    "id": "ai_llm_b_t6_002",
+    "question": "What is the main difference between supervised and unsupervised learning?",
+    "options": [
+      "Supervised learning requires labeled data, unsupervised does not",
+      "Unsupervised learning requires labeled data, supervised does not",
+      "Both require labeled data",
+      "Neither requires labeled data"
+    ],
+    "correctAnswer": "Supervised learning requires labeled data, unsupervised does not",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "Supervised learning trains on input-output pairs; unsupervised learning finds structure or clusters without explicit labels."
+  },
+  {
+    "id": "ai_beg_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "What is a token in LLM APIs? Choose the best beginner-level answer.",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "What is a token in LLM APIs? For newcomers, which statement is correct?",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "What is a token in LLM APIs? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "What is a token in LLM APIs? Pick the fundamental concept that applies.",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "What is a token in LLM APIs? Which choice matches core introductory knowledge?",
+    "options": [
+      "A subword/text unit billed and processed",
+      "A OAuth secret only",
+      "A GPU core",
+      "A dataset row only"
+    ],
+    "correctAnswer": "A subword/text unit billed and processed",
+    "explanation": "Tokenization splits text into model units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Temperature in decoding mainly controls? Choose the best beginner-level answer.",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Temperature in decoding mainly controls? For newcomers, which statement is correct?",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Temperature in decoding mainly controls? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Temperature in decoding mainly controls? Pick the fundamental concept that applies.",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Temperature in decoding mainly controls? Which choice matches core introductory knowledge?",
+    "options": [
+      "Randomness of sampling",
+      "Context window size",
+      "Embedding dim",
+      "Batch size"
+    ],
+    "correctAnswer": "Randomness of sampling",
+    "explanation": "Higher temperature increases randomness.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "RAG typically retrieves? Choose the best beginner-level answer.",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "RAG typically retrieves? For newcomers, which statement is correct?",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "RAG typically retrieves? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "RAG typically retrieves? Pick the fundamental concept that applies.",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "RAG typically retrieves? Which choice matches core introductory knowledge?",
+    "options": [
+      "External documents to ground generation",
+      "Only model weights",
+      "Only logits",
+      "Only tokenizer vocab"
+    ],
+    "correctAnswer": "External documents to ground generation",
+    "explanation": "Retrieval Augmented Generation uses external context.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Embeddings are useful for? Choose the best beginner-level answer.",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Embeddings are useful for? For newcomers, which statement is correct?",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Embeddings are useful for? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Embeddings are useful for? Pick the fundamental concept that applies.",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Embeddings are useful for? Which choice matches core introductory knowledge?",
+    "options": [
+      "Semantic similarity search",
+      "Only grammar checking",
+      "Only compiling",
+      "Only sorting ints"
+    ],
+    "correctAnswer": "Semantic similarity search",
+    "explanation": "Vectors encode semantic proximity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Prompt injection is a risk when? Choose the best beginner-level answer.",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Prompt injection is a risk when? For newcomers, which statement is correct?",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Prompt injection is a risk when? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Prompt injection is a risk when? Pick the fundamental concept that applies.",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Prompt injection is a risk when? Which choice matches core introductory knowledge?",
+    "options": [
+      "Untrusted text can override instructions",
+      "Models are quantized",
+      "Batch size is 1",
+      "Temperature is 0"
+    ],
+    "correctAnswer": "Untrusted text can override instructions",
+    "explanation": "Attackers embed instructions in content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "System prompts usually? Choose the best beginner-level answer.",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "System prompts usually? For newcomers, which statement is correct?",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "System prompts usually? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "System prompts usually? Pick the fundamental concept that applies.",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "System prompts usually? Which choice matches core introductory knowledge?",
+    "options": [
+      "Set high-level behavior/policy",
+      "Replace embeddings",
+      "Train LoRA",
+      "Set GPU clocks"
+    ],
+    "correctAnswer": "Set high-level behavior/policy",
+    "explanation": "System messages steer overall behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Hallucinations refer to? Choose the best beginner-level answer.",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Hallucinations refer to? For newcomers, which statement is correct?",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Hallucinations refer to? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Hallucinations refer to? Pick the fundamental concept that applies.",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Hallucinations refer to? Which choice matches core introductory knowledge?",
+    "options": [
+      "Confident but false generations",
+      "Only OOM errors",
+      "Only tokenizer bugs",
+      "Only rate limits"
+    ],
+    "correctAnswer": "Confident but false generations",
+    "explanation": "Models may invent facts.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Fine-tuning primarily? Choose the best beginner-level answer.",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Fine-tuning primarily? For newcomers, which statement is correct?",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Fine-tuning primarily? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Fine-tuning primarily? Pick the fundamental concept that applies.",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Fine-tuning primarily? Which choice matches core introductory knowledge?",
+    "options": [
+      "Adapts model behavior with labeled data",
+      "Only changes temperature",
+      "Only adds RAG",
+      "Only caches prompts"
+    ],
+    "correctAnswer": "Adapts model behavior with labeled data",
+    "explanation": "Fine-tuning updates weights/adapters.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Context window limits? Choose the best beginner-level answer.",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Context window limits? For newcomers, which statement is correct?",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Context window limits? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Context window limits? Pick the fundamental concept that applies.",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Context window limits? Which choice matches core introductory knowledge?",
+    "options": [
+      "How much text the model can attend to",
+      "Disk size",
+      "Number of GPUs",
+      "HTTP status codes"
+    ],
+    "correctAnswer": "How much text the model can attend to",
+    "explanation": "Context length is a hard constraint.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Function/tool calling lets models? Choose the best beginner-level answer.",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Function/tool calling lets models? For newcomers, which statement is correct?",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Function/tool calling lets models? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Function/tool calling lets models? Pick the fundamental concept that applies.",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Function/tool calling lets models? Which choice matches core introductory knowledge?",
+    "options": [
+      "Request structured tool invocations",
+      "Only stream tokens",
+      "Only embed",
+      "Only quantize"
+    ],
+    "correctAnswer": "Request structured tool invocations",
+    "explanation": "Tools extend model capabilities.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Top-p (nucleus) sampling keeps? Choose the best beginner-level answer.",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Top-p (nucleus) sampling keeps? For newcomers, which statement is correct?",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Top-p (nucleus) sampling keeps? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Top-p (nucleus) sampling keeps? Pick the fundamental concept that applies.",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Top-p (nucleus) sampling keeps? Which choice matches core introductory knowledge?",
+    "options": [
+      "Smallest set of tokens with cumulative p",
+      "All tokens always",
+      "Only argmax",
+      "Only BOS"
+    ],
+    "correctAnswer": "Smallest set of tokens with cumulative p",
+    "explanation": "Nucleus sampling truncates the tail.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Chunking documents for RAG helps? Choose the best beginner-level answer.",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Chunking documents for RAG helps? For newcomers, which statement is correct?",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Chunking documents for RAG helps? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Chunking documents for RAG helps? Pick the fundamental concept that applies.",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Chunking documents for RAG helps? Which choice matches core introductory knowledge?",
+    "options": [
+      "Fit retrieval into embedding/context limits",
+      "Train from scratch",
+      "Remove stopwords only",
+      "Compress GPUs"
+    ],
+    "correctAnswer": "Fit retrieval into embedding/context limits",
+    "explanation": "Chunks are retrievable units.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Evaluation harnesses measure? Choose the best beginner-level answer.",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Evaluation harnesses measure? For newcomers, which statement is correct?",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Evaluation harnesses measure? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Evaluation harnesses measure? Pick the fundamental concept that applies.",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Evaluation harnesses measure? Which choice matches core introductory knowledge?",
+    "options": [
+      "Quality/safety metrics on datasets",
+      "Only latency",
+      "Only cost",
+      "Only GPU thermals"
+    ],
+    "correctAnswer": "Quality/safety metrics on datasets",
+    "explanation": "Evals quantify model behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Guardrails typically? Choose the best beginner-level answer.",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Guardrails typically? For newcomers, which statement is correct?",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Guardrails typically? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Guardrails typically? Pick the fundamental concept that applies.",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Guardrails typically? Which choice matches core introductory knowledge?",
+    "options": [
+      "Filter unsafe inputs/outputs",
+      "Increase temperature",
+      "Disable caching",
+      "Force greedy decode only"
+    ],
+    "correctAnswer": "Filter unsafe inputs/outputs",
+    "explanation": "Guardrails reduce harmful content.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Few-shot prompting provides? Choose the best beginner-level answer.",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Few-shot prompting provides? For newcomers, which statement is correct?",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Few-shot prompting provides? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Few-shot prompting provides? Pick the fundamental concept that applies.",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Few-shot prompting provides? Which choice matches core introductory knowledge?",
+    "options": [
+      "Examples in the prompt",
+      "Gradient updates",
+      "New tokenizer",
+      "New architecture"
+    ],
+    "correctAnswer": "Examples in the prompt",
+    "explanation": "In-context examples guide format/behavior.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Cosine similarity compares? Choose the best beginner-level answer.",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Cosine similarity compares? For newcomers, which statement is correct?",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Cosine similarity compares? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Cosine similarity compares? Pick the fundamental concept that applies.",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Cosine similarity compares? Which choice matches core introductory knowledge?",
+    "options": [
+      "Vector directions",
+      "Only magnitudes",
+      "Only edit distance",
+      "Only BLEU"
+    ],
+    "correctAnswer": "Vector directions",
+    "explanation": "Cosine ignores magnitude scale.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Latency vs throughput tradeoff often involves? Choose the best beginner-level answer.",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Latency vs throughput tradeoff often involves? For newcomers, which statement is correct?",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Latency vs throughput tradeoff often involves? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Latency vs throughput tradeoff often involves? Pick the fundamental concept that applies.",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Latency vs throughput tradeoff often involves? Which choice matches core introductory knowledge?",
+    "options": [
+      "Batching and parallelism choices",
+      "Only prompt length ethics",
+      "Only Unicode",
+      "Only JSON pretty print"
+    ],
+    "correctAnswer": "Batching and parallelism choices",
+    "explanation": "Systems balance speed and capacity.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Structured output (JSON mode) helps? Choose the best beginner-level answer.",
+    "options": [
+      "Reliable downstream parsing",
+      "Faster training",
+      "Larger context always",
+      "Lower temperature always"
+    ],
+    "correctAnswer": "Reliable downstream parsing",
+    "explanation": "Constrained formats aid integration.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Structured output (JSON mode) helps? For newcomers, which statement is correct?",
+    "options": [
+      "Reliable downstream parsing",
+      "Faster training",
+      "Larger context always",
+      "Lower temperature always"
+    ],
+    "correctAnswer": "Reliable downstream parsing",
+    "explanation": "Constrained formats aid integration.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Structured output (JSON mode) helps? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Reliable downstream parsing",
+      "Faster training",
+      "Larger context always",
+      "Lower temperature always"
+    ],
+    "correctAnswer": "Reliable downstream parsing",
+    "explanation": "Constrained formats aid integration.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Structured output (JSON mode) helps? Pick the fundamental concept that applies.",
+    "options": [
+      "Reliable downstream parsing",
+      "Faster training",
+      "Larger context always",
+      "Lower temperature always"
+    ],
+    "correctAnswer": "Reliable downstream parsing",
+    "explanation": "Constrained formats aid integration.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Structured output (JSON mode) helps? Which choice matches core introductory knowledge?",
+    "options": [
+      "Reliable downstream parsing",
+      "Faster training",
+      "Larger context always",
+      "Lower temperature always"
+    ],
+    "correctAnswer": "Reliable downstream parsing",
+    "explanation": "Constrained formats aid integration.",
+    "platform": "AI"
+  },
+  {
+    "id": "ai_beg_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "AI/LLM",
+    "level": "Beginner",
+    "question": "Multi-agent systems coordinate? Choose the best beginner-level answer.",
+    "options": [
+      "Multiple model/tool roles",
+      "Only one tokenizer",
+      "Only one GPU kernel",
+      "Only one prompt forever"
+    ],
+    "correctAnswer": "Multiple model/tool roles",
+    "explanation": "Agents specialize and collaborate.",
+    "platform": "AI"
+  }
+]

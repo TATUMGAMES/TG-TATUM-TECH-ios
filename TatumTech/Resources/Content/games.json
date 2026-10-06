@@ -1,0 +1,505 @@
+{
+  "status": {
+    "statusCode": 200,
+    "statusMessage": "SUCCESS"
+  },
+  "data": {
+    "apps": [
+      {
+        "appId": "game_0001",
+        "appGameId": "tg-pog",
+        "appName": "Price of Glory",
+        "companyName": "Marauder Tech Games",
+        "title": "Price of Glory",
+        "shortDescription": "Turn-based fantasy tactics where skill decides every battle.",
+        "longDescription": "Outsmart rivals in asynchronous turn-based strategy. Build your army, break enemy formations, and climb the ranks in a rich fantasy world where every move matters.",
+        "androidPackageName": "com.maraudertech.priceofglory",
+        "iOSBundleId": "com.maraudertech.priceofglory",
+        "website": "https://tg-api-new.uc.r.appspot.com/m/8594b8c99ade",
+        "appCategory": "Strategy",
+        "gameGenre": "Strategy",
+        "gameplayType": "Non-Casual",
+        "contentGenre": "Strategy",
+        "contentTheme": "Fantasy",
+        "appStore": "iOS / Android",
+        "userSubscriptionType": "Startup",
+        "releaseStatus": "Released",
+        "images": {
+          "featureGraphics": [
+            "drawable:pog_ss_01"
+          ],
+          "screenshots": [
+            "drawable:pog_ss_01",
+            "drawable:pog_ss_02",
+            "drawable:pog_ss_03",
+            "drawable:pog_ss_04",
+            "drawable:pog_ss_05",
+            "drawable:pog_ss_06"
+          ]
+        },
+        "videos": {
+          "promotional": [
+            {
+              "url": "https://tg-api-new.uc.r.appspot.com/m/22da00a76e3b",
+              "thumbnailUrl": "https://img.youtube.com/vi/K8ju43tYasI/hqdefault.jpg"
+            },
+            {
+              "url": "https://tg-api-new.uc.r.appspot.com/m/06971f5dbd45",
+              "thumbnailUrl": "https://img.youtube.com/vi/UQ_4I_qRuoY/hqdefault.jpg"
+            },
+            {
+              "url": "https://tg-api-new.uc.r.appspot.com/m/b123fd7ccb70",
+              "thumbnailUrl": "https://img.youtube.com/vi/aWyAN7PMYZU/hqdefault.jpg"
+            }
+          ],
+          "others": []
+        },
+        "marketingCampaignActive": true,
+        "isFeatured": true,
+        "featuredPriority": 200,
+        "featuredStartDate": "2026-01-01T00:00:00Z",
+        "featuredEndDate": "2028-12-31T23:59:59Z",
+        "popularityScore": 100,
+        "discoveryTags": [
+          "strategy",
+          "tactics",
+          "turn-based",
+          "war",
+          "competition",
+          "real-money",
+          "cash",
+          "leaderboard",
+          "base",
+          "battle",
+          "empire",
+          "mikros",
+          "tatum-games",
+          "mikros-marketing"
+        ],
+        "genres": [
+          "Strategy",
+          "Tactics"
+        ],
+        "campaign": {
+          "campaignId": "cmp-pog",
+          "campaignName": "Price of Glory",
+          "startDate": 1735689600,
+          "endDate": 1893456000,
+          "images": {
+            "appLogo": "drawable:pog_logo"
+          },
+          "ctas": {
+            "google_store": "https://tg-api-new.uc.r.appspot.com/m/282c7e570e1f",
+            "apple_store": "https://tg-api-new.uc.r.appspot.com/m/bb9e818b229d",
+            "steam_store": null,
+            "samsung_store": null,
+            "amazon_store": null,
+            "website": "https://tg-api-new.uc.r.appspot.com/m/8594b8c99ade",
+            "other": null
+          },
+          "screenshotUrls": [
+            "drawable:pog_ss_01",
+            "drawable:pog_ss_02",
+            "drawable:pog_ss_03",
+            "drawable:pog_ss_04",
+            "drawable:pog_ss_05",
+            "drawable:pog_ss_06"
+          ],
+          "videoUrls": [
+            "https://tg-api-new.uc.r.appspot.com/m/22da00a76e3b",
+            "https://tg-api-new.uc.r.appspot.com/m/06971f5dbd45",
+            "https://tg-api-new.uc.r.appspot.com/m/b123fd7ccb70"
+          ],
+          "socialMedia": {
+            "facebook": null,
+            "x": null,
+            "instagram": null,
+            "linkedin": null,
+            "tiktok": null,
+            "youtube": null,
+            "discord": "https://tg-api-new.uc.r.appspot.com/m/28aea395b83b",
+            "twitch": null
+          }
+        }
+      },
+      {
+        "appId": "game_0002",
+        "appGameId": "tg-hvn",
+        "appName": "Heroes Vs Villains: Nemesis",
+        "companyName": "Tatum Games",
+        "title": "Heroes Vs Villains: Nemesis",
+        "shortDescription": "An upcoming Tatum Games title for iOS and Android.",
+        "longDescription": "Heroes Vs Villains: Nemesis is coming soon from Tatum Games. Follow along for updates as this mobile experience moves toward launch on iOS and Android.",
+        "androidPackageName": null,
+        "iOSBundleId": null,
+        "website": null,
+        "appCategory": "Action",
+        "gameGenre": "Action",
+        "gameplayType": "Casual",
+        "contentGenre": "Action",
+        "contentTheme": "Heroes",
+        "appStore": "iOS / Android",
+        "userSubscriptionType": "Free",
+        "releaseStatus": "Coming Soon",
+        "images": {
+          "featureGraphics": [
+            "drawable:hvn_ss_01"
+          ],
+          "screenshots": [
+            "drawable:hvn_ss_01",
+            "drawable:hvn_ss_02",
+            "drawable:hvn_ss_03",
+            "drawable:hvn_ss_04"
+          ]
+        },
+        "videos": {
+          "promotional": [],
+          "others": []
+        },
+        "marketingCampaignActive": true,
+        "isFeatured": true,
+        "featuredPriority": 150,
+        "featuredStartDate": "2026-01-01T00:00:00Z",
+        "featuredEndDate": "2028-12-31T23:59:59Z",
+        "popularityScore": 80,
+        "discoveryTags": [
+          "coming-soon",
+          "tatum-games",
+          "mobile",
+          "mikros"
+        ],
+        "genres": [
+          "Action"
+        ],
+        "campaign": {
+          "campaignId": "cmp-hvn",
+          "campaignName": "Heroes Vs Villains: Nemesis",
+          "startDate": 1735689600,
+          "endDate": 1893456000,
+          "images": {
+            "appLogo": "drawable:hvn_logo"
+          },
+          "ctas": {
+            "google_store": null,
+            "apple_store": null,
+            "steam_store": null,
+            "samsung_store": null,
+            "amazon_store": null,
+            "website": null,
+            "other": null
+          },
+          "screenshotUrls": [
+            "drawable:hvn_ss_01",
+            "drawable:hvn_ss_02",
+            "drawable:hvn_ss_03",
+            "drawable:hvn_ss_04"
+          ],
+          "videoUrls": [],
+          "socialMedia": {
+            "facebook": null,
+            "x": null,
+            "instagram": null,
+            "linkedin": null,
+            "tiktok": null,
+            "youtube": null,
+            "discord": null,
+            "twitch": null
+          }
+        }
+      },
+      {
+        "appId": "game_0003",
+        "appGameId": "tg-banjax",
+        "appName": "BANJAX",
+        "companyName": "MugginsVR",
+        "title": "BANJAX",
+        "shortDescription": "Throw magic flying discs to shatter crystal targets in a dark fantasy VR world.",
+        "longDescription": "BANJAX is a kinetic VR action-arcade game set in a dark fantasy universe. Shatter enchanted crystal targets with magical flying discs that glide with realistic physics, rewarding long-distance throws, chained hits, and trick shots. Soar between realms on your flying dragon, seek out the lost Figments of Andekas to unlock new abilities, and compete on global leaderboards. Created by David Barlia, founder of MugginsVR.",
+        "androidPackageName": null,
+        "iOSBundleId": null,
+        "website": "https://mugginsvr.com/",
+        "appCategory": "Action",
+        "gameGenre": "Action",
+        "gameplayType": "Non-Casual",
+        "contentGenre": "Action",
+        "contentTheme": "Dark Fantasy",
+        "appStore": "Steam VR / Meta Quest",
+        "userSubscriptionType": "Free",
+        "releaseStatus": "Coming Soon",
+        "images": {
+          "featureGraphics": [
+            "drawable:banjax_ss_01"
+          ],
+          "screenshots": [
+            "drawable:banjax_ss_01",
+            "drawable:banjax_ss_02",
+            "drawable:banjax_ss_03",
+            "drawable:banjax_ss_04",
+            "drawable:banjax_ss_05",
+            "drawable:banjax_ss_06"
+          ]
+        },
+        "videos": {
+          "promotional": [
+            {
+              "url": "https://www.youtube.com/watch?v=8Nv-PpXhG00",
+              "thumbnailUrl": "https://img.youtube.com/vi/8Nv-PpXhG00/hqdefault.jpg"
+            }
+          ],
+          "others": []
+        },
+        "marketingCampaignActive": true,
+        "isFeatured": true,
+        "featuredPriority": 140,
+        "featuredStartDate": "2026-01-01T00:00:00Z",
+        "featuredEndDate": "2028-12-31T23:59:59Z",
+        "popularityScore": 70,
+        "discoveryTags": [
+          "coming-soon",
+          "vr",
+          "action",
+          "arcade",
+          "physics",
+          "dark-fantasy",
+          "dragon",
+          "leaderboard",
+          "steam",
+          "meta-quest"
+        ],
+        "genres": [
+          "Action",
+          "Arcade"
+        ],
+        "campaign": {
+          "campaignId": "cmp-banjax",
+          "campaignName": "BANJAX",
+          "startDate": 1735689600,
+          "endDate": 1893456000,
+          "images": {
+            "appLogo": "drawable:banjax_logo_icon"
+          },
+          "ctas": {
+            "google_store": null,
+            "apple_store": null,
+            "steam_store": "https://store.steampowered.com/app/4565160/BANJAX/",
+            "samsung_store": null,
+            "amazon_store": null,
+            "website": "https://mugginsvr.com/",
+            "other": "https://www.meta.com/experiences/banjax/32964033859910934/"
+          },
+          "screenshotUrls": [
+            "drawable:banjax_ss_01",
+            "drawable:banjax_ss_02",
+            "drawable:banjax_ss_03",
+            "drawable:banjax_ss_04",
+            "drawable:banjax_ss_05",
+            "drawable:banjax_ss_06"
+          ],
+          "videoUrls": [
+            "https://www.youtube.com/watch?v=8Nv-PpXhG00"
+          ],
+          "socialMedia": {
+            "facebook": null,
+            "x": null,
+            "instagram": "https://www.instagram.com/mugginsvr",
+            "linkedin": "https://www.linkedin.com/in/barliesque/",
+            "tiktok": null,
+            "youtube": "https://www.youtube.com/@muggins-vr",
+            "discord": null,
+            "twitch": null
+          }
+        }
+      },
+      {
+        "appId": "game_0004",
+        "appGameId": "tg-toe",
+        "appName": "Tales of Encenia",
+        "companyName": "Grey State Development",
+        "title": "Tales of Encenia",
+        "shortDescription": "An original fantasy universe of ancient dragons, forgotten kingdoms, and unlikely heroes.",
+        "longDescription": "Tales of Encenia is an original fantasy universe where ancient dragons, forgotten kingdoms, powerful magic, and unlikely heroes collide in a battle that will shape the fate of the world. Follow Yanshamaru, a young warrior forced into a conflict far greater than himself after his homeland falls to a growing darkness, across mountain kingdoms, floating wind temples, volcanic wastelands, frozen continents, and forgotten ruins.",
+        "androidPackageName": null,
+        "iOSBundleId": null,
+        "website": "https://talesofencenia.com/",
+        "appCategory": "Adventure",
+        "gameGenre": "Adventure",
+        "gameplayType": null,
+        "contentGenre": "Adventure",
+        "contentTheme": "Fantasy",
+        "appStore": "TBA",
+        "userSubscriptionType": "Free",
+        "releaseStatus": "Coming Soon",
+        "images": {
+          "featureGraphics": [
+            "drawable:talesofencenia_ss_01"
+          ],
+          "screenshots": [
+            "drawable:talesofencenia_ss_01",
+            "drawable:talesofencenia_ss_02",
+            "drawable:talesofencenia_ss_03",
+            "drawable:talesofencenia_ss_04",
+            "drawable:talesofencenia_ss_05",
+            "drawable:talesofencenia_ss_06",
+            "drawable:talesofencenia_ss_07"
+          ]
+        },
+        "videos": {
+          "promotional": [
+            {
+              "url": "https://www.youtube.com/watch?v=3f76jiOZET8",
+              "thumbnailUrl": "https://img.youtube.com/vi/3f76jiOZET8/hqdefault.jpg"
+            }
+          ],
+          "others": []
+        },
+        "marketingCampaignActive": true,
+        "isFeatured": true,
+        "featuredPriority": 130,
+        "featuredStartDate": "2026-01-01T00:00:00Z",
+        "featuredEndDate": "2028-12-31T23:59:59Z",
+        "popularityScore": 60,
+        "discoveryTags": [
+          "coming-soon",
+          "fantasy",
+          "adventure",
+          "dragons",
+          "story",
+          "heroes"
+        ],
+        "genres": [
+          "Adventure",
+          "Fantasy"
+        ],
+        "campaign": {
+          "campaignId": "cmp-toe",
+          "campaignName": "Tales of Encenia",
+          "startDate": 1735689600,
+          "endDate": 1893456000,
+          "images": {
+            "appLogo": "drawable:talesofencenia_logo_icon"
+          },
+          "ctas": {
+            "google_store": null,
+            "apple_store": null,
+            "steam_store": null,
+            "samsung_store": null,
+            "amazon_store": null,
+            "website": "https://talesofencenia.com/",
+            "other": null
+          },
+          "screenshotUrls": [
+            "drawable:talesofencenia_ss_01",
+            "drawable:talesofencenia_ss_02",
+            "drawable:talesofencenia_ss_03",
+            "drawable:talesofencenia_ss_04",
+            "drawable:talesofencenia_ss_05",
+            "drawable:talesofencenia_ss_06",
+            "drawable:talesofencenia_ss_07"
+          ],
+          "videoUrls": [
+            "https://www.youtube.com/watch?v=3f76jiOZET8"
+          ],
+          "socialMedia": {
+            "facebook": "https://www.facebook.com/TalesOfEncenia",
+            "x": null,
+            "instagram": "https://www.instagram.com/talesofencenia/",
+            "linkedin": null,
+            "tiktok": "https://www.tiktok.com/@talesofencenia",
+            "youtube": "https://www.youtube.com/@TalesOfEncenia",
+            "discord": null,
+            "twitch": null
+          }
+        }
+      },
+      {
+        "appId": "game_0005",
+        "appGameId": "tg-sap",
+        "appName": "Saints Art Puzzle",
+        "companyName": "Art of Devotion Games",
+        "title": "Saints Art Puzzle",
+        "shortDescription": "Piece together artwork of the saints in a relaxing puzzle game.",
+        "longDescription": "Saints Art Puzzle from Art of Devotion Games, founded by Amy Abafor, is a puzzle game built around artwork of the saints. Available on iOS and Android.",
+        "androidPackageName": "com.artofdevotiongames.saintsartpuzzle",
+        "iOSBundleId": null,
+        "website": "https://www.artofdevotiongames.com/",
+        "appCategory": "Puzzle",
+        "gameGenre": "Puzzle",
+        "gameplayType": "Casual",
+        "contentGenre": "Puzzle",
+        "contentTheme": "Art",
+        "appStore": "iOS / Android",
+        "userSubscriptionType": "Free",
+        "releaseStatus": "Released",
+        "images": {
+          "featureGraphics": [
+            "drawable:saint_art_puzzle_ss_01"
+          ],
+          "screenshots": [
+            "drawable:saint_art_puzzle_ss_01",
+            "drawable:saint_art_puzzle_ss_02",
+            "drawable:saint_art_puzzle_ss_03",
+            "drawable:saint_art_puzzle_ss_04",
+            "drawable:saint_art_puzzle_ss_05",
+            "drawable:saint_art_puzzle_ss_06"
+          ]
+        },
+        "videos": {
+          "promotional": [],
+          "others": []
+        },
+        "marketingCampaignActive": true,
+        "isFeatured": true,
+        "featuredPriority": 120,
+        "featuredStartDate": "2026-01-01T00:00:00Z",
+        "featuredEndDate": "2028-12-31T23:59:59Z",
+        "popularityScore": 50,
+        "discoveryTags": [
+          "puzzle",
+          "casual",
+          "art",
+          "mobile"
+        ],
+        "genres": [
+          "Puzzle"
+        ],
+        "campaign": {
+          "campaignId": "cmp-sap",
+          "campaignName": "Saints Art Puzzle",
+          "startDate": 1735689600,
+          "endDate": 1893456000,
+          "images": {
+            "appLogo": "drawable:saint_art_puzzle_logo"
+          },
+          "ctas": {
+            "google_store": "https://play.google.com/store/apps/details?id=com.artofdevotiongames.saintsartpuzzle",
+            "apple_store": "https://apps.apple.com/us/app/saints-art-puzzle/id6759738917",
+            "steam_store": null,
+            "samsung_store": null,
+            "amazon_store": null,
+            "website": "https://www.artofdevotiongames.com/",
+            "other": "https://linktr.ee/artofdevotiongames"
+          },
+          "screenshotUrls": [
+            "drawable:saint_art_puzzle_ss_01",
+            "drawable:saint_art_puzzle_ss_02",
+            "drawable:saint_art_puzzle_ss_03",
+            "drawable:saint_art_puzzle_ss_04",
+            "drawable:saint_art_puzzle_ss_05",
+            "drawable:saint_art_puzzle_ss_06"
+          ],
+          "videoUrls": [],
+          "socialMedia": {
+            "facebook": null,
+            "x": null,
+            "instagram": "https://www.instagram.com/artofdevotiongames/",
+            "linkedin": null,
+            "tiktok": "https://www.tiktok.com/@art.of.devotion8",
+            "youtube": null,
+            "discord": null,
+            "twitch": null
+          }
+        }
+      }
+    ]
+  }
+}

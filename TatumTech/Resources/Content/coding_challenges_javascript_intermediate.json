@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "js_int_001",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is the result of the expression: [] + []?",
+    "options": [
+      "[]",
+      "0",
+      "NaN",
+      "\"\""
+    ],
+    "correctAnswer": "\"\"",
+    "explanation": "Adding two arrays converts them to strings. [] + [] evaluates to an empty string.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_002",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is the output of console.log(typeof NaN)?",
+    "options": [
+      "\"undefined\"",
+      "\"number\"",
+      "\"NaN\"",
+      "\"object\""
+    ],
+    "correctAnswer": "\"number\"",
+    "explanation": "In JavaScript, NaN is of type 'number', even though it means Not a Number.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_003",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Which method is used to combine two arrays?",
+    "options": [
+      "concat()",
+      "merge()",
+      "append()",
+      "combine()"
+    ],
+    "correctAnswer": "concat()",
+    "explanation": "The concat() method is used to merge two or more arrays.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_004",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "How can you prevent an object from being modified?",
+    "options": [
+      "Object.freeze()",
+      "Object.seal()",
+      "Object.lock()",
+      "Object.prevent()"
+    ],
+    "correctAnswer": "Object.freeze()",
+    "explanation": "Object.freeze() makes an object immutable. Its properties can't be changed or added.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_005",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Which of the following is NOT a JavaScript loop?",
+    "options": [
+      "for",
+      "foreach",
+      "while",
+      "do...while"
+    ],
+    "correctAnswer": "foreach",
+    "explanation": "'foreach' is not a loop statement in JavaScript, although Array.forEach() is a method.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_006",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What will this log? console.log([] == ![])",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "TypeError"
+    ],
+    "correctAnswer": "true",
+    "explanation": "[] is truthy, so ![] is false. [] == false → true due to coercion.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_007",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Which keyword is used to create a class in JavaScript?",
+    "options": [
+      "class",
+      "function",
+      "object",
+      "struct"
+    ],
+    "correctAnswer": "class",
+    "explanation": "ES6 introduced the 'class' keyword to define classes in JavaScript.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_008",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does the 'this' keyword refer to in a regular function?",
+    "options": [
+      "The global object",
+      "The function itself",
+      "The parent object",
+      "The module"
+    ],
+    "correctAnswer": "The global object",
+    "explanation": "In non-strict mode, 'this' refers to the global object in a regular function.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_009",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Which array method returns a new array with only the elements that pass a test?",
+    "options": [
+      "map()",
+      "filter()",
+      "reduce()",
+      "forEach()"
+    ],
+    "correctAnswer": "filter()",
+    "explanation": "filter() returns a new array of items that return true in the callback function.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_010",
+    "created_at": "2025-07-01T10:05:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "How do you handle asynchronous code more cleanly than using callbacks?",
+    "options": [
+      "setTimeout()",
+      "forEach()",
+      "Promises and async/await",
+      "loops"
+    ],
+    "correctAnswer": "Promises and async/await",
+    "explanation": "Promises and async/await provide cleaner syntax and better error handling for async code.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "In JavaScript, `const` bindings are? In a typical production scenario, which is best?",
+    "options": [
+      "Not reassignable",
+      "Deeply immutable always",
+      "Function-scoped like var",
+      "Hoisted as undefined only"
+    ],
+    "correctAnswer": "Not reassignable",
+    "explanation": "const prevents reassignment of the binding.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Promises represent? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Future completion of async work",
+      "Only DOM nodes",
+      "Only CSS rules",
+      "Only JSON schemas"
+    ],
+    "correctAnswer": "Future completion of async work",
+    "explanation": "Promises model eventual success/failure.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Promises represent? Considering tradeoffs, what is correct?",
+    "options": [
+      "Future completion of async work",
+      "Only DOM nodes",
+      "Only CSS rules",
+      "Only JSON schemas"
+    ],
+    "correctAnswer": "Future completion of async work",
+    "explanation": "Promises model eventual success/failure.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Promises represent? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Future completion of async work",
+      "Only DOM nodes",
+      "Only CSS rules",
+      "Only JSON schemas"
+    ],
+    "correctAnswer": "Future completion of async work",
+    "explanation": "Promises model eventual success/failure.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Promises represent? Select the most suitable engineering choice.",
+    "options": [
+      "Future completion of async work",
+      "Only DOM nodes",
+      "Only CSS rules",
+      "Only JSON schemas"
+    ],
+    "correctAnswer": "Future completion of async work",
+    "explanation": "Promises model eventual success/failure.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `async/await` simplify? In a typical production scenario, which is best?",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `async/await` simplify? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `async/await` simplify? Considering tradeoffs, what is correct?",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `async/await` simplify? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `async/await` simplify? Select the most suitable engineering choice.",
+    "options": [
+      "Promise-based asynchronous code",
+      "CSS animations",
+      "Regex compilation",
+      "Binary heaps"
+    ],
+    "correctAnswer": "Promise-based asynchronous code",
+    "explanation": "await pauses an async function until a Promise settles.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Closures in JavaScript capture? In a typical production scenario, which is best?",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Closures in JavaScript capture? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Closures in JavaScript capture? Considering tradeoffs, what is correct?",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Closures in JavaScript capture? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Closures in JavaScript capture? Select the most suitable engineering choice.",
+    "options": [
+      "Lexical environment",
+      "Only globalThis",
+      "Only the call stack",
+      "Only prototypes"
+    ],
+    "correctAnswer": "Lexical environment",
+    "explanation": "Closures remember variables from enclosing scopes.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`map` on arrays returns? In a typical production scenario, which is best?",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`map` on arrays returns? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`map` on arrays returns? Considering tradeoffs, what is correct?",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`map` on arrays returns? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`map` on arrays returns? Select the most suitable engineering choice.",
+    "options": [
+      "A new array of transformed values",
+      "The same array mutated",
+      "A Set always",
+      "A Promise always"
+    ],
+    "correctAnswer": "A new array of transformed values",
+    "explanation": "map produces a new array.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`null` vs `undefined` in JavaScript? In a typical production scenario, which is best?",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`null` vs `undefined` in JavaScript? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`null` vs `undefined` in JavaScript? Considering tradeoffs, what is correct?",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`null` vs `undefined` in JavaScript? Which statement reflects solid mid-level practice?",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`null` vs `undefined` in JavaScript? Select the most suitable engineering choice.",
+    "options": [
+      "null is assigned absence; undefined is uninitialized",
+      "They are identical tokens",
+      "null is a number",
+      "undefined is an object type only"
+    ],
+    "correctAnswer": "null is assigned absence; undefined is uninitialized",
+    "explanation": "They signal different kinds of emptiness.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is event bubbling? In a typical production scenario, which is best?",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is event bubbling? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is event bubbling? Considering tradeoffs, what is correct?",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is event bubbling? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is event bubbling? Select the most suitable engineering choice.",
+    "options": [
+      "Events propagate from target to ancestors",
+      "Only capturing phase",
+      "Only once listeners",
+      "Only passive listeners"
+    ],
+    "correctAnswer": "Events propagate from target to ancestors",
+    "explanation": "Bubbling moves up the DOM tree.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`JSON.parse` converts? In a typical production scenario, which is best?",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`JSON.parse` converts? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`JSON.parse` converts? Considering tradeoffs, what is correct?",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`JSON.parse` converts? Which statement reflects solid mid-level practice?",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`JSON.parse` converts? Select the most suitable engineering choice.",
+    "options": [
+      "JSON text to a JS value",
+      "Objects to XML",
+      "Promises to callbacks",
+      "CSS to JS"
+    ],
+    "correctAnswer": "JSON text to a JS value",
+    "explanation": "parse deserializes JSON strings.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Modules with `import/export` are? In a typical production scenario, which is best?",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Modules with `import/export` are? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Modules with `import/export` are? Considering tradeoffs, what is correct?",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Modules with `import/export` are? Which statement reflects solid mid-level practice?",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Modules with `import/export` are? Select the most suitable engineering choice.",
+    "options": [
+      "ES modules",
+      "Only CommonJS",
+      "Only AMD",
+      "Only IIFE"
+    ],
+    "correctAnswer": "ES modules",
+    "explanation": "import/export define ES module boundaries.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`this` in an arrow function is? In a typical production scenario, which is best?",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`this` in an arrow function is? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`this` in an arrow function is? Considering tradeoffs, what is correct?",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`this` in an arrow function is? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`this` in an arrow function is? Select the most suitable engineering choice.",
+    "options": [
+      "Lexically captured",
+      "Always window",
+      "Always undefined",
+      "Rebound each call like methods"
+    ],
+    "correctAnswer": "Lexically captured",
+    "explanation": "Arrow functions do not bind their own this.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Set` stores? In a typical production scenario, which is best?",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Set` stores? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Set` stores? Considering tradeoffs, what is correct?",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Set` stores? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Set` stores? Select the most suitable engineering choice.",
+    "options": [
+      "Unique values",
+      "Only key/value pairs",
+      "Only sorted ints",
+      "Only DOM nodes"
+    ],
+    "correctAnswer": "Unique values",
+    "explanation": "Set membership is unique.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`fetch` returns? In a typical production scenario, which is best?",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`fetch` returns? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`fetch` returns? Considering tradeoffs, what is correct?",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`fetch` returns? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`fetch` returns? Select the most suitable engineering choice.",
+    "options": [
+      "A Promise",
+      "A string always",
+      "A sync XHR",
+      "A Worker"
+    ],
+    "correctAnswer": "A Promise",
+    "explanation": "fetch is Promise-based.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Optional chaining `?.` helps when? In a typical production scenario, which is best?",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Optional chaining `?.` helps when? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Optional chaining `?.` helps when? Considering tradeoffs, what is correct?",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Optional chaining `?.` helps when? Which statement reflects solid mid-level practice?",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Optional chaining `?.` helps when? Select the most suitable engineering choice.",
+    "options": [
+      "A property may be nullish",
+      "Always forcing throws",
+      "Sorting arrays",
+      "Parsing XML"
+    ],
+    "correctAnswer": "A property may be nullish",
+    "explanation": "?. short-circuits on null/undefined.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Array.isArray` checks? In a typical production scenario, which is best?",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Array.isArray` checks? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Array.isArray` checks? Considering tradeoffs, what is correct?",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Array.isArray` checks? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Array.isArray` checks? Select the most suitable engineering choice.",
+    "options": [
+      "Whether a value is an array",
+      "Whether a value is iterable only",
+      "TypedArray only",
+      "Only arguments objects"
+    ],
+    "correctAnswer": "Whether a value is an array",
+    "explanation": "Prefer Array.isArray over typeof.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `debounce` typically do? In a typical production scenario, which is best?",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `debounce` typically do? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `debounce` typically do? Considering tradeoffs, what is correct?",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `debounce` typically do? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What does `debounce` typically do? Select the most suitable engineering choice.",
+    "options": [
+      "Delay invoking until quiet period",
+      "Retry forever",
+      "Sort arrays",
+      "Parse JSON"
+    ],
+    "correctAnswer": "Delay invoking until quiet period",
+    "explanation": "Debounce waits for inactivity.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`localStorage` data is stored as? In a typical production scenario, which is best?",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`localStorage` data is stored as? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`localStorage` data is stored as? Considering tradeoffs, what is correct?",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`localStorage` data is stored as? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`localStorage` data is stored as? Select the most suitable engineering choice.",
+    "options": [
+      "Strings",
+      "Binary blobs only",
+      "Live objects",
+      "HTTP cookies only"
+    ],
+    "correctAnswer": "Strings",
+    "explanation": "Values are stringified.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Strict mode (`'use strict'`) can? In a typical production scenario, which is best?",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Strict mode (`'use strict'`) can? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Strict mode (`'use strict'`) can? Considering tradeoffs, what is correct?",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Strict mode (`'use strict'`) can? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "Strict mode (`'use strict'`) can? Select the most suitable engineering choice.",
+    "options": [
+      "Catch common mistakes earlier",
+      "Disable GC",
+      "Force TypeScript",
+      "Enable JSX"
+    ],
+    "correctAnswer": "Catch common mistakes earlier",
+    "explanation": "Strict mode tightens JS semantics.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Promise.all` rejects when? In a typical production scenario, which is best?",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Promise.all` rejects when? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Promise.all` rejects when? Considering tradeoffs, what is correct?",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Promise.all` rejects when? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "`Promise.all` rejects when? Select the most suitable engineering choice.",
+    "options": [
+      "Any input promise rejects",
+      "All succeed",
+      "None settle",
+      "Timeouts only"
+    ],
+    "correctAnswer": "Any input promise rejects",
+    "explanation": "all fails fast on first rejection.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_096",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is a pure function? In a typical production scenario, which is best?",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_097",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is a pure function? Which approach is most appropriate at intermediate complexity?",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_098",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is a pure function? Considering tradeoffs, what is correct?",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_099",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is a pure function? Which statement reflects solid mid-level practice?",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  },
+  {
+    "id": "js_int_100",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "JavaScript",
+    "level": "Intermediate",
+    "question": "What is a pure function? Select the most suitable engineering choice.",
+    "options": [
+      "Same inputs => same output, no side effects",
+      "Mutates globals",
+      "Always async",
+      "Always recursive"
+    ],
+    "correctAnswer": "Same inputs => same output, no side effects",
+    "explanation": "Purity aids testing and reasoning.",
+    "platform": "Web"
+  }
+]

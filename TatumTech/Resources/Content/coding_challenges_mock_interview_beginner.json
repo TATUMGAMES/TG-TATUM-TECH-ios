@@ -1,0 +1,1593 @@
+[
+  {
+    "id": "mock_b_001",
+    "question": "In the STAR method, what does the S stand for?",
+    "options": [
+      "Strategy",
+      "Situation",
+      "Summary",
+      "Skill"
+    ],
+    "correctAnswer": "Situation",
+    "language": "MockInterview",
+    "level": "Beginner",
+    "platform": "General",
+    "explanation": "STAR: Situation, Task, Action, Result."
+  },
+  {
+    "id": "mock_b_002",
+    "question": "A good opening for 'Tell me about yourself' should:",
+    "options": [
+      "List only hobbies unrelated to the role",
+      "Summarize relevant experience and interest in the role",
+      "Read your full resume line by line",
+      "Decline to answer"
+    ],
+    "correctAnswer": "Summarize relevant experience and interest in the role",
+    "language": "MockInterview",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "mock_b_003",
+    "question": "When asked about a weakness, it is best to:",
+    "options": [
+      "Say you have no weaknesses",
+      "Pick a real area and show how you improve",
+      "Blame former teammates",
+      "Refuse the question"
+    ],
+    "correctAnswer": "Pick a real area and show how you improve",
+    "language": "MockInterview",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "mock_b_004",
+    "question": "After answering a behavioral question, you should often:",
+    "options": [
+      "Stop immediately with no outcome",
+      "End with a clear Result and impact",
+      "Ask for the salary in the same breath",
+      "Change the subject to sports"
+    ],
+    "correctAnswer": "End with a clear Result and impact",
+    "language": "MockInterview",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "mock_b_005",
+    "question": "Clarifying questions in a coding interview help you:",
+    "options": [
+      "Waste time",
+      "Confirm constraints and edge cases",
+      "Avoid writing any code",
+      "Skip testing"
+    ],
+    "correctAnswer": "Confirm constraints and edge cases",
+    "language": "MockInterview",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "mi_beg_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "In a system design interview, first clarify? Choose the best beginner-level answer.",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "In a system design interview, first clarify? For newcomers, which statement is correct?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "In a system design interview, first clarify? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "In a system design interview, first clarify? Pick the fundamental concept that applies.",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "In a system design interview, first clarify? Which choice matches core introductory knowledge?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "CAP theorem trades off? Choose the best beginner-level answer.",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "CAP theorem trades off? For newcomers, which statement is correct?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "CAP theorem trades off? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "CAP theorem trades off? Pick the fundamental concept that applies.",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "CAP theorem trades off? Which choice matches core introductory knowledge?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Horizontal scaling adds? Choose the best beginner-level answer.",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Horizontal scaling adds? For newcomers, which statement is correct?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Horizontal scaling adds? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Horizontal scaling adds? Pick the fundamental concept that applies.",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Horizontal scaling adds? Which choice matches core introductory knowledge?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A load balancer primarily? Choose the best beginner-level answer.",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A load balancer primarily? For newcomers, which statement is correct?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A load balancer primarily? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A load balancer primarily? Pick the fundamental concept that applies.",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A load balancer primarily? Which choice matches core introductory knowledge?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Idempotent APIs allow? Choose the best beginner-level answer.",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Idempotent APIs allow? For newcomers, which statement is correct?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Idempotent APIs allow? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Idempotent APIs allow? Pick the fundamental concept that applies.",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Idempotent APIs allow? Which choice matches core introductory knowledge?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Caching improves? Choose the best beginner-level answer.",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Caching improves? For newcomers, which statement is correct?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Caching improves? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Caching improves? Pick the fundamental concept that applies.",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Caching improves? Which choice matches core introductory knowledge?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Observability typically includes? Choose the best beginner-level answer.",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Observability typically includes? For newcomers, which statement is correct?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Observability typically includes? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Observability typically includes? Pick the fundamental concept that applies.",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Observability typically includes? Which choice matches core introductory knowledge?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A good API error should? Choose the best beginner-level answer.",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A good API error should? For newcomers, which statement is correct?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A good API error should? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A good API error should? Pick the fundamental concept that applies.",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A good API error should? Which choice matches core introductory knowledge?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Rate limiting protects? Choose the best beginner-level answer.",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Rate limiting protects? For newcomers, which statement is correct?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Rate limiting protects? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Rate limiting protects? Pick the fundamental concept that applies.",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Rate limiting protects? Which choice matches core introductory knowledge?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Event-driven designs often use? Choose the best beginner-level answer.",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Event-driven designs often use? For newcomers, which statement is correct?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Event-driven designs often use? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Event-driven designs often use? Pick the fundamental concept that applies.",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Event-driven designs often use? Which choice matches core introductory knowledge?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Strong consistency means? Choose the best beginner-level answer.",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Strong consistency means? For newcomers, which statement is correct?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Strong consistency means? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Strong consistency means? Pick the fundamental concept that applies.",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Strong consistency means? Which choice matches core introductory knowledge?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A postmortem should focus on? Choose the best beginner-level answer.",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A postmortem should focus on? For newcomers, which statement is correct?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A postmortem should focus on? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A postmortem should focus on? Pick the fundamental concept that applies.",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "A postmortem should focus on? Which choice matches core introductory knowledge?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Technical debt is? Choose the best beginner-level answer.",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Technical debt is? For newcomers, which statement is correct?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Technical debt is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Technical debt is? Pick the fundamental concept that applies.",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Technical debt is? Which choice matches core introductory knowledge?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Code review goals include? Choose the best beginner-level answer.",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Code review goals include? For newcomers, which statement is correct?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Code review goals include? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Code review goals include? Pick the fundamental concept that applies.",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Code review goals include? Which choice matches core introductory knowledge?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Feature flags enable? Choose the best beginner-level answer.",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Feature flags enable? For newcomers, which statement is correct?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Feature flags enable? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Feature flags enable? Pick the fundamental concept that applies.",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Feature flags enable? Which choice matches core introductory knowledge?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Database indexing speeds? Choose the best beginner-level answer.",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Database indexing speeds? For newcomers, which statement is correct?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Database indexing speeds? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Database indexing speeds? Pick the fundamental concept that applies.",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Database indexing speeds? Which choice matches core introductory knowledge?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Circuit breakers prevent? Choose the best beginner-level answer.",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Circuit breakers prevent? For newcomers, which statement is correct?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Circuit breakers prevent? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Circuit breakers prevent? Pick the fundamental concept that applies.",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Circuit breakers prevent? Which choice matches core introductory knowledge?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Pagination should be? Choose the best beginner-level answer.",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Pagination should be? For newcomers, which statement is correct?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Pagination should be? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Pagination should be? Pick the fundamental concept that applies.",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Pagination should be? Which choice matches core introductory knowledge?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Security basics include? Choose the best beginner-level answer.",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Security basics include? For newcomers, which statement is correct?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Security basics include? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Security basics include? Pick the fundamental concept that applies.",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_beg_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Beginner",
+    "question": "Security basics include? Which choice matches core introductory knowledge?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  }
+]

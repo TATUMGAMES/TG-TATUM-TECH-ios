@@ -1,0 +1,710 @@
+[
+  {
+    "id": "job_0001",
+    "company": "Riot Games",
+    "title": "Software Engineer \u2013 Live Services",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Build and maintain services that power live multiplayer game features and player experiences.",
+    "technologies": [
+      "Kotlin",
+      "Java",
+      "Backend",
+      "Live Services"
+    ],
+    "applyUrl": "https://www.riotgames.com/en/work-with-us/jobs"
+  },
+  {
+    "id": "job_0002",
+    "company": "Microsoft",
+    "title": "Software Engineer \u2013 Cloud & AI",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Explore software engineering opportunities across cloud platforms, developer tools, and AI-enabled services.",
+    "technologies": [
+      "C#",
+      "Azure",
+      "Cloud",
+      "AI"
+    ],
+    "applyUrl": "https://careers.microsoft.com/"
+  },
+  {
+    "id": "job_0003",
+    "company": "Google",
+    "title": "Associate Product Manager",
+    "category": "Product",
+    "employmentType": "Full-time",
+    "description": "Product opportunities focused on strategy, execution, and consumer-facing experiences across Google products.",
+    "technologies": [
+      "Product Management",
+      "Analytics",
+      "UX"
+    ],
+    "applyUrl": "https://careers.google.com/"
+  },
+  {
+    "id": "job_0004",
+    "company": "Sony Interactive Entertainment",
+    "title": "Gameplay Programmer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Gameplay systems opportunities for PlayStation titles spanning mechanics, tools, and player-facing features.",
+    "technologies": [
+      "C++",
+      "Gameplay",
+      "PlayStation"
+    ],
+    "applyUrl": "https://www.sie.com/en/careers.html"
+  },
+  {
+    "id": "job_0005",
+    "company": "Epic Games",
+    "title": "Unreal Engine Developer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Engine and tooling opportunities supporting creators building with Unreal Engine.",
+    "technologies": [
+      "C++",
+      "Unreal Engine",
+      "Tools"
+    ],
+    "applyUrl": "https://www.epicgames.com/site/en-US/careers"
+  },
+  {
+    "id": "job_0006",
+    "company": "OpenAI",
+    "title": "AI Engineer",
+    "category": "AI / Machine Learning",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities related to large language models, evaluation, and AI product systems.",
+    "technologies": [
+      "Python",
+      "LLMs",
+      "Machine Learning"
+    ],
+    "applyUrl": "https://openai.com/careers"
+  },
+  {
+    "id": "job_0007",
+    "company": "Apple",
+    "title": "Machine Learning Engineer \u2013 Vision",
+    "category": "AI / Machine Learning",
+    "employmentType": "Full-time",
+    "description": "ML and computer vision opportunities across Apple hardware and software product areas.",
+    "technologies": [
+      "Swift",
+      "Python",
+      "Computer Vision",
+      "ML"
+    ],
+    "applyUrl": "https://jobs.apple.com/"
+  },
+  {
+    "id": "job_0008",
+    "company": "Disney",
+    "title": "Interactive AI Software Engineer",
+    "category": "AI / Machine Learning",
+    "employmentType": "Full-time",
+    "description": "Software opportunities connecting AI systems with interactive entertainment experiences.",
+    "technologies": [
+      "Python",
+      "AI",
+      "Interactive Media"
+    ],
+    "applyUrl": "https://jobs.disneycareers.com/"
+  },
+  {
+    "id": "job_0009",
+    "company": "Meta",
+    "title": "LLM Specialist",
+    "category": "AI / Machine Learning",
+    "employmentType": "Full-time",
+    "description": "Opportunities working with LLM-powered products, evaluation workflows, and applied AI systems.",
+    "technologies": [
+      "Python",
+      "LLMs",
+      "Prompting"
+    ],
+    "applyUrl": "https://www.metacareers.com/"
+  },
+  {
+    "id": "job_0010",
+    "company": "Valve",
+    "title": "Graphics Engineer",
+    "category": "Graphics / Rendering",
+    "employmentType": "Full-time",
+    "description": "Real-time rendering and graphics systems opportunities for games and platform technology.",
+    "technologies": [
+      "C++",
+      "Graphics",
+      "Rendering"
+    ],
+    "applyUrl": "https://www.valvesoftware.com/en/jobs"
+  },
+  {
+    "id": "job_0011",
+    "company": "Unity Technologies",
+    "title": "AI Gameplay Programmer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Gameplay and AI tooling opportunities across the Unity engine ecosystem.",
+    "technologies": [
+      "C#",
+      "Unity",
+      "Gameplay",
+      "AI"
+    ],
+    "applyUrl": "https://unity.com/careers"
+  },
+  {
+    "id": "job_0012",
+    "company": "Electronic Arts",
+    "title": "Backend Engineer \u2013 Online Services",
+    "category": "Backend / Cloud",
+    "employmentType": "Full-time",
+    "description": "Backend services for matchmaking, progression, and live operations on EA titles.",
+    "technologies": [
+      "Java",
+      "C#",
+      "Cloud",
+      "Online Services"
+    ],
+    "applyUrl": "https://www.ea.com/careers"
+  },
+  {
+    "id": "job_0013",
+    "company": "Microsoft",
+    "title": "Software Development Intern",
+    "category": "Software Engineering",
+    "employmentType": "Internship",
+    "description": "Internship opportunities building software across cloud, AI, and productivity teams.",
+    "technologies": [
+      "C#",
+      "Python",
+      "Cloud"
+    ],
+    "applyUrl": "https://careers.microsoft.com/students"
+  },
+  {
+    "id": "job_0014",
+    "company": "Sony Interactive Entertainment",
+    "title": "Game Designer",
+    "category": "Design",
+    "employmentType": "Full-time",
+    "description": "Game design opportunities covering systems, balance, and player-facing experiences.",
+    "technologies": [
+      "Game Design",
+      "Systems Design"
+    ],
+    "applyUrl": "https://www.sie.com/en/careers.html"
+  },
+  {
+    "id": "job_0015",
+    "company": "NVIDIA",
+    "title": "CUDA / GPU Software Engineer",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "GPU computing and systems software opportunities spanning CUDA, drivers, and developer platforms.",
+    "technologies": [
+      "C++",
+      "CUDA",
+      "GPU"
+    ],
+    "applyUrl": "https://jobs.nvidia.com/careers"
+  },
+  {
+    "id": "job_0016",
+    "company": "Amazon",
+    "title": "Software Development Engineer",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Software engineering opportunities across AWS, devices, and consumer products.",
+    "technologies": [
+      "Java",
+      "AWS",
+      "Distributed Systems"
+    ],
+    "applyUrl": "https://www.amazon.jobs/"
+  },
+  {
+    "id": "job_0017",
+    "company": "Ubisoft",
+    "title": "Gameplay Programmer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Gameplay programming opportunities across Ubisoft studios and live game franchises.",
+    "technologies": [
+      "C++",
+      "Gameplay",
+      "Game Engines"
+    ],
+    "applyUrl": "https://www.ubisoft.com/en-us/company/careers"
+  },
+  {
+    "id": "job_0018",
+    "company": "Nintendo",
+    "title": "Software Engineer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Software engineering opportunities supporting Nintendo platforms, tools, and game development.",
+    "technologies": [
+      "C++",
+      "Nintendo",
+      "Tools"
+    ],
+    "applyUrl": "https://careers.nintendo.com/"
+  },
+  {
+    "id": "job_0019",
+    "company": "Blizzard Entertainment",
+    "title": "Software Engineer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities across Blizzard game franchises, platforms, and live services.",
+    "technologies": [
+      "C++",
+      "Online Services",
+      "Games"
+    ],
+    "applyUrl": "https://careers.blizzard.com/"
+  },
+  {
+    "id": "job_0020",
+    "company": "Take-Two Interactive",
+    "title": "Software Engineer",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities across Take-Two labels supporting game platforms and services.",
+    "technologies": [
+      "C++",
+      "Backend",
+      "Games"
+    ],
+    "applyUrl": "https://www.take2games.com/careers/"
+  },
+  {
+    "id": "job_0021",
+    "company": "Anthropic",
+    "title": "Machine Learning Engineer",
+    "category": "AI / Machine Learning",
+    "employmentType": "Full-time",
+    "description": "ML research and engineering opportunities focused on reliable, useful AI systems.",
+    "technologies": [
+      "Python",
+      "Machine Learning",
+      "LLMs"
+    ],
+    "applyUrl": "https://www.anthropic.com/careers"
+  },
+  {
+    "id": "job_0022",
+    "company": "Adobe",
+    "title": "Software Engineer \u2013 Creative Cloud",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Software engineering opportunities across Creative Cloud products and creative tooling platforms.",
+    "technologies": [
+      "C++",
+      "JavaScript",
+      "Creative Tools"
+    ],
+    "applyUrl": "https://www.adobe.com/careers.html"
+  },
+  {
+    "id": "job_0023",
+    "company": "Roblox",
+    "title": "Game Systems Engineer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Platform and game systems opportunities supporting creators and experiences on Roblox.",
+    "technologies": [
+      "Lua",
+      "C++",
+      "Platform"
+    ],
+    "applyUrl": "https://careers.roblox.com/"
+  },
+  {
+    "id": "job_0024",
+    "company": "Bungie",
+    "title": "Software Engineer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities across Bungie game technology, tools, and live service systems.",
+    "technologies": [
+      "C++",
+      "Gameplay",
+      "Online Services"
+    ],
+    "applyUrl": "https://careers.bungie.com/jobs"
+  },
+  {
+    "id": "job_0025",
+    "company": "Niantic",
+    "title": "Software Engineer \u2013 Game Development",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Mobile game and AR engineering opportunities using Unity and large-scale multiplayer systems.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "AR",
+      "Mobile"
+    ],
+    "applyUrl": "https://careers.nianticlabs.com/"
+  },
+  {
+    "id": "job_0026",
+    "company": "Supercell",
+    "title": "Backend Software Engineer",
+    "category": "Backend / Cloud",
+    "employmentType": "Full-time",
+    "description": "Backend engineering opportunities supporting live mobile games and player identity systems.",
+    "technologies": [
+      "Go",
+      "Backend",
+      "Cloud"
+    ],
+    "applyUrl": "https://supercell.com/en/careers/"
+  },
+  {
+    "id": "job_0027",
+    "company": "JetBrains",
+    "title": "Software Engineer \u2013 Developer Tools",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities building IDEs, language tooling, and developer productivity products.",
+    "technologies": [
+      "Kotlin",
+      "Java",
+      "Developer Tools"
+    ],
+    "applyUrl": "https://www.jetbrains.com/careers/jobs/"
+  },
+  {
+    "id": "job_0028",
+    "company": "Cloudflare",
+    "title": "Software Engineer \u2013 Edge Platform",
+    "category": "Backend / Cloud",
+    "employmentType": "Full-time",
+    "description": "Distributed systems opportunities across Cloudflare edge platform and developer products.",
+    "technologies": [
+      "Go",
+      "Rust",
+      "Distributed Systems",
+      "Cloud"
+    ],
+    "applyUrl": "https://www.cloudflare.com/careers/"
+  },
+  {
+    "id": "job_0029",
+    "company": "Discord",
+    "title": "Software Engineer",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities across Discord client, backend, and community platform systems.",
+    "technologies": [
+      "Elixir",
+      "Rust",
+      "React",
+      "Backend"
+    ],
+    "applyUrl": "https://discord.com/careers"
+  },
+  {
+    "id": "job_0030",
+    "company": "CD PROJEKT RED",
+    "title": "Gameplay Programmer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Gameplay programming opportunities across CD PROJEKT RED game titles and tools.",
+    "technologies": [
+      "C++",
+      "Gameplay",
+      "Unreal Engine"
+    ],
+    "applyUrl": "https://www.cdprojekt.com/en/jobs/"
+  },
+  {
+    "id": "job_0031",
+    "company": "King",
+    "title": "Data Analyst",
+    "category": "Data / Analytics",
+    "employmentType": "Full-time",
+    "description": "Analytics opportunities supporting live mobile games, player insights, and product decisions.",
+    "technologies": [
+      "SQL",
+      "Python",
+      "Analytics"
+    ],
+    "applyUrl": "https://king.com/careers"
+  },
+  {
+    "id": "job_0032",
+    "company": "Paradox Interactive",
+    "title": "Game Designer",
+    "category": "Design",
+    "employmentType": "Full-time",
+    "description": "Design opportunities across Paradox strategy and simulation game franchises.",
+    "technologies": [
+      "Game Design",
+      "Systems Design"
+    ],
+    "applyUrl": "https://www.paradoxinteractive.com/careers"
+  },
+  {
+    "id": "job_0033",
+    "company": "GitHub",
+    "title": "Software Engineer",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities across GitHub developer platform, collaboration, and productivity tools.",
+    "technologies": [
+      "Ruby",
+      "Go",
+      "TypeScript"
+    ],
+    "applyUrl": "https://www.github.careers/"
+  },
+  {
+    "id": "job_0034",
+    "company": "Stripe",
+    "title": "Software Engineer",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities building payments infrastructure and developer-facing APIs.",
+    "technologies": [
+      "Ruby",
+      "Java",
+      "APIs",
+      "Backend"
+    ],
+    "applyUrl": "https://stripe.com/jobs"
+  },
+  {
+    "id": "job_0035",
+    "company": "Datadog",
+    "title": "Software Engineer \u2013 Observability",
+    "category": "Backend / Cloud",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities building monitoring, observability, and cloud infrastructure products.",
+    "technologies": [
+      "Go",
+      "Python",
+      "Distributed Systems"
+    ],
+    "applyUrl": "https://careers.datadoghq.com/"
+  },
+  {
+    "id": "job_0036",
+    "company": "Shopify",
+    "title": "Software Engineer",
+    "category": "Software Engineering",
+    "employmentType": "Full-time",
+    "description": "Engineering opportunities across commerce platform, merchant tools, and cloud services.",
+    "technologies": [
+      "Ruby",
+      "React",
+      "Cloud"
+    ],
+    "applyUrl": "https://www.shopify.com/careers"
+  },
+  {
+    "id": "job_0037",
+    "company": "Pixi & Pop",
+    "title": "Game Systems Developer",
+    "category": "Game Development",
+    "employmentType": "Full-time",
+    "description": "Gameplay systems opportunities for indie and mid-size interactive entertainment projects.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "Game Systems"
+    ],
+    "applyUrl": "https://pixiandpop.bamboohr.com/careers/"
+  },
+  {
+    "id": "job_0038",
+    "company": "Pixi & Pop",
+    "title": "AI Product Engineer",
+    "category": "AI / Machine Learning",
+    "employmentType": "Full-time",
+    "description": "Opportunities designing and implementing AI-driven features for creative tools and games.",
+    "technologies": [
+      "Python",
+      "LLMs",
+      "Unity"
+    ],
+    "applyUrl": "https://pixiandpop.bamboohr.com/careers/"
+  },
+  {
+    "id": "job_0039",
+    "company": "Cantina AI",
+    "title": "AI Software Engineer",
+    "category": "AI / Machine Learning",
+    "employmentType": "Full-time",
+    "description": "AI feature and integration opportunities for enterprise products using LLMs and automation tooling.",
+    "technologies": [
+      "Python",
+      "LLMs",
+      "Automation"
+    ],
+    "applyUrl": "https://jobs.ashbyhq.com/cantina"
+  },
+  {
+    "id": "job_0040",
+    "company": "Benchmark Sports",
+    "title": "Data Engineer \u2013 Sports Analytics",
+    "category": "Data / Analytics",
+    "employmentType": "Full-time",
+    "description": "Data pipeline and analytics opportunities for sports technology products.",
+    "technologies": [
+      "Python",
+      "SQL",
+      "Data Engineering"
+    ],
+    "applyUrl": "https://www.benchmarksports.com/"
+  },
+  {
+    "id": "job_0041",
+    "company": "Activision",
+    "title": "Online Services Engineer",
+    "category": "Backend / Cloud",
+    "employmentType": "Full-time",
+    "description": "Online services opportunities supporting multiplayer features and live game operations.",
+    "technologies": [
+      "C++",
+      "Backend",
+      "Online Services"
+    ],
+    "applyUrl": "https://careers.activision.com/"
+  },
+  {
+    "id": "job_0042",
+    "company": "Amazon",
+    "title": "UX Designer",
+    "category": "Design",
+    "employmentType": "Full-time",
+    "description": "Design opportunities across Amazon consumer products, devices, and digital experiences.",
+    "technologies": [
+      "UX",
+      "UI Design",
+      "Figma"
+    ],
+    "applyUrl": "https://www.amazon.jobs/"
+  },
+  {
+    "id": "job_0043",
+    "company": "Google",
+    "title": "Data Scientist",
+    "category": "Data / Analytics",
+    "employmentType": "Full-time",
+    "description": "Analytics and data science opportunities across Google products and platforms.",
+    "technologies": [
+      "Python",
+      "SQL",
+      "Machine Learning"
+    ],
+    "applyUrl": "https://careers.google.com/"
+  },
+  {
+    "id": "job_0044",
+    "company": "Meta",
+    "title": "Product Designer",
+    "category": "Design",
+    "employmentType": "Full-time",
+    "description": "Product design opportunities across Meta apps, devices, and platform experiences.",
+    "technologies": [
+      "Product Design",
+      "Figma",
+      "UX"
+    ],
+    "applyUrl": "https://www.metacareers.com/"
+  },
+  {
+    "id": "job_0045",
+    "company": "NVIDIA",
+    "title": "Graphics Software Engineer",
+    "category": "Graphics / Rendering",
+    "employmentType": "Full-time",
+    "description": "Graphics and rendering software opportunities across NVIDIA developer and platform technologies.",
+    "technologies": [
+      "C++",
+      "Graphics",
+      "CUDA",
+      "Rendering"
+    ],
+    "applyUrl": "https://jobs.nvidia.com/careers"
+  },
+  {
+    "id": "job_0046",
+    "company": "Epic Games",
+    "title": "Technical Artist",
+    "category": "Graphics / Rendering",
+    "employmentType": "Full-time",
+    "description": "Technical art opportunities spanning shaders, pipelines, and Unreal Engine content tooling.",
+    "technologies": [
+      "Unreal Engine",
+      "Shaders",
+      "Technical Art"
+    ],
+    "applyUrl": "https://www.epicgames.com/site/en-US/careers"
+  },
+  {
+    "id": "job_0047",
+    "company": "Unity Technologies",
+    "title": "Product Manager \u2013 Creator Tools",
+    "category": "Product",
+    "employmentType": "Full-time",
+    "description": "Product opportunities for Unity creator tools, engine workflows, and developer experiences.",
+    "technologies": [
+      "Product Management",
+      "Unity",
+      "Tools"
+    ],
+    "applyUrl": "https://unity.com/careers"
+  },
+  {
+    "id": "job_0048",
+    "company": "OpenAI",
+    "title": "Software Engineering Intern",
+    "category": "Software Engineering",
+    "employmentType": "Internship",
+    "description": "Internship opportunities in software and AI systems across OpenAI product and research teams.",
+    "technologies": [
+      "Python",
+      "Software Engineering",
+      "AI"
+    ],
+    "applyUrl": "https://openai.com/careers"
+  },
+  {
+    "id": "job_0049",
+    "company": "Microsoft",
+    "title": "Contract Software Engineer",
+    "category": "Software Engineering",
+    "employmentType": "Contract",
+    "description": "Contract software engineering opportunities across Microsoft cloud and productivity platforms.",
+    "technologies": [
+      "C#",
+      "Azure",
+      "Cloud"
+    ],
+    "applyUrl": "https://careers.microsoft.com/"
+  },
+  {
+    "id": "job_0050",
+    "company": "Electronic Arts",
+    "title": "Part-time QA Analyst",
+    "category": "Other",
+    "employmentType": "Part-time",
+    "description": "Part-time quality assurance opportunities supporting live game testing and player experience.",
+    "technologies": [
+      "QA",
+      "Testing",
+      "Games"
+    ],
+    "applyUrl": "https://www.ea.com/careers"
+  }
+]

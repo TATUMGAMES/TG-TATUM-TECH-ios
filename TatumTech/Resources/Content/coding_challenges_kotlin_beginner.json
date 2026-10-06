@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "kt_beg_001",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Which keyword is used to declare a variable in Kotlin?",
+    "options": [
+      "var",
+      "let",
+      "val",
+      "def"
+    ],
+    "correctAnswer": "var",
+    "explanation": "'var' and 'val' are used to declare variables in Kotlin. 'var' is mutable, 'val' is immutable.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_002",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is the output of println(1 + 2 * 3)?",
+    "options": [
+      "7",
+      "9",
+      "6",
+      "5"
+    ],
+    "correctAnswer": "7",
+    "explanation": "Multiplication has higher precedence: 2*3=6, 1+6=7.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_003",
+    "created_at": "2025-07-01T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Which of the following is a valid function declaration in Kotlin?",
+    "options": [
+      "fun sum(a: Int, b: Int): Int",
+      "def sum(a, b): Int",
+      "function sum(a, b) { }",
+      "sum(a: Int, b: Int): Int"
+    ],
+    "correctAnswer": "fun sum(a: Int, b: Int): Int",
+    "explanation": "Kotlin functions are declared with the 'fun' keyword.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, which keyword declares a read-only local property? Choose the best beginner-level answer.",
+    "options": [
+      "val",
+      "var",
+      "const",
+      "final"
+    ],
+    "correctAnswer": "val",
+    "explanation": "val creates an immutable binding.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, which keyword declares a read-only local property? Which choice matches core introductory knowledge?",
+    "options": [
+      "val",
+      "var",
+      "const",
+      "final"
+    ],
+    "correctAnswer": "val",
+    "explanation": "val creates an immutable binding.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, null-safety is primarily enforced by? Choose the best beginner-level answer.",
+    "options": [
+      "Nullable types with ?",
+      "All vars being nullable",
+      "Runtime only",
+      "Annotations only"
+    ],
+    "correctAnswer": "Nullable types with ?",
+    "explanation": "Types are non-null by default; ? marks nullability.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, null-safety is primarily enforced by? For newcomers, which statement is correct?",
+    "options": [
+      "Nullable types with ?",
+      "All vars being nullable",
+      "Runtime only",
+      "Annotations only"
+    ],
+    "correctAnswer": "Nullable types with ?",
+    "explanation": "Types are non-null by default; ? marks nullability.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, null-safety is primarily enforced by? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Nullable types with ?",
+      "All vars being nullable",
+      "Runtime only",
+      "Annotations only"
+    ],
+    "correctAnswer": "Nullable types with ?",
+    "explanation": "Types are non-null by default; ? marks nullability.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, null-safety is primarily enforced by? Pick the fundamental concept that applies.",
+    "options": [
+      "Nullable types with ?",
+      "All vars being nullable",
+      "Runtime only",
+      "Annotations only"
+    ],
+    "correctAnswer": "Nullable types with ?",
+    "explanation": "Types are non-null by default; ? marks nullability.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, null-safety is primarily enforced by? Which choice matches core introductory knowledge?",
+    "options": [
+      "Nullable types with ?",
+      "All vars being nullable",
+      "Runtime only",
+      "Annotations only"
+    ],
+    "correctAnswer": "Nullable types with ?",
+    "explanation": "Types are non-null by default; ? marks nullability.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?.` do in Kotlin? Choose the best beginner-level answer.",
+    "options": [
+      "Safe-call operator",
+      "Force unwrap",
+      "Elvis operator",
+      "Type cast"
+    ],
+    "correctAnswer": "Safe-call operator",
+    "explanation": "?. calls only when the receiver is non-null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?.` do in Kotlin? For newcomers, which statement is correct?",
+    "options": [
+      "Safe-call operator",
+      "Force unwrap",
+      "Elvis operator",
+      "Type cast"
+    ],
+    "correctAnswer": "Safe-call operator",
+    "explanation": "?. calls only when the receiver is non-null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?.` do in Kotlin? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Safe-call operator",
+      "Force unwrap",
+      "Elvis operator",
+      "Type cast"
+    ],
+    "correctAnswer": "Safe-call operator",
+    "explanation": "?. calls only when the receiver is non-null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?.` do in Kotlin? Pick the fundamental concept that applies.",
+    "options": [
+      "Safe-call operator",
+      "Force unwrap",
+      "Elvis operator",
+      "Type cast"
+    ],
+    "correctAnswer": "Safe-call operator",
+    "explanation": "?. calls only when the receiver is non-null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?.` do in Kotlin? Which choice matches core introductory knowledge?",
+    "options": [
+      "Safe-call operator",
+      "Force unwrap",
+      "Elvis operator",
+      "Type cast"
+    ],
+    "correctAnswer": "Safe-call operator",
+    "explanation": "?. calls only when the receiver is non-null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?:` do in Kotlin? Choose the best beginner-level answer.",
+    "options": [
+      "Elvis operator for defaults",
+      "Safe call",
+      "Smart cast",
+      "Range check"
+    ],
+    "correctAnswer": "Elvis operator for defaults",
+    "explanation": "?: provides a fallback when the left side is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?:` do in Kotlin? For newcomers, which statement is correct?",
+    "options": [
+      "Elvis operator for defaults",
+      "Safe call",
+      "Smart cast",
+      "Range check"
+    ],
+    "correctAnswer": "Elvis operator for defaults",
+    "explanation": "?: provides a fallback when the left side is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?:` do in Kotlin? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Elvis operator for defaults",
+      "Safe call",
+      "Smart cast",
+      "Range check"
+    ],
+    "correctAnswer": "Elvis operator for defaults",
+    "explanation": "?: provides a fallback when the left side is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?:` do in Kotlin? Pick the fundamental concept that applies.",
+    "options": [
+      "Elvis operator for defaults",
+      "Safe call",
+      "Smart cast",
+      "Range check"
+    ],
+    "correctAnswer": "Elvis operator for defaults",
+    "explanation": "?: provides a fallback when the left side is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `?:` do in Kotlin? Which choice matches core introductory knowledge?",
+    "options": [
+      "Elvis operator for defaults",
+      "Safe call",
+      "Smart cast",
+      "Range check"
+    ],
+    "correctAnswer": "Elvis operator for defaults",
+    "explanation": "?: provides a fallback when the left side is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `data class` primarily generates? Choose the best beginner-level answer.",
+    "options": [
+      "equals/hashCode/toString/copy",
+      "Only JNI glue",
+      "Only XML serializers",
+      "Only UI bindings"
+    ],
+    "correctAnswer": "equals/hashCode/toString/copy",
+    "explanation": "Data classes synthesize common value methods.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `data class` primarily generates? For newcomers, which statement is correct?",
+    "options": [
+      "equals/hashCode/toString/copy",
+      "Only JNI glue",
+      "Only XML serializers",
+      "Only UI bindings"
+    ],
+    "correctAnswer": "equals/hashCode/toString/copy",
+    "explanation": "Data classes synthesize common value methods.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `data class` primarily generates? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "equals/hashCode/toString/copy",
+      "Only JNI glue",
+      "Only XML serializers",
+      "Only UI bindings"
+    ],
+    "correctAnswer": "equals/hashCode/toString/copy",
+    "explanation": "Data classes synthesize common value methods.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `data class` primarily generates? Pick the fundamental concept that applies.",
+    "options": [
+      "equals/hashCode/toString/copy",
+      "Only JNI glue",
+      "Only XML serializers",
+      "Only UI bindings"
+    ],
+    "correctAnswer": "equals/hashCode/toString/copy",
+    "explanation": "Data classes synthesize common value methods.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `data class` primarily generates? Which choice matches core introductory knowledge?",
+    "options": [
+      "equals/hashCode/toString/copy",
+      "Only JNI glue",
+      "Only XML serializers",
+      "Only UI bindings"
+    ],
+    "correctAnswer": "equals/hashCode/toString/copy",
+    "explanation": "Data classes synthesize common value methods.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Coroutines in Kotlin are typically started with? Choose the best beginner-level answer.",
+    "options": [
+      "launch or async",
+      "Thread.start only",
+      "fork()",
+      "Promise.all"
+    ],
+    "correctAnswer": "launch or async",
+    "explanation": "launch/async are primary coroutine builders.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Coroutines in Kotlin are typically started with? For newcomers, which statement is correct?",
+    "options": [
+      "launch or async",
+      "Thread.start only",
+      "fork()",
+      "Promise.all"
+    ],
+    "correctAnswer": "launch or async",
+    "explanation": "launch/async are primary coroutine builders.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Coroutines in Kotlin are typically started with? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "launch or async",
+      "Thread.start only",
+      "fork()",
+      "Promise.all"
+    ],
+    "correctAnswer": "launch or async",
+    "explanation": "launch/async are primary coroutine builders.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Coroutines in Kotlin are typically started with? Pick the fundamental concept that applies.",
+    "options": [
+      "launch or async",
+      "Thread.start only",
+      "fork()",
+      "Promise.all"
+    ],
+    "correctAnswer": "launch or async",
+    "explanation": "launch/async are primary coroutine builders.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Coroutines in Kotlin are typically started with? Which choice matches core introductory knowledge?",
+    "options": [
+      "launch or async",
+      "Thread.start only",
+      "fork()",
+      "Promise.all"
+    ],
+    "correctAnswer": "launch or async",
+    "explanation": "launch/async are primary coroutine builders.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `suspend` functions may? Choose the best beginner-level answer.",
+    "options": [
+      "Call other suspend functions",
+      "Block the UI thread always",
+      "Only run on main",
+      "Never call delay"
+    ],
+    "correctAnswer": "Call other suspend functions",
+    "explanation": "Suspend functions compose cooperative async work.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `suspend` functions may? For newcomers, which statement is correct?",
+    "options": [
+      "Call other suspend functions",
+      "Block the UI thread always",
+      "Only run on main",
+      "Never call delay"
+    ],
+    "correctAnswer": "Call other suspend functions",
+    "explanation": "Suspend functions compose cooperative async work.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `suspend` functions may? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Call other suspend functions",
+      "Block the UI thread always",
+      "Only run on main",
+      "Never call delay"
+    ],
+    "correctAnswer": "Call other suspend functions",
+    "explanation": "Suspend functions compose cooperative async work.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `suspend` functions may? Pick the fundamental concept that applies.",
+    "options": [
+      "Call other suspend functions",
+      "Block the UI thread always",
+      "Only run on main",
+      "Never call delay"
+    ],
+    "correctAnswer": "Call other suspend functions",
+    "explanation": "Suspend functions compose cooperative async work.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `suspend` functions may? Which choice matches core introductory knowledge?",
+    "options": [
+      "Call other suspend functions",
+      "Block the UI thread always",
+      "Only run on main",
+      "Never call delay"
+    ],
+    "correctAnswer": "Call other suspend functions",
+    "explanation": "Suspend functions compose cooperative async work.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `sealed class` useful for in Kotlin? Choose the best beginner-level answer.",
+    "options": [
+      "Restricted hierarchies for when branches",
+      "Open inheritance only",
+      "JNI only",
+      "Reflection only"
+    ],
+    "correctAnswer": "Restricted hierarchies for when branches",
+    "explanation": "Sealed types enable exhaustive when checks.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `sealed class` useful for in Kotlin? For newcomers, which statement is correct?",
+    "options": [
+      "Restricted hierarchies for when branches",
+      "Open inheritance only",
+      "JNI only",
+      "Reflection only"
+    ],
+    "correctAnswer": "Restricted hierarchies for when branches",
+    "explanation": "Sealed types enable exhaustive when checks.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `sealed class` useful for in Kotlin? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Restricted hierarchies for when branches",
+      "Open inheritance only",
+      "JNI only",
+      "Reflection only"
+    ],
+    "correctAnswer": "Restricted hierarchies for when branches",
+    "explanation": "Sealed types enable exhaustive when checks.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `sealed class` useful for in Kotlin? Pick the fundamental concept that applies.",
+    "options": [
+      "Restricted hierarchies for when branches",
+      "Open inheritance only",
+      "JNI only",
+      "Reflection only"
+    ],
+    "correctAnswer": "Restricted hierarchies for when branches",
+    "explanation": "Sealed types enable exhaustive when checks.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `sealed class` useful for in Kotlin? Which choice matches core introductory knowledge?",
+    "options": [
+      "Restricted hierarchies for when branches",
+      "Open inheritance only",
+      "JNI only",
+      "Reflection only"
+    ],
+    "correctAnswer": "Restricted hierarchies for when branches",
+    "explanation": "Sealed types enable exhaustive when checks.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `companion object` holds? Choose the best beginner-level answer.",
+    "options": [
+      "Type-level members",
+      "Only instance fields",
+      "Only XML resources",
+      "Only Gradle tasks"
+    ],
+    "correctAnswer": "Type-level members",
+    "explanation": "Companion objects provide class-level members.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `companion object` holds? For newcomers, which statement is correct?",
+    "options": [
+      "Type-level members",
+      "Only instance fields",
+      "Only XML resources",
+      "Only Gradle tasks"
+    ],
+    "correctAnswer": "Type-level members",
+    "explanation": "Companion objects provide class-level members.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `companion object` holds? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Type-level members",
+      "Only instance fields",
+      "Only XML resources",
+      "Only Gradle tasks"
+    ],
+    "correctAnswer": "Type-level members",
+    "explanation": "Companion objects provide class-level members.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `companion object` holds? Pick the fundamental concept that applies.",
+    "options": [
+      "Type-level members",
+      "Only instance fields",
+      "Only XML resources",
+      "Only Gradle tasks"
+    ],
+    "correctAnswer": "Type-level members",
+    "explanation": "Companion objects provide class-level members.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `companion object` holds? Which choice matches core introductory knowledge?",
+    "options": [
+      "Type-level members",
+      "Only instance fields",
+      "Only XML resources",
+      "Only Gradle tasks"
+    ],
+    "correctAnswer": "Type-level members",
+    "explanation": "Companion objects provide class-level members.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `lazy` provide in Kotlin? Choose the best beginner-level answer.",
+    "options": [
+      "Deferred initialization",
+      "Eager constants only",
+      "Thread interruption",
+      "Memory mapping"
+    ],
+    "correctAnswer": "Deferred initialization",
+    "explanation": "lazy initializes on first access.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `lazy` provide in Kotlin? For newcomers, which statement is correct?",
+    "options": [
+      "Deferred initialization",
+      "Eager constants only",
+      "Thread interruption",
+      "Memory mapping"
+    ],
+    "correctAnswer": "Deferred initialization",
+    "explanation": "lazy initializes on first access.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `lazy` provide in Kotlin? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Deferred initialization",
+      "Eager constants only",
+      "Thread interruption",
+      "Memory mapping"
+    ],
+    "correctAnswer": "Deferred initialization",
+    "explanation": "lazy initializes on first access.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `lazy` provide in Kotlin? Pick the fundamental concept that applies.",
+    "options": [
+      "Deferred initialization",
+      "Eager constants only",
+      "Thread interruption",
+      "Memory mapping"
+    ],
+    "correctAnswer": "Deferred initialization",
+    "explanation": "lazy initializes on first access.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `lazy` provide in Kotlin? Which choice matches core introductory knowledge?",
+    "options": [
+      "Deferred initialization",
+      "Eager constants only",
+      "Thread interruption",
+      "Memory mapping"
+    ],
+    "correctAnswer": "Deferred initialization",
+    "explanation": "lazy initializes on first access.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `inline` functions often help with? Choose the best beginner-level answer.",
+    "options": [
+      "Higher-order function overhead",
+      "Network latency",
+      "Disk I/O",
+      "GPU shaders"
+    ],
+    "correctAnswer": "Higher-order function overhead",
+    "explanation": "Inlining can remove lambda allocation costs.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `inline` functions often help with? For newcomers, which statement is correct?",
+    "options": [
+      "Higher-order function overhead",
+      "Network latency",
+      "Disk I/O",
+      "GPU shaders"
+    ],
+    "correctAnswer": "Higher-order function overhead",
+    "explanation": "Inlining can remove lambda allocation costs.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `inline` functions often help with? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Higher-order function overhead",
+      "Network latency",
+      "Disk I/O",
+      "GPU shaders"
+    ],
+    "correctAnswer": "Higher-order function overhead",
+    "explanation": "Inlining can remove lambda allocation costs.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `inline` functions often help with? Pick the fundamental concept that applies.",
+    "options": [
+      "Higher-order function overhead",
+      "Network latency",
+      "Disk I/O",
+      "GPU shaders"
+    ],
+    "correctAnswer": "Higher-order function overhead",
+    "explanation": "Inlining can remove lambda allocation costs.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `inline` functions often help with? Which choice matches core introductory knowledge?",
+    "options": [
+      "Higher-order function overhead",
+      "Network latency",
+      "Disk I/O",
+      "GPU shaders"
+    ],
+    "correctAnswer": "Higher-order function overhead",
+    "explanation": "Inlining can remove lambda allocation costs.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Flow in Kotlin is primarily used for? Choose the best beginner-level answer.",
+    "options": [
+      "Cold asynchronous streams",
+      "Blocking sockets only",
+      "XML parsing only",
+      "Layout inflation"
+    ],
+    "correctAnswer": "Cold asynchronous streams",
+    "explanation": "Flow models reactive streams of values.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Flow in Kotlin is primarily used for? For newcomers, which statement is correct?",
+    "options": [
+      "Cold asynchronous streams",
+      "Blocking sockets only",
+      "XML parsing only",
+      "Layout inflation"
+    ],
+    "correctAnswer": "Cold asynchronous streams",
+    "explanation": "Flow models reactive streams of values.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Flow in Kotlin is primarily used for? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Cold asynchronous streams",
+      "Blocking sockets only",
+      "XML parsing only",
+      "Layout inflation"
+    ],
+    "correctAnswer": "Cold asynchronous streams",
+    "explanation": "Flow models reactive streams of values.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Flow in Kotlin is primarily used for? Pick the fundamental concept that applies.",
+    "options": [
+      "Cold asynchronous streams",
+      "Blocking sockets only",
+      "XML parsing only",
+      "Layout inflation"
+    ],
+    "correctAnswer": "Cold asynchronous streams",
+    "explanation": "Flow models reactive streams of values.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "Flow in Kotlin is primarily used for? Which choice matches core introductory knowledge?",
+    "options": [
+      "Cold asynchronous streams",
+      "Blocking sockets only",
+      "XML parsing only",
+      "Layout inflation"
+    ],
+    "correctAnswer": "Cold asynchronous streams",
+    "explanation": "Flow models reactive streams of values.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `object` declaration creates? Choose the best beginner-level answer.",
+    "options": [
+      "A singleton",
+      "An abstract class",
+      "An enum only",
+      "A package"
+    ],
+    "correctAnswer": "A singleton",
+    "explanation": "object declares a singleton instance.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `object` declaration creates? For newcomers, which statement is correct?",
+    "options": [
+      "A singleton",
+      "An abstract class",
+      "An enum only",
+      "A package"
+    ],
+    "correctAnswer": "A singleton",
+    "explanation": "object declares a singleton instance.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `object` declaration creates? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A singleton",
+      "An abstract class",
+      "An enum only",
+      "A package"
+    ],
+    "correctAnswer": "A singleton",
+    "explanation": "object declares a singleton instance.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `object` declaration creates? Pick the fundamental concept that applies.",
+    "options": [
+      "A singleton",
+      "An abstract class",
+      "An enum only",
+      "A package"
+    ],
+    "correctAnswer": "A singleton",
+    "explanation": "object declares a singleton instance.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `object` declaration creates? Which choice matches core introductory knowledge?",
+    "options": [
+      "A singleton",
+      "An abstract class",
+      "An enum only",
+      "A package"
+    ],
+    "correctAnswer": "A singleton",
+    "explanation": "object declares a singleton instance.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `by` enable in Kotlin? Choose the best beginner-level answer.",
+    "options": [
+      "Delegation",
+      "Only inheritance",
+      "Only generics",
+      "Only annotations"
+    ],
+    "correctAnswer": "Delegation",
+    "explanation": "by supports property and interface delegation.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `by` enable in Kotlin? For newcomers, which statement is correct?",
+    "options": [
+      "Delegation",
+      "Only inheritance",
+      "Only generics",
+      "Only annotations"
+    ],
+    "correctAnswer": "Delegation",
+    "explanation": "by supports property and interface delegation.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `by` enable in Kotlin? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Delegation",
+      "Only inheritance",
+      "Only generics",
+      "Only annotations"
+    ],
+    "correctAnswer": "Delegation",
+    "explanation": "by supports property and interface delegation.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `by` enable in Kotlin? Pick the fundamental concept that applies.",
+    "options": [
+      "Delegation",
+      "Only inheritance",
+      "Only generics",
+      "Only annotations"
+    ],
+    "correctAnswer": "Delegation",
+    "explanation": "by supports property and interface delegation.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `by` enable in Kotlin? Which choice matches core introductory knowledge?",
+    "options": [
+      "Delegation",
+      "Only inheritance",
+      "Only generics",
+      "Only annotations"
+    ],
+    "correctAnswer": "Delegation",
+    "explanation": "by supports property and interface delegation.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `when` without an argument is similar to? Choose the best beginner-level answer.",
+    "options": [
+      "if-else chains",
+      "for loops",
+      "try-finally only",
+      "goto"
+    ],
+    "correctAnswer": "if-else chains",
+    "explanation": "Argument-less when branches on boolean conditions.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `when` without an argument is similar to? For newcomers, which statement is correct?",
+    "options": [
+      "if-else chains",
+      "for loops",
+      "try-finally only",
+      "goto"
+    ],
+    "correctAnswer": "if-else chains",
+    "explanation": "Argument-less when branches on boolean conditions.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `when` without an argument is similar to? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "if-else chains",
+      "for loops",
+      "try-finally only",
+      "goto"
+    ],
+    "correctAnswer": "if-else chains",
+    "explanation": "Argument-less when branches on boolean conditions.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `when` without an argument is similar to? Pick the fundamental concept that applies.",
+    "options": [
+      "if-else chains",
+      "for loops",
+      "try-finally only",
+      "goto"
+    ],
+    "correctAnswer": "if-else chains",
+    "explanation": "Argument-less when branches on boolean conditions.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `when` without an argument is similar to? Which choice matches core introductory knowledge?",
+    "options": [
+      "if-else chains",
+      "for loops",
+      "try-finally only",
+      "goto"
+    ],
+    "correctAnswer": "if-else chains",
+    "explanation": "Argument-less when branches on boolean conditions.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is a primary constructor in Kotlin? Choose the best beginner-level answer.",
+    "options": [
+      "Constructor declared in the class header",
+      "Only a Java factory",
+      "Only a builder",
+      "Only a DI graph"
+    ],
+    "correctAnswer": "Constructor declared in the class header",
+    "explanation": "Primary constructors appear in the class header.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is a primary constructor in Kotlin? For newcomers, which statement is correct?",
+    "options": [
+      "Constructor declared in the class header",
+      "Only a Java factory",
+      "Only a builder",
+      "Only a DI graph"
+    ],
+    "correctAnswer": "Constructor declared in the class header",
+    "explanation": "Primary constructors appear in the class header.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is a primary constructor in Kotlin? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Constructor declared in the class header",
+      "Only a Java factory",
+      "Only a builder",
+      "Only a DI graph"
+    ],
+    "correctAnswer": "Constructor declared in the class header",
+    "explanation": "Primary constructors appear in the class header.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is a primary constructor in Kotlin? Pick the fundamental concept that applies.",
+    "options": [
+      "Constructor declared in the class header",
+      "Only a Java factory",
+      "Only a builder",
+      "Only a DI graph"
+    ],
+    "correctAnswer": "Constructor declared in the class header",
+    "explanation": "Primary constructors appear in the class header.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is a primary constructor in Kotlin? Which choice matches core introductory knowledge?",
+    "options": [
+      "Constructor declared in the class header",
+      "Only a Java factory",
+      "Only a builder",
+      "Only a DI graph"
+    ],
+    "correctAnswer": "Constructor declared in the class header",
+    "explanation": "Primary constructors appear in the class header.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `MutableList` differs from `List` because it is? Choose the best beginner-level answer.",
+    "options": [
+      "Mutable",
+      "Always sorted",
+      "Thread-safe always",
+      "Immutable"
+    ],
+    "correctAnswer": "Mutable",
+    "explanation": "MutableList supports in-place modification.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `MutableList` differs from `List` because it is? For newcomers, which statement is correct?",
+    "options": [
+      "Mutable",
+      "Always sorted",
+      "Thread-safe always",
+      "Immutable"
+    ],
+    "correctAnswer": "Mutable",
+    "explanation": "MutableList supports in-place modification.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `MutableList` differs from `List` because it is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Mutable",
+      "Always sorted",
+      "Thread-safe always",
+      "Immutable"
+    ],
+    "correctAnswer": "Mutable",
+    "explanation": "MutableList supports in-place modification.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `MutableList` differs from `List` because it is? Pick the fundamental concept that applies.",
+    "options": [
+      "Mutable",
+      "Always sorted",
+      "Thread-safe always",
+      "Immutable"
+    ],
+    "correctAnswer": "Mutable",
+    "explanation": "MutableList supports in-place modification.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, `MutableList` differs from `List` because it is? Which choice matches core introductory knowledge?",
+    "options": [
+      "Mutable",
+      "Always sorted",
+      "Thread-safe always",
+      "Immutable"
+    ],
+    "correctAnswer": "Mutable",
+    "explanation": "MutableList supports in-place modification.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `!!` do in Kotlin? Choose the best beginner-level answer.",
+    "options": [
+      "Asserts non-null (can throw)",
+      "Safe call",
+      "Elvis",
+      "Smart cast"
+    ],
+    "correctAnswer": "Asserts non-null (can throw)",
+    "explanation": "!! throws if the value is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `!!` do in Kotlin? For newcomers, which statement is correct?",
+    "options": [
+      "Asserts non-null (can throw)",
+      "Safe call",
+      "Elvis",
+      "Smart cast"
+    ],
+    "correctAnswer": "Asserts non-null (can throw)",
+    "explanation": "!! throws if the value is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `!!` do in Kotlin? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Asserts non-null (can throw)",
+      "Safe call",
+      "Elvis",
+      "Smart cast"
+    ],
+    "correctAnswer": "Asserts non-null (can throw)",
+    "explanation": "!! throws if the value is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `!!` do in Kotlin? Pick the fundamental concept that applies.",
+    "options": [
+      "Asserts non-null (can throw)",
+      "Safe call",
+      "Elvis",
+      "Smart cast"
+    ],
+    "correctAnswer": "Asserts non-null (can throw)",
+    "explanation": "!! throws if the value is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What does `!!` do in Kotlin? Which choice matches core introductory knowledge?",
+    "options": [
+      "Asserts non-null (can throw)",
+      "Safe call",
+      "Elvis",
+      "Smart cast"
+    ],
+    "correctAnswer": "Asserts non-null (can throw)",
+    "explanation": "!! throws if the value is null.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, extension functions? Choose the best beginner-level answer.",
+    "options": [
+      "Add call-site helpers without inheritance",
+      "Modify bytecode of sealed JDK classes always",
+      "Replace the JVM",
+      "Disable null checks"
+    ],
+    "correctAnswer": "Add call-site helpers without inheritance",
+    "explanation": "Extensions are resolved statically.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, extension functions? For newcomers, which statement is correct?",
+    "options": [
+      "Add call-site helpers without inheritance",
+      "Modify bytecode of sealed JDK classes always",
+      "Replace the JVM",
+      "Disable null checks"
+    ],
+    "correctAnswer": "Add call-site helpers without inheritance",
+    "explanation": "Extensions are resolved statically.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, extension functions? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Add call-site helpers without inheritance",
+      "Modify bytecode of sealed JDK classes always",
+      "Replace the JVM",
+      "Disable null checks"
+    ],
+    "correctAnswer": "Add call-site helpers without inheritance",
+    "explanation": "Extensions are resolved statically.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, extension functions? Pick the fundamental concept that applies.",
+    "options": [
+      "Add call-site helpers without inheritance",
+      "Modify bytecode of sealed JDK classes always",
+      "Replace the JVM",
+      "Disable null checks"
+    ],
+    "correctAnswer": "Add call-site helpers without inheritance",
+    "explanation": "Extensions are resolved statically.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "In Kotlin, extension functions? Which choice matches core introductory knowledge?",
+    "options": [
+      "Add call-site helpers without inheritance",
+      "Modify bytecode of sealed JDK classes always",
+      "Replace the JVM",
+      "Disable null checks"
+    ],
+    "correctAnswer": "Add call-site helpers without inheritance",
+    "explanation": "Extensions are resolved statically.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_096",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `Channel` commonly used for in Kotlin coroutines? Choose the best beginner-level answer.",
+    "options": [
+      "Communicating between coroutines",
+      "Only HTTP caching",
+      "Only XML",
+      "Only UI themes"
+    ],
+    "correctAnswer": "Communicating between coroutines",
+    "explanation": "Channels pass values between coroutines.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_097",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `Channel` commonly used for in Kotlin coroutines? For newcomers, which statement is correct?",
+    "options": [
+      "Communicating between coroutines",
+      "Only HTTP caching",
+      "Only XML",
+      "Only UI themes"
+    ],
+    "correctAnswer": "Communicating between coroutines",
+    "explanation": "Channels pass values between coroutines.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_098",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `Channel` commonly used for in Kotlin coroutines? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Communicating between coroutines",
+      "Only HTTP caching",
+      "Only XML",
+      "Only UI themes"
+    ],
+    "correctAnswer": "Communicating between coroutines",
+    "explanation": "Channels pass values between coroutines.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_099",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `Channel` commonly used for in Kotlin coroutines? Pick the fundamental concept that applies.",
+    "options": [
+      "Communicating between coroutines",
+      "Only HTTP caching",
+      "Only XML",
+      "Only UI themes"
+    ],
+    "correctAnswer": "Communicating between coroutines",
+    "explanation": "Channels pass values between coroutines.",
+    "platform": "Mobile"
+  },
+  {
+    "id": "kt_beg_100",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Kotlin",
+    "level": "Beginner",
+    "question": "What is `Channel` commonly used for in Kotlin coroutines? Which choice matches core introductory knowledge?",
+    "options": [
+      "Communicating between coroutines",
+      "Only HTTP caching",
+      "Only XML",
+      "Only UI themes"
+    ],
+    "correctAnswer": "Communicating between coroutines",
+    "explanation": "Channels pass values between coroutines.",
+    "platform": "Mobile"
+  }
+]

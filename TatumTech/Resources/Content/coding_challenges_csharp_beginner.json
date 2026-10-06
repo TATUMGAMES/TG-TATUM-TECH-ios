@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "cs_beg_001",
+    "question": "What is the correct way to declare a variable in C#?",
+    "options": [
+      "int x = 5;",
+      "var x = 5;",
+      "x = 5;",
+      "int x; x = 5;"
+    ],
+    "correctAnswer": "int x = 5;",
+    "language": "C#",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_002",
+    "question": "Which keyword is used to create a class in C#?",
+    "options": [
+      "class",
+      "Class",
+      "CLASS",
+      "new"
+    ],
+    "correctAnswer": "class",
+    "language": "C#",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_003",
+    "question": "What is the output of this code?\n\n```csharp\nusing System;\nclass Program {\n    static void Main() {\n        int x = 5;\n        int y = 3;\n        Console.WriteLine(x + y);\n    }\n}\n```",
+    "options": [
+      "8",
+      "53",
+      "Error",
+      "15"
+    ],
+    "correctAnswer": "8",
+    "language": "C#",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_004",
+    "question": "Which data type is used to store whole numbers in C#?",
+    "options": [
+      "int",
+      "float",
+      "string",
+      "bool"
+    ],
+    "correctAnswer": "int",
+    "language": "C#",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_005",
+    "question": "What is the correct syntax for a for loop in C#?",
+    "options": [
+      "for (int i = 0; i < 5; i++)",
+      "for i in range(5)",
+      "for (i = 0; i < 5; i++)",
+      "for i from 0 to 5"
+    ],
+    "correctAnswer": "for (int i = 0; i < 5; i++)",
+    "language": "C#",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_006",
+    "question": "Which keyword is used to create an object in C#?",
+    "options": [
+      "new",
+      "create",
+      "object",
+      "instance"
+    ],
+    "correctAnswer": "new",
+    "language": "C#",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_007",
+    "question": "What is the output of this code?\n\n```csharp\nusing System;\nclass Program {\n    static void Main() {\n        string name = \"C#\";\n        Console.WriteLine(\"Hello \" + name);\n    }\n}\n```",
+    "options": [
+      "Hello C#",
+      "Hello + name",
+      "Error",
+      "Hello"
+    ],
+    "correctAnswer": "Hello C#",
+    "language": "C#",
+    "level": "Beginner",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "In C#, string is? Choose the best beginner-level answer.",
+    "options": [
+      "An immutable reference type",
+      "A mutable value type",
+      "Always stackalloc",
+      "A pointer only"
+    ],
+    "correctAnswer": "An immutable reference type",
+    "explanation": "System.String is immutable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "async/await typically returns? Pick the fundamental concept that applies.",
+    "options": [
+      "Task or Task<T>",
+      "void only",
+      "Thread always",
+      "only IEnumerable"
+    ],
+    "correctAnswer": "Task or Task<T>",
+    "explanation": "async methods usually return Task.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "async/await typically returns? Which choice matches core introductory knowledge?",
+    "options": [
+      "Task or Task<T>",
+      "void only",
+      "Thread always",
+      "only IEnumerable"
+    ],
+    "correctAnswer": "Task or Task<T>",
+    "explanation": "async methods usually return Task.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "LINQ helps with? Choose the best beginner-level answer.",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "LINQ helps with? For newcomers, which statement is correct?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "LINQ helps with? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "LINQ helps with? Pick the fundamental concept that applies.",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "LINQ helps with? Which choice matches core introductory knowledge?",
+    "options": [
+      "Querying collections",
+      "Only UI XAML",
+      "Only GC",
+      "Only networking"
+    ],
+    "correctAnswer": "Querying collections",
+    "explanation": "LINQ provides query operators.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Nullable reference types warn about? Choose the best beginner-level answer.",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Nullable reference types warn about? For newcomers, which statement is correct?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Nullable reference types warn about? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Nullable reference types warn about? Pick the fundamental concept that applies.",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Nullable reference types warn about? Which choice matches core introductory knowledge?",
+    "options": [
+      "Possible null dereferences",
+      "Only boxing",
+      "Only unsafe code",
+      "Only COM"
+    ],
+    "correctAnswer": "Possible null dereferences",
+    "explanation": "NRT analyzes nullability.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "record types emphasize? Choose the best beginner-level answer.",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "record types emphasize? For newcomers, which statement is correct?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "record types emphasize? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "record types emphasize? Pick the fundamental concept that applies.",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "record types emphasize? Which choice matches core introductory knowledge?",
+    "options": [
+      "Value-like immutability",
+      "Only mutable structs",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Value-like immutability",
+    "explanation": "records suit immutable data.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IDisposable is for? Choose the best beginner-level answer.",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IDisposable is for? For newcomers, which statement is correct?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IDisposable is for? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IDisposable is for? Pick the fundamental concept that applies.",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IDisposable is for? Which choice matches core introductory knowledge?",
+    "options": [
+      "Deterministic cleanup",
+      "Only finalizers",
+      "Only GC.Collect",
+      "Only threads"
+    ],
+    "correctAnswer": "Deterministic cleanup",
+    "explanation": "Dispose releases resources.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "using statement ensures? Choose the best beginner-level answer.",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "using statement ensures? For newcomers, which statement is correct?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "using statement ensures? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "using statement ensures? Pick the fundamental concept that applies.",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "using statement ensures? Which choice matches core introductory knowledge?",
+    "options": [
+      "Dispose is called",
+      "Only GC",
+      "Only awaits",
+      "Only locks"
+    ],
+    "correctAnswer": "Dispose is called",
+    "explanation": "using scopes IDisposable.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Span<T> helps with? Choose the best beginner-level answer.",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Span<T> helps with? For newcomers, which statement is correct?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Span<T> helps with? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Span<T> helps with? Pick the fundamental concept that applies.",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Span<T> helps with? Which choice matches core introductory knowledge?",
+    "options": [
+      "Stack/slice memory without allocations",
+      "Only heap lists",
+      "Only COM",
+      "Only UI"
+    ],
+    "correctAnswer": "Stack/slice memory without allocations",
+    "explanation": "Span views contiguous memory.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Dependency Injection commonly uses? Choose the best beginner-level answer.",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Dependency Injection commonly uses? For newcomers, which statement is correct?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Dependency Injection commonly uses? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Dependency Injection commonly uses? Pick the fundamental concept that applies.",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "Dependency Injection commonly uses? Which choice matches core introductory knowledge?",
+    "options": [
+      "Constructor injection",
+      "Only static singletons",
+      "Only Service Locator anti-pattern always",
+      "Only globals"
+    ],
+    "correctAnswer": "Constructor injection",
+    "explanation": "DI prefers constructor injection.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "enum in C# is? Choose the best beginner-level answer.",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "enum in C# is? For newcomers, which statement is correct?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "enum in C# is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "enum in C# is? Pick the fundamental concept that applies.",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "enum in C# is? Which choice matches core introductory knowledge?",
+    "options": [
+      "A value type of named constants",
+      "A class always",
+      "A delegate",
+      "An interface"
+    ],
+    "correctAnswer": "A value type of named constants",
+    "explanation": "enums are value types.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "delegate represents? Choose the best beginner-level answer.",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "delegate represents? For newcomers, which statement is correct?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "delegate represents? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "delegate represents? Pick the fundamental concept that applies.",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "delegate represents? Which choice matches core introductory knowledge?",
+    "options": [
+      "A type-safe function pointer",
+      "Only events without handlers",
+      "Only LINQ",
+      "Only GC"
+    ],
+    "correctAnswer": "A type-safe function pointer",
+    "explanation": "delegates wrap methods.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "event keyword builds on? Choose the best beginner-level answer.",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "event keyword builds on? For newcomers, which statement is correct?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "event keyword builds on? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "event keyword builds on? Pick the fundamental concept that applies.",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "event keyword builds on? Which choice matches core introductory knowledge?",
+    "options": [
+      "Delegates",
+      "Only tasks",
+      "Only spans",
+      "Only records"
+    ],
+    "correctAnswer": "Delegates",
+    "explanation": "events are special multicast delegates.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "lock statement uses? Choose the best beginner-level answer.",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "lock statement uses? For newcomers, which statement is correct?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "lock statement uses? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "lock statement uses? Pick the fundamental concept that applies.",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "lock statement uses? Which choice matches core introductory knowledge?",
+    "options": [
+      "Monitor synchronization",
+      "Only Interlocked",
+      "Only SpinWait",
+      "Only GC"
+    ],
+    "correctAnswer": "Monitor synchronization",
+    "explanation": "lock is syntactic sugar for Monitor.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IEnumerable<T> enables? Choose the best beginner-level answer.",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IEnumerable<T> enables? For newcomers, which statement is correct?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IEnumerable<T> enables? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IEnumerable<T> enables? Pick the fundamental concept that applies.",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "IEnumerable<T> enables? Which choice matches core introductory knowledge?",
+    "options": [
+      "foreach iteration",
+      "Only async",
+      "Only reflection",
+      "Only COM"
+    ],
+    "correctAnswer": "foreach iteration",
+    "explanation": "IEnumerable supports iteration.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ValueTask can reduce? Choose the best beginner-level answer.",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ValueTask can reduce? For newcomers, which statement is correct?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ValueTask can reduce? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ValueTask can reduce? Pick the fundamental concept that applies.",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ValueTask can reduce? Which choice matches core introductory knowledge?",
+    "options": [
+      "Allocations for sync completions",
+      "All GC pauses",
+      "Network RTT",
+      "JIT time"
+    ],
+    "correctAnswer": "Allocations for sync completions",
+    "explanation": "ValueTask optimizes hot paths.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "init accessors allow? Choose the best beginner-level answer.",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "init accessors allow? For newcomers, which statement is correct?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "init accessors allow? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "init accessors allow? Pick the fundamental concept that applies.",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "init accessors allow? Which choice matches core introductory knowledge?",
+    "options": [
+      "Set during object initialization",
+      "Mutation anytime",
+      "Only private set forever without init",
+      "Only fields"
+    ],
+    "correctAnswer": "Set during object initialization",
+    "explanation": "init is for construction-time sets.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "pattern matching improves? Choose the best beginner-level answer.",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "pattern matching improves? For newcomers, which statement is correct?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "pattern matching improves? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "pattern matching improves? Pick the fundamental concept that applies.",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "pattern matching improves? Which choice matches core introductory knowledge?",
+    "options": [
+      "Type tests and deconstruction",
+      "Only GC",
+      "Only COM",
+      "Only unsafe"
+    ],
+    "correctAnswer": "Type tests and deconstruction",
+    "explanation": "patterns simplify control flow.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "CancellationToken is used to? Choose the best beginner-level answer.",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "CancellationToken is used to? For newcomers, which statement is correct?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "CancellationToken is used to? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "CancellationToken is used to? Pick the fundamental concept that applies.",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "CancellationToken is used to? Which choice matches core introductory knowledge?",
+    "options": [
+      "Cooperatively cancel async work",
+      "Kill threads forcibly",
+      "Stop GC",
+      "Disable JIT"
+    ],
+    "correctAnswer": "Cooperatively cancel async work",
+    "explanation": "tokens signal cancellation.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ConcurrentDictionary is? Choose the best beginner-level answer.",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ConcurrentDictionary is? For newcomers, which statement is correct?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ConcurrentDictionary is? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ConcurrentDictionary is? Pick the fundamental concept that applies.",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "ConcurrentDictionary is? Which choice matches core introductory knowledge?",
+    "options": [
+      "Thread-safe map",
+      "Not thread-safe",
+      "Only sorted",
+      "Only immutable"
+    ],
+    "correctAnswer": "Thread-safe map",
+    "explanation": "ConcurrentDictionary supports concurrent access.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_096",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "HttpClient should be? Choose the best beginner-level answer.",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_097",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "HttpClient should be? For newcomers, which statement is correct?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_098",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "HttpClient should be? Which option is most accurate for an introductory scenario?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_099",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "HttpClient should be? Pick the fundamental concept that applies.",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  },
+  {
+    "id": "cs_beg_100",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "C#",
+    "level": "Beginner",
+    "question": "HttpClient should be? Which choice matches core introductory knowledge?",
+    "options": [
+      "Reused (or via IHttpClientFactory)",
+      "Disposed every call always",
+      "Only sync",
+      "Only WebRequest"
+    ],
+    "correctAnswer": "Reused (or via IHttpClientFactory)",
+    "explanation": "Reuse avoids socket exhaustion.",
+    "platform": "General"
+  }
+]

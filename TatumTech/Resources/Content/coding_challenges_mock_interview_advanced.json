@@ -1,0 +1,1592 @@
+[
+  {
+    "id": "mock_a_001",
+    "question": "Negotiating an offer professionally usually means:",
+    "options": [
+      "Accepting instantly without review",
+      "Thanking them, citing market data, and proposing a clear ask",
+      "Threatening to quit other jobs",
+      "Ignoring written offer details"
+    ],
+    "correctAnswer": "Thanking them, citing market data, and proposing a clear ask",
+    "language": "MockInterview",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "mock_a_002",
+    "question": "For executive-style 'vision' questions, anchor answers in:",
+    "options": [
+      "Only buzzwords",
+      "User impact, metrics, and trade-offs you owned",
+      "Personal grievances",
+      "Other companies' secrets"
+    ],
+    "correctAnswer": "User impact, metrics, and trade-offs you owned",
+    "language": "MockInterview",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "mock_a_003",
+    "question": "When discussing failure, strong candidates emphasize:",
+    "options": [
+      "Hiding the failure",
+      "Learning, changed behavior, and measurable improvement",
+      "Blaming the market only",
+      "Denying responsibility"
+    ],
+    "correctAnswer": "Learning, changed behavior, and measurable improvement",
+    "language": "MockInterview",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "mock_a_004",
+    "question": "Dealing with ambiguous product requirements in an interview story:",
+    "options": [
+      "Ignore stakeholders",
+      "Clarify goals, prototype, and validate with users or data",
+      "Code first for weeks",
+      "Wait indefinitely"
+    ],
+    "correctAnswer": "Clarify goals, prototype, and validate with users or data",
+    "language": "MockInterview",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "mock_a_005",
+    "question": "Leading without authority is best demonstrated with:",
+    "options": [
+      "Ordering people around",
+      "Influence through clarity, alignment, and follow-through",
+      "Avoiding collaboration",
+      "Only solo work examples"
+    ],
+    "correctAnswer": "Influence through clarity, alignment, and follow-through",
+    "language": "MockInterview",
+    "level": "Advanced",
+    "platform": "General"
+  },
+  {
+    "id": "mi_adv_001",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "In a system design interview, first clarify? Under advanced constraints, which is correct?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_002",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "In a system design interview, first clarify? Which option best matches expert-level understanding?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_003",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "In a system design interview, first clarify? In a high-scale design, what applies?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_004",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "In a system design interview, first clarify? Which statement is most precise for advanced use?",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_005",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "In a system design interview, first clarify? Select the rigorously correct advanced answer.",
+    "options": [
+      "Requirements and constraints",
+      "Micro-optimizations only",
+      "Office politics",
+      "IDE themes"
+    ],
+    "correctAnswer": "Requirements and constraints",
+    "explanation": "Scope before architecture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_006",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "CAP theorem trades off? Under advanced constraints, which is correct?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_007",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "CAP theorem trades off? Which option best matches expert-level understanding?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_008",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "CAP theorem trades off? In a high-scale design, what applies?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_009",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "CAP theorem trades off? Which statement is most precise for advanced use?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_010",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "CAP theorem trades off? Select the rigorously correct advanced answer.",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "CPU, API, Persistence",
+      "Cache, Auth, Proxy",
+      "Latency only"
+    ],
+    "correctAnswer": "Consistency, Availability, Partition tolerance",
+    "explanation": "Distributed systems face CAP limits.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_011",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Horizontal scaling adds? Under advanced constraints, which is correct?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_012",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Horizontal scaling adds? Which option best matches expert-level understanding?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_013",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Horizontal scaling adds? In a high-scale design, what applies?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_014",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Horizontal scaling adds? Which statement is most precise for advanced use?",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_015",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Horizontal scaling adds? Select the rigorously correct advanced answer.",
+    "options": [
+      "More machines",
+      "Only bigger CPUs",
+      "Only more RAM on one box",
+      "Only faster disks always"
+    ],
+    "correctAnswer": "More machines",
+    "explanation": "Scale out with nodes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_016",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A load balancer primarily? Under advanced constraints, which is correct?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_017",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A load balancer primarily? Which option best matches expert-level understanding?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_018",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A load balancer primarily? In a high-scale design, what applies?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_019",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A load balancer primarily? Which statement is most precise for advanced use?",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_020",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A load balancer primarily? Select the rigorously correct advanced answer.",
+    "options": [
+      "Distributes traffic across backends",
+      "Stores durable state",
+      "Trains models",
+      "Compiles code"
+    ],
+    "correctAnswer": "Distributes traffic across backends",
+    "explanation": "LBs spread requests.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_021",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Idempotent APIs allow? Under advanced constraints, which is correct?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_022",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Idempotent APIs allow? Which option best matches expert-level understanding?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_023",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Idempotent APIs allow? In a high-scale design, what applies?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_024",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Idempotent APIs allow? Which statement is most precise for advanced use?",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_025",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Idempotent APIs allow? Select the rigorously correct advanced answer.",
+    "options": [
+      "Safe retries",
+      "Only exactly-once without care",
+      "Mutating differently each call",
+      "Ignoring auth"
+    ],
+    "correctAnswer": "Safe retries",
+    "explanation": "Same request can be replayed safely.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_026",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Caching improves? Under advanced constraints, which is correct?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_027",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Caching improves? Which option best matches expert-level understanding?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_028",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Caching improves? In a high-scale design, what applies?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_029",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Caching improves? Which statement is most precise for advanced use?",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_030",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Caching improves? Select the rigorously correct advanced answer.",
+    "options": [
+      "Read latency / load",
+      "Write durability always",
+      "Correctness always",
+      "Disk capacity"
+    ],
+    "correctAnswer": "Read latency / load",
+    "explanation": "Caches serve hot data faster.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_031",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Observability typically includes? Under advanced constraints, which is correct?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_032",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Observability typically includes? Which option best matches expert-level understanding?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_033",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Observability typically includes? In a high-scale design, what applies?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_034",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Observability typically includes? Which statement is most precise for advanced use?",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_035",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Observability typically includes? Select the rigorously correct advanced answer.",
+    "options": [
+      "Metrics, logs, traces",
+      "Only unit tests",
+      "Only linters",
+      "Only CI badges"
+    ],
+    "correctAnswer": "Metrics, logs, traces",
+    "explanation": "The three pillars of observability.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_036",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A good API error should? Under advanced constraints, which is correct?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_037",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A good API error should? Which option best matches expert-level understanding?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_038",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A good API error should? In a high-scale design, what applies?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_039",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A good API error should? Which statement is most precise for advanced use?",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_040",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A good API error should? Select the rigorously correct advanced answer.",
+    "options": [
+      "Be actionable and consistent",
+      "Leak stack traces to clients always",
+      "Return 200 with failures",
+      "Omit codes"
+    ],
+    "correctAnswer": "Be actionable and consistent",
+    "explanation": "Clients need clear failure modes.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_041",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Rate limiting protects? Under advanced constraints, which is correct?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_042",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Rate limiting protects? Which option best matches expert-level understanding?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_043",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Rate limiting protects? In a high-scale design, what applies?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_044",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Rate limiting protects? Which statement is most precise for advanced use?",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_045",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Rate limiting protects? Select the rigorously correct advanced answer.",
+    "options": [
+      "Services from overload/abuse",
+      "Only databases from vacuum",
+      "Only CPUs from turbo",
+      "Only disks from SMART"
+    ],
+    "correctAnswer": "Services from overload/abuse",
+    "explanation": "Limits bound request rates.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_046",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Event-driven designs often use? Under advanced constraints, which is correct?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_047",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Event-driven designs often use? Which option best matches expert-level understanding?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_048",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Event-driven designs often use? In a high-scale design, what applies?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_049",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Event-driven designs often use? Which statement is most precise for advanced use?",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_050",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Event-driven designs often use? Select the rigorously correct advanced answer.",
+    "options": [
+      "Message queues/streams",
+      "Only shared memory locks",
+      "Only CSV files",
+      "Only FTP"
+    ],
+    "correctAnswer": "Message queues/streams",
+    "explanation": "Events decouple producers/consumers.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_051",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Strong consistency means? Under advanced constraints, which is correct?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_052",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Strong consistency means? Which option best matches expert-level understanding?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_053",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Strong consistency means? In a high-scale design, what applies?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_054",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Strong consistency means? Which statement is most precise for advanced use?",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_055",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Strong consistency means? Select the rigorously correct advanced answer.",
+    "options": [
+      "Readers see latest committed writes (per model)",
+      "Eventual replicas always stale",
+      "No replication",
+      "Only caches"
+    ],
+    "correctAnswer": "Readers see latest committed writes (per model)",
+    "explanation": "Consistency models define visibility.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_056",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A postmortem should focus on? Under advanced constraints, which is correct?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_057",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A postmortem should focus on? Which option best matches expert-level understanding?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_058",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A postmortem should focus on? In a high-scale design, what applies?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_059",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A postmortem should focus on? Which statement is most precise for advanced use?",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_060",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "A postmortem should focus on? Select the rigorously correct advanced answer.",
+    "options": [
+      "Learning and prevention",
+      "Blame",
+      "Silence",
+      "Deleting logs"
+    ],
+    "correctAnswer": "Learning and prevention",
+    "explanation": "Blameless postmortems improve systems.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_061",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Technical debt is? Under advanced constraints, which is correct?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_062",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Technical debt is? Which option best matches expert-level understanding?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_063",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Technical debt is? In a high-scale design, what applies?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_064",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Technical debt is? Which statement is most precise for advanced use?",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_065",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Technical debt is? Select the rigorously correct advanced answer.",
+    "options": [
+      "Deferred quality/cost tradeoffs",
+      "Only unused code",
+      "Only outdated docs",
+      "Only cloud bills"
+    ],
+    "correctAnswer": "Deferred quality/cost tradeoffs",
+    "explanation": "Debt accrues interest as change cost.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_066",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Code review goals include? Under advanced constraints, which is correct?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_067",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Code review goals include? Which option best matches expert-level understanding?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_068",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Code review goals include? In a high-scale design, what applies?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_069",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Code review goals include? Which statement is most precise for advanced use?",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_070",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Code review goals include? Select the rigorously correct advanced answer.",
+    "options": [
+      "Correctness, clarity, knowledge sharing",
+      "Only style nitpicks",
+      "Blocking all merges",
+      "Skipping tests"
+    ],
+    "correctAnswer": "Correctness, clarity, knowledge sharing",
+    "explanation": "Reviews improve quality and culture.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_071",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Feature flags enable? Under advanced constraints, which is correct?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_072",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Feature flags enable? Which option best matches expert-level understanding?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_073",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Feature flags enable? In a high-scale design, what applies?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_074",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Feature flags enable? Which statement is most precise for advanced use?",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_075",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Feature flags enable? Select the rigorously correct advanced answer.",
+    "options": [
+      "Gradual rollout / kill switches",
+      "Only A/B on fonts",
+      "Only compile-time macros",
+      "Only DB indexes"
+    ],
+    "correctAnswer": "Gradual rollout / kill switches",
+    "explanation": "Flags control exposure.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_076",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Database indexing speeds? Under advanced constraints, which is correct?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_077",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Database indexing speeds? Which option best matches expert-level understanding?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_078",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Database indexing speeds? In a high-scale design, what applies?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_079",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Database indexing speeds? Which statement is most precise for advanced use?",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_080",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Database indexing speeds? Select the rigorously correct advanced answer.",
+    "options": [
+      "Lookups at write/storage cost",
+      "All writes always",
+      "Network RTT",
+      "DNS"
+    ],
+    "correctAnswer": "Lookups at write/storage cost",
+    "explanation": "Indexes trade write cost for read speed.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_081",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Circuit breakers prevent? Under advanced constraints, which is correct?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_082",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Circuit breakers prevent? Which option best matches expert-level understanding?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_083",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Circuit breakers prevent? In a high-scale design, what applies?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_084",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Circuit breakers prevent? Which statement is most precise for advanced use?",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_085",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Circuit breakers prevent? Select the rigorously correct advanced answer.",
+    "options": [
+      "Cascading failures",
+      "All retries forever succeeding",
+      "Only disk full",
+      "Only GC"
+    ],
+    "correctAnswer": "Cascading failures",
+    "explanation": "Breakers shed load when deps fail.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_086",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Pagination should be? Under advanced constraints, which is correct?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_087",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Pagination should be? Which option best matches expert-level understanding?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_088",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Pagination should be? In a high-scale design, what applies?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_089",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Pagination should be? Which statement is most precise for advanced use?",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_090",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Pagination should be? Select the rigorously correct advanced answer.",
+    "options": [
+      "Stable and efficient for large sets",
+      "Always load everything",
+      "Random only",
+      "Only client-side"
+    ],
+    "correctAnswer": "Stable and efficient for large sets",
+    "explanation": "Cursor/offset strategies matter.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_091",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Security basics include? Under advanced constraints, which is correct?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_092",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Security basics include? Which option best matches expert-level understanding?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_093",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Security basics include? In a high-scale design, what applies?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_094",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Security basics include? Which statement is most precise for advanced use?",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  },
+  {
+    "id": "mi_adv_095",
+    "created_at": "2026-01-15T10:00:00Z",
+    "language": "Mock Interview",
+    "level": "Advanced",
+    "question": "Security basics include? Select the rigorously correct advanced answer.",
+    "options": [
+      "AuthN/AuthZ, least privilege, validation",
+      "Only HTTPS banners",
+      "Only captchas",
+      "Only obfuscation"
+    ],
+    "correctAnswer": "AuthN/AuthZ, least privilege, validation",
+    "explanation": "Defense in depth.",
+    "platform": "Interview"
+  }
+]

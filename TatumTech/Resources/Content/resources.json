@@ -1,0 +1,222 @@
+[
+  {
+    "id": "java_oracle_docs",
+    "title": "Oracle Java Documentation",
+    "description": "Official Java SE documentation, tutorials, and API reference.",
+    "url": "https://docs.oracle.com/en/java/",
+    "source": "Oracle",
+    "categories": [
+      "Java"
+    ],
+    "resourceType": "Official Documentation"
+  },
+  {
+    "id": "java_oracle_tutorial",
+    "title": "The Java Tutorials",
+    "description": "Official beginner-friendly Java language and platform tutorials.",
+    "url": "https://docs.oracle.com/javase/tutorial/",
+    "source": "Oracle",
+    "categories": [
+      "Java"
+    ],
+    "resourceType": "Tutorial"
+  },
+  {
+    "id": "kotlin_official_docs",
+    "title": "Kotlin Documentation",
+    "description": "Official Kotlin language docs, guides, and API reference.",
+    "url": "https://kotlinlang.org/docs/home.html",
+    "source": "JetBrains",
+    "categories": [
+      "Kotlin"
+    ],
+    "resourceType": "Official Documentation"
+  },
+  {
+    "id": "kotlin_android_guide",
+    "title": "Android Developers Guide",
+    "description": "Official Android development guides with Kotlin-first examples.",
+    "url": "https://developer.android.com/guide",
+    "source": "Google",
+    "categories": [
+      "Kotlin"
+    ],
+    "resourceType": "Guide"
+  },
+  {
+    "id": "cpp_cppreference",
+    "title": "C++ Reference (cppreference)",
+    "description": "Comprehensive C++ language and standard library reference.",
+    "url": "https://en.cppreference.com/w/",
+    "source": "cppreference",
+    "categories": [
+      "C++"
+    ],
+    "resourceType": "Reference"
+  },
+  {
+    "id": "cpp_learncpp",
+    "title": "Learn C++",
+    "description": "Structured free tutorials covering modern C++ fundamentals.",
+    "url": "https://www.learncpp.com/",
+    "source": "LearnCpp.com",
+    "categories": [
+      "C++"
+    ],
+    "resourceType": "Tutorial"
+  },
+  {
+    "id": "csharp_microsoft_learn",
+    "title": "Microsoft Learn — C#",
+    "description": "Official C# tutorials, fundamentals, and learning paths.",
+    "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "source": "Microsoft",
+    "categories": [
+      "C#"
+    ],
+    "resourceType": "Official Documentation"
+  },
+  {
+    "id": "csharp_dotnet_touramentals",
+    "title": "C# Fundamentals for Absolute Beginners",
+    "description": "Beginner path for C# and .NET on Microsoft Learn.",
+    "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/",
+    "source": "Microsoft",
+    "categories": [
+      "C#"
+    ],
+    "resourceType": "Course"
+  },
+  {
+    "id": "python_official_docs",
+    "title": "Python Official Documentation",
+    "description": "Language reference, standard library, and HOWTOs.",
+    "url": "https://docs.python.org/3/",
+    "source": "Python Software Foundation",
+    "categories": [
+      "Python"
+    ],
+    "resourceType": "Official Documentation"
+  },
+  {
+    "id": "python_official_tutorial",
+    "title": "The Python Tutorial",
+    "description": "Official introductory tutorial for the Python language.",
+    "url": "https://docs.python.org/3/tutorial/",
+    "source": "Python Software Foundation",
+    "categories": [
+      "Python"
+    ],
+    "resourceType": "Tutorial"
+  },
+  {
+    "id": "javascript_mdn_guide",
+    "title": "MDN JavaScript Guide",
+    "description": "Structured guide from fundamentals through advanced JavaScript.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "source": "MDN Web Docs",
+    "categories": [
+      "JavaScript"
+    ],
+    "resourceType": "Official Documentation"
+  },
+  {
+    "id": "javascript_mdn_home",
+    "title": "MDN Web Docs",
+    "description": "Authoritative reference for web technologies including JavaScript.",
+    "url": "https://developer.mozilla.org/",
+    "source": "MDN Web Docs",
+    "categories": [
+      "JavaScript"
+    ],
+    "resourceType": "Reference"
+  },
+  {
+    "id": "php_official_manual",
+    "title": "PHP Manual",
+    "description": "Official PHP language reference and getting-started material.",
+    "url": "https://www.php.net/manual/en/",
+    "source": "The PHP Group",
+    "categories": [
+      "PHP"
+    ],
+    "resourceType": "Official Documentation"
+  },
+  {
+    "id": "php_getting_started",
+    "title": "PHP Getting Started",
+    "description": "Official introduction to installing and writing PHP scripts.",
+    "url": "https://www.php.net/manual/en/getting-started.php",
+    "source": "The PHP Group",
+    "categories": [
+      "PHP"
+    ],
+    "resourceType": "Guide"
+  },
+  {
+    "id": "aiml_pytorch_tutorials",
+    "title": "PyTorch Tutorials",
+    "description": "Official beginner and practical PyTorch machine learning tutorials.",
+    "url": "https://pytorch.org/tutorials/",
+    "source": "PyTorch",
+    "categories": [
+      "AI/ML",
+      "Python"
+    ],
+    "resourceType": "Official Documentation"
+  },
+  {
+    "id": "aiml_sklearn_user_guide",
+    "title": "scikit-learn User Guide",
+    "description": "Official guide to classical machine learning with scikit-learn.",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "source": "scikit-learn",
+    "categories": [
+      "AI/ML",
+      "Python"
+    ],
+    "resourceType": "Official Documentation"
+  },
+  {
+    "id": "aiml_google_ml_crash_course",
+    "title": "Google Machine Learning Crash Course",
+    "description": "Free introductory ML course with practical exercises.",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "source": "Google",
+    "categories": [
+      "AI/ML"
+    ],
+    "resourceType": "Course"
+  },
+  {
+    "id": "freecodecamp",
+    "title": "freeCodeCamp",
+    "description": "Free interactive coding curriculum across multiple languages.",
+    "url": "https://www.freecodecamp.org/",
+    "source": "freeCodeCamp",
+    "categories": [
+      "JavaScript",
+      "Python",
+      "Java"
+    ],
+    "resourceType": "Tutorial"
+  },
+  {
+    "id": "github_student_pack",
+    "title": "GitHub Student Developer Pack",
+    "description": "Free developer tools and learning benefits for students.",
+    "url": "https://education.github.com/pack",
+    "source": "GitHub",
+    "categories": [
+      "Java",
+      "Kotlin",
+      "Python",
+      "JavaScript",
+      "C#",
+      "C++",
+      "PHP",
+      "AI/ML"
+    ],
+    "resourceType": "Tool"
+  }
+]
