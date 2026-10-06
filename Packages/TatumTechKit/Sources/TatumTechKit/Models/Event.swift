@@ -11,6 +11,8 @@ public struct Event: Identifiable, Hashable, Sendable {
     public let featuredImage: ImageSource
     public let registrationURL: URL?
     public let speakers: [Speaker]
+    /// The event date exactly as published, used to place speaker sessions on the calendar.
+    public let dateText: String
 
     public init(
         id: String,
@@ -21,7 +23,8 @@ public struct Event: Identifiable, Hashable, Sendable {
         location: String,
         featuredImage: ImageSource,
         registrationURL: URL?,
-        speakers: [Speaker]
+        speakers: [Speaker],
+        dateText: String = ""
     ) {
         self.id = id
         self.name = name
@@ -32,6 +35,7 @@ public struct Event: Identifiable, Hashable, Sendable {
         self.featuredImage = featuredImage
         self.registrationURL = registrationURL
         self.speakers = speakers.inSpeakingOrder()
+        self.dateText = dateText
     }
 
     public var hasVirtualSpeakers: Bool { !speakers.isEmpty }
@@ -148,7 +152,8 @@ extension Event {
             location: dto.location ?? "",
             featuredImage: ImageSource(contentValue: dto.featuredImage),
             registrationURL: URL(contentValue: dto.lumaUrl),
-            speakers: dto.virtualSpeakers.map(Speaker.init(dto:))
+            speakers: dto.virtualSpeakers.map(Speaker.init(dto:)),
+            dateText: dto.date ?? ""
         )
     }
 }
