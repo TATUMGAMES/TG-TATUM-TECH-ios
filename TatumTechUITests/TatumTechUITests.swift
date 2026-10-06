@@ -40,7 +40,9 @@ final class TatumTechUITests: XCTestCase {
 
     func testHomeOpensPartnersAndEvents() {
         let app = launch(signedIn: true)
-        XCTAssertTrue(app.staticTexts["Hello, Ada!"].waitForExistence(timeout: 5))
+        let greeting = app.staticTexts["home.greeting"]
+        XCTAssertTrue(greeting.waitForExistence(timeout: 5))
+        XCTAssertTrue(greeting.label.hasPrefix("Hello"))
 
         app.buttons["feature.partners"].tap()
         XCTAssertTrue(app.navigationBars["Partners"].waitForExistence(timeout: 5))
@@ -52,9 +54,93 @@ final class TatumTechUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Register"].waitForExistence(timeout: 5))
     }
 
-    func testAccountMenuOffersDeletion() {
+    func testAnsweringACodingQuestionShowsFeedback() {
+        let app = launch(signedIn: true)
+        app.tabBars.buttons["Learn"].tap()
+
+        let firstOption = app.buttons["quiz.option.0"]
+        XCTAssertTrue(firstOption.waitForExistence(timeout: 5))
+        firstOption.tap()
+        app.buttons["quiz.submit"].tap()
+
+        let proceed = app.buttons["quiz.feedback.continue"]
+        XCTAssertTrue(proceed.waitForExistence(timeout: 5))
+        proceed.tap()
+        XCTAssertTrue(app.buttons["quiz.option.0"].waitForExistence(timeout: 5))
+    }
+
+    func testContactCardCanBeCreatedAndShared() {
+        let app = launch(signedIn: true)
+        app.buttons["feature.upcomingEvents"].tap()
+
+        let create = app.buttons["networking.create"]
+        XCTAssertTrue(create.waitForExistence(timeout: 5))
+        create.tap()
+
+        let firstName = app.textFields["contactCard.firstName"]
+        XCTAssertTrue(firstName.waitForExistence(timeout: 5))
+        firstName.tap()
+        firstName.typeText("Ada")
+        let email = app.textFields["contactCard.email"]
+        email.tap()
+        email.typeText("ada@example.com")
+        app.buttons["contactCard.save"].tap()
+
+        let share = app.buttons["networking.share"]
+        XCTAssertTrue(share.waitForExistence(timeout: 5))
+        share.tap()
+        XCTAssertTrue(app.navigationBars["My Tatum Tech Card"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.images["My Tatum Tech Card QR code"].waitForExistence(timeout: 5))
+    }
+
+    func testContactCardRequiresNameAndEmail() {
+        let app = launch(signedIn: true)
+        app.buttons["feature.upcomingEvents"].tap()
+        let create = app.buttons["networking.create"]
+        XCTAssertTrue(create.waitForExistence(timeout: 5))
+        create.tap()
+
+        let save = app.buttons["contactCard.save"]
+        XCTAssertTrue(save.waitForExistence(timeout: 5))
+        save.tap()
+        XCTAssertTrue(app.staticTexts["First name is required"].waitForExistence(timeout: 2))
+        XCTAssertTrue(app.staticTexts["Email is required"].exists)
+    }
+
+    func testHomeCategoriesOpenTheirScreens() {
+        let app = launch(signedIn: true)
+        let destinations: [(category: String, card: String, title: String)] = [
+            ("coding", "stats", "Stats"),
+            ("coding", "resources", "Resources"),
+            ("community", "donate", "Donate"),
+            ("career", "careers", "Career"),
+            ("games", "discoverGames", "Discover Games")
+        ]
+        for destination in destinations {
+            let chip = app.buttons["home.category.\(destination.category)"]
+            XCTAssertTrue(chip.waitForExistence(timeout: 5))
+            chip.tap()
+            let card = app.buttons["feature.\(destination.card)"]
+            XCTAssertTrue(card.waitForExistence(timeout: 5))
+            card.tap()
+            XCTAssertTrue(app.navigationBars[destination.title].waitForExistence(timeout: 5), destination.title)
+            app.navigationBars.buttons.element(boundBy: 0).tap()
+        }
+    }
+
+    func testTimelineAndStatsTabs() {
+        let app = launch(signedIn: true)
+        app.tabBars.buttons["Timeline"].tap()
+        XCTAssertTrue(app.navigationBars["My Timeline"].waitForExistence(timeout: 5))
+        app.tabBars.buttons["Stats"].tap()
+        XCTAssertTrue(app.navigationBars["Stats"].waitForExistence(timeout: 5))
+    }
+
+    func testProfileOffersDeletion() {
         let app = launch(signedIn: true)
         app.buttons["home.menu"].tap()
+        XCTAssertTrue(app.buttons["menu.profile"].waitForExistence(timeout: 5))
+        app.buttons["menu.profile"].tap()
         XCTAssertTrue(app.buttons["account.delete"].waitForExistence(timeout: 5))
         app.buttons["account.delete"].tap()
         XCTAssertTrue(app.alerts["Delete Account"].waitForExistence(timeout: 2))

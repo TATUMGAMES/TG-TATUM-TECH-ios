@@ -13,7 +13,15 @@ struct AppModelTests {
             return
         }
         #expect(summary.method == .apple)
-        #expect(app.displayName == "Ada")
+    }
+
+    @Test func greetsWithTheLocalProfileName() async {
+        let app = AppModel(dependencies: .uiTesting(signedIn: true))
+        await app.start()
+        await app.refreshLocalUser()
+        #expect(app.localUser != nil)
+        #expect(!app.greetingName.isEmpty)
+        #expect(app.greetingName == app.localUser?.displayNameOrAnonymous)
     }
 
     @Test func startsSignedOutWithoutAnAccount() async {
