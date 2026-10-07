@@ -64,7 +64,7 @@ struct TatumTechAPIClientTests {
         let requests = transport.requests
         #expect(requests[0].url.path == "/tatum-tech/signout")
         #expect(requests[0].headers["Authorization"] == "Bearer token-1")
-        #expect(requests[0].body == nil)
+        #expect(requests[0].body.map { String(decoding: $0, as: UTF8.self) } == "{}")
         #expect(requests[1].url.path == "/tatum-tech/updateUserProfile")
         let profile = Fixtures.json(requests[1])
         #expect(profile["firstName"] as? String == "Ada")

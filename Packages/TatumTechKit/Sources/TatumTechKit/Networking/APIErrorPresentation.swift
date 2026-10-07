@@ -8,7 +8,7 @@ public enum APIOperation: Sendable, Equatable {
     case signUp
     case forgotPassword
     case loadContent
-    case general
+    case signOut
 }
 
 /// User-facing description of a failed API call, without localized text: the app maps `message`

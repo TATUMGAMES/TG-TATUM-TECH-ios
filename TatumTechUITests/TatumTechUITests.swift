@@ -161,4 +161,33 @@ final class TatumTechUITests: XCTestCase {
         XCTAssertTrue(app.alerts["Delete Account"].waitForExistence(timeout: 2))
         app.alerts.buttons["No"].tap()
     }
+
+    /// "Sign Out" sits below Save; "No" keeps the user on Profile, "Yes" returns to the welcome
+    /// screen with no way back.
+    func testProfileSignOutConfirmsThenReturnsToWelcome() {
+        let app = launch(signedIn: true)
+        app.buttons["home.menu"].tap()
+        XCTAssertTrue(app.buttons["menu.profile"].waitForExistence(timeout: 5))
+        app.buttons["menu.profile"].tap()
+
+        let save = app.buttons["profile.save"]
+        let signOut = app.buttons["account.signOut"]
+        XCTAssertTrue(signOut.waitForExistence(timeout: 5))
+        XCTAssertEqual(signOut.label, "Sign Out")
+        XCTAssertLessThan(save.frame.maxY, signOut.frame.minY)
+        XCTAssertGreaterThanOrEqual(signOut.frame.height, 44)
+
+        signOut.tap()
+        let confirmation = app.alerts["Sign Out"]
+        XCTAssertTrue(confirmation.waitForExistence(timeout: 2))
+        XCTAssertTrue(confirmation.staticTexts["Are you sure you want to sign out?"].exists)
+        confirmation.buttons["No"].tap()
+        XCTAssertTrue(app.navigationBars["Profile"].waitForExistence(timeout: 2))
+
+        signOut.tap()
+        XCTAssertTrue(confirmation.waitForExistence(timeout: 2))
+        confirmation.buttons["Yes"].tap()
+        XCTAssertTrue(app.buttons["welcome.signIn"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.navigationBars["Profile"].exists)
+    }
 }

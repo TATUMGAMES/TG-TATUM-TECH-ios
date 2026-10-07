@@ -71,6 +71,21 @@ struct AppModelTests {
         guard case .signedIn = await app.accountService.state() else { Issue.record("Expected to stay signed in"); return }
     }
 
+    @Test func signingOutReturnsToTheAuthFlowAndKeepsTheAccountAndLocalData() async {
+        let firebase = InMemoryFirebaseAuthentication(signedInUserID: AppDependencies.uiTestFirebaseUserID)
+        let app = AppModel(dependencies: .uiTesting(signedIn: true, firebaseAuth: firebase))
+        await app.start()
+        await app.local.updateProfile(firstName: "Ada", lastName: "", email: "")
+
+        #expect(await app.signOut() == .signedOut)
+
+        #expect(app.phase == .signedOut)
+        #expect(await app.accountService.state() == .signedOut)
+        #expect(firebase.currentUserID == nil)
+        #expect(firebase.deletedUserIDs.isEmpty)
+        #expect(await app.local.ensureUser().firstName == "Ada")
+    }
+
     @Test func appleUserCanSignOutAndBackIn() async throws {
         let firebase = InMemoryFirebaseAuthentication()
         let app = AppModel(dependencies: .uiTesting(signedIn: false, firebaseAuth: firebase))

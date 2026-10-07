@@ -34,7 +34,7 @@ extension AlertMessage {
         case .signUp: String(localized: "Unable to Create Your Account")
         case .forgotPassword: String(localized: "Unable to Send Reset Email")
         case .loadContent: String(localized: "Unable to Load Content")
-        case .general: defaultTitle
+        case .signOut: String(localized: "Unable to Sign Out")
         }
     }
 

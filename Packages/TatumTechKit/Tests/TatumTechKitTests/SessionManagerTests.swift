@@ -152,6 +152,71 @@ struct SessionManagerTests {
         #expect(transport.requests.map(\.url.path) == ["/tatum-tech/signout"])
     }
 
+    @Test func confirmedSignOutPostsAnEmptyBodyWithTheBearerTokenAndClearsTheSession() async throws {
+        try seed(expiresIn: 86_400)
+        let transport = FakeTransport(json: #"{"status":{"statusCode":200,"statusMessage":"OK"},"data":{}}"#)
+        let manager = manager(transport)
+
+        try await manager.signOutOrFail()
+
+        let request = try #require(transport.requests.first)
+        #expect(transport.requests.count == 1)
+        #expect(request.method == .post)
+        #expect(request.url.path == "/tatum-tech/signout")
+        #expect(request.headers["Authorization"] == "Bearer access-1")
+        #expect(request.body.map { String(decoding: $0, as: UTF8.self) } == "{}")
+        #expect(await manager.isSignedIn == false)
+        #expect(store.load() == nil)
+    }
+
+    @Test func failedSignOutKeepsTheSession() async throws {
+        try seed(expiresIn: 86_400)
+        let manager = manager(FakeTransport(statusCode: 500, json: "{}"))
+
+        await #expect(throws: APIError.http(statusCode: 500, messages: [])) { try await manager.signOutOrFail() }
+
+        #expect(await manager.isSignedIn)
+        #expect(store.load()?.accessToken == "access-1")
+    }
+
+    @Test func signOutRejectedInsideAnHTTP200EnvelopeKeepsTheSession() async throws {
+        try seed(expiresIn: 86_400)
+        let manager = manager(FakeTransport(json: #"{"status":{"statusCode":500,"statusMessage":"Server error"}}"#))
+
+        await #expect(throws: APIError.self) { try await manager.signOutOrFail() }
+
+        #expect(await manager.isSignedIn)
+    }
+
+    @Test func offlineSignOutKeepsTheSession() async throws {
+        try seed(expiresIn: 86_400)
+        let manager = manager(FakeTransport { _ in throw URLError(.notConnectedToInternet) })
+
+        await #expect(throws: APIError.self) { try await manager.signOutOrFail() }
+
+        #expect(await manager.isSignedIn)
+    }
+
+    @Test func signOutOfASessionTheServerAlreadyRejectedCountsAsSignedOut() async throws {
+        try seed(expiresIn: 86_400)
+        let transport = FakeTransport(statusCode: 401, json: "{}")
+        let manager = manager(transport)
+
+        try await manager.signOutOrFail()
+
+        #expect(transport.requests.map(\.url.path) == ["/tatum-tech/signout", "/tatum-tech/refreshToken"])
+        #expect(await manager.isSignedIn == false)
+        #expect(store.load() == nil)
+    }
+
+    @Test func confirmedSignOutWithoutASessionSendsNothing() async throws {
+        let transport = FakeTransport(json: "{}")
+
+        try await manager(transport).signOutOrFail()
+
+        #expect(transport.requests.isEmpty)
+    }
+
     @Test func refreshFinishingAfterSignOutDoesNotRestoreTheSession() async throws {
         try seed(expiresIn: 60)
         let transport = FakeTransport { request in

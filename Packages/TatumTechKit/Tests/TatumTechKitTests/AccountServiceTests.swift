@@ -199,6 +199,47 @@ struct AccountServiceTests {
         #expect(transport.requests.last?.url.path == "/tatum-tech/signout")
     }
 
+    @Test func confirmedSignOutForgetsEveryIdentityAndFirebase() async throws {
+        let transport = FakeTransport(json: Fixtures.authEnvelope())
+        let service = service(transport)
+        _ = try await service.completeGoogleSignIn(GoogleIdentity(idToken: "id-token", userID: "g-1"))
+
+        try await service.signOutOrFail()
+
+        #expect(await service.state() == .signedOut)
+        #expect(await service.federatedAccount == nil)
+        #expect(firebase.currentUserID == nil)
+        #expect(firebase.deletedUserIDs.isEmpty)
+        #expect(transport.requests.last?.url.path == "/tatum-tech/signout")
+    }
+
+    @Test func failedSignOutKeepsTheAccountSignedIn() async throws {
+        let signOutFails = FakeTransport { request in
+            request.url.path == "/tatum-tech/signout"
+                ? HTTPResponse(statusCode: 503, body: Data("{}".utf8))
+                : HTTPResponse(statusCode: 200, body: Data(Fixtures.authEnvelope().utf8))
+        }
+        let service = service(signOutFails)
+        let signedIn = try await service.completeGoogleSignIn(GoogleIdentity(idToken: "id-token", userID: "g-1")).state
+
+        await #expect(throws: APIError.http(statusCode: 503, messages: [])) { try await service.signOutOrFail() }
+
+        #expect(await service.state() == signedIn)
+        #expect(firebase.currentUserID != nil)
+    }
+
+    @Test func appleUserWithoutAnAPISessionSignsOutWithoutARequest() async throws {
+        let transport = FakeTransport(json: "{}")
+        let service = service(transport)
+        _ = try await service.completeAppleSignIn(apple())
+
+        try await service.signOutOrFail()
+
+        #expect(await service.state() == .signedOut)
+        #expect(firebase.currentUserID == nil)
+        #expect(transport.requests.isEmpty)
+    }
+
     @Test func appleUserCanSignOutAndSignBackIn() async throws {
         let service = service(FakeTransport(json: "{}"))
         let first = try await service.completeAppleSignIn(apple(givenName: "Ada"))

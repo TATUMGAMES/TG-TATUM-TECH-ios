@@ -247,6 +247,14 @@ public actor AccountService {
         forgetFederatedIdentity()
     }
 
+    /// Signs out of the Tatum Tech API and, once the server confirms (or there is no API session),
+    /// out of Firebase, forgetting every stored identity. A failure is thrown with nothing cleared,
+    /// so the user stays signed in and can retry. The account and its data are kept.
+    public func signOutOrFail() async throws {
+        try await sessionManager.signOutOrFail()
+        forgetFederatedIdentity()
+    }
+
     /// Deletes the signed-in user's Firebase account, then signs out everywhere.
     ///
     /// Apple users must pass a fresh authorization for the same Apple ID: their Apple tokens are

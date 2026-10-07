@@ -74,9 +74,28 @@ while it runs. A revoked or missing credential signs the user out, including fro
 
 ## Sign-out
 
-There is no standalone Sign Out button; the account ends through Delete Account or a revoked Apple
-credential. `AccountService.signOut()` ends the API session, signs out of Firebase and clears the
-stored federated account. Signing in again with Apple works normally afterwards.
+**Sign Out on the Profile screen** (below Save) is a text link. It opens the same Yes/No alert as
+Delete Account; "No" closes it without any request.
+
+On "Yes", `ProfileSignOutModel` runs `AppModel.signOut()`, which calls
+`AccountService.signOutOrFail()`. That posts `{}` to `tatum-tech/signout` with the bearer token
+through `SessionManager.signOutOrFail()`. Only once the server confirms does the app:
+
+1. clear the API session;
+2. sign out of Firebase and forget the stored federated account;
+3. sign out of Google without revoking access;
+4. return to the welcome screen.
+
+There is no API session for Apple users or after a failed Google exchange, so no request is
+sent. A session the server already rejected (its refresh token was refused) also counts as
+signed out.
+
+Any other failure keeps the user signed in on Profile and shows the standard API failure alert
+("Unable to Sign Out", with "Try Again" for transient failures). The progress overlay prevents a
+second request. The account and on-device data are kept.
+
+A revoked Apple credential and account deletion use the best-effort `AccountService.signOut()`,
+which always clears the session. Signing in again with Apple works normally afterwards.
 
 ## Account deletion
 
