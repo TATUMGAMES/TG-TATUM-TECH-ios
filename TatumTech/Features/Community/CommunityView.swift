@@ -128,22 +128,42 @@ private struct ServerDetails: View {
         }
     }
 
+//    private var banner: some View {
+//        let shape = RoundedRectangle(cornerRadius: 4)
+//        return Group {
+//            if let url = info.bannerURL {
+//                ContentImage(source: .remote(url), placeholder: "discord_banner")
+//            } else {
+//                Image("discord_banner").resizable().scaledToFill()
+//            }
+//        }
+//        .frame(maxWidth: .infinity)
+//        .frame(height: 120)
+//        .clipShape(shape)
+//        .overlay(shape.strokeBorder(Palette.brandPrimary, lineWidth: 2))
+//        .accessibilityLabel("Server Banner")
+//    }
+
     private var banner: some View {
         let shape = RoundedRectangle(cornerRadius: 4)
-        return Group {
-            if let url = info.bannerURL {
-                ContentImage(source: .remote(url), placeholder: "discord_banner")
-            } else {
-                Image("discord_banner").resizable().scaledToFill()
+        return Color.clear
+            .frame(maxWidth: .infinity)
+            .frame(height: 120)
+            .overlay {
+                if let url = info.bannerURL {
+                    ContentImage(source: .remote(url), placeholder: "discord_banner")
+                        .scaledToFill()
+                } else {
+                    Image("discord_banner")
+                        .resizable()
+                        .scaledToFill()
+                }
             }
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 120)
-        .clipShape(shape)
-        .overlay(shape.strokeBorder(Palette.brandPrimary, lineWidth: 2))
-        .accessibilityLabel("Server Banner")
+            .clipShape(shape)
+            .overlay(shape.strokeBorder(Palette.brandPrimary, lineWidth: 2))
+            .accessibilityLabel("Server Banner")
     }
-
+    
     @ViewBuilder
     private var icon: some View {
         if let url = info.iconURL {
