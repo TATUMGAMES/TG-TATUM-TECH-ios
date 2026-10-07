@@ -35,8 +35,11 @@ Keychain by a previous install are cleared.
 | Forgot Password | Email and Send; success shown inline |
 
 Validation errors appear after a field loses focus and is not blank; submit stays disabled until
-the form is valid. Server messages are shown as-is (capped at 500 characters); network failures
-use friendly copy.
+the form is valid. While a request runs the button shows a progress indicator and further taps are
+ignored. Failures appear in an alert with a title-cased title ("Unable to Create Your Account",
+"We’ve Encountered an Issue") and the app's own message for the cause; technical text is never
+shown. Transient failures (network, timeout, rate limit, server error) offer "Try Again", which
+sends the request again only when tapped.
 
 ## Main app
 

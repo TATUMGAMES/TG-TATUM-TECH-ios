@@ -20,14 +20,14 @@ public enum HTTPRedaction {
         }
     }
 
-    /// Pretty-printed JSON with sensitive values masked, or the raw text for non-JSON bodies.
-    public static func redactedBody(_ body: Data?, limit: Int = 16_384) -> String? {
+    /// JSON with sensitive values masked, or the raw text for non-JSON bodies.
+    public static func redactedBody(_ body: Data?, limit: Int = 16_384, prettyPrinted: Bool = true) -> String? {
         guard let body, !body.isEmpty else { return nil }
+        let options: JSONSerialization.WritingOptions = prettyPrinted
+            ? [.prettyPrinted, .sortedKeys, .fragmentsAllowed]
+            : [.sortedKeys, .fragmentsAllowed]
         if let object = try? JSONSerialization.jsonObject(with: body, options: [.fragmentsAllowed]),
-           let data = try? JSONSerialization.data(
-               withJSONObject: redact(object),
-               options: [.prettyPrinted, .sortedKeys, .fragmentsAllowed]
-           ),
+           let data = try? JSONSerialization.data(withJSONObject: redact(object), options: options),
            let text = String(data: data, encoding: .utf8) {
             return truncated(text, limit: limit)
         }

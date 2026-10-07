@@ -59,7 +59,7 @@ struct GamesView: View {
             state = .loaded(try await app.dependencies.catalog.games())
         } catch {
             app.analytics.recordHandled(error)
-            state = .failed(error.localizedDescription.isEmpty ? "Something went wrong." : error.localizedDescription)
+            state = .failed(String(localized: "We couldn't load the games right now. Please try again later."))
         }
     }
 

@@ -48,7 +48,7 @@ final class SignInModel {
         } catch is CancellationError {
             return nil
         } catch {
-            alert = .authFailure(error)
+            alert = .apiFailure(error, operation: .signIn)
             return nil
         }
     }
@@ -92,7 +92,7 @@ final class SignUpModel {
         } catch is CancellationError {
             return nil
         } catch {
-            alert = .authFailure(error)
+            alert = .apiFailure(error, operation: .signUp)
             return nil
         }
     }
@@ -130,7 +130,7 @@ final class ForgotPasswordModel {
         } catch is CancellationError {
             return
         } catch {
-            alert = .authFailure(error)
+            alert = .apiFailure(error, operation: .forgotPassword)
         }
     }
 }

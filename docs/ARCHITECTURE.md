@@ -61,7 +61,26 @@ value types.
 ## Key behaviors
 
 - **Session lifetime:** access tokens refresh one hour before expiry with a single shared request;
-  only a 400, 401 or 403 from the refresh endpoint signs the user out. Network errors never do.
+  only a 400, 401, 403 or 419 (`REFRESH_TOKEN_DOES_NOT_EXIST`) from the refresh endpoint signs the
+  user out. Network errors never do.
+- **Response envelope:** the API answers `{"status":{"statusCode":N,"statusMessage":"CODE"},"data":{...}}`
+  and reports most failures inside an HTTP 200 response, e.g. `PASSWORDS_DO_NOT_MATCH` with
+  status 406. `TatumTechAPIClient` turns any non-2xx `status.statusCode` into
+  `APIError.http(statusCode:messages:)`, including on endpoints without data (forgot/reset
+  password, sign-out, profile update), so a rejected request is never reported as success.
+- **API errors:** `APIErrorClassifier` is the only place that interprets statuses, server codes
+  and transport failures. It yields an `APIErrorKind` (network, timeout, 400, 401, 403, 404, 409,
+  429, 5xx, invalid response, unknown); known codes such as `USER_ALREADY_EXISTS` take precedence
+  over the status, and server text is kept only if `SafeServerMessage` accepts it.
+  `APIErrorPresentation` chooses the copy for an `APIOperation`, and `AlertMessage.apiFailure`
+  localizes it: request-specific failures are titled after the operation ("Unable to Create Your
+  Account"), connectivity and service failures use "We’ve Encountered an Issue". Network, timeout,
+  429 and 5xx failures offer "Try Again", which only runs when the user taps it.
+- **API failure log:** Debug builds write one entry per failed call to the unified log (category
+  `API`) through `APIErrorLog`: environment, method, path, HTTP and API status, server code, error
+  type, exception, duration and a summarized response body with credentials masked. Request
+  bodies, headers and query strings are never included. The API does not return a request ID.
+  At launch Debug builds also log the selected environment, base URL and why it was chosen.
 - **Google sign-in:** Firebase verifies the Google credential first; a Firebase failure keeps the
   user signed out. Then the ID token is exchanged with the API (10-second limit). If the exchange
   fails the user stays signed in with Google only.

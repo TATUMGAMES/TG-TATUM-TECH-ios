@@ -3,12 +3,15 @@ import Foundation
 /// Why an API call failed. Every client method throws either this or `CancellationError`.
 ///
 /// Associated values are technical detail for logs and tests; never show them to users.
-/// Map errors to user-facing copy in the UI layer.
+/// Map errors to user-facing copy with `APIErrorPresentation`.
 public enum APIError: Error, Sendable, Equatable {
-    /// The server answered with a non-2xx status. `messages` are the error messages found in the body.
+    /// The API reported a non-2xx status, either as the HTTP status or as `status.statusCode` in
+    /// the response envelope. `messages` are the error messages or codes found in the body.
     case http(statusCode: Int, messages: [String])
-    /// The request never got an HTTP answer (offline, DNS, TLS, timeout).
+    /// The request never got an HTTP answer (offline, DNS, TLS).
     case network(String)
+    /// The server did not answer in time.
+    case timeout(String)
     /// A 2xx response could not be decoded into the expected model.
     case decoding(String)
     /// Anything else, e.g. a request that could not be built or a session that could not be stored.
@@ -27,8 +30,12 @@ public enum APIError: Error, Sendable, Equatable {
             .first { !$0.isEmpty }
     }
 
+    /// No HTTP answer at all: offline or timed out.
     public var isNetworkFailure: Bool {
-        if case .network = self { true } else { false }
+        switch self {
+        case .network, .timeout: true
+        default: false
+        }
     }
 }
 

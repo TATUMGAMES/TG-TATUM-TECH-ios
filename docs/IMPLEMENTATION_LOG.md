@@ -175,3 +175,22 @@ What was built and decided, in order. Add an entry for each meaningful change.
 
 - Kit: 131 tests in 16 suites, all passing. App unit and UI tests were added for the nonce,
   alerts, analytics, deletion results and button order; they have not been run (needs a Mac).
+
+## 2026-10: API errors and stage environment
+
+- Debug builds use the stage API by default; production needs `TATUM_TECH_ENVIRONMENT = production`.
+  Previously every build defaulted to production, where the Tatum Tech API is not deployed and
+  every route answers with an HTML 404 page. Release builds still always use production. The
+  selected environment and the reason are logged at launch in Debug builds.
+- `TatumTechAPIClient` checks `status.statusCode` in every response. The API reports most failures
+  inside HTTP 200 responses; they were previously decoded as success or as a missing `data` field.
+- `APIErrorClassifier`, `SafeServerMessage` and `APIErrorPresentation` replace `AuthErrorText`.
+  Alerts have title-cased, operation-specific titles, never show raw server or exception text,
+  and offer a user-initiated "Try Again" only for transient failures. Sign-up is never retried
+  automatically.
+- `APIErrorLog` writes one credential-masked entry per failed call in Debug builds.
+- A refresh rejected with 419 (`REFRESH_TOKEN_DOES_NOT_EXIST`) now signs the user out.
+- Timeouts are reported as `APIError.timeout`, separate from other network failures.
+- Games no longer show raw error descriptions.
+- Kit: 161 tests in 22 suites, all passing. New app tests for sign-up alerts and title casing
+  have not been run (needs a Mac).

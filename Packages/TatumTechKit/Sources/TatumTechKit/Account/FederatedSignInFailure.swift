@@ -1,33 +1,5 @@
 import Foundation
 
-/// Chooses the user-facing explanation for a failed auth request. Localized copy comes from the
-/// caller so this stays free of UI resources.
-public enum AuthErrorText {
-    /// Server messages beyond this length are cut short so the alert stays readable.
-    public static let maxMessageLength = 500
-
-    /// Server-provided HTTP messages are shown as-is (trimmed and length-capped); anything else
-    /// falls back to the given copy so no technical detail leaks.
-    public static func message(for error: any Error, networkMessage: String, genericMessage: String) -> String {
-        guard let apiError = error as? APIError else { return genericMessage }
-        switch apiError {
-        case .http:
-            return apiError.serverMessage.map(capLength) ?? genericMessage
-        case .network:
-            return networkMessage
-        case .decoding, .unexpected:
-            return genericMessage
-        }
-    }
-
-    static func capLength(_ message: String) -> String {
-        guard message.count > maxMessageLength else { return message }
-        let prefix = message.prefix(maxMessageLength)
-        let trimmed = prefix.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
-        return trimmed + "…"
-    }
-}
-
 /// Why a Google sign-in attempt did not produce an identity.
 public enum GoogleSignInFailure: Error, Equatable, Sendable {
     /// The user dismissed Google's sheet. Nothing is shown.
@@ -104,7 +76,7 @@ public enum FederatedSignInCopy: Equatable, Sendable {
             case .invalidCredential, .invalidNonce, .requiresRecentLogin, .failed: self = .failed
             }
         case let failure as APIError:
-            if case .network = failure { self = .network } else { self = .failed }
+            self = failure.isNetworkFailure ? .network : .failed
         default:
             self = .failed
         }
