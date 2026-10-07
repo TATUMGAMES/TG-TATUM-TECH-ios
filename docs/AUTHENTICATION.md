@@ -147,7 +147,9 @@ See [ANALYTICS_PARITY.md](ANALYTICS_PARITY.md) for parameters and verification.
 | --- | --- |
 | Sign-in orchestration, stored identities, deletion rules | `TatumTechKit/Account/AccountService.swift` |
 | Firebase protocol, failures, in-memory test double | `TatumTechKit/Account/FirebaseAuthentication.swift` |
-| Error copy mapping | `TatumTechKit/Account/AuthErrorText.swift` |
+| Google and Apple failure copy | `TatumTechKit/Account/FederatedSignInFailure.swift` |
+| API error classification and copy selection | `TatumTechKit/Networking/APIErrorClassifier.swift`, `APIErrorPresentation.swift` |
+| Alert copy | `TatumTech/Components/AlertMessage.swift` |
 | Firebase SDK adapter | `TatumTech/App/FirebaseAuthentication.swift` |
 | Nonce, Apple request, reauthorization | `TatumTech/Features/Auth/AppleSignIn.swift` |
 | Welcome screen buttons and models | `TatumTech/Features/Auth/AuthFlowView.swift`, `AuthModels.swift` |

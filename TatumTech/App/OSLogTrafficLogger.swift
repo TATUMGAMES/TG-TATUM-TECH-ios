@@ -36,3 +36,13 @@ struct OSLogTrafficLogger: HTTPTrafficLogger {
         return parts.seconds * 1000 + parts.attoseconds / 1_000_000_000_000_000
     }
 }
+
+/// Writes one structured entry per failed Tatum Tech API call (see `APIErrorLog`). Installed only
+/// in Debug builds; request bodies and headers are never included.
+struct OSLogAPIFailureLogger: APIFailureObserver {
+    private let logger = Logger(subsystem: AppLog.subsystem, category: "API")
+
+    func requestFailed(_ failure: APIRequestFailure) {
+        logger.warning("\(APIErrorLog.describe(failure), privacy: .public)")
+    }
+}

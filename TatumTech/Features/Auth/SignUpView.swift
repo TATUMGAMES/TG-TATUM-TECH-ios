@@ -88,7 +88,7 @@ struct SignUpView: View {
             case nil: break
             }
         }
-        .alert($model.alert)
+        .alert($model.alert, retry: submit)
     }
 
     private func submit() {

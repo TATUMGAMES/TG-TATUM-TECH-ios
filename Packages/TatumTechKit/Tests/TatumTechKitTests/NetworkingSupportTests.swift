@@ -72,7 +72,9 @@ struct AppConfigurationTests {
             infoDictionary: ["TatumTechEnvironment": "stage", "TatumTechDataSource": "localJSON"],
             isDebugBuild: false
         )
-        #expect(configuration == AppConfiguration(environment: .production, dataSource: .network, apiKey: nil, logsHTTPTraffic: false))
+        #expect(configuration == AppConfiguration(
+            environment: .production, environmentSource: .releaseBuild, dataSource: .network, apiKey: nil, logsHTTPTraffic: false
+        ))
     }
 
     @Test func blankOrUnexpandedValuesFallBack() {
@@ -80,7 +82,7 @@ struct AppConfigurationTests {
             infoDictionary: ["TatumTechEnvironment": "", "TatumTechAPIKey": "$(TATUM_TECH_API_KEY)"],
             isDebugBuild: true
         )
-        #expect(configuration.environment == .production)
+        #expect(configuration.environment == .stage)
         #expect(configuration.dataSource == .network)
         #expect(configuration.apiKey == nil)
     }

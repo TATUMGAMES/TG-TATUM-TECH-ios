@@ -2,32 +2,8 @@ import Foundation
 import Testing
 @testable import TatumTechKit
 
-@Suite("Presentation support: error copy, dates, contact links")
+@Suite("Presentation support: dates, contact links")
 struct PresentationSupportTests {
-    private func message(_ error: any Error) -> String {
-        AuthErrorText.message(for: error, networkMessage: "network", genericMessage: "generic")
-    }
-
-    @Test func serverMessageIsShownTrimmed() {
-        #expect(message(APIError.http(statusCode: 401, messages: ["", "  Invalid credentials  "])) == "Invalid credentials")
-    }
-
-    @Test func httpWithoutMessageIsGeneric() {
-        #expect(message(APIError.http(statusCode: 500, messages: [])) == "generic")
-    }
-
-    @Test func networkDecodingAndUnknownErrors() {
-        #expect(message(APIError.network("offline")) == "network")
-        #expect(message(APIError.decoding("bad")) == "generic")
-        #expect(message(APIError.unexpected("x")) == "generic")
-        #expect(message(CancellationError()) == "generic")
-    }
-
-    @Test func longServerMessagesAreCapped() {
-        let long = String(repeating: "a", count: 499) + " " + String(repeating: "b", count: 100)
-        let result = message(APIError.http(statusCode: 400, messages: [long]))
-        #expect(result == String(repeating: "a", count: 499) + "…")
-    }
 
     @Test func eventStartFormatsInItsPublishedOffset() throws {
         let posix = Locale(identifier: "en_US_POSIX")

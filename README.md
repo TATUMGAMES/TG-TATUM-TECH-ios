@@ -56,7 +56,7 @@ Build settings flow from `Config/*.xcconfig` into `Config/Info.plist`, where
 | Setting | Purpose |
 | --- | --- |
 | `PRODUCT_BUNDLE_IDENTIFIER` | `com.tatumgames.tatumtech.ios` (Release), `com.tatumgames.tatumtech.ios.debug` (Debug) |
-| `TATUM_TECH_ENVIRONMENT` | `production` or `stage` (Debug only) |
+| `TATUM_TECH_ENVIRONMENT` | Debug only: blank (default) uses `stage`; `production` opts into the production API |
 | `TATUM_TECH_DATA_SOURCE` | `network` or `LOCAL_JSON` (Debug only) |
 | `TATUM_TECH_API_KEY` | Optional `x-api-key` header |
 | `GOOGLE_IOS_CLIENT_ID` / `GOOGLE_REVERSED_CLIENT_ID` | iOS OAuth client for Google sign-in |
@@ -66,7 +66,14 @@ Build settings flow from `Config/*.xcconfig` into `Config/Info.plist`, where
 | `FIREBASE_CONFIG_DIR` | Folder under `Config/Firebase/` whose `GoogleService-Info.plist` is bundled |
 | `FIREBASE_CONFIG_REQUIRED` | `YES` fails the build when that file is missing (Release); `NO` builds without Firebase (Debug) |
 
-Release builds always use the production API over the network and never log HTTP traffic. Never
+| Environment | Base URL |
+| --- | --- |
+| Production | `https://tg-api-new.uc.r.appspot.com` |
+| Stage | `https://tg-api-new-stage.uc.r.appspot.com` |
+
+Debug builds use the stage API unless `TATUM_TECH_ENVIRONMENT = production` is set in
+`Config/Secrets.xcconfig`, and log the selected environment at launch. Release builds always use
+the production API over the network and never log HTTP traffic. Never
 commit credentials, private keys, provisioning profiles or Firebase configuration files;
 `Config/Secrets.xcconfig` is the only place for machine-local values.
 

@@ -16,7 +16,9 @@ SWIFT_VERSION = 5.0
 SWIFT_STRICT_CONCURRENCY = complete
 
 // Tatum Tech API. Release builds always use production + network regardless of these values.
-TATUM_TECH_ENVIRONMENT = production
+// Debug builds use stage while TATUM_TECH_ENVIRONMENT is blank; set it to production in
+// Secrets.xcconfig to opt a Debug build into the production API.
+TATUM_TECH_ENVIRONMENT =
 TATUM_TECH_DATA_SOURCE = network
 TATUM_TECH_API_KEY =
 

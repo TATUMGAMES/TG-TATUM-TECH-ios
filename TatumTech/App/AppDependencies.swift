@@ -1,4 +1,5 @@
 import Foundation
+import OSLog
 import TatumTechKit
 import UserNotifications
 
@@ -51,12 +52,17 @@ struct AppDependencies {
         case .network: URLSessionTransport()
         case .localJSON: LocalJSONTransport(loadFile: BundledContent.loader)
         }
+        var failureObserver: any APIFailureObserver = analytics
+        if configuration.logsHTTPTraffic {
+            Logger(subsystem: AppLog.subsystem, category: "API").info("\(configuration.environmentDescription, privacy: .public)")
+            failureObserver = APIFailureObservers([analytics, OSLogAPIFailureLogger()])
+        }
         let client = TatumTechAPIClient(
             baseURL: configuration.environment.baseURL,
             apiKey: configuration.apiKey,
             transport: transport,
             logger: configuration.logsHTTPTraffic ? OSLogTrafficLogger() : nil,
-            failureObserver: analytics
+            failureObserver: failureObserver
         )
         let appStoreID = (bundle.object(forInfoDictionaryKey: "TatumTechAppStoreID") as? String)?
             .trimmingCharacters(in: .whitespacesAndNewlines)

@@ -79,6 +79,61 @@ struct AuthModelsTests {
         #expect(!model.didSendEmail)
     }
 
+    private func signUpModel(_ transport: any HTTPTransport) -> SignUpModel {
+        let model = SignUpModel(account: TestServices.accountService(transport: transport))
+        model.email.text = "ada@example.com"
+        model.password.text = "Secret!"
+        model.confirmation.text = "Secret!"
+        return model
+    }
+
+    @Test func existingAccountReportedInsideAnHTTP200IsExplained() async {
+        let model = signUpModel(StubTransport(statusCode: 200, json: #"{"status":{"statusCode":400,"statusMessage":"USER_ALREADY_EXISTS"},"data":{}}"#))
+
+        let state = await model.submit()
+
+        #expect(state == nil)
+        #expect(model.alert?.title == "Unable to Create Your Account")
+        #expect(model.alert?.message == AlertMessage.message(for: .accountExists))
+        #expect(model.alert?.canRetry == false)
+        #expect(!model.isSubmitting)
+        #expect(model.canSubmit)
+    }
+
+    @Test func offlineSignUpOffersTryAgainWithoutRetryingOnItsOwn() async {
+        let transport = OfflineTransport()
+        let model = signUpModel(transport)
+
+        _ = await model.submit()
+
+        #expect(model.alert?.title == AlertMessage.defaultTitle)
+        #expect(model.alert?.message == AlertMessage.networkMessage)
+        #expect(model.alert?.canRetry == true)
+        #expect(!model.isSubmitting)
+    }
+
+    @Test func missingDeploymentShowsServiceCopyNotRawText() async {
+        let html = "<html><head><title>404 Page Not Found</title></head><body>The page you requested was not found.</body></html>"
+        let model = signUpModel(StubTransport(statusCode: 404, json: html))
+
+        _ = await model.submit()
+
+        #expect(model.alert?.title == AlertMessage.defaultTitle)
+        #expect(model.alert?.message == AlertMessage.message(for: .service))
+        #expect(model.alert?.message.contains("404") == false)
+    }
+
+    @Test func errorTitlesAreTitleCase() {
+        let minorWords: Set<String> = ["a", "an", "and", "the", "to", "of", "in", "on", "for", "or"]
+        let titles = [AlertMessage.defaultTitle] + [APIOperation.signIn, .signUp, .forgotPassword, .loadContent].map(AlertMessage.title(for:))
+        for title in titles {
+            for (index, word) in title.split(separator: " ").enumerated() {
+                let capitalized = word.first?.isUppercase == true
+                #expect(capitalized || (index > 0 && minorWords.contains(word.lowercased())), "\(title)")
+            }
+        }
+    }
+
     @Test func federatedCancellationShowsNothing() {
         #expect(AlertMessage.signInFailure(GoogleSignInFailure.cancelled, provider: .google) == nil)
         #expect(AlertMessage.signInFailure(AppleSignInFailure.cancelled, provider: .apple) == nil)

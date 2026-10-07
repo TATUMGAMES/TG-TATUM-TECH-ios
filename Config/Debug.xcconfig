@@ -7,6 +7,7 @@ APP_DISPLAY_NAME = Tatum Tech Debug
 FIREBASE_CONFIG_DIR = Debug
 FIREBASE_CONFIG_REQUIRED = NO
 
-// Debug-only switches. Override in Secrets.xcconfig, for example:
-//   TATUM_TECH_ENVIRONMENT = stage
+// Debug-only switches. Debug builds use the stage API by default. Override in Secrets.xcconfig,
+// for example:
+//   TATUM_TECH_ENVIRONMENT = production
 //   TATUM_TECH_DATA_SOURCE = LOCAL_JSON
