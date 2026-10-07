@@ -181,7 +181,7 @@ public struct TatumTechAPIClient: Sendable {
             return try require(envelope.data, "data")
         } catch {
             let failure = (error as? APIError) ?? APIError.decoding("\(method.rawValue) \(path): \(error)")
-            report(failure, for: request, duration: clock.now - started)
+            report(failure, for: request, response: response, duration: clock.now - started)
             throw failure
         }
     }
@@ -216,8 +216,11 @@ public struct TatumTechAPIClient: Sendable {
             if Task.isCancelled || error is CancellationError || (error as? URLError)?.code == .cancelled {
                 throw CancellationError()
             }
-            let failure = APIError.network(String(describing: error))
-            report(failure, for: request, duration: clock.now - started)
+            let detail = String(describing: error)
+            let failure = error is TimeoutError || (error as? URLError)?.code == .timedOut
+                ? APIError.timeout(detail)
+                : APIError.network(detail)
+            report(failure, for: request, response: nil, duration: clock.now - started)
             throw failure
         }
         logger?.log(response: response, for: request, duration: clock.now - started)
@@ -227,19 +230,40 @@ public struct TatumTechAPIClient: Sendable {
                 statusCode: response.statusCode,
                 messages: ErrorMessageParser.messages(from: response.body)
             )
-            report(failure, for: request, duration: clock.now - started)
+            report(failure, for: request, response: response, duration: clock.now - started)
+            throw failure
+        }
+        if let failure = Self.envelopeFailure(in: response.body) {
+            report(failure, for: request, response: response, duration: clock.now - started)
             throw failure
         }
         return (request, response)
     }
 
-    private func report(_ error: APIError, for request: HTTPRequest, duration: Duration) {
+    /// The API answers HTTP 200 even for failures and reports the outcome in `status.statusCode`,
+    /// e.g. `{"status":{"statusCode":406,"statusMessage":"PASSWORDS_DO_NOT_MATCH"}}`. Returns that
+    /// failure, or `nil` when the body reports success or has no status.
+    static func envelopeFailure(in body: Data) -> APIError? {
+        guard let json = (try? JSONSerialization.jsonObject(with: body)) as? [String: Any],
+              let status = json["status"] as? [String: Any],
+              let code = (status["statusCode"] as? Int)
+                ?? (status["statusCode"] as? NSNumber)?.intValue
+                ?? (status["statusCode"] as? String).flatMap(Int.init),
+              code != 0, !(200..<300).contains(code)
+        else { return nil }
+        let message = (status["statusMessage"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines)
+        return .http(statusCode: code, messages: [message].compactMap { $0 }.filter { !$0.isEmpty })
+    }
+
+    private func report(_ error: APIError, for request: HTTPRequest, response: HTTPResponse?, duration: Duration) {
         failureObserver?.requestFailed(
             APIRequestFailure(
                 method: request.method,
                 url: request.url,
                 durationMilliseconds: duration.wholeMilliseconds,
-                error: error
+                error: error,
+                responseStatusCode: response?.statusCode,
+                responseBody: response?.body
             )
         )
     }

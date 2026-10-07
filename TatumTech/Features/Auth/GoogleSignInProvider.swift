@@ -5,8 +5,8 @@ import TatumTechKit
 @preconcurrency import GoogleSignIn
 #endif
 
-/// Native Google sign-in. Produces the Google ID token the Tatum Tech API exchanges at
-/// `tatum-tech/signin`. Failures are reported as `GoogleSignInFailure`.
+/// Native Google sign-in. Produces the Google tokens used to sign in to Firebase and the ID token
+/// the Tatum Tech API exchanges at `tatum-tech/signin`. Failures are reported as `GoogleSignInFailure`.
 @MainActor
 protocol GoogleSignInProviding {
     func signIn() async throws -> GoogleIdentity
@@ -62,6 +62,7 @@ final class GoogleSDKSignIn: GoogleSignInProviding {
         }
         return GoogleIdentity(
             idToken: idToken,
+            accessToken: result.user.accessToken.tokenString,
             userID: userID,
             email: result.user.profile?.email,
             displayName: result.user.profile?.name

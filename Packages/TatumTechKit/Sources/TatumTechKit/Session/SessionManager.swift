@@ -5,13 +5,13 @@ import Foundation
 ///
 /// Session lifetime: the API issues short-lived access tokens (24 hours) and the manager refreshes
 /// them with the refresh token shortly before they expire, so an active user stays signed in.
-/// When the server rejects the refresh token (400/401/403) the session is cleared; network
-/// failures never sign the user out.
+/// When the server rejects the refresh token (400/401/403, or 419 `REFRESH_TOKEN_DOES_NOT_EXIST`)
+/// the session is cleared; network failures never sign the user out.
 public actor SessionManager {
     /// Refresh this long before expiry so requests never carry a just-expired token.
     public static let refreshWindow: TimeInterval = 60 * 60
     public static let signOutTimeout: Duration = .seconds(10)
-    static let rejectionStatusCodes: Set<Int> = [400, 401, 403]
+    static let rejectionStatusCodes: Set<Int> = [400, 401, 403, 419]
 
     public enum RefreshResult: Equatable, Sendable {
         case noSession

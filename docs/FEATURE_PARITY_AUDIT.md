@@ -18,7 +18,7 @@ How to read the columns:
 
 | Feature | Screen | Android behavior identified | iOS implemented | Logic implemented | Error handling | Analytics | Assets | Tested |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Welcome | Welcome | Sign In, Sign Up, Google button, terms and privacy links | Yes, plus Sign in with Apple | Yes | Google unavailable message when unconfigured | Screen | `google_sign_in_button`, logo | UI test |
+| Welcome | Welcome | Sign In, Sign Up, Google button, terms and privacy links | Yes, plus Sign in with Apple (Firebase Authentication) | Yes | Google unavailable message when unconfigured | Screen | `google_sign_in_button`, logo | UI test |
 | Email sign-in | Sign In | Email and password validation after focus loss, submit disabled until valid, server messages shown | Yes | Yes | Server message (capped at 500 chars) or friendly copy | Screen | — | Kit (CredentialRules, AccountService, API client); UI test |
 | Sign-up | Sign Up | Email, password, confirmation, same validation | Yes | Yes | Same as sign-in | Screen | — | Kit; App test (auth models) |
 | Forgot password | Forgot Password | Email, send, success message | Yes | Yes | Inline success and error | Screen | — | Kit; App test |

@@ -1,13 +1,62 @@
 # Analytics Parity
 
 Every analytics event Tatum Tech sends, how each platform sends it, and how far it has been
-verified. Event names, parameter names and values are identical on Android and iOS so reports
-combine both platforms.
+verified. Events both platforms send use identical names, parameter names and values so reports
+combine both platforms. `login` and `sign_up` are iOS only (see "Auth events" below).
 
 Events go to Firebase Analytics through `AnalyticsService` (`TatumTechKit/Analytics`). Errors that
-carry a stack go to Crashlytics. With no `GoogleService-Info.plist` in the build, nothing is sent.
-No event carries personal information: screen names are route templates and endpoints have
-identifiers replaced with `{id}`.
+carry a stack go to Crashlytics. With no `GoogleService-Info.plist` in the build, or one that does
+not belong to the running bundle ID, nothing is sent. No event carries personal information:
+screen names are route templates and endpoints have identifiers replaced with `{id}`.
+
+## Summary
+
+| | Count |
+| --- | --- |
+| Android events found (`AnalyticsEvents.kt`, `AnalyticsService.kt`) | 8 |
+| iOS events implemented, same names and parameters | 8 |
+| Missing on iOS | 0 |
+| iOS-only events (`login`, `sign_up`) | 2 |
+| iOS events in total | 10 |
+| User properties / user ID set on either platform | none |
+| Events verified at runtime in DebugView | 0 (needs a Mac build; see TODO.md) |
+
+## Environments
+
+Debug and production report to separate Firebase apps in the same Firebase project
+(`tatumtech-mobile-firebase`), so debug traffic never reaches production reports. Android follows
+the same model with its own debug and release apps.
+
+| | Debug | Production |
+| --- | --- | --- |
+| Xcode scheme | Tatum Tech Debug | Tatum Tech Prod |
+| Build configuration | Debug | Release |
+| Bundle ID | `com.tatumgames.tatumtech.ios.debug` | `com.tatumgames.tatumtech.ios` |
+| Firebase iOS app ID | `1:200853064929:ios:fca90eb9865f2e2bd6fba0` | `1:200853064929:ios:56260bb200c2ad8fd6fba0` |
+| Configuration file | `Config/Firebase/Debug/GoogleService-Info.plist` | `Config/Firebase/Prod/GoogleService-Info.plist` |
+| Android counterpart | `com.tatumgames.tatumtech.android.debug` | `com.tatumgames.tatumtech.android` |
+
+Only one file is bundled per build, chosen by the build configuration and checked twice: the
+"Copy Firebase Configuration" build phase fails if the file's `BUNDLE_ID` differs from the build's
+bundle ID, and at launch `FirebaseConfigurationCheck` (in `TatumTechKit`) compares the bundled
+file's `BUNDLE_ID` and `GOOGLE_APP_ID` with the running app before Firebase starts. The running
+bundle ID decides the environment, not the build configuration. Debug builds show the result in
+the menu under "Firebase (Debug build only)".
+
+## Beyond events
+
+| Item | Android | iOS | Verified |
+| --- | --- | --- | --- |
+| User properties | None set | None set | Code review |
+| User ID | Not set | Not set | Code review |
+| Crashlytics custom keys | `application_id` (package name), `build_type` (`debug`/`release`) | `application_id` (bundle ID), `build_type` (`debug`/`release`) | Code review |
+| Crashlytics collection | Enabled | Enabled (SDK default) | Code review |
+| DebugView | Debug builds enable analytics collection for DebugView | The Tatum Tech Debug scheme launches with `-FIRAnalyticsDebugEnabled` | Not yet (needs a Mac) |
+| Screen tracking | `navigate` event (below); Firebase automatic screen reporting left at its default | `navigate` event (below); Firebase automatic screen reporting left at its default | Code review |
+| Auth events | Only `navigate` for the auth screens and `api_error` for failed sign-in calls | `navigate` and `api_error` as on Android, plus `login` / `sign_up` after a successful sign-in, and a handled `exception` for a failed Google or Apple sign-in. Cancelling a sign-in sends nothing. | Unit test (event names and parameters), code review |
+| Coding challenge events | No dedicated event; finishing a session can trigger the rating prompt (`rate_app` with `trigger` = `coding_challenge_complete`) | Same | Code review |
+
+## Events
 
 **Verified** levels used below:
 - **Unit test:** a `TatumTechKit` test asserts the event name and parameters (runs on any platform).
@@ -20,9 +69,11 @@ identifiers replaced with `{id}`.
 | `update_profile` | One event per changed field after saving Profile or the contact card editor. | `ProfileView` and `ContactCardEditorView` log one event per field returned by `LocalRepository.updateProfile`. | `field`: `first_name`, `last_name` or `email` | Code review |
 | `scan_contact_card` | Logged when a valid Tatum Tech card is scanned. | `ScannerView` logs before opening the scanned-card preview. Invalid or unsupported codes are not logged. | none | Code review |
 | `create_contact_card` | Logged when a contact card is saved for the first time. | `ContactCardEditorView` logs only when no card existed before saving. | none | Code review |
-| `delete_account` | Logged when deletion starts. | `AppModel.deleteAccount` logs before signing out and erasing data. | none | Code review |
+| `delete_account` | Logged when deletion starts. | `AppModel.deleteAccount` logs before deleting the account and erasing data. For Apple accounts it logs after the user confirms Apple's reauthorization sheet; cancelling that sheet sends nothing. | none | Code review |
+| `login` (iOS only) | Not sent. | `SignInModel` after email sign-in; `FederatedSignInModel` after a Google or Apple sign-in for a returning Firebase user. Firebase's recommended event name. | `method`: `email`, `google` or `apple` | Unit test (`authEventsCarryTheMethod`), app unit tests |
+| `sign_up` (iOS only) | Not sent. | `SignUpModel` after email sign-up; `FederatedSignInModel` when Firebase reports a new user for a Google or Apple sign-in. | `method`: `email`, `google` or `apple` | Unit test, app unit tests |
 | `rate_app` | Logged when the user submits a star rating. | `RatingView` logs on submit. | `rating` (integer 1–5), `trigger`: `app_open` or `coding_challenge_complete`, `sent_to_store`: `"true"` or `"false"` | Unit test (rating policy), code review |
-| `exception` (handled) | Logged with a Crashlytics non-fatal when a recoverable error occurs (Discord response parsing). | `AnalyticsService.recordHandled` from `DiscordClient` on parse failures. iOS also reports a failure to load the bundled games catalog (`GamesView`, `GameDetailsView`); Android only writes that failure to the log. A failure there means the shipped file is broken, so iOS surfaces it. | `handled`: `"true"` | Code review |
+| `exception` (handled) | Logged with a Crashlytics non-fatal when a recoverable error occurs (Discord response parsing). | `AnalyticsService.recordHandled` from `DiscordClient` on parse failures. iOS also reports failed Google and Apple sign-ins (not cancellations, and not a build where the provider is unavailable) and failed Google account deletion. iOS also reports a failure to load the bundled games catalog (`GamesView`, `GameDetailsView`); Android only writes that failure to the log. A failure there means the shipped file is broken, so iOS surfaces it. | `handled`: `"true"` | Code review |
 | `exception` (unhandled) | Best-effort event from the default uncaught exception handler, then the previous handler (Crashlytics). | `UnhandledExceptionBridge` installs an uncaught Objective-C exception handler that logs the event and then calls the previous handler (Crashlytics). Swift runtime traps cannot be intercepted on iOS; Crashlytics reports them on the next launch. | `handled`: `"false"` | Code review |
 | `api_error` | Logged for every failed Tatum Tech API call and every failed Discord request. Successful calls are never logged. | `TatumTechAPIClient` reports failures through `APIFailureObserver` (implemented by `AnalyticsService`); `DiscordClient` reports HTTP, empty-body, network and parse failures. | `endpoint` (sanitized path), `method` (lowercase), `duration_ms` (integer), `error_type`: `http`, `timeout`, `connection`, `io`, `parse` or `unknown`; `status_code` (integer) when there was an HTTP response | Unit test (`httpFailuresAreReportedToAnalytics`, sanitizer), code review |
 

@@ -78,3 +78,119 @@ What was built and decided, in order. Add an entry for each meaningful change.
   category opening its screens, Timeline and Stats tabs, answering a coding question, creating and
   sharing a contact card, contact card validation, deletion confirmation from Profile.
 - The app target and its tests have not been compiled or run yet (no Mac). See TODO.md.
+
+## 2026-10: Firebase Debug and production environments
+
+### Configuration naming
+
+- Kept the two existing build configurations, Debug and Release, and did not add new ones. Each
+  already maps to one bundle ID, so a third configuration would only add a way to mismatch them.
+  The environment is named in the schemes and the home-screen name instead: **Tatum Tech Debug**
+  (Debug: run, test, profile, archive) and **Tatum Tech Prod** (Release: run, profile, archive).
+  The generic TatumTech scheme was replaced by these two.
+
+### Configuration files
+
+- Inspected both Firebase files by content. `BUNDLE_ID` `com.tatumgames.tatumtech.ios.debug` with
+  app `1:200853064929:ios:fca90eb9865f2e2bd6fba0`, and `com.tatumgames.tatumtech.ios` with app
+  `1:200853064929:ios:56260bb200c2ad8fd6fba0`; both in project `tatumtech-mobile-firebase`. They
+  match the intended bundle IDs.
+- Moved them to `Config/Firebase/Debug/GoogleService-Info.plist` and
+  `Config/Firebase/Prod/GoogleService-Info.plist`. `Config/` is not a synchronized group, so
+  neither file can be added to the target by accident.
+- They stay git-ignored. Firebase iOS API keys are restricted client identifiers, but the
+  repository rule is to never commit API keys; build machines and CI receive the files separately.
+
+### Selection and checks
+
+- The "Copy Firebase Configuration" build phase copies only
+  `Config/Firebase/$(FIREBASE_CONFIG_DIR)/GoogleService-Info.plist`, removes any previously copied
+  file first, and fails when the file's `BUNDLE_ID` differs from `PRODUCT_BUNDLE_IDENTIFIER`. A
+  missing file fails Release (`FIREBASE_CONFIG_REQUIRED = YES`) and only warns in Debug. The script
+  was exercised with a stand-in for PlistBuddy for the match, swapped, missing-Debug and
+  missing-Release cases.
+- At launch `FirebaseConfigurationCheck` (kit) compares the bundled file's `BUNDLE_ID` and
+  `GOOGLE_APP_ID` with the running bundle ID; Firebase starts with
+  `FirebaseApp.configure(options:)` only when they match. The bundle ID decides the environment,
+  not the build configuration. Firebase is still configured once, from
+  `AppDependencies.live()`, which the SwiftUI `App` creates once at launch; no app delegate is
+  needed.
+- Crashlytics custom keys `application_id` and `build_type` are set, as on Android.
+- Debug builds show environment, bundle ID, Firebase app ID, project and status in the menu
+  ("Firebase (Debug build only)"). The section is compiled out of Release. No API key is read
+  into it.
+- The Debug scheme passes `-FIRAnalyticsDebugEnabled` for DebugView.
+- Home-screen names come from `APP_DISPLAY_NAME`: "Tatum Tech Debug" and "Tatum Tech Prod".
+
+### SDK
+
+- The Firebase package requirement was "up to next major from 11.0.0", which could never resolve
+  the current release. Raised to 12.19.2 (up to next major), products FirebaseAnalytics and
+  FirebaseCrashlytics only. Its shared dependencies (GoogleUtilities 8.x, gtm-session-fetcher,
+  promises) overlap with GoogleSignIn-iOS 8.x's requirements.
+- Added the **Upload Crashlytics Symbols** build phase. It runs only when the build produces
+  dSYMs (Release) and a Firebase file was bundled.
+
+### Analytics audit
+
+- Android sends 8 events, sets no user properties and no user ID, and sets two Crashlytics keys.
+  iOS sends the same 8 events with the same parameters; nothing is missing. See
+  ANALYTICS_PARITY.md.
+- Kit tests: 117 in 15 suites, all passing. Nothing here has been built in Xcode or verified in
+  the Firebase console yet (TODO.md, Firebase).
+
+## 2026-10: Sign in with Apple through Firebase Authentication
+
+### Sign-in
+
+- Added the FirebaseAuth product (Firebase 12.19.2). `FirebaseAuthenticating` (kit) wraps it;
+  `FirebaseSDKAuthentication` (app) is the SDK adapter and maps Firebase error codes to
+  `FirebaseAuthFailure`. Builds without a Firebase configuration use
+  `UnavailableFirebaseAuthentication`, so Apple and Google explain that they are unavailable.
+- Apple: a single-use random nonce per attempt (`SecRandomCopyBytes`, SHA-256 in the request),
+  then `OAuthProvider.appleCredential`, then Firebase sign-in, then the existing
+  `AccountService` state. Name and email are kept from the first authorization and never
+  replaced by empty values; private relay email is supported.
+- Google now also signs in to Firebase before the API exchange. A Firebase failure keeps the user
+  signed out; an exchange failure still leaves them signed in with Google only.
+- A stored Google or Apple identity counts only while it matches the current Firebase user.
+- Welcome order: Sign In, Sign Up, "OR", Sign in with Apple, Sign in with Google.
+- Cancellation is silent. Every other failure shows a standard alert with provider-specific copy
+  (`AlertMessage.signInFailure`).
+
+### Account
+
+- Sign-out also signs out of Firebase. Email sign-in or sign-up clears any federated identity.
+- Apple account deletion reauthorizes with Apple, revokes the token, then deletes the Firebase
+  user. Cancelling or a failure keeps the account and shows an alert. Google deletion stays best
+  effort.
+- No automatic account linking; see AUTHENTICATION.md.
+
+### Analytics
+
+- Added `login` and `sign_up` with `method`, and handled-exception reporting for failed Google
+  and Apple sign-ins. Android does not send these yet (ANALYTICS_PARITY.md).
+
+### Tests
+
+- Kit: 131 tests in 16 suites, all passing. App unit and UI tests were added for the nonce,
+  alerts, analytics, deletion results and button order; they have not been run (needs a Mac).
+
+## 2026-10: API errors and stage environment
+
+- Debug builds use the stage API by default; production needs `TATUM_TECH_ENVIRONMENT = production`.
+  Previously every build defaulted to production, where the Tatum Tech API is not deployed and
+  every route answers with an HTML 404 page. Release builds still always use production. The
+  selected environment and the reason are logged at launch in Debug builds.
+- `TatumTechAPIClient` checks `status.statusCode` in every response. The API reports most failures
+  inside HTTP 200 responses; they were previously decoded as success or as a missing `data` field.
+- `APIErrorClassifier`, `SafeServerMessage` and `APIErrorPresentation` replace `AuthErrorText`.
+  Alerts have title-cased, operation-specific titles, never show raw server or exception text,
+  and offer a user-initiated "Try Again" only for transient failures. Sign-up is never retried
+  automatically.
+- `APIErrorLog` writes one credential-masked entry per failed call in Debug builds.
+- A refresh rejected with 419 (`REFRESH_TOKEN_DOES_NOT_EXIST`) now signs the user out.
+- Timeouts are reported as `APIError.timeout`, separate from other network failures.
+- Games no longer show raw error descriptions.
+- Kit: 161 tests in 22 suites, all passing. New app tests for sign-up alerts and title casing
+  have not been run (needs a Mac).

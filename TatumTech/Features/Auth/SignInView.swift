@@ -8,8 +8,8 @@ struct SignInView: View {
     @State private var model: SignInModel
     @FocusState private var focus: Field?
 
-    init(account: AccountService) {
-        _model = State(initialValue: SignInModel(account: account))
+    init(account: AccountService, analytics: AnalyticsService = .disabled) {
+        _model = State(initialValue: SignInModel(account: account, analytics: analytics))
     }
 
     var body: some View {
@@ -78,7 +78,7 @@ struct SignInView: View {
             case nil: break
             }
         }
-        .alert($model.alert)
+        .alert($model.alert, retry: submit)
     }
 
     private func submit() {

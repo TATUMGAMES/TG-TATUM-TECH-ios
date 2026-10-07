@@ -1,8 +1,11 @@
 #include "Shared.xcconfig"
 #include? "Secrets.xcconfig"
 
+// Production Firebase app: "Tatum Tech Prod".
 PRODUCT_BUNDLE_IDENTIFIER = com.tatumgames.tatumtech.ios
-FIREBASE_PLIST_VARIANT = Prod
+APP_DISPLAY_NAME = Tatum Tech Prod
+FIREBASE_CONFIG_DIR = Prod
+FIREBASE_CONFIG_REQUIRED = YES
 
 // Release always targets the production API over the network.
 TATUM_TECH_ENVIRONMENT = production

@@ -39,15 +39,14 @@ networking with QR contact cards.
    remote packages (GoogleSignIn-iOS, Firebase).
 2. Copy `Config/Secrets.example.xcconfig` to `Config/Secrets.xcconfig` (git-ignored) and set
    `DEVELOPMENT_TEAM` to run on a device. Every other value is optional.
-3. Optional: place the Firebase configuration files `GoogleService-Info Debug.plist` and
-   `GoogleService-Info Prod.plist` in the repository root. They are git-ignored and must never be
-   committed. Without them the app runs with analytics and crash reporting turned off.
-4. Select the **TatumTech** scheme and run.
+3. Place the Firebase configuration files (see [Firebase](#firebase)). Optional for Debug builds.
+4. Select the **Tatum Tech Debug** scheme and run.
 
 With no local configuration the app still runs: content uses the production API, challenges and
-catalogs use bundled data, Sign in with Apple works once the team has the capability, and the
-Google button explains that Google sign-in is unavailable. [TODO.md](TODO.md) lists the external
-setup that is still required.
+catalogs use bundled data, and email sign-in works. Sign in with Apple and Google sign-in go
+through Firebase Authentication, so they need the Firebase file for the build; without it their
+buttons explain that the option is unavailable. [docs/AUTHENTICATION.md](docs/AUTHENTICATION.md)
+describes the sign-in setup, and [TODO.md](TODO.md) lists the external setup that is still required.
 
 ## Configuration
 
@@ -57,17 +56,52 @@ Build settings flow from `Config/*.xcconfig` into `Config/Info.plist`, where
 | Setting | Purpose |
 | --- | --- |
 | `PRODUCT_BUNDLE_IDENTIFIER` | `com.tatumgames.tatumtech.ios` (Release), `com.tatumgames.tatumtech.ios.debug` (Debug) |
-| `TATUM_TECH_ENVIRONMENT` | `production` or `stage` (Debug only) |
+| `TATUM_TECH_ENVIRONMENT` | Debug only: blank (default) uses `stage`; `production` opts into the production API |
 | `TATUM_TECH_DATA_SOURCE` | `network` or `LOCAL_JSON` (Debug only) |
 | `TATUM_TECH_API_KEY` | Optional `x-api-key` header |
 | `GOOGLE_IOS_CLIENT_ID` / `GOOGLE_REVERSED_CLIENT_ID` | iOS OAuth client for Google sign-in |
 | `GOOGLE_SERVER_CLIENT_ID` | Public Web client ID used as the ID token audience |
 | `APP_STORE_ID` | Numeric App Store ID for the "rate the app" link |
-| `FIREBASE_PLIST_VARIANT` | Which `GoogleService-Info <variant>.plist` is bundled |
+| `APP_DISPLAY_NAME` | Home-screen name: "Tatum Tech Debug" (Debug), "Tatum Tech Prod" (Release) |
+| `FIREBASE_CONFIG_DIR` | Folder under `Config/Firebase/` whose `GoogleService-Info.plist` is bundled |
+| `FIREBASE_CONFIG_REQUIRED` | `YES` fails the build when that file is missing (Release); `NO` builds without Firebase (Debug) |
 
-Release builds always use the production API over the network and never log HTTP traffic. Never
+| Environment | Base URL |
+| --- | --- |
+| Production | `https://tg-api-new.uc.r.appspot.com` |
+| Stage | `https://tg-api-new-stage.uc.r.appspot.com` |
+
+Debug builds use the stage API unless `TATUM_TECH_ENVIRONMENT = production` is set in
+`Config/Secrets.xcconfig`, and log the selected environment at launch. Release builds always use
+the production API over the network and never log HTTP traffic. Never
 commit credentials, private keys, provisioning profiles or Firebase configuration files;
 `Config/Secrets.xcconfig` is the only place for machine-local values.
+
+## Firebase
+
+Debug and production builds report to separate Firebase apps:
+
+| Scheme | Configuration | Bundle ID | Firebase file |
+| --- | --- | --- | --- |
+| Tatum Tech Debug | Debug | `com.tatumgames.tatumtech.ios.debug` | `Config/Firebase/Debug/GoogleService-Info.plist` |
+| Tatum Tech Prod | Release | `com.tatumgames.tatumtech.ios` | `Config/Firebase/Prod/GoogleService-Info.plist` |
+
+- Download each file from the Firebase console (project `tatumtech-mobile-firebase`) for the
+  matching iOS app and place it at the path above. `Config/Firebase/` is git-ignored because the
+  files contain API keys; share them through the team's secure channel.
+- Do not add these files to the Xcode target. The **Copy Firebase Configuration** build phase
+  bundles exactly one of them as `GoogleService-Info.plist` and fails the build if its
+  `BUNDLE_ID` differs from the build's bundle ID.
+- Debug builds without the file still run, with analytics and crash reporting off. Release builds
+  without it fail. For CI jobs that build Release without Firebase, pass
+  `FIREBASE_CONFIG_REQUIRED=NO` to `xcodebuild`; for release CI, write the file from a CI secret
+  before building.
+- At launch the app checks the bundled file's bundle ID and Firebase app ID against the running
+  app before starting Firebase. In Debug builds the menu shows the environment, bundle ID and
+  Firebase app ID under "Firebase (Debug build only)".
+- The Tatum Tech Debug scheme launches with `-FIRAnalyticsDebugEnabled`, so events appear in
+  Firebase DebugView.
+- Release archives upload dSYMs to Crashlytics in the **Upload Crashlytics Symbols** build phase.
 
 ## Project layout
 
@@ -91,8 +125,9 @@ docs/                      Design, architecture, data, analytics, assets, audit,
 ## Testing
 
 - **Core package:** `cd Packages/TatumTechKit && swift test`. It also runs on Linux and Windows.
-- **App:** run the **TatumTech** scheme's tests in Xcode (Cmd-U): app unit tests, package tests
-  and UI tests.
+- **App:** run the **Tatum Tech Debug** scheme's tests in Xcode (Cmd-U): app unit tests, package
+  tests and UI tests.
+- **Release:** archive with the **Tatum Tech Prod** scheme (Product > Archive).
 - UI tests launch with `-uiTesting` (plus `-uiTestingSignedIn` to start signed in). In that mode
   the app uses bundled JSON, in-memory storage and credentials, and no external sign-in, so no
   network or account is needed.
@@ -101,6 +136,7 @@ docs/                      Design, architecture, data, analytics, assets, audit,
 
 - [docs/APP_DESIGN.md](docs/APP_DESIGN.md): screens, navigation and visual design
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): layers, modules and key behaviors
+- [docs/AUTHENTICATION.md](docs/AUTHENTICATION.md): sign-in methods, account linking, deletion and setup
 - [docs/LOCAL_DATA.md](docs/LOCAL_DATA.md): what is stored on the device and where
 - [docs/ANALYTICS_PARITY.md](docs/ANALYTICS_PARITY.md): every analytics event and its parameters
 - [docs/ASSET_PARITY.md](docs/ASSET_PARITY.md): images, colors, animations and bundled content

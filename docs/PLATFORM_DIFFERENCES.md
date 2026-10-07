@@ -4,11 +4,15 @@ Behavior that is intentionally different on iOS, and why.
 
 ## Sign-in
 
-- **Sign in with Apple** is offered on iOS. App Store Review Guideline 4.8 requires it when an app
-  offers third-party sign-in such as Google. The API has no Apple endpoint yet, so an Apple
-  sign-in is stored on the device only (like a Google sign-in whose API exchange failed).
-- **Google sign-in** uses the GoogleSignIn SDK directly. The ID token goes to the same
-  `tatum-tech/signin` endpoint with the same Web client ID as audience.
+- **Sign in with Apple** is offered on iOS, through Firebase Authentication. App Store Review
+  Guideline 4.8 requires it when an app offers third-party sign-in such as Google. The API has no
+  Apple endpoint yet, so an Apple sign-in has a Firebase session but no API session (like a Google
+  sign-in whose API exchange failed).
+- **Google sign-in** uses the GoogleSignIn SDK, then Firebase Authentication, as on Android. The
+  ID token goes to the same `tatum-tech/signin` endpoint with the same Web client ID as audience.
+- **Account deletion** for Apple accounts asks the user to authorize with Apple again, revokes the
+  Apple token and deletes the Firebase user; if that fails the account is kept and the user can
+  retry. Google accounts are deleted from Firebase on a best-effort basis, as on Android.
 - **Revoked Apple credentials** sign the user out at launch and immediately while the app runs.
 - **Reinstall:** Keychain items survive app deletion on iOS, so the first launch after an install
   clears stored credentials, giving the same result as a fresh install elsewhere.
@@ -42,14 +46,20 @@ Behavior that is intentionally different on iOS, and why.
 - Uncaught Objective-C exceptions log `exception` with `handled=false` before Crashlytics handles
   them. Swift runtime traps cannot be intercepted; Crashlytics reports them on the next launch.
 - A failure to load the bundled games catalog is reported as a handled exception.
+- iOS sends Firebase's recommended `login` and `sign_up` events (`method` = `email`, `google` or
+  `apple`) and records failed Google and Apple sign-ins as handled exceptions. Android sends
+  neither yet.
 
 ## Build and distribution
 
 - Bundle IDs: Release `com.tatumgames.tatumtech.ios`, Debug `com.tatumgames.tatumtech.ios.debug`,
-  each with its own Firebase configuration file.
+  each reporting to its own Firebase app in the shared Firebase project. Android selects its
+  configuration file per build type from source-set folders; iOS selects
+  `Config/Firebase/<Debug|Prod>/GoogleService-Info.plist` per build configuration in a build
+  phase that fails on a bundle ID mismatch, and checks it again at launch.
+- Schemes: Tatum Tech Debug (Debug) and Tatum Tech Prod (Release, used for archives).
 - Configuration comes from xcconfig files. Local values live in the git-ignored
-  `Config/Secrets.xcconfig`; Firebase files are git-ignored and copied into the app by a build
-  phase when present.
+  `Config/Secrets.xcconfig`; Firebase files are git-ignored.
 - Release builds force the production API over the network.
 - The privacy manifest (`PrivacyInfo.xcprivacy`) declares collected data and required-reason API
   use.

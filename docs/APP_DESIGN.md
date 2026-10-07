@@ -3,6 +3,15 @@
 How the iOS app is organized for users: screens, navigation and the visual system.
 [PLATFORM_DIFFERENCES.md](PLATFORM_DIFFERENCES.md) lists behavior that is specific to iOS.
 
+## Builds
+
+| Scheme | Home-screen name | Bundle ID | Firebase app |
+| --- | --- | --- | --- |
+| Tatum Tech Debug | Tatum Tech Debug | `com.tatumgames.tatumtech.ios.debug` | Debug |
+| Tatum Tech Prod | Tatum Tech Prod | `com.tatumgames.tatumtech.ios` | Production |
+
+Different bundle IDs let both builds sit on one device side by side.
+
 ## Launch and account state
 
 `RootView` switches on `AppModel.phase`:
@@ -20,14 +29,17 @@ Keychain by a previous install are cleared.
 
 | Screen | Content |
 | --- | --- |
-| Welcome | "Let's begin your Tatum Tech experience.", Sign In, Sign Up, Google sign-in button, Sign in with Apple, terms and privacy links |
+| Welcome | "Let's begin your Tatum Tech experience.", Sign In, Sign Up, "OR", Sign in with Apple (system button, black, white in dark mode, at least 44 pt tall and scaling with Dynamic Type), Google sign-in button, terms and privacy links. See [AUTHENTICATION.md](AUTHENTICATION.md) |
 | Sign In | Email, password (Show/Hide), Forgot Password link, Sign In |
 | Sign Up | Email, password, confirmation, Sign Up |
 | Forgot Password | Email and Send; success shown inline |
 
 Validation errors appear after a field loses focus and is not blank; submit stays disabled until
-the form is valid. Server messages are shown as-is (capped at 500 characters); network failures
-use friendly copy.
+the form is valid. While a request runs the button shows a progress indicator and further taps are
+ignored. Failures appear in an alert with a title-cased title ("Unable to Create Your Account",
+"We’ve Encountered an Issue") and the app's own message for the cause; technical text is never
+shown. Transient failures (network, timeout, rate limit, server error) offer "Try Again", which
+sends the request again only when tapped.
 
 ## Main app
 
@@ -52,7 +64,9 @@ delivered.
 - Recent Notifications: collapsible, up to 200 pt tall, unread items highlighted; tapping marks the
   item read and opens its destination.
 - The menu button opens the account sheet: Profile, Demographic Info, About Tatum Games, FAQ, app
-  version, terms and privacy.
+  version, terms and privacy. Debug builds add a "Firebase (Debug build only)" section with the
+  environment name, bundle ID, Firebase app ID, Firebase project and status; Release builds do not
+  contain it.
 
 | Category | Cards |
 | --- | --- |

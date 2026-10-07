@@ -65,7 +65,7 @@ struct ForgotPasswordView: View {
                 AccessibilityNotification.Announcement(String(localized: "Reset password email sent")).post()
             }
         }
-        .alert($model.alert)
+        .alert($model.alert, retry: submit)
     }
 
     private func submit() {

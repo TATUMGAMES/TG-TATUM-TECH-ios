@@ -15,13 +15,14 @@ struct AuthFlowView: View {
         NavigationStack {
             WelcomeView(model: FederatedSignInModel(
                 account: app.accountService,
-                google: app.dependencies.googleSignIn
+                google: app.dependencies.googleSignIn,
+                analytics: app.analytics
             ))
             .trackScreen("auth_screen")
             .navigationDestination(for: AuthRoute.self) { route in
                 switch route {
-                case .signIn: SignInView(account: app.accountService).trackScreen("sign_in_screen")
-                case .signUp: SignUpView(account: app.accountService).trackScreen("sign_up_screen")
+                case .signIn: SignInView(account: app.accountService, analytics: app.analytics).trackScreen("sign_in_screen")
+                case .signUp: SignUpView(account: app.accountService, analytics: app.analytics).trackScreen("sign_up_screen")
                 case .forgotPassword: ForgotPasswordView(account: app.accountService).trackScreen("forgot_password_screen")
                 }
             }
@@ -32,6 +33,8 @@ struct AuthFlowView: View {
 
 struct WelcomeView: View {
     @Environment(AppModel.self) private var app
+    @Environment(\.colorScheme) private var colorScheme
+    @ScaledMetric(relativeTo: .body) private var appleButtonHeight = Metrics.buttonHeight
     @State private var model: FederatedSignInModel
 
     init(model: FederatedSignInModel) {
@@ -65,6 +68,19 @@ struct WelcomeView: View {
                     .foregroundStyle(Palette.textPrimary)
                     .accessibilityHidden(true)
 
+                // Apple's own control and styles; it contrasts with the background in both
+                // appearances and its title scales with the button height.
+                SignInWithAppleButton(.signIn) { request in
+                    model.prepareAppleRequest(request)
+                } onCompletion: { result in
+                    Task {
+                        if let state = await model.completeApple(result) { app.apply(state) }
+                    }
+                }
+                .signInWithAppleButtonStyle(colorScheme == .dark ? .white : .black)
+                .frame(height: min(max(appleButtonHeight, Metrics.minimumTapTarget), Metrics.buttonHeight * 1.5))
+                .accessibilityIdentifier("welcome.apple")
+
                 Button {
                     Task {
                         if let state = await model.signInWithGoogle() { app.apply(state) }
@@ -78,17 +94,6 @@ struct WelcomeView: View {
                 .frame(maxWidth: .infinity)
                 .accessibilityLabel("Sign in with Google")
                 .accessibilityIdentifier("welcome.google")
-
-                SignInWithAppleButton(.signIn) { request in
-                    model.prepareAppleRequest(request)
-                } onCompletion: { result in
-                    Task {
-                        if let state = await model.completeApple(result) { app.apply(state) }
-                    }
-                }
-                .signInWithAppleButtonStyle(.black)
-                .frame(height: Metrics.buttonHeight)
-                .accessibilityIdentifier("welcome.apple")
             }
             .frame(maxWidth: Metrics.authButtonMaxWidth)
 

@@ -69,7 +69,7 @@ extension APIError {
     public var analyticsType: APIErrorType {
         switch self {
         case .http: .http
-        case .network: .io
+        case .network, .timeout: .io
         case .decoding: .parse
         case .unexpected: .unknown
         }

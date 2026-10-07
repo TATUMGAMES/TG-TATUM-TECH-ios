@@ -33,7 +33,7 @@ struct LoadFailedView: View {
 
     var body: some View {
         ContentUnavailableView {
-            Label("Something went wrong", systemImage: "wifi.exclamationmark")
+            Label("Unable to Load Content", systemImage: "wifi.exclamationmark")
         } description: {
             Text(message)
         } actions: {
