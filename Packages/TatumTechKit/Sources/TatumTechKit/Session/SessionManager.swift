@@ -157,6 +157,20 @@ public actor SessionManager {
         clear()
     }
 
+    /// Signs out of the API and clears the local session only once the server confirms it, so a
+    /// failed request leaves the user signed in and able to retry. A session the server already
+    /// rejected (its refresh token was refused, which clears it) also counts as signed out.
+    /// Does nothing without a session.
+    public func signOutOrFail() async throws {
+        guard session != nil else { return }
+        do {
+            try await authenticated { client, token in try await client.signOut(accessToken: token) }
+        } catch {
+            if session != nil { throw error }
+        }
+        clear()
+    }
+
     // MARK: Helpers
 
     private func isNearExpiry(_ session: TatumTechSession) -> Bool {

@@ -87,6 +87,12 @@ struct APIErrorPresentationTests {
         #expect(!presentation.canRetry)
     }
 
+    @Test func rejectedSignOutIsTitledAfterItAndReadsAsAnExpiredSession() {
+        let presentation = APIErrorPresentation(error: http(401), operation: .signOut)
+        #expect(presentation.usesOperationTitle)
+        #expect(presentation.message == .sessionExpired)
+    }
+
     @Test func validationCodesUseTheAppsCopy() {
         #expect(signUp(http(405, "INVALID_EMAIL_FORMAT")).message == .invalidEmail)
         #expect(signUp(http(406, "INVALID_PASSWORD_FORMAT")).message == .invalidPassword)

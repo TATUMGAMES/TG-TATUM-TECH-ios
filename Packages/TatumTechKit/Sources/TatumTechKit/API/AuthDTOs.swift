@@ -41,6 +41,9 @@ struct UpdateUserProfileRequest: Encodable {
     let lastName: String?
 }
 
+/// Encodes as `{}`, for endpoints that expect a JSON body without fields.
+struct EmptyRequest: Encodable {}
+
 /// `data` of sign-in, sign-up, and refresh-token responses.
 public struct AuthSessionDTO: Decodable, Sendable, Equatable {
     public var accessToken: String?

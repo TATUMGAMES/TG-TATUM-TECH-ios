@@ -132,8 +132,10 @@ answers. Sessions resume where they stopped.
 
 ### Profile
 
-- **Profile:** read-only username, first name, last name, email, Save, and Delete Account with a
-  confirmation dialog.
+- **Profile:** read-only username, first name, last name, email, Save, a black Sign Out text link
+  below Save, and Delete Account. Sign Out and Delete Account use the same Yes/No confirmation
+  alert, and both show a progress overlay while running. A failed sign-out keeps the user on
+  Profile and shows the standard API failure alert.
 - **Demographic Info:** a 13-or-older confirmation, three consents that gate Save, and optional
   age range, sex, occupation, salary range and school.
 - **About and FAQ:** mission, MIKROS resources, Visit Tatum Tech, and frequently asked questions.
@@ -162,6 +164,6 @@ Defined in `DesignSystem/Theme.swift` and the asset catalog:
 
 - Every control has a label; image-only buttons have explicit labels.
 - Elements used by UI tests have stable identifiers (`welcome.signIn`, `signIn.email`,
-  `feature.partners`, `home.greeting`, `menu.profile`, `account.delete`, `networking.scan`,
+  `feature.partners`, `home.greeting`, `menu.profile`, `account.signOut`, `account.delete`, `networking.scan`,
   `contactCard.save`, and so on).
 - Toasts post accessibility announcements.

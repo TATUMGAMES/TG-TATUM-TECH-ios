@@ -39,6 +39,7 @@ struct StubGoogleSignIn: GoogleSignInProviding {
     func signIn() async throws -> GoogleIdentity { try result.get() }
     func handle(_ url: URL) -> Bool { false }
     func disconnect() async {}
+    func signOut() {}
 }
 
 /// Re-authorizes with a fixed result instead of Apple's sheet.
