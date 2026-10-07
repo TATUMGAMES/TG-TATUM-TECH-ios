@@ -22,6 +22,21 @@ final class TatumTechUITests: XCTestCase {
         XCTAssertTrue(app.buttons["welcome.apple"].exists)
     }
 
+    /// Sign In, Sign Up, then "OR", then Sign in with Apple above Sign in with Google.
+    func testAppleButtonSitsBetweenSignUpAndGoogle() {
+        let app = launch(signedIn: false)
+        let signUp = app.buttons["welcome.signUp"]
+        let apple = app.buttons["welcome.apple"]
+        let google = app.buttons["welcome.google"]
+        XCTAssertTrue(apple.waitForExistence(timeout: 5))
+
+        XCTAssertLessThan(app.buttons["welcome.signIn"].frame.maxY, signUp.frame.minY)
+        XCTAssertLessThan(signUp.frame.maxY, apple.frame.minY)
+        XCTAssertLessThanOrEqual(apple.frame.maxY, google.frame.minY)
+        XCTAssertGreaterThanOrEqual(apple.frame.height, 44)
+        XCTAssertTrue(apple.isHittable)
+    }
+
     func testSignInStaysDisabledUntilTheFormIsValid() {
         let app = launch(signedIn: false)
         app.buttons["welcome.signIn"].tap()

@@ -138,3 +138,40 @@ What was built and decided, in order. Add an entry for each meaningful change.
   ANALYTICS_PARITY.md.
 - Kit tests: 117 in 15 suites, all passing. Nothing here has been built in Xcode or verified in
   the Firebase console yet (TODO.md, Firebase).
+
+## 2026-10: Sign in with Apple through Firebase Authentication
+
+### Sign-in
+
+- Added the FirebaseAuth product (Firebase 12.19.2). `FirebaseAuthenticating` (kit) wraps it;
+  `FirebaseSDKAuthentication` (app) is the SDK adapter and maps Firebase error codes to
+  `FirebaseAuthFailure`. Builds without a Firebase configuration use
+  `UnavailableFirebaseAuthentication`, so Apple and Google explain that they are unavailable.
+- Apple: a single-use random nonce per attempt (`SecRandomCopyBytes`, SHA-256 in the request),
+  then `OAuthProvider.appleCredential`, then Firebase sign-in, then the existing
+  `AccountService` state. Name and email are kept from the first authorization and never
+  replaced by empty values; private relay email is supported.
+- Google now also signs in to Firebase before the API exchange. A Firebase failure keeps the user
+  signed out; an exchange failure still leaves them signed in with Google only.
+- A stored Google or Apple identity counts only while it matches the current Firebase user.
+- Welcome order: Sign In, Sign Up, "OR", Sign in with Apple, Sign in with Google.
+- Cancellation is silent. Every other failure shows a standard alert with provider-specific copy
+  (`AlertMessage.signInFailure`).
+
+### Account
+
+- Sign-out also signs out of Firebase. Email sign-in or sign-up clears any federated identity.
+- Apple account deletion reauthorizes with Apple, revokes the token, then deletes the Firebase
+  user. Cancelling or a failure keeps the account and shows an alert. Google deletion stays best
+  effort.
+- No automatic account linking; see AUTHENTICATION.md.
+
+### Analytics
+
+- Added `login` and `sign_up` with `method`, and handled-exception reporting for failed Google
+  and Apple sign-ins. Android does not send these yet (ANALYTICS_PARITY.md).
+
+### Tests
+
+- Kit: 131 tests in 16 suites, all passing. App unit and UI tests were added for the nonce,
+  alerts, analytics, deletion results and button order; they have not been run (needs a Mac).

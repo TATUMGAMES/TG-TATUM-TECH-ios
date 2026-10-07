@@ -54,9 +54,15 @@ public enum AnalyticsEvent: Hashable, Sendable {
     case rateApp(rating: Int, trigger: RatingTrigger, sentToStore: Bool)
     case exception(handled: Bool)
     case apiError(APIErrorReport)
+    /// An existing account signed in (Firebase recommended event).
+    case login(method: AuthMethod)
+    /// A new account was created (Firebase recommended event).
+    case signUp(method: AuthMethod)
 
     public var name: String {
         switch self {
+        case .login: "login"
+        case .signUp: "sign_up"
         case .navigate: "navigate"
         case .updateProfile: "update_profile"
         case .scanContactCard: "scan_contact_card"
@@ -86,6 +92,8 @@ public enum AnalyticsEvent: Hashable, Sendable {
             ["handled": .string(handled ? "true" : "false")]
         case let .apiError(report):
             report.parameters
+        case let .login(method), let .signUp(method):
+            ["method": .string(method.rawValue)]
         }
     }
 }

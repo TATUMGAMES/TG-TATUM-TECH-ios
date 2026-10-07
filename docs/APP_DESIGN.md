@@ -29,7 +29,7 @@ Keychain by a previous install are cleared.
 
 | Screen | Content |
 | --- | --- |
-| Welcome | "Let's begin your Tatum Tech experience.", Sign In, Sign Up, Google sign-in button, Sign in with Apple, terms and privacy links |
+| Welcome | "Let's begin your Tatum Tech experience.", Sign In, Sign Up, "OR", Sign in with Apple (system button, black, white in dark mode, at least 44 pt tall and scaling with Dynamic Type), Google sign-in button, terms and privacy links. See [AUTHENTICATION.md](AUTHENTICATION.md) |
 | Sign In | Email, password (Show/Hide), Forgot Password link, Sign In |
 | Sign Up | Email, password, confirmation, Sign Up |
 | Forgot Password | Email and Send; success shown inline |

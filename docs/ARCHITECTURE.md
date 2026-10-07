@@ -15,7 +15,7 @@ How the Tatum Tech iOS app is built: a platform-neutral core package and a Swift
 | Content | `ContentRepository` for events, speakers and partners; `BundledCatalog` for challenges, achievements, careers, resources and games |
 | Local data | `LocalRepository` actor over a JSON document (see [LOCAL_DATA.md](LOCAL_DATA.md)) |
 | Session and credentials | `SessionManager` actor, Keychain through `SecureStore` |
-| Sign-in | Email via the API; Google via the GoogleSignIn SDK behind `GoogleSignInProviding`; Apple via AuthenticationServices |
+| Sign-in | Email via the API; Google (GoogleSignIn SDK behind `GoogleSignInProviding`) and Apple (AuthenticationServices) both verified by Firebase Authentication behind `FirebaseAuthenticating`. See [AUTHENTICATION.md](AUTHENTICATION.md) |
 | Reminders | `MeetingReminderCenter` (UserNotifications) driven by `MeetingReminderPlanner` in the kit |
 | Analytics | `AnalyticsService` in the kit; Firebase Analytics and Crashlytics clients in the app, started only after `FirebaseConfigurationCheck` confirms the bundled configuration belongs to the running bundle ID |
 | Configuration | xcconfig, then Info.plist, then `AppConfiguration.resolve` |
@@ -52,7 +52,7 @@ value types.
 ## App layer
 
 - `App/`: `TatumTechApp`, `RootView`, `AppModel`, `AppRouter`, `AppDependencies`,
-  `BundledCatalog`, `ContactCardImageStore`, `FirebaseServices`.
+  `BundledCatalog`, `ContactCardImageStore`, `FirebaseServices`, `FirebaseAuthentication`.
 - `Features/<Name>/`: views and their models. Models receive services in their initializer and
   expose plain state.
 - `Components/` and `DesignSystem/`: shared views (toast, Safari, form fields, GIFs, confetti,
@@ -62,10 +62,12 @@ value types.
 
 - **Session lifetime:** access tokens refresh one hour before expiry with a single shared request;
   only a 400, 401 or 403 from the refresh endpoint signs the user out. Network errors never do.
-- **Google sign-in:** the Google identity is stored first, then the ID token is exchanged with the
-  API (10-second limit). If the exchange fails the user stays signed in with Google only.
-- **Apple sign-in:** SHA-256 nonce; revoked credentials sign the user out at launch and
-  immediately while the app runs.
+- **Google sign-in:** Firebase verifies the Google credential first; a Firebase failure keeps the
+  user signed out. Then the ID token is exchanged with the API (10-second limit). If the exchange
+  fails the user stays signed in with Google only.
+- **Apple sign-in:** single-use random nonce (SHA-256 in the request), verified by Firebase.
+  Revoked credentials sign the user out at launch and immediately while the app runs. Deleting an
+  Apple account reauthorizes with Apple, revokes the token and deletes the Firebase user.
 - **Offline first:** challenges, stats, timeline, careers, resources and games work without a
   network. Events, speakers, partners and Discord need the network in normal builds.
 - **Navigation from notifications:** reminder taps and recent notifications go through
@@ -77,5 +79,5 @@ value types.
 - One scene switching on `AppModel.phase` for launch, auth and the main tabs.
 - A single JSON document for local data: small, atomic writes, easy to erase on account deletion.
 - Protocols at external boundaries (`HTTPTransport`, `SecureStore`, `GoogleSignInProviding`,
-  `AppleCredentialStateChecking`, `AnalyticsClient`) keep the app testable without the network or
+  `AppleCredentialStateChecking`, `AppleReauthorizing`, `FirebaseAuthenticating`, `AnalyticsClient`) keep the app testable without the network or
   real accounts.

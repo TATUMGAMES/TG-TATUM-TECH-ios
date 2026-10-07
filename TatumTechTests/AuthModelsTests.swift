@@ -79,8 +79,28 @@ struct AuthModelsTests {
         #expect(!model.didSendEmail)
     }
 
-    @Test func googleCancellationShowsNothing() {
-        #expect(AlertMessage.googleFailure(.cancelled) == nil)
-        #expect(AlertMessage.googleFailure(.unavailable)?.message.contains("isn't available") == true)
+    @Test func federatedCancellationShowsNothing() {
+        #expect(AlertMessage.signInFailure(GoogleSignInFailure.cancelled, provider: .google) == nil)
+        #expect(AlertMessage.signInFailure(AppleSignInFailure.cancelled, provider: .apple) == nil)
+        #expect(AlertMessage.signInFailure(GoogleSignInFailure.unavailable, provider: .google)?.message.contains("isn't available") == true)
+    }
+
+    @Test func emailSignInAndSignUpAreLogged() async {
+        let json = #"{"status":{"statusCode":200,"statusMessage":"OK"},"data":{"accessToken":"a","refreshToken":"r","expiresIn":3600,"user":{"id":1}}}"#
+        let recorder = RecordingAnalyticsClient()
+        let analytics = AnalyticsService(clients: [recorder])
+
+        let signIn = SignInModel(account: TestServices.accountService(transport: StubTransport(statusCode: 200, json: json)), analytics: analytics)
+        signIn.email.text = "ada@example.com"
+        signIn.password.text = "Secret!"
+        _ = await signIn.submit()
+
+        let signUp = SignUpModel(account: TestServices.accountService(transport: StubTransport(statusCode: 200, json: json)), analytics: analytics)
+        signUp.email.text = "ada@example.com"
+        signUp.password.text = "Secret!"
+        signUp.confirmation.text = "Secret!"
+        _ = await signUp.submit()
+
+        #expect(recorder.events == ["login", "sign_up"])
     }
 }

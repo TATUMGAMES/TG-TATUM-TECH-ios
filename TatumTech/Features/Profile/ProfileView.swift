@@ -12,6 +12,7 @@ struct ProfileView: View {
     @State private var toast: ToastMessage?
     @State private var isConfirmingDeletion = false
     @State private var isDeleting = false
+    @State private var alert: AlertMessage?
 
     var body: some View {
         ScrollView {
@@ -69,6 +70,7 @@ struct ProfileView: View {
             Text("Are you sure you want to delete your Tatum Tech account? This action is not reversable.")
         }
         .toast($toast)
+        .alert($alert)
         .task { await load() }
     }
 
@@ -95,6 +97,16 @@ struct ProfileView: View {
 
     private func deleteAccount() {
         isDeleting = true
-        Task { await app.deleteAccount() }
+        Task {
+            switch await app.deleteAccount() {
+            case .deleted:
+                break
+            case .cancelled:
+                isDeleting = false
+            case let .failed(message):
+                isDeleting = false
+                alert = message
+            }
+        }
     }
 }

@@ -89,8 +89,12 @@ final class AppModel {
         await syncReminders()
     }
 
+    /// Loads the local profile. A profile created now takes its names from the signed-in provider
+    /// (Apple sends them only on the first authorization); an existing profile is never changed.
     func refreshLocalUser() async {
-        localUser = await local.ensureUser()
+        var seed: FederatedAccount?
+        if case let .signedIn(summary) = phase { seed = summary.federatedAccount }
+        localUser = await local.ensureUser(seedFirstName: seed?.givenName, seedLastName: seed?.familyName)
     }
 
     /// Fetches upcoming events and schedules reminders for their speaker sessions.
@@ -112,23 +116,60 @@ final class AppModel {
         await local.setCounter(CounterKey.sentToAppStoreForRating, to: 1)
     }
 
-    /// Signs out everywhere and erases this device's data, keeping only whether the user was
-    /// already sent to the App Store to rate the app. Runs to completion even if the calling view
-    /// disappears.
-    func deleteAccount() async {
+    enum AccountDeletionResult: Equatable {
+        case deleted
+        /// The user closed Apple's sheet; nothing changed.
+        case cancelled
+        /// Nothing was deleted and the user is still signed in.
+        case failed(AlertMessage)
+    }
+
+    /// Deletes the Firebase account, signs out everywhere and erases this device's data, keeping
+    /// only whether the user was already sent to the App Store to rate the app.
+    ///
+    /// Sign in with Apple users first authorize again so their Apple tokens can be revoked before
+    /// the Firebase user is deleted. Once started, deletion runs to completion even if the calling
+    /// view disappears.
+    func deleteAccount() async -> AccountDeletionResult {
         let dependencies = dependencies
         let account = accountService
+        var appleReauthorization: AppleIdentity?
+        if await account.federatedAccount?.provider == .apple {
+            do {
+                appleReauthorization = try await dependencies.appleReauthorizer.reauthorize()
+            } catch {
+                guard FederatedSignInCopy(error: error) != nil else { return .cancelled }
+                logger.error("Apple reauthorization for account deletion failed: \(String(describing: error), privacy: .public)")
+                dependencies.analytics.recordHandled(error)
+                return .failed(.accountDeletionFailure(error))
+            }
+        }
         dependencies.analytics.log(.deleteAccount)
-        await Task {
-            await account.signOut()
+        let logger = logger
+        let outcome: Result<Void, any Error> = await Task {
+            do {
+                if let remoteError = try await account.deleteAccount(appleReauthorization: appleReauthorization) {
+                    logger.warning("Firebase user not deleted: \(String(describing: remoteError), privacy: .public)")
+                    dependencies.analytics.recordHandled(remoteError)
+                }
+            } catch {
+                return .failure(error)
+            }
             await dependencies.googleSignIn.disconnect()
             await dependencies.local.deleteAllData()
             dependencies.contactImages.deleteAll()
+            return .success(())
         }.value
+        if case let .failure(error) = outcome {
+            logger.error("Account deletion failed: \(String(describing: error), privacy: .public)")
+            dependencies.analytics.recordHandled(error)
+            return .failed(.accountDeletionFailure(error))
+        }
         reminders.removeAll()
         router.reset()
         localUser = nil
         phase = .signedOut
+        return .deleted
     }
 }
 

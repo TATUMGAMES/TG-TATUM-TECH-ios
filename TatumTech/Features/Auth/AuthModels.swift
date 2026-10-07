@@ -23,9 +23,11 @@ final class SignInModel {
     var alert: AlertMessage?
 
     private let account: AccountService
+    private let analytics: AnalyticsService
 
-    init(account: AccountService) {
+    init(account: AccountService, analytics: AnalyticsService = .disabled) {
         self.account = account
+        self.analytics = analytics
     }
 
     var isEmailValid: Bool { CredentialRules.isValidEmail(email.text) }
@@ -40,7 +42,9 @@ final class SignInModel {
         isSubmitting = true
         defer { isSubmitting = false }
         do {
-            return try await account.signIn(email: email.text, password: password.text)
+            let state = try await account.signIn(email: email.text, password: password.text)
+            analytics.log(.login(method: .email))
+            return state
         } catch is CancellationError {
             return nil
         } catch {
@@ -62,9 +66,11 @@ final class SignUpModel {
     var alert: AlertMessage?
 
     private let account: AccountService
+    private let analytics: AnalyticsService
 
-    init(account: AccountService) {
+    init(account: AccountService, analytics: AnalyticsService = .disabled) {
         self.account = account
+        self.analytics = analytics
     }
 
     var isEmailValid: Bool { CredentialRules.isValidEmail(email.text) }
@@ -80,7 +86,9 @@ final class SignUpModel {
         isSubmitting = true
         defer { isSubmitting = false }
         do {
-            return try await account.signUp(email: email.text, password: password.text, confirmPassword: confirmation.text)
+            let state = try await account.signUp(email: email.text, password: password.text, confirmPassword: confirmation.text)
+            analytics.log(.signUp(method: .email))
+            return state
         } catch is CancellationError {
             return nil
         } catch {
@@ -127,80 +135,106 @@ final class ForgotPasswordModel {
     }
 }
 
-/// Google and Apple sign-in from the welcome screen.
+/// Google and Apple sign-in from the welcome screen. Both sign in to Firebase through
+/// `AccountService` and enter the app with the same signed-in state as email sign-in.
 @MainActor
 @Observable
 final class FederatedSignInModel {
     private(set) var isWorking = false
     var alert: AlertMessage?
-    private(set) var appleAttempt = AppleSignInAttempt()
+    /// The nonce for the Apple request in flight. Consumed by the first completion so a nonce is
+    /// never reused.
+    private var appleAttempt: AppleSignInAttempt?
 
     private let account: AccountService
     private let google: any GoogleSignInProviding
+    private let analytics: AnalyticsService
     private let logger = Logger(subsystem: AppLog.subsystem, category: "Auth")
 
-    init(account: AccountService, google: any GoogleSignInProviding) {
+    init(account: AccountService, google: any GoogleSignInProviding, analytics: AnalyticsService = .disabled) {
         self.account = account
         self.google = google
+        self.analytics = analytics
     }
 
     func signInWithGoogle() async -> AccountState? {
         guard !isWorking else { return nil }
         isWorking = true
         defer { isWorking = false }
-        let identity: GoogleIdentity
         do {
-            identity = try await google.signIn()
-        } catch let failure as GoogleSignInFailure {
-            if case let .failed(detail) = failure {
-                logger.error("Google sign-in failed: \(detail, privacy: .public)")
-            }
-            alert = .googleFailure(failure)
-            return nil
-        } catch {
-            alert = .googleFailure(.failed(String(describing: error)))
-            return nil
-        }
-        do {
+            let identity = try await google.signIn()
             let result = try await account.completeGoogleSignIn(identity)
             if let exchangeError = result.exchangeError {
                 logger.warning("Tatum Tech Google sign-in failed; continuing without a Tatum Tech session: \(String(describing: exchangeError), privacy: .public)")
             }
-            return result.state
-        } catch is CancellationError {
-            return nil
+            return succeeded(result, method: .google)
         } catch {
-            logger.error("Storing the Google account failed: \(String(describing: error), privacy: .public)")
-            alert = .googleFailure(.failed("storage"))
+            failed(error, provider: .google)
             return nil
         }
     }
 
+    /// Configures the `SignInWithAppleButton` request with a fresh nonce.
     func prepareAppleRequest(_ request: ASAuthorizationAppleIDRequest) {
-        appleAttempt = AppleSignInAttempt()
-        appleAttempt.configure(request)
+        do {
+            let attempt = try AppleSignInAttempt()
+            attempt.configure(request)
+            appleAttempt = attempt
+        } catch {
+            appleAttempt = nil
+            request.requestedScopes = [.fullName, .email]
+            logger.error("Could not create a Sign in with Apple nonce: \(String(describing: error), privacy: .public)")
+        }
     }
 
+    /// Handles the `SignInWithAppleButton` result.
     func completeApple(_ result: Result<ASAuthorization, any Error>) async -> AccountState? {
-        switch result {
-        case let .failure(error):
-            if !error.isAppleSignInCancellation {
-                logger.error("Sign in with Apple failed: \(String(describing: error), privacy: .public)")
-                alert = .appleFailure
-            }
-            return nil
-        case let .success(authorization):
-            guard let identity = AppleIdentity(authorization: authorization) else {
-                alert = .appleFailure
-                return nil
-            }
-            do {
-                return try await account.completeAppleSignIn(identity)
-            } catch {
-                logger.error("Storing the Apple account failed: \(String(describing: error), privacy: .public)")
-                alert = .appleFailure
-                return nil
+        let attempt = appleAttempt
+        appleAttempt = nil
+        let identity = Result<AppleIdentity, any Error> {
+            switch result {
+            case let .failure(error):
+                throw AppleSignInFailure(authorizationError: error)
+            case let .success(authorization):
+                guard let attempt else { throw AppleSignInFailure.invalidNonce }
+                return try AppleIdentity(authorization: authorization, rawNonce: attempt.rawNonce)
             }
         }
+        return await finishApple(identity)
+    }
+
+    /// Signs in to Firebase with the Apple identity. Separate from `completeApple` so tests can
+    /// supply identities without AuthenticationServices.
+    func finishApple(_ identity: Result<AppleIdentity, any Error>) async -> AccountState? {
+        guard !isWorking else { return nil }
+        isWorking = true
+        defer { isWorking = false }
+        do {
+            let result = try await account.completeAppleSignIn(identity.get())
+            return succeeded(result, method: .apple)
+        } catch {
+            failed(error, provider: .apple)
+            return nil
+        }
+    }
+
+    private func succeeded(_ result: FederatedSignInResult, method: AuthMethod) -> AccountState? {
+        guard case .signedIn = result.state else {
+            alert = .signInFailure(FirebaseAuthFailure.failed("No signed-in state"), provider: method)
+            return nil
+        }
+        analytics.log(result.isNewUser ? .signUp(method: method) : .login(method: method))
+        return result.state
+    }
+
+    /// Cancellation returns quietly to the welcome screen; anything else is logged, explained in an
+    /// alert, and recorded unless the provider is simply not set up in this build.
+    private func failed(_ error: any Error, provider: AuthMethod) {
+        guard let copy = FederatedSignInCopy(error: error) else { return }
+        logger.error("\(provider.rawValue, privacy: .public) sign-in failed: \(String(describing: error), privacy: .public)")
+        if copy != .unavailable {
+            analytics.recordHandled(error)
+        }
+        alert = .signInFailure(error, provider: provider)
     }
 }

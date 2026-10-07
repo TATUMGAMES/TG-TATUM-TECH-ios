@@ -43,9 +43,10 @@ networking with QR contact cards.
 4. Select the **Tatum Tech Debug** scheme and run.
 
 With no local configuration the app still runs: content uses the production API, challenges and
-catalogs use bundled data, Sign in with Apple works once the team has the capability, and the
-Google button explains that Google sign-in is unavailable. [TODO.md](TODO.md) lists the external
-setup that is still required.
+catalogs use bundled data, and email sign-in works. Sign in with Apple and Google sign-in go
+through Firebase Authentication, so they need the Firebase file for the build; without it their
+buttons explain that the option is unavailable. [docs/AUTHENTICATION.md](docs/AUTHENTICATION.md)
+describes the sign-in setup, and [TODO.md](TODO.md) lists the external setup that is still required.
 
 ## Configuration
 
@@ -128,6 +129,7 @@ docs/                      Design, architecture, data, analytics, assets, audit,
 
 - [docs/APP_DESIGN.md](docs/APP_DESIGN.md): screens, navigation and visual design
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): layers, modules and key behaviors
+- [docs/AUTHENTICATION.md](docs/AUTHENTICATION.md): sign-in methods, account linking, deletion and setup
 - [docs/LOCAL_DATA.md](docs/LOCAL_DATA.md): what is stored on the device and where
 - [docs/ANALYTICS_PARITY.md](docs/ANALYTICS_PARITY.md): every analytics event and its parameters
 - [docs/ASSET_PARITY.md](docs/ASSET_PARITY.md): images, colors, animations and bundled content

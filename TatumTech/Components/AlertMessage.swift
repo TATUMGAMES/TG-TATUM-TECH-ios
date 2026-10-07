@@ -23,21 +23,36 @@ extension AlertMessage {
         )
     }
 
-    /// Explains a failed Google sign-in, or `nil` when the user cancelled.
-    static func googleFailure(_ failure: GoogleSignInFailure) -> AlertMessage? {
-        guard let copy = failure.copy else { return nil }
+    /// Explains a failed Google or Apple sign-in, or `nil` when the user cancelled.
+    static func signInFailure(_ error: any Error, provider: AuthMethod) -> AlertMessage? {
+        guard let copy = FederatedSignInCopy(error: error) else { return nil }
+        let apple = provider == .apple
         let message = switch copy {
-        case .network: networkMessage
-        case .unavailable: String(localized: "Google sign-in isn't available right now. Please try again, or sign in with your email.")
-        case .failed: String(localized: "We couldn't sign you in with Google. Please try again, or sign in with your email.")
+        case .network:
+            networkMessage
+        case .unavailable:
+            apple
+                ? String(localized: "Sign in with Apple isn't available right now. Please try again later, or sign in with your email.")
+                : String(localized: "Google sign-in isn't available right now. Please try again, or sign in with your email.")
+        case .accountExists:
+            String(localized: "An account with this email already uses a different sign-in method. Please sign in the way you did before.")
+        case .disabled:
+            String(localized: "This account has been disabled.")
+        case .failed:
+            apple
+                ? String(localized: "We couldn't sign you in with Apple. Please try again, or sign in with your email.")
+                : String(localized: "We couldn't sign you in with Google. Please try again, or sign in with your email.")
         }
         return AlertMessage(title: defaultTitle, message: message)
     }
 
-    static let appleFailure = AlertMessage(
-        title: defaultTitle,
-        message: String(localized: "We couldn't sign you in with Apple. Please try again, or sign in with your email.")
-    )
+    /// Explains why the account could not be deleted. The user is still signed in and can retry.
+    static func accountDeletionFailure(_ error: any Error) -> AlertMessage {
+        let message = FederatedSignInCopy(error: error) == .network
+            ? networkMessage
+            : String(localized: "We couldn't delete your account. Please try again.")
+        return AlertMessage(title: String(localized: "Account not deleted"), message: message)
+    }
 
     static func simple(_ message: String) -> AlertMessage {
         AlertMessage(title: defaultTitle, message: message)

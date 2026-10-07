@@ -11,6 +11,7 @@
 		A10000000000000000000102 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000602 /* GoogleSignIn */; };
 		A10000000000000000000103 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000603 /* FirebaseAnalytics */; };
 		A10000000000000000000104 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000604 /* FirebaseCrashlytics */; };
+		A10000000000000000000105 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000605 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 				A10000000000000000000102 /* GoogleSignIn in Frameworks */,
 				A10000000000000000000103 /* FirebaseAnalytics in Frameworks */,
 				A10000000000000000000104 /* FirebaseCrashlytics in Frameworks */,
+				A10000000000000000000105 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,7 @@
 				A10000000000000000000602 /* GoogleSignIn */,
 				A10000000000000000000603 /* FirebaseAnalytics */,
 				A10000000000000000000604 /* FirebaseCrashlytics */,
+				A10000000000000000000605 /* FirebaseAuth */,
 			);
 			productName = TatumTech;
 			productReference = A10000000000000000000301 /* TatumTech.app */;
@@ -665,6 +668,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A10000000000000000001103 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		A10000000000000000000605 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000001103 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

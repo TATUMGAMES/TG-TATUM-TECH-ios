@@ -11,7 +11,7 @@ Never put credentials, keys or tokens in this file.
 - **What:** Open the project, resolve packages (GoogleSignIn-iOS, firebase-ios-sdk), build for a
   simulator and a device, and run all tests (Cmd-U).
 - **Why:** The app target and its tests have not been compiled. Only `TatumTechKit` was built and
-  tested (117 tests, Swift 6.4 toolchain on Windows).
+  tested (131 tests, Swift 6.4 toolchain on Windows).
 - **Where:** `TatumTech/`, `TatumTechTests/`, `TatumTechUITests/`, `TatumTech.xcodeproj`.
 - **Blocks release:** Yes.
 - Check in particular: camera QR scanning on a device, the system New Contact screen after saving
@@ -30,7 +30,7 @@ repository; nothing here has been verified on a device or in the Firebase consol
 | One file bundled per build, chosen by configuration, mismatch fails the build | Done in the build phase; build not yet run in Xcode |
 | Bundle ID and Firebase app ID checked at launch before Firebase starts | Done; logic unit tested in `TatumTechKit` |
 | Schemes "Tatum Tech Debug" (Debug) and "Tatum Tech Prod" (Release, archive) | Done; not yet opened in Xcode |
-| Firebase SDK 12.19.2 (Analytics, Crashlytics) resolves and builds | Not verified |
+| Firebase SDK 12.19.2 (Analytics, Crashlytics, Auth) resolves and builds | Not verified |
 | Debug build sends events to the Debug Firebase app | Not verified |
 | Release build sends events to the production Firebase app | Not verified |
 | Crashlytics reports and dSYM upload | Not verified |
@@ -85,11 +85,25 @@ repository; nothing here has been verified on a device or in the Firebase consol
   name is set separately in App Store Connect.
 - **Blocks release:** No.
 
+## Sign in with Apple
+
+Implemented in code; not production-ready until these are done. Details in
+`docs/AUTHENTICATION.md`. Never commit the `.p8` key.
+
+- [ ] Apple Developer: enable Sign in with Apple on App IDs `com.tatumgames.tatumtech.ios` and
+      `com.tatumgames.tatumtech.ios.debug`, then regenerate their provisioning profiles.
+- [ ] Apple Developer: create a Services ID and a Sign in with Apple key (needed to revoke tokens
+      when an account is deleted).
+- [ ] Firebase console (`tatumtech-mobile-firebase`), Authentication: enable Apple and enter the
+      Services ID, Team ID, key ID and private key; enable Google.
+- [ ] Firebase console: confirm "one account per email address" is the intended setting.
+- [ ] Physical iPhone, Debug and Prod: first sign-in, returning sign-in, cancel, "Hide My Email",
+      delete account (token revoked, Firebase user gone), sign in again.
+
 ## External configuration
 
-### Apple Developer team and capabilities
-- **What:** Set `DEVELOPMENT_TEAM` in `Config/Secrets.xcconfig`; register App IDs
-  `com.tatumgames.tatumtech.ios` and `com.tatumgames.tatumtech.ios.debug` with Sign in with Apple.
+### Apple Developer team
+- **What:** Set `DEVELOPMENT_TEAM` in `Config/Secrets.xcconfig`.
 - **Blocks release:** Yes.
 
 ### Google iOS OAuth clients
@@ -113,7 +127,8 @@ repository; nothing here has been verified on a device or in the Firebase consol
 ### Backend: Sign in with Apple endpoint
 - **What:** An endpoint that verifies an Apple identity token and nonce and issues a Tatum Tech
   session.
-- **Why:** Apple sign-ins currently stay on the device and cannot call authenticated APIs.
+- **Why:** Apple sign-ins are verified by Firebase but get no Tatum Tech API session, so they
+  cannot call authenticated APIs.
 - **Blocks release:** No.
 
 ### Backend: sign-in route
