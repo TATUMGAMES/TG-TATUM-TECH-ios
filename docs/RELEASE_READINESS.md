@@ -8,7 +8,9 @@ done; everything else says what is missing.
 | Check | Result | How |
 | --- | --- | --- |
 | Core package builds | Pass | `swift build` in `Packages/TatumTechKit`, Swift 6.4 toolchain (Windows) |
-| Core package tests | 110 tests in 14 suites pass | `swift test`, same toolchain |
+| Core package tests | 117 tests in 15 suites pass | `swift test`, same toolchain |
+| Firebase files match their apps | Debug file `BUNDLE_ID` is `com.tatumgames.tatumtech.ios.debug`, production file is `com.tatumgames.tatumtech.ios` | Inspected the files' contents |
+| Firebase file selection | Copy phase bundles one file and fails on a mismatched or (Release) missing file | Script run outside Xcode with a PlistBuddy stand-in; launch check unit tested (`FirebaseEnvironmentTests`) |
 | Bundled content | All 31 JSON files decode; every challenge bucket has 100 questions; every answer is among its options | Kit tests `everyBundledFileLoads`, `everyBucketHasAFullPool`, `everyQuestionHasItsAnswerAmongTheOptions`, `bundledAppContentDecodes` |
 | Bundled content matches the shared source | All 31 files identical | SHA-256 comparison |
 | No placeholder screens | No "coming soon" or pending screens remain; every Home card opens its feature | Source search; `HomeCatalogTests.everyCardOpensItsScreen` (not yet run) |
@@ -21,7 +23,8 @@ done; everything else says what is missing.
 | App target compiles | The SwiftUI app layer has never been compiled. Expect a round of compile fixes. |
 | App unit tests and UI tests pass | Written, never run. |
 | Device-only features | Camera QR scanning, system New Contact screen, local notifications, photo capture, Safari checkout. |
-| Firebase events arrive | Check every event in [ANALYTICS_PARITY.md](ANALYTICS_PARITY.md) in DebugView. |
+| Firebase events arrive | Check every event in [ANALYTICS_PARITY.md](ANALYTICS_PARITY.md) in DebugView under the Debug app. |
+| Production Firebase routing | A Release build must report to the production iOS app only. Not checked in the Firebase console. |
 | Accessibility | VoiceOver labels and Dynamic Type at the largest sizes on real screens. |
 | Performance | Launch time, scrolling in Games carousels and long challenge sessions. |
 
@@ -50,7 +53,12 @@ Details for each are in [TODO.md](../TODO.md).
 - **Account deletion:** available in Profile; needs the server endpoint (blocker 5).
 - **Rating:** uses the App Store review URL once `APP_STORE_ID` is set, otherwise
   `requestReview`.
-- **Crashlytics symbols:** add the upload run-script phase before the first TestFlight build.
+- **Archive:** use the Tatum Tech Prod scheme; the build fails without
+  `Config/Firebase/Prod/GoogleService-Info.plist`.
+- **Crashlytics symbols:** the Upload Crashlytics Symbols phase runs on Release builds; confirm the
+  first archive's dSYM appears in the Firebase console.
+- **Home-screen name:** Release currently shows "Tatum Tech Prod" (`APP_DISPLAY_NAME`); confirm
+  before submission.
 - **Export compliance:** the app uses only standard HTTPS and Apple cryptography (SHA-256 for the
   Apple sign-in nonce and card IDs); set `ITSAppUsesNonExemptEncryption` accordingly when the App
   Store Connect record is created.

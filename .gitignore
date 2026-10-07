@@ -20,6 +20,8 @@ Config/Secrets.xcconfig
 *.provisionprofile
 *.cer
 *.p8
+# Firebase configuration (Config/Firebase/<Debug|Prod>/GoogleService-Info.plist) carries API keys.
+Config/Firebase/
 GoogleService-Info*.plist
 .env
 .env.*

@@ -11,25 +11,70 @@ import FirebaseAnalytics
 import FirebaseCrashlytics
 #endif
 
-/// Starts Firebase when the build contains a `GoogleService-Info.plist`. Builds without one (for
-/// example a fresh clone) run normally with analytics and crash reporting turned off.
+/// What Firebase was started with. Shown in the Debug build's diagnostics panel; never holds the
+/// API key or OAuth client IDs.
+struct FirebaseDiagnostics: Sendable, Equatable {
+    var bundleIdentifier: String
+    var check: FirebaseConfigurationCheck
+    var configuration: FirebaseConfigurationSummary?
+    var isConfigured: Bool
+
+    static let disabled = FirebaseDiagnostics(
+        bundleIdentifier: Bundle.main.bundleIdentifier ?? "",
+        check: .missingConfiguration,
+        configuration: nil,
+        isConfigured: false
+    )
+
+    var environmentName: String {
+        FirebaseEnvironment(bundleIdentifier: bundleIdentifier)?.displayName ?? "Unregistered"
+    }
+}
+
+/// Starts Firebase from the single `GoogleService-Info.plist` the build bundled for this
+/// configuration, after checking that it belongs to the running bundle ID. Builds without one (for
+/// example a fresh clone) or with a mismatched one run normally with analytics and crash
+/// reporting turned off.
 enum FirebaseServices {
     private static let logger = Logger(subsystem: AppLog.subsystem, category: "Firebase")
 
     /// Configures Firebase once and returns the analytics clients to use.
     @MainActor
-    static func configure(bundle: Bundle = .main) -> [any AnalyticsClient] {
+    static func configure(bundle: Bundle = .main) -> (clients: [any AnalyticsClient], diagnostics: FirebaseDiagnostics) {
+        let path = bundle.path(forResource: "GoogleService-Info", ofType: "plist")
+        let plist = path.flatMap { NSDictionary(contentsOfFile: $0) as? [String: Any] }
+        let check = FirebaseConfigurationCheck.evaluate(appBundleIdentifier: bundle.bundleIdentifier, plist: plist)
+        var diagnostics = FirebaseDiagnostics(
+            bundleIdentifier: bundle.bundleIdentifier ?? "",
+            check: check,
+            configuration: plist.flatMap(FirebaseConfigurationSummary.init(plist:)),
+            isConfigured: false
+        )
+        guard case let .valid(environment) = check else {
+            if check == .missingConfiguration {
+                logger.notice("\(check.summary, privacy: .public); analytics and crash reporting are off")
+            } else {
+                logger.fault("\(check.summary, privacy: .public); Firebase was not started")
+            }
+            return ([], diagnostics)
+        }
+
         #if canImport(FirebaseCore) && canImport(FirebaseAnalytics) && canImport(FirebaseCrashlytics)
-        guard bundle.path(forResource: "GoogleService-Info", ofType: "plist") != nil else {
-            logger.notice("GoogleService-Info.plist is not bundled; analytics and crash reporting are off")
-            return []
+        guard let path, let options = FirebaseOptions(contentsOfFile: path) else {
+            logger.fault("GoogleService-Info.plist could not be loaded; Firebase was not started")
+            return ([], diagnostics)
         }
         if FirebaseApp.app() == nil {
-            FirebaseApp.configure()
+            FirebaseApp.configure(options: options)
         }
-        return [FirebaseAnalyticsClient()]
+        let crashlytics = Crashlytics.crashlytics()
+        crashlytics.setCustomValue(environment.bundleIdentifier, forKey: "application_id")
+        crashlytics.setCustomValue(environment == .debug ? "debug" : "release", forKey: "build_type")
+        diagnostics.isConfigured = true
+        logger.info("Firebase started: \(environment.displayName, privacy: .public), app \(options.googleAppID, privacy: .public)")
+        return ([FirebaseAnalyticsClient()], diagnostics)
         #else
-        return []
+        return ([], diagnostics)
         #endif
     }
 }

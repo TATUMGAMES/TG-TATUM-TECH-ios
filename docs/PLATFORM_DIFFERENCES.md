@@ -46,10 +46,13 @@ Behavior that is intentionally different on iOS, and why.
 ## Build and distribution
 
 - Bundle IDs: Release `com.tatumgames.tatumtech.ios`, Debug `com.tatumgames.tatumtech.ios.debug`,
-  each with its own Firebase configuration file.
+  each reporting to its own Firebase app in the shared Firebase project. Android selects its
+  configuration file per build type from source-set folders; iOS selects
+  `Config/Firebase/<Debug|Prod>/GoogleService-Info.plist` per build configuration in a build
+  phase that fails on a bundle ID mismatch, and checks it again at launch.
+- Schemes: Tatum Tech Debug (Debug) and Tatum Tech Prod (Release, used for archives).
 - Configuration comes from xcconfig files. Local values live in the git-ignored
-  `Config/Secrets.xcconfig`; Firebase files are git-ignored and copied into the app by a build
-  phase when present.
+  `Config/Secrets.xcconfig`; Firebase files are git-ignored.
 - Release builds force the production API over the network.
 - The privacy manifest (`PrivacyInfo.xcprivacy`) declares collected data and required-reason API
   use.

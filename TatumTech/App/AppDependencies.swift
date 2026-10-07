@@ -14,6 +14,7 @@ struct AppDependencies {
     let local: LocalRepository
     let catalog: BundledCatalog
     let analytics: AnalyticsService
+    let firebase: FirebaseDiagnostics
     let discord: DiscordClient
     let contactImages: ContactCardImageStore
     let reminders: MeetingReminderCenter
@@ -36,7 +37,8 @@ struct AppDependencies {
         )
         let keychain = KeychainStore(service: "\(bundle.bundleIdentifier ?? "com.tatumgames.tatumtech").auth")
         FirstLaunchGuard().clearCredentialsAfterReinstall(keychain)
-        let analytics = AnalyticsService(clients: FirebaseServices.configure(bundle: bundle))
+        let firebase = FirebaseServices.configure(bundle: bundle)
+        let analytics = AnalyticsService(clients: firebase.clients)
         UnhandledExceptionBridge.install(analytics: analytics)
 
         let transport: any HTTPTransport = switch configuration.dataSource {
@@ -60,6 +62,7 @@ struct AppDependencies {
             appleCredentials: AppleIDCredentialStateChecker(),
             local: LocalRepository(fileURL: LocalDataLocation.fileURL),
             analytics: analytics,
+            firebase: firebase.diagnostics,
             discordTransport: URLSessionTransport(),
             contactImages: .live(),
             reminders: MeetingReminderCenter(notifications: .current()),
@@ -88,6 +91,7 @@ struct AppDependencies {
             appleCredentials: AuthorizedAppleCredentials(),
             local: LocalRepository(fileURL: nil),
             analytics: .disabled,
+            firebase: .disabled,
             discordTransport: OfflineTransport(),
             contactImages: .inMemory,
             reminders: MeetingReminderCenter(notifications: nil, defaults: UserDefaults(suiteName: "ui-testing") ?? .standard),
@@ -103,6 +107,7 @@ struct AppDependencies {
         appleCredentials: any AppleCredentialStateChecking,
         local: LocalRepository,
         analytics: AnalyticsService,
+        firebase: FirebaseDiagnostics,
         discordTransport: any HTTPTransport,
         contactImages: ContactCardImageStore,
         reminders: MeetingReminderCenter,
@@ -124,6 +129,7 @@ struct AppDependencies {
         self.local = local
         self.catalog = BundledCatalog(loadFile: BundledContent.loader)
         self.analytics = analytics
+        self.firebase = firebase
         self.discord = DiscordClient(transport: discordTransport, analytics: analytics)
         self.contactImages = contactImages
         self.reminders = reminders

@@ -78,3 +78,63 @@ What was built and decided, in order. Add an entry for each meaningful change.
   category opening its screens, Timeline and Stats tabs, answering a coding question, creating and
   sharing a contact card, contact card validation, deletion confirmation from Profile.
 - The app target and its tests have not been compiled or run yet (no Mac). See TODO.md.
+
+## 2026-10: Firebase Debug and production environments
+
+### Configuration naming
+
+- Kept the two existing build configurations, Debug and Release, and did not add new ones. Each
+  already maps to one bundle ID, so a third configuration would only add a way to mismatch them.
+  The environment is named in the schemes and the home-screen name instead: **Tatum Tech Debug**
+  (Debug: run, test, profile, archive) and **Tatum Tech Prod** (Release: run, profile, archive).
+  The generic TatumTech scheme was replaced by these two.
+
+### Configuration files
+
+- Inspected both Firebase files by content. `BUNDLE_ID` `com.tatumgames.tatumtech.ios.debug` with
+  app `1:200853064929:ios:fca90eb9865f2e2bd6fba0`, and `com.tatumgames.tatumtech.ios` with app
+  `1:200853064929:ios:56260bb200c2ad8fd6fba0`; both in project `tatumtech-mobile-firebase`. They
+  match the intended bundle IDs.
+- Moved them to `Config/Firebase/Debug/GoogleService-Info.plist` and
+  `Config/Firebase/Prod/GoogleService-Info.plist`. `Config/` is not a synchronized group, so
+  neither file can be added to the target by accident.
+- They stay git-ignored. Firebase iOS API keys are restricted client identifiers, but the
+  repository rule is to never commit API keys; build machines and CI receive the files separately.
+
+### Selection and checks
+
+- The "Copy Firebase Configuration" build phase copies only
+  `Config/Firebase/$(FIREBASE_CONFIG_DIR)/GoogleService-Info.plist`, removes any previously copied
+  file first, and fails when the file's `BUNDLE_ID` differs from `PRODUCT_BUNDLE_IDENTIFIER`. A
+  missing file fails Release (`FIREBASE_CONFIG_REQUIRED = YES`) and only warns in Debug. The script
+  was exercised with a stand-in for PlistBuddy for the match, swapped, missing-Debug and
+  missing-Release cases.
+- At launch `FirebaseConfigurationCheck` (kit) compares the bundled file's `BUNDLE_ID` and
+  `GOOGLE_APP_ID` with the running bundle ID; Firebase starts with
+  `FirebaseApp.configure(options:)` only when they match. The bundle ID decides the environment,
+  not the build configuration. Firebase is still configured once, from
+  `AppDependencies.live()`, which the SwiftUI `App` creates once at launch; no app delegate is
+  needed.
+- Crashlytics custom keys `application_id` and `build_type` are set, as on Android.
+- Debug builds show environment, bundle ID, Firebase app ID, project and status in the menu
+  ("Firebase (Debug build only)"). The section is compiled out of Release. No API key is read
+  into it.
+- The Debug scheme passes `-FIRAnalyticsDebugEnabled` for DebugView.
+- Home-screen names come from `APP_DISPLAY_NAME`: "Tatum Tech Debug" and "Tatum Tech Prod".
+
+### SDK
+
+- The Firebase package requirement was "up to next major from 11.0.0", which could never resolve
+  the current release. Raised to 12.19.2 (up to next major), products FirebaseAnalytics and
+  FirebaseCrashlytics only. Its shared dependencies (GoogleUtilities 8.x, gtm-session-fetcher,
+  promises) overlap with GoogleSignIn-iOS 8.x's requirements.
+- Added the **Upload Crashlytics Symbols** build phase. It runs only when the build produces
+  dSYMs (Release) and a Firebase file was bundled.
+
+### Analytics audit
+
+- Android sends 8 events, sets no user properties and no user ID, and sets two Crashlytics keys.
+  iOS sends the same 8 events with the same parameters; nothing is missing. See
+  ANALYTICS_PARITY.md.
+- Kit tests: 117 in 15 suites, all passing. Nothing here has been built in Xcode or verified in
+  the Firebase console yet (TODO.md, Firebase).

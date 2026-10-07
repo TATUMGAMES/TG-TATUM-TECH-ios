@@ -32,6 +32,13 @@ GOOGLE_REVERSED_CLIENT_ID = com.tatumgames.tatumtech.google-unconfigured
 // Connect record exists; the rating prompt then falls back to the in-app review request.
 APP_STORE_ID =
 
-// Firebase reads "GoogleService-Info $(FIREBASE_PLIST_VARIANT).plist" from the repository
-// root at build time. Those files are git-ignored.
-FIREBASE_PLIST_VARIANT = Prod
+// Home-screen name. Debug and Release override it per environment.
+APP_DISPLAY_NAME = Tatum Tech
+
+// The "Copy Firebase Configuration" build phase bundles exactly one file,
+// Config/Firebase/$(FIREBASE_CONFIG_DIR)/GoogleService-Info.plist, as GoogleService-Info.plist and
+// fails the build if its BUNDLE_ID differs from PRODUCT_BUNDLE_IDENTIFIER. The files are
+// git-ignored. When FIREBASE_CONFIG_REQUIRED is YES a missing file fails the build; otherwise the
+// app builds with analytics and crash reporting off.
+FIREBASE_CONFIG_DIR = Prod
+FIREBASE_CONFIG_REQUIRED = YES

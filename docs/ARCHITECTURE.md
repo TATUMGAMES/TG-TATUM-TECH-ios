@@ -17,7 +17,7 @@ How the Tatum Tech iOS app is built: a platform-neutral core package and a Swift
 | Session and credentials | `SessionManager` actor, Keychain through `SecureStore` |
 | Sign-in | Email via the API; Google via the GoogleSignIn SDK behind `GoogleSignInProviding`; Apple via AuthenticationServices |
 | Reminders | `MeetingReminderCenter` (UserNotifications) driven by `MeetingReminderPlanner` in the kit |
-| Analytics | `AnalyticsService` in the kit; Firebase Analytics and Crashlytics clients in the app |
+| Analytics | `AnalyticsService` in the kit; Firebase Analytics and Crashlytics clients in the app, started only after `FirebaseConfigurationCheck` confirms the bundled configuration belongs to the running bundle ID |
 | Configuration | xcconfig, then Info.plist, then `AppConfiguration.resolve` |
 | Tests | Swift Testing (kit and app), XCUITest (UI) |
 
@@ -31,7 +31,8 @@ Linux and Windows too, so its tests run anywhere.
   contact card codecs (JSON payload and vCard, own-card detection, connections).
 - `API/`: `TatumTechAPIClient` (sign-in, sign-up, refresh, password reset, sign-out, profile,
   events, speakers, partners), DTOs and lenient decoding.
-- `Configuration/`: `AppConfiguration` (environment, data source, logging).
+- `Configuration/`: `AppConfiguration` (environment, data source, logging) and
+  `FirebaseEnvironment` (bundle ID to Firebase app mapping and the configuration check).
 - `Models/` and `Content/`: `Event`, `Speaker`, `Partner`, `ImageSource`, formatting, repository.
 - `Session/` and `Account/`: session lifetime, Keychain storage, `AccountService` combining the API
   session with stored Google and Apple identities, credential rules, error copy.

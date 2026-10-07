@@ -1,8 +1,10 @@
 import SwiftUI
+import TatumTechKit
 
 /// Account menu (the side drawer): profile and info destinations, app version, and legal links.
 /// Picking a destination closes the menu and opens the screen on the current tab.
 struct AccountSheet: View {
+    @Environment(AppModel.self) private var app
     @Environment(AppRouter.self) private var router
     @Environment(\.dismiss) private var dismiss
 
@@ -26,6 +28,10 @@ struct AccountSheet: View {
                     menuItem("About Tatum Games", systemImage: "info.circle", route: .about(.about), id: "menu.about")
                     menuItem("FAQ", systemImage: "questionmark.circle", route: .about(.faq), id: "menu.faq")
                 }
+
+                #if DEBUG
+                FirebaseDiagnosticsSection(diagnostics: app.dependencies.firebase)
+                #endif
 
                 Section {
                     VStack(spacing: Spacing.sm) {
@@ -64,3 +70,32 @@ struct AccountSheet: View {
         Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0"
     }
 }
+
+#if DEBUG
+/// Which Firebase app this build reports to. Compiled into Debug builds only.
+private struct FirebaseDiagnosticsSection: View {
+    let diagnostics: FirebaseDiagnostics
+
+    var body: some View {
+        Section {
+            row("Environment", diagnostics.environmentName)
+            row("Bundle ID", diagnostics.bundleIdentifier)
+            row("Firebase app ID", diagnostics.configuration?.googleAppID ?? "None")
+            row("Firebase project", diagnostics.configuration?.projectID ?? "None")
+            row("Status", diagnostics.isConfigured ? "Running" : diagnostics.check.summary)
+        } header: {
+            Text("Firebase (Debug build only)")
+        }
+        .accessibilityIdentifier("menu.firebaseDiagnostics")
+    }
+
+    private func row(_ title: String, _ value: String) -> some View {
+        LabeledContent(title) {
+            Text(value)
+                .font(.footnote.monospaced())
+                .multilineTextAlignment(.trailing)
+                .textSelection(.enabled)
+        }
+    }
+}
+#endif

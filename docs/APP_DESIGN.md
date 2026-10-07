@@ -3,6 +3,15 @@
 How the iOS app is organized for users: screens, navigation and the visual system.
 [PLATFORM_DIFFERENCES.md](PLATFORM_DIFFERENCES.md) lists behavior that is specific to iOS.
 
+## Builds
+
+| Scheme | Home-screen name | Bundle ID | Firebase app |
+| --- | --- | --- | --- |
+| Tatum Tech Debug | Tatum Tech Debug | `com.tatumgames.tatumtech.ios.debug` | Debug |
+| Tatum Tech Prod | Tatum Tech Prod | `com.tatumgames.tatumtech.ios` | Production |
+
+Different bundle IDs let both builds sit on one device side by side.
+
 ## Launch and account state
 
 `RootView` switches on `AppModel.phase`:
@@ -52,7 +61,9 @@ delivered.
 - Recent Notifications: collapsible, up to 200 pt tall, unread items highlighted; tapping marks the
   item read and opens its destination.
 - The menu button opens the account sheet: Profile, Demographic Info, About Tatum Games, FAQ, app
-  version, terms and privacy.
+  version, terms and privacy. Debug builds add a "Firebase (Debug build only)" section with the
+  environment name, bundle ID, Firebase app ID, Firebase project and status; Release builds do not
+  contain it.
 
 | Category | Cards |
 | --- | --- |
