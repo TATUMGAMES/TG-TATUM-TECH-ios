@@ -116,6 +116,37 @@ final class AppModel {
         await local.setCounter(CounterKey.sentToAppStoreForRating, to: 1)
     }
 
+    enum SignOutResult: Equatable {
+        case signedOut
+        /// Nothing was cleared and the user is still signed in.
+        case failed(AlertMessage)
+    }
+
+    /// Signs out of the Tatum Tech API, then Firebase and Google, and returns to the auth flow.
+    /// The account and this device's data are kept. If the API sign-out fails nothing is cleared,
+    /// so the user stays signed in and can retry. Once started, sign-out runs to completion even if
+    /// the calling view disappears.
+    func signOut() async -> SignOutResult {
+        let account = accountService
+        let outcome: Result<Void, any Error> = await Task {
+            do {
+                try await account.signOutOrFail()
+                return .success(())
+            } catch {
+                return .failure(error)
+            }
+        }.value
+        if case let .failure(error) = outcome {
+            logger.error("Sign-out failed: \(String(describing: error), privacy: .public)")
+            return .failed(.apiFailure(error, operation: .signOut))
+        }
+        dependencies.googleSignIn.signOut()
+        reminders.removeAll()
+        router.reset()
+        phase = .signedOut
+        return .signedOut
+    }
+
     enum AccountDeletionResult: Equatable {
         case deleted
         /// The user closed Apple's sheet; nothing changed.

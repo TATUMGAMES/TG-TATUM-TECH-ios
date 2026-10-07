@@ -25,6 +25,7 @@ How to read the columns:
 | Google sign-in | Welcome | Google identity kept even if the API exchange fails | Yes | Yes | Unavailable or failure copy | — | Google button | Kit (`googleSignInContinuesWhenExchangeFails`) |
 | Session restore and refresh | — | Refresh one hour before expiry, single refresh, sign-out only when refresh is rejected | Yes | Yes | Network errors keep the session | `api_error` | — | Kit (SessionManager, 12 tests); App test |
 | Profile | Profile | Username read-only, first/last name, email, Save, toast, Delete Account with Yes/No confirmation | Yes | Yes | Delete progress overlay | Screen, `update_profile`, `delete_account` | SF Symbols | UI test (deletion dialog) |
+| Sign out | Profile | Text link below Save, Yes/No confirmation, `POST tatum-tech/signout` with `{}`, clears session, Firebase and Google only after the server confirms, returns to Welcome | Yes | Yes | Failure stays on Profile with the standard API alert; progress overlay blocks a second request | — | — | Kit (SessionManager, AccountService); App test; UI test |
 | Demographic info | Demographic | 13+ confirmation, three consents gate Save, age/sex/salary/occupation/school, salary only with occupation | Yes | Yes | Cancel on the 13+ dialog goes back | Screen | — | None |
 | Delete account | Profile | Signs out, erases local data, keeps "sent to store" flag | Yes | Yes | Runs to completion even if the screen closes | `delete_account` | — | App test |
 

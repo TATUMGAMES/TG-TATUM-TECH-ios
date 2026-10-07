@@ -1,7 +1,8 @@
 import SwiftUI
 import TatumTechKit
 
-/// The on-device profile: read-only username, editable names and email, and account deletion.
+/// The on-device profile: read-only username, editable names and email, sign-out, and account
+/// deletion.
 struct ProfileView: View {
     @Environment(AppModel.self) private var app
     @State private var isLoading = true
@@ -13,6 +14,7 @@ struct ProfileView: View {
     @State private var isConfirmingDeletion = false
     @State private var isDeleting = false
     @State private var alert: AlertMessage?
+    @State private var signOut = ProfileSignOutModel()
 
     var body: some View {
         ScrollView {
@@ -31,6 +33,18 @@ struct ProfileView: View {
                         .buttonStyle(.primary)
                         .padding(.top, Spacing.xl)
                         .accessibilityIdentifier("profile.save")
+
+                    // A text link rather than a button style, so it stays visually subordinate to Save.
+                    Button {
+                        signOut.requestSignOut()
+                    } label: {
+                        Text("Sign Out")
+                            .font(.body.weight(.semibold))
+                            .foregroundStyle(Color.black)
+                            .padding(.horizontal, Spacing.sm)
+                            .frame(minHeight: Metrics.minimumTapTarget)
+                    }
+                    .accessibilityIdentifier("account.signOut")
                 }
 
                 Button {
@@ -53,25 +67,43 @@ struct ProfileView: View {
         .background(Color.white.ignoresSafeArea())
         .navigationTitle("Profile")
         .navigationBarTitleDisplayMode(.inline)
-        .disabled(isDeleting)
+        .disabled(progressMessage != nil)
         .overlay {
-            if isDeleting {
-                ProgressView("Deleting account…")
+            if let progressMessage {
+                ProgressView(progressMessage)
                     .tint(Palette.brandPrimaryStrong)
                     .padding(Spacing.xl)
                     .background(.regularMaterial, in: RoundedRectangle(cornerRadius: Radius.medium))
             }
         }
-        .navigationBarBackButtonHidden(isDeleting)
+        .navigationBarBackButtonHidden(progressMessage != nil)
         .alert("Delete Account", isPresented: $isConfirmingDeletion) {
             Button("Yes", role: .destructive, action: deleteAccount)
             Button("No", role: .cancel) {}
         } message: {
             Text("Are you sure you want to delete your Tatum Tech account? This action is not reversable.")
         }
+        .alert("Sign Out", isPresented: $signOut.isConfirming) {
+            Button("Yes", action: confirmSignOut)
+            Button("No", role: .cancel) {}
+        } message: {
+            Text("Are you sure you want to sign out?")
+        }
         .toast($toast)
         .alert($alert)
+        .alert($signOut.alert, retry: confirmSignOut)
         .task { await load() }
+    }
+
+    /// Shown over the screen, which ignores input, while deletion or sign-out runs.
+    private var progressMessage: LocalizedStringKey? {
+        if isDeleting { return "Deleting account…" }
+        if signOut.isSigningOut { return "Signing out…" }
+        return nil
+    }
+
+    private func confirmSignOut() {
+        Task { await signOut.confirm { await app.signOut() } }
     }
 
     private func load() async {

@@ -112,7 +112,7 @@ public struct TatumTechAPIClient: Sendable {
     }
 
     public func signOut(accessToken: String) async throws {
-        try await send(.post, TatumTechEndpoint.signOut, body: nil, accessToken: accessToken)
+        try await send(.post, TatumTechEndpoint.signOut, body: EmptyRequest(), accessToken: accessToken)
     }
 
     /// `nil` names are left unchanged.

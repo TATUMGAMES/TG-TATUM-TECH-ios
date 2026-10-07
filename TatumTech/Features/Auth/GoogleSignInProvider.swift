@@ -14,6 +14,8 @@ protocol GoogleSignInProviding {
     func handle(_ url: URL) -> Bool
     /// Forgets the Google session and revokes the app's access (used by account deletion).
     func disconnect() async
+    /// Forgets the Google session without revoking access, so signing in again is one tap.
+    func signOut()
 }
 
 /// Used when the GoogleSignIn package or the iOS OAuth client ID is missing: tapping the Google
@@ -22,6 +24,7 @@ struct UnavailableGoogleSignIn: GoogleSignInProviding {
     func signIn() async throws -> GoogleIdentity { throw GoogleSignInFailure.unavailable }
     func handle(_ url: URL) -> Bool { false }
     func disconnect() async {}
+    func signOut() {}
 }
 
 enum GoogleSignInProviderFactory {
@@ -79,6 +82,10 @@ final class GoogleSDKSignIn: GoogleSignInProviding {
         } catch {
             GIDSignIn.sharedInstance.signOut()
         }
+    }
+
+    func signOut() {
+        GIDSignIn.sharedInstance.signOut()
     }
 
     private static func failure(from error: any Error) -> GoogleSignInFailure {
