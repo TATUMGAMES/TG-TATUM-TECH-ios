@@ -86,6 +86,19 @@ struct AppModelTests {
         #expect(await app.local.ensureUser().firstName == "Ada")
     }
 
+    @Test func savingTheProfileWithoutAnAPISessionStoresTrimmedFieldsLocally() async {
+        let app = AppModel(dependencies: .uiTesting(signedIn: true))
+        await app.start()
+
+        #expect(await app.saveProfile(firstName: " Ada ", lastName: "", email: " ada@example.com ") == .saved)
+
+        let user = await app.local.ensureUser()
+        #expect(user.firstName == "Ada")
+        #expect(user.lastName == nil)
+        #expect(user.email == "ada@example.com")
+        #expect(app.greetingName == "Ada")
+    }
+
     @Test func appleUserCanSignOutAndBackIn() async throws {
         let firebase = InMemoryFirebaseAuthentication()
         let app = AppModel(dependencies: .uiTesting(signedIn: false, firebaseAuth: firebase))

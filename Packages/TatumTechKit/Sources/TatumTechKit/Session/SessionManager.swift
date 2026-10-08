@@ -171,6 +171,17 @@ public actor SessionManager {
         clear()
     }
 
+    // MARK: Profile
+
+    /// Saves the account's names; `nil` names are left out of the request and stay unchanged.
+    /// Does nothing without a session, since there is no account to update.
+    public func updateUserProfile(firstName: String?, lastName: String?) async throws {
+        guard session != nil else { return }
+        try await authenticated { client, token in
+            try await client.updateUserProfile(firstName: firstName, lastName: lastName, accessToken: token)
+        }
+    }
+
     // MARK: Helpers
 
     private func isNearExpiry(_ session: TatumTechSession) -> Bool {

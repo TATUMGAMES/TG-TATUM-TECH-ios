@@ -116,6 +116,45 @@ final class AppModel {
         await local.setCounter(CounterKey.sentToAppStoreForRating, to: 1)
     }
 
+    enum SaveProfileResult: Equatable {
+        case saved
+        /// Nothing was stored.
+        case failed(AlertMessage)
+    }
+
+    /// Saves the Profile screen: the trimmed names go to the Tatum Tech API (blank ones are left
+    /// out), then names and email are stored locally. The API has no email field, so email stays
+    /// local. If the request fails nothing is stored. Without an API session only the local
+    /// profile is updated. Once started, the save runs to completion even if the calling view
+    /// disappears.
+    func saveProfile(firstName: String, lastName: String, email: String) async -> SaveProfileResult {
+        let first = firstName.trimmingCharacters(in: .whitespacesAndNewlines)
+        let last = lastName.trimmingCharacters(in: .whitespacesAndNewlines)
+        let mail = email.trimmingCharacters(in: .whitespacesAndNewlines)
+        let account = accountService
+        let local = local
+        let analytics = analytics
+        let outcome: Result<Void, any Error> = await Task {
+            do {
+                try await account.updateUserProfile(
+                    firstName: first.isEmpty ? nil : first,
+                    lastName: last.isEmpty ? nil : last
+                )
+            } catch {
+                return .failure(error)
+            }
+            let changed = await local.updateProfile(firstName: first, lastName: last, email: mail)
+            changed.forEach { analytics.log(.updateProfile(field: $0)) }
+            return .success(())
+        }.value
+        if case let .failure(error) = outcome {
+            logger.error("Profile update failed: \(String(describing: error), privacy: .public)")
+            return .failed(.apiFailure(error, operation: .updateProfile))
+        }
+        await refreshLocalUser()
+        return .saved
+    }
+
     enum SignOutResult: Equatable {
         case signedOut
         /// Nothing was cleared and the user is still signed in.

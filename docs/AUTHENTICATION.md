@@ -72,6 +72,19 @@ while it runs. A revoked or missing credential signs the user out, including fro
 - If the product later wants linked accounts, add a "link Apple" action for a signed-in Google
   user using `User.link(with:)`.
 
+## Profile save
+
+**Save on the Profile screen** runs `AppModel.saveProfile` through `ProfileSaveModel`, which
+ignores taps while a save is running and covers the screen with a "Saving…" overlay. The trimmed
+names go to `POST tatum-tech/updateUserProfile` with the bearer token, through
+`AccountService.updateUserProfile` and `SessionManager.updateUserProfile` (refreshed and retried
+once on 401). Blank names are left out of the request body. Only after the server confirms are the
+names and email stored in the local profile; email is local only, because the API has no email
+field. A failure stores nothing and shows the standard API alert ("Unable to Save Profile").
+
+Without an API session (Apple users, or after a failed Google exchange) no request is sent and only
+the local profile is updated.
+
 ## Sign-out
 
 **Sign Out on the Profile screen** (below Save) is a text link. It opens the same Yes/No alert as

@@ -31,7 +31,7 @@ empty values, so files written by older versions keep loading.
 | `counters` | `APP_OPEN_COUNT`, `HAS_BEEN_SENT_TO_APP_STORE_FOR_RATING`, `GAME_DETAILS_VIEWED`, `JOB_APPLY_CLICKED`. |
 | `contactCard` | The user's card: stable card ID, photo file name, name, job title, company, description, email, phone, alternate email, website, LinkedIn, Twitter/X, custom link, Calendly. |
 | `connections` | Scanned cards, unique per card ID. Re-scanning updates the details and keeps the first connection date. |
-| `notifications` | Recent notifications (daily coding challenge, upcoming events). At most 3 event notifications; read items expire after 14 days. |
+| `notifications` | Recent notifications (daily coding challenge, upcoming events). At most 3 event notifications, recorded when Upcoming Events loads (Home never requests events); read items expire after 14 days. |
 
 ## Bundled content
 

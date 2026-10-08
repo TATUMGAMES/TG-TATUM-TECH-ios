@@ -58,11 +58,18 @@ extension LocalRepository {
     // MARK: Recent notifications
 
     /// Adds today's notifications that are missing, drops read ones past retention, and returns
-    /// the list newest first.
-    public func refreshNotifications(events: [Event], hasChallengeQuestions: Bool, now: Date = Date(), calendar: Calendar = .current) async -> [RecentNotification] {
+    /// the list newest first. Event notifications are added by `recordEventNotifications(_:now:)`.
+    public func refreshNotifications(hasChallengeQuestions: Bool, now: Date = Date(), calendar: Calendar = .current) async -> [RecentNotification] {
         await store.update { data in
-            RecentNotificationPolicy.refresh(&data.notifications, events: events, hasChallengeQuestions: hasChallengeQuestions, now: now, calendar: calendar)
+            RecentNotificationPolicy.refresh(&data.notifications, hasChallengeQuestions: hasChallengeQuestions, now: now, calendar: calendar)
             return data.notifications.sorted { $0.createdAt > $1.createdAt }
+        }
+    }
+
+    /// Adds notifications for the first upcoming `events` (as loaded by Upcoming Events) that are missing.
+    public func recordEventNotifications(_ events: [Event], now: Date = Date()) async {
+        await store.update { data in
+            RecentNotificationPolicy.addEvents(events, to: &data.notifications, now: now)
         }
     }
 
@@ -98,12 +105,20 @@ public enum RecentNotificationPolicy {
         return String(format: "%04d-%02d-%02d", year, month, day)
     }
 
-    static func refresh(_ notifications: inout [RecentNotification], events: [Event], hasChallengeQuestions: Bool, now: Date, calendar: Calendar) {
+    static func addEvents(_ events: [Event], to notifications: inout [RecentNotification], now: Date) {
+        for event in events.prefix(maxEventNotifications) {
+            insertIfMissing(RecentNotification(
+                id: eventID(event.id), type: .event, title: "Upcoming Events", description: event.name,
+                iconName: "upcoming_events", createdAt: now, relatedContentID: event.id
+            ), into: &notifications)
+        }
+    }
+
+    static func refresh(_ notifications: inout [RecentNotification], hasChallengeQuestions: Bool, now: Date, calendar: Calendar) {
         let dayKey = dayKey(for: now, calendar: calendar)
 
         func insertIfMissing(_ notification: RecentNotification) {
-            guard !notifications.contains(where: { $0.id == notification.id }) else { return }
-            notifications.append(notification)
+            Self.insertIfMissing(notification, into: &notifications)
         }
 
         if hasChallengeQuestions {
@@ -111,12 +126,6 @@ public enum RecentNotificationPolicy {
                 id: codingChallengeDailyID(dayKey), type: .codingChallenge, title: "Coding Challenge",
                 description: "New coding challenge available", iconName: "notif_coding_challenge",
                 createdAt: now, relatedContentID: dayKey
-            ))
-        }
-        for event in events.prefix(maxEventNotifications) {
-            insertIfMissing(RecentNotification(
-                id: eventID(event.id), type: .event, title: "Upcoming Events", description: event.name,
-                iconName: "upcoming_events", createdAt: now, relatedContentID: event.id
             ))
         }
         insertIfMissing(RecentNotification(
@@ -136,5 +145,10 @@ public enum RecentNotificationPolicy {
         ))
 
         notifications.removeAll { !shouldRetain($0, now: now) }
+    }
+
+    private static func insertIfMissing(_ notification: RecentNotification, into notifications: inout [RecentNotification]) {
+        guard !notifications.contains(where: { $0.id == notification.id }) else { return }
+        notifications.append(notification)
     }
 }

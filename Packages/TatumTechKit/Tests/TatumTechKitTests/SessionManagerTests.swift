@@ -217,6 +217,55 @@ struct SessionManagerTests {
         #expect(transport.requests.isEmpty)
     }
 
+    @Test func profileUpdatePostsBothNamesWithTheBearerToken() async throws {
+        try seed(expiresIn: 86_400)
+        let transport = FakeTransport(json: #"{"status":{"statusCode":200,"statusMessage":"OK"},"data":{}}"#)
+
+        try await manager(transport).updateUserProfile(firstName: "Tatum2", lastName: "Tech1")
+
+        let request = try #require(transport.requests.first)
+        #expect(transport.requests.count == 1)
+        #expect(request.method == .post)
+        #expect(request.url.path == "/tatum-tech/updateUserProfile")
+        #expect(request.headers["Authorization"] == "Bearer access-1")
+        #expect(try bodyFields(request) == ["firstName": "Tatum2", "lastName": "Tech1"])
+    }
+
+    @Test func profileUpdateLeavesMissingNamesOutOfTheBody() async throws {
+        try seed(expiresIn: 86_400)
+        let transport = FakeTransport(json: #"{"status":{"statusCode":200,"statusMessage":"OK"},"data":{}}"#)
+        let manager = manager(transport)
+
+        try await manager.updateUserProfile(firstName: "Ada", lastName: nil)
+        try await manager.updateUserProfile(firstName: nil, lastName: nil)
+
+        #expect(try transport.requests.map(bodyFields) == [["firstName": "Ada"], [:]])
+    }
+
+    @Test func failedProfileUpdateThrowsAndKeepsTheSession() async throws {
+        try seed(expiresIn: 86_400)
+        let manager = manager(FakeTransport(statusCode: 500, json: "{}"))
+
+        await #expect(throws: APIError.http(statusCode: 500, messages: [])) {
+            try await manager.updateUserProfile(firstName: "Ada", lastName: "Lovelace")
+        }
+
+        #expect(await manager.isSignedIn)
+    }
+
+    @Test func profileUpdateWithoutASessionSendsNothing() async throws {
+        let transport = FakeTransport(json: "{}")
+
+        try await manager(transport).updateUserProfile(firstName: "Ada", lastName: "Lovelace")
+
+        #expect(transport.requests.isEmpty)
+    }
+
+    private func bodyFields(_ request: HTTPRequest) throws -> [String: String] {
+        let body = try #require(request.body)
+        return try #require(try JSONSerialization.jsonObject(with: body) as? [String: String])
+    }
+
     @Test func refreshFinishingAfterSignOutDoesNotRestoreTheSession() async throws {
         try seed(expiresIn: 60)
         let transport = FakeTransport { request in

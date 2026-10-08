@@ -255,6 +255,12 @@ public actor AccountService {
         forgetFederatedIdentity()
     }
 
+    /// Saves the account's names with the Tatum Tech API; `nil` names stay unchanged. Does nothing
+    /// without an API session.
+    public func updateUserProfile(firstName: String?, lastName: String?) async throws {
+        try await sessionManager.updateUserProfile(firstName: firstName, lastName: lastName)
+    }
+
     /// Deletes the signed-in user's Firebase account, then signs out everywhere.
     ///
     /// Apple users must pass a fresh authorization for the same Apple ID: their Apple tokens are

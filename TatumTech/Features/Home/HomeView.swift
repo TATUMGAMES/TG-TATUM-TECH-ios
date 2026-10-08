@@ -73,12 +73,12 @@ struct HomeView: View {
         .accessibilityIdentifier("home.greeting")
     }
 
-    /// Reloads the profile name and today's notifications each time Home appears.
+    /// Reloads the profile name and today's notifications each time Home appears. Requests no
+    /// content: event notifications are recorded when Upcoming Events loads.
     private func refresh() async {
         await app.refreshLocalUser()
-        let events = (try? await app.content.upcomingEvents()) ?? []
         let hasQuestions = await !app.dependencies.catalog.questionBank.isEmpty
-        notifications = await app.local.refreshNotifications(events: events, hasChallengeQuestions: hasQuestions)
+        notifications = await app.local.refreshNotifications(hasChallengeQuestions: hasQuestions)
     }
 
     private func open(_ notification: RecentNotification) {

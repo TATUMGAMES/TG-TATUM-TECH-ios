@@ -206,17 +206,23 @@ struct CatalogTests {
             Event(id: "e\(index)", name: "Event \(index)", host: "", start: nil, durationHours: 0, location: "", featuredImage: .none, registrationURL: nil, speakers: [])
         }
 
-        let first = await repository.refreshNotifications(events: events, hasChallengeQuestions: true, now: now, calendar: calendar)
+        let beforeEvents = await repository.refreshNotifications(hasChallengeQuestions: true, now: now, calendar: calendar)
+        #expect(beforeEvents.count == 4)
+        #expect(!beforeEvents.contains { $0.type == .event })
+
+        await repository.recordEventNotifications(events, now: now)
+        let first = await repository.refreshNotifications(hasChallengeQuestions: true, now: now, calendar: calendar)
         #expect(first.count == 7)
         #expect(first.filter { $0.type == .event }.count == 3)
         #expect(first.contains { $0.id == "coding_challenge:daily:2027-01-15" })
 
-        let again = await repository.refreshNotifications(events: events, hasChallengeQuestions: true, now: now + 60, calendar: calendar)
+        await repository.recordEventNotifications(events, now: now + 60)
+        let again = await repository.refreshNotifications(hasChallengeQuestions: true, now: now + 60, calendar: calendar)
         #expect(again.count == 7)
 
         await repository.markNotificationRead(id: "event:e1", at: now)
         let later = now + 15 * 24 * 60 * 60
-        let afterRetention = await repository.refreshNotifications(events: [], hasChallengeQuestions: false, now: later, calendar: calendar)
+        let afterRetention = await repository.refreshNotifications(hasChallengeQuestions: false, now: later, calendar: calendar)
         #expect(!afterRetention.contains { $0.id == "event:e1" })
         #expect(afterRetention.contains { $0.id == "event:e2" })
     }
