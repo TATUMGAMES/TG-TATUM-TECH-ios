@@ -35,6 +35,7 @@ extension AlertMessage {
         case .forgotPassword: String(localized: "Unable to Send Reset Email")
         case .loadContent: String(localized: "Unable to Load Content")
         case .signOut: String(localized: "Unable to Sign Out")
+        case .updateProfile: String(localized: "Unable to Save Profile")
         }
     }
 

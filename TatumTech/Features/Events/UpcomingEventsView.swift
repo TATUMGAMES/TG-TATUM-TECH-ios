@@ -17,7 +17,7 @@ struct UpcomingEventsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .task {
                 await model.load()
-                await syncReminders()
+                await eventsLoaded()
             }
     }
 
@@ -27,7 +27,12 @@ struct UpcomingEventsView: View {
         case .loading:
             LoadingView()
         case .failed:
-            LoadFailedView { Task { await model.reload() } }
+            LoadFailedView {
+                Task {
+                    await model.reload()
+                    await eventsLoaded()
+                }
+            }
         case let .loaded(events):
             ScrollView {
                 LazyVStack(spacing: Spacing.lg) {
@@ -44,14 +49,16 @@ struct UpcomingEventsView: View {
             }
             .refreshable {
                 await model.reload()
-                await syncReminders()
+                await eventsLoaded()
             }
         }
     }
 
-    private func syncReminders() async {
+    /// Schedules speaker reminders and records Home's event notifications from the loaded events.
+    private func eventsLoaded() async {
         if case let .loaded(events) = model.state {
             await app.reminders.sync(events: events)
+            await app.local.recordEventNotifications(events)
         }
     }
 }

@@ -10,10 +10,10 @@ struct ProfileView: View {
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var email = ""
-    @State private var toast: ToastMessage?
     @State private var isConfirmingDeletion = false
     @State private var isDeleting = false
     @State private var alert: AlertMessage?
+    @State private var saveModel = ProfileSaveModel()
     @State private var signOut = ProfileSignOutModel()
 
     var body: some View {
@@ -89,16 +89,18 @@ struct ProfileView: View {
         } message: {
             Text("Are you sure you want to sign out?")
         }
-        .toast($toast)
+        .toast($saveModel.toast)
         .alert($alert)
+        .alert($saveModel.alert, retry: save)
         .alert($signOut.alert, retry: confirmSignOut)
         .task { await load() }
     }
 
-    /// Shown over the screen, which ignores input, while deletion or sign-out runs.
+    /// Shown over the screen, which ignores input, while saving, deletion, or sign-out runs.
     private var progressMessage: LocalizedStringKey? {
         if isDeleting { return "Deleting account…" }
         if signOut.isSigningOut { return "Signing out…" }
+        if saveModel.isSaving { return "Saving…" }
         return nil
     }
 
@@ -116,15 +118,8 @@ struct ProfileView: View {
     }
 
     private func save() {
-        let local = app.local
-        let analytics = app.analytics
         let (first, last, mail) = (firstName, lastName, email)
-        Task {
-            let changed = await local.updateProfile(firstName: first, lastName: last, email: mail)
-            changed.forEach { analytics.log(.updateProfile(field: $0)) }
-            await app.refreshLocalUser()
-            toast = ToastMessage(text: "Profile updated successfully!")
-        }
+        Task { await saveModel.save { await app.saveProfile(firstName: first, lastName: last, email: mail) } }
     }
 
     private func deleteAccount() {
